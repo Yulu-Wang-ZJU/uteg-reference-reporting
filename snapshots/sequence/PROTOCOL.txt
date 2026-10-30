@@ -1,0 +1,37 @@
+Current MA sequential validation — frozen before new fitting
+
+Authorization: user requested the experiments required for Figure 4 now.
+Scope: three two-source-to-third-center directions plus Huzhou-to-SAHZU,
+20 seeds 1000–1019, original record/group splits, C40/C60/C40.
+Reuse unchanged frozen T900 predictions/actions. Refit only T300/T600 with
+the same generalized-exponential X4, Ridge-10, original nested Huber/adapter
+selection, MA-error LR and two balanced logistic within-risk heads [B,predMA].
+Reuse existing true-observed prefix fits; B is an existing X4 column.
+Model family/configuration, label boundaries 50/70 and selector remain fixed;
+time-specific numerical coefficients and thresholds are fitted on legal
+development partitions only. No new signals, model search or test tuning.
+Current normal-prefix zero-internal-tail-error plus five distinct correct
+normal records; shared low/high tail threshold requires overall >75% and
+five distinct reports; frozen selector controls ties. Unsupported heads reject
+within reports. Original target adaptation still has a frozen auxiliary CI
+selection mechanism; endpoints and figures here are MA, not CI.
+
+Source records are exactly the matching T900 source lists. Prefix test QC is
+prefix-finite only, not inherited from future T900 fit quality. Calibration
+and test pools stay fixed; no post hoc class-dependent exclusions.
+Ridge is deterministic, so identical full-source training is reused across
+seeds within each direction/time; downstream 20 splits remain separate.
+First report retained; otherwise observe U-TEG again, withhold at 15min if
+still unqualified. No reference TEG is an online input.
+
+Finite cap: <=16,000 new fit units, <=8,000 per horizon (7,800 science and
+200 repair); exact preflight bound computed from unique nested training sets.
+No signal fitting is required. Every fit is logged before computation.
+Freeze all 160 context objects and thresholds before new test scoring.
+Test scoring and reference evaluation are separate from training. Independently
+recompute saved predictions/actions; preserve all old outputs and manuscript.
+Report cumulative correct/wrong/unreported, agreement, coverage, low/high
+released-within counts, and paired 15-minus-5 correct/wrong yield intervals.
+Bootstrap record/group clusters with seeds kept together; distinguish repeated
+events from independent patients. Cumulative monotonicity is not proof of
+improved discrimination or clinical safety. Publish failures as well as gains.

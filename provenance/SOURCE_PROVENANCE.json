@@ -1,0 +1,1387 @@
+{
+  "schema": "uteg_reference_reporting_source_provenance_v1",
+  "release": "uteg_reference_reporting_20261030",
+  "created": "2026-10-30",
+  "snapshot_policy": "curated exact code and protocol snapshots unless an entry documents a workstation-path redaction; no data, trained objects, result tables or manuscript sources copied",
+  "manuscript_anchors": [
+    {
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/main.tex",
+      "sha256": "a0cc7560b4254da7024bf60f76dcec8b72cb9250339c4f63f75f31307d911af3",
+      "bytes": 66837
+    },
+    {
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/supplement_current.tex",
+      "sha256": "48b7ef448e0ecd13abef53e09e5ea5cdc5d66ebd727b34e642d85a14561f2708",
+      "bytes": 408568
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshot_path": "snapshots/ridge10/runtime.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/runtime.py",
+      "role": "runtime/cache isolation and historical dependency binding",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "5c61ce41dd3dc55d2f784e7ffa716fe8233c498ac68a12ae14e0303356ba2919",
+      "snapshot_sha256": "5c61ce41dd3dc55d2f784e7ffa716fe8233c498ac68a12ae14e0303356ba2919",
+      "bytes": 12010,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/ridge10/run_ridge10_fullchain.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/run_ridge10_fullchain.py",
+      "role": "Ridge-10 four-output mapping, adaptation and MA-ERROR-LR gate",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "015a92a39dda98d6440179c74b8437801d970ba004ddb01c1f1ad5a5e54e9d15",
+      "snapshot_sha256": "015a92a39dda98d6440179c74b8437801d970ba004ddb01c1f1ad5a5e54e9d15",
+      "bytes": 44741,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/ridge10/evaluate_frozen_actions.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/evaluate_frozen_actions.py",
+      "role": "frozen action evaluator and record-cluster summaries",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "2d519ef6cb52113bb6f2a04dc484acdf2703b1a618e7f74a09779a460aee6f23",
+      "snapshot_sha256": "2d519ef6cb52113bb6f2a04dc484acdf2703b1a618e7f74a09779a460aee6f23",
+      "bytes": 48682,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/ridge10/freeze_ma_thresholds.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/freeze_ma_thresholds.py",
+      "role": "finite outer-B score threshold freeze",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "f5fce568c74bdb3e6c3bb86f19846ac37ba2d92401e40ab9f302c71997aeb737",
+      "snapshot_sha256": "f5fce568c74bdb3e6c3bb86f19846ac37ba2d92401e40ab9f302c71997aeb737",
+      "bytes": 8184,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/ridge10/preflight_ridge10_fullchain.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/preflight_ridge10_fullchain.py",
+      "role": "read-only Ridge-10/source identity preflight",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "51c064f32d4085b8b2bb22b2caad94e157f0f466b0c81c04b8a15a50bef0b4d0",
+      "snapshot_sha256": "51c064f32d4085b8b2bb22b2caad94e157f0f466b0c81c04b8a15a50bef0b4d0",
+      "bytes": 14721,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/supplement/batch.py",
+      "source_path": "outputs/uteg_supplement_completion_20261027_203140/batch.py",
+      "role": "supplement task plan and frozen training orchestration",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "060353f4a40053b58e86ad68fbc14d92f066b38d4e08309f0487c975164efe5b",
+      "snapshot_sha256": "060353f4a40053b58e86ad68fbc14d92f066b38d4e08309f0487c975164efe5b",
+      "bytes": 12632,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/supplement/analyze.py",
+      "source_path": "outputs/uteg_supplement_completion_20261027_203140/analyze.py",
+      "role": "mapping, gate and temporal analysis",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "a08e03b743ca59746a78b6ecf6d86607eb426a611761e90a0bcc80c86ccd8795",
+      "snapshot_sha256": "a08e03b743ca59746a78b6ecf6d86607eb426a611761e90a0bcc80c86ccd8795",
+      "bytes": 20262,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/supplement/finalize.py",
+      "source_path": "outputs/uteg_supplement_completion_20261027_203140/finalize.py",
+      "role": "independent appendix verification",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "81de58c608f19381418ed6bfb8e91eb69960ab232e33cdc6e2ed95307de43483",
+      "snapshot_sha256": "81de58c608f19381418ed6bfb8e91eb69960ab232e33cdc6e2ed95307de43483",
+      "bytes": 15064,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/supplement/launch.py",
+      "source_path": "outputs/uteg_supplement_completion_20261027_203140/launch.py",
+      "role": "supplement launch entrypoint",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "5ec9cb65f03a7ed9a281c2e138112b02e41d144c4ba87c89b5ce96e39daf5bbd",
+      "snapshot_sha256": "5ec9cb65f03a7ed9a281c2e138112b02e41d144c4ba87c89b5ce96e39daf5bbd",
+      "bytes": 1727,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/supplement/render.py",
+      "source_path": "outputs/uteg_supplement_completion_20261027_203140/render.py",
+      "role": "supplement figure rendering",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "bbfee406e2480e37173a198e7ce4d848cc8bc2b1ad99125415181202598d8764",
+      "snapshot_sha256": "bbfee406e2480e37173a198e7ce4d848cc8bc2b1ad99125415181202598d8764",
+      "bytes": 13653,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/sequence/run.py",
+      "source_path": "outputs/uteg_current_ma_sequence_20261026/run.py",
+      "role": "5/10-minute current-policy prefix fitting and dual heads",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "d2f3879216fe5cdc472552458ee7541fcc0e96fd8a48bf443592dc5d18a45edc",
+      "snapshot_sha256": "d2f3879216fe5cdc472552458ee7541fcc0e96fd8a48bf443592dc5d18a45edc",
+      "bytes": 11310,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/sequence/evaluate.py",
+      "source_path": "outputs/uteg_current_ma_sequence_20261026/evaluate.py",
+      "role": "frozen prefix scoring and first-report replay",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "a3e37860862d2be5fce645d0c24aa82b315df6d026e1ca3f2ce1fc9e7e2df4b0",
+      "snapshot_sha256": "a3e37860862d2be5fce645d0c24aa82b315df6d026e1ca3f2ce1fc9e7e2df4b0",
+      "bytes": 7372,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/sequence/verify_saved.py",
+      "source_path": "outputs/uteg_current_ma_sequence_20261026/verify_saved.py",
+      "role": "saved sequence verification",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "e115f1defcbf8fe416c06dabd163acd07b618ab4bd5bbccbcb2c43a9ef968a4a",
+      "snapshot_sha256": "e115f1defcbf8fe416c06dabd163acd07b618ab4bd5bbccbcb2c43a9ef968a4a",
+      "bytes": 3759,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/hgb/run.py",
+      "source_path": "outputs/uteg_table2_hgb_20261029/run.py",
+      "role": "matched HGB full-error-score baseline",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "6e80f7f7823cbbf8ad3f94a78e5106e4e6f4ed45ba94d0fe2ce20e6899b1aa71",
+      "snapshot_sha256": "6e80f7f7823cbbf8ad3f94a78e5106e4e6f4ed45ba94d0fe2ce20e6899b1aa71",
+      "bytes": 6216,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/hgb/verify.py",
+      "source_path": "outputs/uteg_table2_hgb_20261029/verify.py",
+      "role": "HGB baseline verification",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "83befb39e2160b81a6191a9cff241112ee08dbde347cc80d8757eae7d5a0656a",
+      "snapshot_sha256": "83befb39e2160b81a6191a9cff241112ee08dbde347cc80d8757eae7d5a0656a",
+      "bytes": 1553,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/adaptation/run.py",
+      "source_path": "outputs/uteg_adaptation_fourway_20261029/run.py",
+      "role": "raw, affine, joint and current adaptation comparison",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "0cd67043d276484f77195ccc1229ff399e4b89bea48592f7e6520ab0343336d9",
+      "snapshot_sha256": "0cd67043d276484f77195ccc1229ff399e4b89bea48592f7e6520ab0343336d9",
+      "bytes": 8291,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/adaptation/verify.py",
+      "source_path": "outputs/uteg_adaptation_fourway_20261029/verify.py",
+      "role": "adaptation comparison verification",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "30d431bfdafdf213f30f14cee6e563cdb8cff35ff622eff7b1f4bfeb6d0f2203",
+      "snapshot_sha256": "30d431bfdafdf213f30f14cee6e563cdb8cff35ff622eff7b1f4bfeb6d0f2203",
+      "bytes": 2257,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/legacy/runtime.py",
+      "source_path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/runtime.py",
+      "role": "historical target/prefix runtime",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "30c9ed6e061c73f77b73a538c9f6209e9e823facd29a4cf080f6a01d2a381e5c",
+      "snapshot_sha256": "30c9ed6e061c73f77b73a538c9f6209e9e823facd29a4cf080f6a01d2a381e5c",
+      "bytes": 6202,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/legacy/train_target_legacy.py",
+      "source_path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/train_target_legacy.py",
+      "role": "target-side Huber and CI-auxiliary adaptation chain",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "d60302678418adfb0c5e70f0299fef92931d19a0480acb04bfd7b4bb08d306e6",
+      "snapshot_sha256": "d60302678418adfb0c5e70f0299fef92931d19a0480acb04bfd7b4bb08d306e6",
+      "bytes": 22576,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/legacy/downstream_15min.py",
+      "source_path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/downstream_15min.py",
+      "role": "legacy 15-minute downstream Huber/adapter/gate path",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "0d8b057531fd72a0f0d0be468a6ab14b055fcb27fe42c976f5fb582f41925951",
+      "snapshot_sha256": "0d8b057531fd72a0f0d0be468a6ab14b055fcb27fe42c976f5fb582f41925951",
+      "bytes": 10693,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/legacy/build_prefix_inputs.py",
+      "source_path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/build_prefix_inputs.py",
+      "role": "generalized-exponential U-TEG prefix preprocessing and fitting",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "057401ca4356b6f1f6639e92a7e3cf33af8a7569cd21b9d5e88d7398fb69395b",
+      "snapshot_sha256": "057401ca4356b6f1f6639e92a7e3cf33af8a7569cd21b9d5e88d7398fb69395b",
+      "bytes": 16959,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/legacy/prefix_source.py",
+      "source_path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/prefix_source.py",
+      "role": "frozen-config prefix source mapping",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "948323b2cfaa19a67be9f54a5a65a0e11599c66a3745e000863d04b6be92c6e4",
+      "snapshot_sha256": "948323b2cfaa19a67be9f54a5a65a0e11599c66a3745e000863d04b6be92c6e4",
+      "bytes": 6563,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/legacy/evaluate_prefix.py",
+      "source_path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/evaluate_prefix.py",
+      "role": "frozen prefix external replay",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "b7896626e24c818e8fb40e2f23a6fff71dff419dfc72b0fc234acea62d868543",
+      "snapshot_sha256": "b7896626e24c818e8fb40e2f23a6fff71dff419dfc72b0fc234acea62d868543",
+      "bytes": 7801,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/prefix/platform_process.py",
+      "source_path": "outputs/uteg_platform_filter_pilot_20261006_124636/process.py",
+      "role": "platform filtering and prefix preprocessing dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "d82d56ff6ef0e1a0a4f7310e153ec61c60c9e202fa977cf3750da22f2f718250",
+      "snapshot_sha256": "d82d56ff6ef0e1a0a4f7310e153ec61c60c9e202fa977cf3750da22f2f718250",
+      "bytes": 6573,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/prefix/hubei_process.py",
+      "source_path": "outputs/uteg_hubei_qc_repair_20261021_171418/run.py",
+      "role": "Hubei fixed-length prefix QC and preprocessing dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "78801beabf5dd1ccc12665079f6e68edf7fcd108764d2686acc98cae480dc652",
+      "snapshot_sha256": "78801beabf5dd1ccc12665079f6e68edf7fcd108764d2686acc98cae480dc652",
+      "bytes": 7085,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/prefix/curves.py",
+      "source_path": "outputs/uteg_platform_param_compare_20261006_125428/curves.py",
+      "role": "platform generalized-exponential curve fitting dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "4c8f20d93dfbcc3790c9dedb86e0366dc710f3a2eaa6e52624be5df06f61c2ee",
+      "snapshot_sha256": "4c8f20d93dfbcc3790c9dedb86e0366dc710f3a2eaa6e52624be5df06f61c2ee",
+      "bytes": 6834,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/prefix/zero5_refit.py",
+      "source_path": "outputs/uteg_zero5_med4_20261006_113257/refit.py",
+      "role": "zero-tail curve refit dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "9a9682fef5bcc6b24cc0832fe41d2f2558b489c965f076266380eeddd0885ba6",
+      "snapshot_sha256": "9a9682fef5bcc6b24cc0832fe41d2f2558b489c965f076266380eeddd0885ba6",
+      "bytes": 4974,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/hgb/old_runtime.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ma_tail_weight_gate_run_20261026_141553/runtime.py",
+      "role": "weighted-gate runtime dependency for the HGB lineage",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "ee8647fd1badd8d637c2c80c1f82fe9979dd4adc9831d38ccb953bfc6b5c7ccc",
+      "snapshot_sha256": "ee8647fd1badd8d637c2c80c1f82fe9979dd4adc9831d38ccb953bfc6b5c7ccc",
+      "bytes": 9452,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/hgb/run_weighted_gate.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ma_tail_weight_gate_run_20261026_141553/run_weighted_gate.py",
+      "role": "reviewed weighted MA gate implementation used by HGB selector",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "bf1593abc3bccac3957181d3145ecadf0cff69b5cd32461cfd519474c1ee04ef",
+      "snapshot_sha256": "bf1593abc3bccac3957181d3145ecadf0cff69b5cd32461cfd519474c1ee04ef",
+      "bytes": 44167,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/hgb/selector_weighted_gate.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ma_tail_weight_gate_run_20261026_141553/selector_weighted_gate.py",
+      "role": "weighted-gate outer-B selector dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "1aa7ff6afc2e7a9c8cf9b31c680d3adff224ae17ce97506c30671b932a6c2da6",
+      "snapshot_sha256": "1aa7ff6afc2e7a9c8cf9b31c680d3adff224ae17ce97506c30671b932a6c2da6",
+      "bytes": 20833,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/hgb/runtime.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ma_tail_weight_gate_run_20261026_141553/ridge_ma13d_hgb_prepare_20261026_151041/runtime.py",
+      "role": "Ridge+MA13D-HGB run-local runtime",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "5e6cdacf29e95b3078076ff479b272f0aeca00ade1d29d33f9a951427b5bf787",
+      "snapshot_sha256": "5e6cdacf29e95b3078076ff479b272f0aeca00ade1d29d33f9a951427b5bf787",
+      "bytes": 24006,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/hgb/run_hgb_ma13d_driver.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ma_tail_weight_gate_run_20261026_141553/ridge_ma13d_hgb_prepare_20261026_151041/run_hgb_ma13d_driver.py",
+      "role": "authorized Ridge+MA13D-HGB fitting driver",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "261a5ce830f1b9811b40f4793da37150667557a68a361d0da05b91c6cd90d173",
+      "snapshot_sha256": "261a5ce830f1b9811b40f4793da37150667557a68a361d0da05b91c6cd90d173",
+      "bytes": 33328,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/hgb/run_hgb_development_selector.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ma_tail_weight_gate_run_20261026_141553/ridge_ma13d_hgb_prepare_20261026_151041/run_hgb_development_selector.py",
+      "role": "Ridge+MA13D-HGB development selector",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "6aa8095e70d12c97b2d4220d51d7e7307067ac6a034994d15158a85752c20d07",
+      "snapshot_sha256": "6aa8095e70d12c97b2d4220d51d7e7307067ac6a034994d15158a85752c20d07",
+      "bytes": 11652,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/hgb/run_ridge_ma13d_hgb_prepare.py",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ma_tail_weight_gate_run_20261026_141553/ridge_ma13d_hgb_prepare_20261026_151041/run_ridge_ma13d_hgb_prepare.py",
+      "role": "HGB preflight/prepare entrypoint",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "6cf72cdfc589888189783386b5eb721fdadaafb0bde82e754af78c0de7d87442",
+      "snapshot_sha256": "6cf72cdfc589888189783386b5eb721fdadaafb0bde82e754af78c0de7d87442",
+      "bytes": 18515,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/formal_generate_figures.py",
+      "source_path": "outputs/uteg_manuscript_figures_20261024_234843/build/generate_figures.py",
+      "role": "editable Figure 1--4 formal figure generator",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "ae5ecfc79eff77a1e99cdf691123a0165ece71c4f6ba5916fcde79c6c1dc93f7",
+      "snapshot_sha256": "ae5ecfc79eff77a1e99cdf691123a0165ece71c4f6ba5916fcde79c6c1dc93f7",
+      "bytes": 20141,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/formal_validate_figures.py",
+      "source_path": "outputs/uteg_manuscript_figures_20261024_234843/build/validate_formal_figures.py",
+      "role": "formal Figure 1--4 artifact validator",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "70eca7ac2b53b0bbe7fb04b7fbc010d6012e38f7b46ee36794bbe369bf8e303c",
+      "snapshot_sha256": "70eca7ac2b53b0bbe7fb04b7fbc010d6012e38f7b46ee36794bbe369bf8e303c",
+      "bytes": 8756,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/results_build_figures.py",
+      "source_path": "outputs/uteg_results_figures_20261026/build_figures.py",
+      "role": "current Figure 2--4 plotting and aggregate source-data builder",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "1f07a45cb3cb7963c082223f9c273a34a444eabe82acbd10c6b984704b5d1715",
+      "snapshot_sha256": "1f07a45cb3cb7963c082223f9c273a34a444eabe82acbd10c6b984704b5d1715",
+      "bytes": 25583,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/results_unify_current.py",
+      "source_path": "outputs/uteg_results_figures_20261026/unify_current.py",
+      "role": "current-policy figure gallery and source identity builder",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "97ae1f9a5637a2875e9c261a3d972ba6b502ae07c49a0f9ac02e48e732478ccb",
+      "snapshot_sha256": "97ae1f9a5637a2875e9c261a3d972ba6b502ae07c49a0f9ac02e48e732478ccb",
+      "bytes": 8914,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/figure2_times.py",
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/editorial/figure2_times.py",
+      "role": "Figure 2 font/format conversion; workstation DLL path portable redaction",
+      "copied_exact": false,
+      "redactions": [
+        "replaced the source's workstation-specific Anaconda DLL path with UTEG_CAIROSVG_DLL_ROOT or CONDA_PREFIX resolution"
+      ],
+      "source_sha256": "0aa7ed8f913ca9129f0c8ded8d78de7b222f997b05efe7d171ffa8f0a4963a3e",
+      "snapshot_sha256": "a775ad03b90cfb2982923eb5684c5f06fa5025258753d813aede4fc80733d660",
+      "bytes": 1873,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/redesign_figure3.py",
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/editorial/redesign_figure3.py",
+      "role": "current Figure 3 frozen-statistics redraw",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "e5d57305b3dbff912106c02ce58a750dc3642c091719d964c800959f884065eb",
+      "snapshot_sha256": "e5d57305b3dbff912106c02ce58a750dc3642c091719d964c800959f884065eb",
+      "bytes": 4787,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/figure4_main_pair.py",
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/editorial/figure4_main_pair.py",
+      "role": "current Figure 4 first-report paired trajectory generator",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "f38233e372b7e1f00618818ce7c42d6e01e8529b1e0ddf404d04cb5cece27d0f",
+      "snapshot_sha256": "f38233e372b7e1f00618818ce7c42d6e01e8529b1e0ddf404d04cb5cece27d0f",
+      "bytes": 5603,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/appendix_build.py",
+      "source_path": "outputs/uteg_appendix_review_20261028/build.py",
+      "role": "current supplementary figure/table assembly",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "57d0ed565b9bc22be925d5719714b9360c819f7d75350072258ffdb8b92985ab",
+      "snapshot_sha256": "57d0ed565b9bc22be925d5719714b9360c819f7d75350072258ffdb8b92985ab",
+      "bytes": 37769,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/appendix_check.py",
+      "source_path": "outputs/uteg_appendix_review_20261028/check.py",
+      "role": "supplementary artifact and link checker",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "0fb2c6c9d0474e7e762cea27f8b58c652fc6a0c1bb2f8445cef764f83713f31c",
+      "snapshot_sha256": "0fb2c6c9d0474e7e762cea27f8b58c652fc6a0c1bb2f8445cef764f83713f31c",
+      "bytes": 2563,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/revise_figure1_f.ps1",
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/editorial/revise_figure1_f.ps1",
+      "role": "Figure 1 editable source revision",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "498fb4b645d7a9f296e157f70bef6d71cc4cafcd83deaecd30b81170a240dbef",
+      "snapshot_sha256": "498fb4b645d7a9f296e157f70bef6d71cc4cafcd83deaecd30b81170a240dbef",
+      "bytes": 2622,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/export_terminology_figure1_20261029.ps1",
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/editorial/export_terminology_figure1_20261029.ps1",
+      "role": "Figure 1 terminology-aligned export",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "3f2c20d4cd7ab9f17c2207baaa99bfe5a5019dbe962dfb07e711e94d527858a8",
+      "snapshot_sha256": "3f2c20d4cd7ab9f17c2207baaa99bfe5a5019dbe962dfb07e711e94d527858a8",
+      "bytes": 642,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/figures/export_aligned_figure1.ps1",
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/editorial/export_aligned_figure1.ps1",
+      "role": "Figure 1 aligned export",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "365a427eba3270b48a5eeb0d65bb0a236d437a058841e3b9a9a30ea21829cf0f",
+      "snapshot_sha256": "365a427eba3270b48a5eeb0d65bb0a236d437a058841e3b9a9a30ea21829cf0f",
+      "bytes": 615,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/legacy/evaluate_15min.py",
+      "source_path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/evaluate_15min.py",
+      "role": "prefix evaluator dependency for frozen prediction loading",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "b52caba03d7ca47e189e2b5385b085d219e9766661b21d17d86e4e6517ab4b8a",
+      "snapshot_sha256": "b52caba03d7ca47e189e2b5385b085d219e9766661b21d17d86e4e6517ab4b8a",
+      "bytes": 11568,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/nine_runtime.py",
+      "source_path": "outputs/uteg_nine_direction_ma_20261025_195548/code/nine_runtime.py",
+      "role": "nine-direction runtime imported by MA gate fitting",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "4e591cfe4c2d4d877ef10d2c44885452dae851cf2039da2659a028f922520721",
+      "snapshot_sha256": "4e591cfe4c2d4d877ef10d2c44885452dae851cf2039da2659a028f922520721",
+      "bytes": 8004,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/independent_models.py",
+      "source_path": "outputs/uteg_trust_gate_selection_20261004_205412/independent_models.py",
+      "role": "independent gate model scorer loaded by threshold utilities",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "5c458677e492c0307878a9e746923996a015d078d362f24151a234273a4e4db9",
+      "snapshot_sha256": "5c458677e492c0307878a9e746923996a015d078d362f24151a234273a4e4db9",
+      "bytes": 7068,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/trust_runtime.py",
+      "source_path": "outputs/uteg_trust_gate_selection_20261004_205412/runtime.py",
+      "role": "independent gate runtime dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "64092d11cda832f845434a7d4080c6d4f494a061a6c41986d044ab27fe1b4d0f",
+      "snapshot_sha256": "64092d11cda832f845434a7d4080c6d4f494a061a6c41986d044ab27fe1b4d0f",
+      "bytes": 2315,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/trust_threshold_runtime.py",
+      "source_path": "outputs/uteg_trust_threshold90_20261006_161248/runtime.py",
+      "role": "threshold utility runtime dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "78ed3eb54cbfb17455a8c817d4b1ecf51ea3c354ad353f5db7ffda45a8c34111",
+      "snapshot_sha256": "78ed3eb54cbfb17455a8c817d4b1ecf51ea3c354ad353f5db7ffda45a8c34111",
+      "bytes": 1948,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/prefix/platform_runtime.py",
+      "source_path": "outputs/uteg_platform_param_compare_20261006_125428/runtime.py",
+      "role": "platform curve fitting runtime dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "b2ff1bac9d9f647b17bfc3ff4194506e1eaab535f6c9a0f56c802f83ae9b5f09",
+      "snapshot_sha256": "b2ff1bac9d9f647b17bfc3ff4194506e1eaab535f6c9a0f56c802f83ae9b5f09",
+      "bytes": 2975,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/prefix/zero5_runtime.py",
+      "source_path": "outputs/uteg_zero5_med4_20261006_113257/runtime.py",
+      "role": "zero-tail refit runtime dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "46335e06a38fc9010280ce01b6615b3066a45e047cf787c5da56267eb7724646",
+      "snapshot_sha256": "46335e06a38fc9010280ce01b6615b3066a45e047cf787c5da56267eb7724646",
+      "bytes": 2721,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/d2_ci_runtime.py",
+      "source_path": "outputs/uteg_d2_ci_native85_20261007_012322/runtime.py",
+      "role": "D2 CI adaptation runtime wrapper",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "44cf4149011ee231f076616ccc0bf41617972bdb75c250b4be062984cb2de503",
+      "snapshot_sha256": "44cf4149011ee231f076616ccc0bf41617972bdb75c250b4be062984cb2de503",
+      "bytes": 424,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/d2_base_runtime.py",
+      "source_path": "outputs/uteg_d2_adapt60_trust_20261007_005909/runtime.py",
+      "role": "D2 base adaptation runtime",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "70fee35ab513ec7db16bc590e2f03d6921895150f81d0857aa956311c747b2b0",
+      "snapshot_sha256": "70fee35ab513ec7db16bc590e2f03d6921895150f81d0857aa956311c747b2b0",
+      "bytes": 2673,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/d2_core.py",
+      "source_path": "outputs/uteg_d2_adapt60_trust_20261007_005909/core.py",
+      "role": "D2 base Huber/CI/gate core loaded by CI engine",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "303442f76592ff26a7616005be2f8276e291c1f276764f70b7a53eb863905503",
+      "snapshot_sha256": "303442f76592ff26a7616005be2f8276e291c1f276764f70b7a53eb863905503",
+      "bytes": 3118,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/d2_audit.py",
+      "source_path": "outputs/uteg_d2_adapt60_trust_20261007_005909/audit.py",
+      "role": "D2 independent audit and adapter scorer",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "77ff521251bd984b8cc651dbdf1bc7cdef487ab11d6efc8083a20085f36a8fd4",
+      "snapshot_sha256": "77ff521251bd984b8cc651dbdf1bc7cdef487ab11d6efc8083a20085f36a8fd4",
+      "bytes": 6518,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/crossfit_core.py",
+      "source_path": "outputs/uteg_trust_crossfit40_20261006_170625/core.py",
+      "role": "cross-fit split/calibration dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "4ce7db1f26e10392b32b82f66d1b4e1e21e0a3b8ab62493873eb760e9f5bb3c7",
+      "snapshot_sha256": "4ce7db1f26e10392b32b82f66d1b4e1e21e0a3b8ab62493873eb760e9f5bb3c7",
+      "bytes": 2333,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/scalar_runtime.py",
+      "source_path": "outputs/uteg_scalar_ordinal_trust_20261006_181750/runtime.py",
+      "role": "scalar ordinal runtime dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "e2b3cdef47bbcd0cab72659632d99c428c2cd1b1cb2985e477750b1097f913a1",
+      "snapshot_sha256": "e2b3cdef47bbcd0cab72659632d99c428c2cd1b1cb2985e477750b1097f913a1",
+      "bytes": 2093,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/fourparam_verify.py",
+      "source_path": "outputs/uteg_fourparam_mapping_trust_20261006_132600/verify.py",
+      "role": "four-parameter source function dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "61bbffc45e3bd1d4bfeb45299edbb21c879ec0e4cec96cb7c3b2cd81d9467724",
+      "snapshot_sha256": "61bbffc45e3bd1d4bfeb45299edbb21c879ec0e4cec96cb7c3b2cd81d9467724",
+      "bytes": 13459,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/zero5_verify.py",
+      "source_path": "outputs/uteg_zero5_med4_20261006_113257/verify_independent.py",
+      "role": "zero-tail source function dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "e330e5865146cd667824313b36bb10fa66e9dc28dc0f29bea76757b72f428a60",
+      "snapshot_sha256": "e330e5865146cd667824313b36bb10fa66e9dc28dc0f29bea76757b72f428a60",
+      "bytes": 9728,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/clinical_verify.py",
+      "source_path": "outputs/uteg_med4_source_clinical_20261006_104632/verify_independent.py",
+      "role": "clinical source function dependency",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "497e4e7ab61d4b23f2531f1f69130b99081ffe8aa40eabc83cda86885b49b7e8",
+      "snapshot_sha256": "497e4e7ab61d4b23f2531f1f69130b99081ffe8aa40eabc83cda86885b49b7e8",
+      "bytes": 11317,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/models.py",
+      "source_path": "outputs/uteg_hill_exp_matched_20261012_153337/models.py",
+      "role": "historical mapper families and Huber/auxiliary adapter assembly",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "1d634c54799f5643ddf2f81b6a4fcfaf8039dde3b46a581f70957d32ea861439",
+      "snapshot_sha256": "1d634c54799f5643ddf2f81b6a4fcfaf8039dde3b46a581f70957d32ea861439",
+      "bytes": 2486,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/early_decision_common.py",
+      "source_path": "outputs/uteg_med4_early_decision_20261004_191744/common.py",
+      "role": "shared projection, CI labels, calibration and prediction",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "62f02e10496073e09eb5724e5333d87a5de14e0031bfc233b30b8a04ed741081",
+      "snapshot_sha256": "62f02e10496073e09eb5724e5333d87a5de14e0031bfc233b30b8a04ed741081",
+      "bytes": 3073,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/capacity_core.py",
+      "source_path": "outputs/uteg_med4_capacity_20261006_001701/core.py",
+      "role": "capacity/model calibration helpers",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "61277cc90dee81cbd778b3af37c281bef44f2d820e4f488f0e0a78cb2b2c6661",
+      "snapshot_sha256": "61277cc90dee81cbd778b3af37c281bef44f2d820e4f488f0e0a78cb2b2c6661",
+      "bytes": 5403,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/source_clinical_core.py",
+      "source_path": "outputs/uteg_med4_source_clinical_20261006_104632/core.py",
+      "role": "source clinical loss/weight helpers",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "7d13fbbc20dae986506e23474e730078dfc8fe284ef1a22937b4711c0225c653",
+      "snapshot_sha256": "7d13fbbc20dae986506e23474e730078dfc8fe284ef1a22937b4711c0225c653",
+      "bytes": 4226,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/fourparam_mapping_core.py",
+      "source_path": "outputs/uteg_fourparam_mapping_trust_20261006_132600/core.py",
+      "role": "four-parameter mapper fit/predict",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "bfea7287c3f0cdbe38df9b1100603621c4a76754bc66c3490f30b317f64d5e7b",
+      "snapshot_sha256": "bfea7287c3f0cdbe38df9b1100603621c4a76754bc66c3490f30b317f64d5e7b",
+      "bytes": 6329,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/scalar_ordinal_core.py",
+      "source_path": "outputs/uteg_scalar_ordinal_trust_20261006_181750/core.py",
+      "role": "scalar ordinal auxiliary selection",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "af2778263299539f5361c0ba9f7a8baa097968be12660e97a91f1edd9a7e131b",
+      "snapshot_sha256": "af2778263299539f5361c0ba9f7a8baa097968be12660e97a91f1edd9a7e131b",
+      "bytes": 3075,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/platform_param_core.py",
+      "source_path": "outputs/uteg_platform_param_compare_20261006_125428/core.py",
+      "role": "platform parameter representation helpers",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "88526d956d4271a340f2f8a64cd37b0233536ada8071f0ee3bb405d0fb4bb584",
+      "snapshot_sha256": "88526d956d4271a340f2f8a64cd37b0233536ada8071f0ee3bb405d0fb4bb584",
+      "bytes": 851,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/models/zero5_core.py",
+      "source_path": "outputs/uteg_zero5_med4_20261006_113257/core.py",
+      "role": "zero-tail model helper",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "37159bfc7f6c68b85b9764569f63947b99ecd65ead1071a96a0993e56d785fd7",
+      "snapshot_sha256": "37159bfc7f6c68b85b9764569f63947b99ecd65ead1071a96a0993e56d785fd7",
+      "bytes": 3604,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/independent_statistics.py",
+      "source_path": "outputs/uteg_trust_gate_selection_20261004_205412/independent_statistics.py",
+      "role": "historical gate statistics",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "165e3e383ce7d795860be0d013490b9ae0986028057100fc65ff801c86a87d3c",
+      "snapshot_sha256": "165e3e383ce7d795860be0d013490b9ae0986028057100fc65ff801c86a87d3c",
+      "bytes": 5975,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/risk_models.py",
+      "source_path": "outputs/uteg_trust_gate_selection_20261004_205412/risk_models.py",
+      "role": "13-feature error-risk models",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "e168520a8d6b447ae4fa21eeccc7709a0e7f327b3a8608cdc574de2c7852789d",
+      "snapshot_sha256": "e168520a8d6b447ae4fa21eeccc7709a0e7f327b3a8608cdc574de2c7852789d",
+      "bytes": 29662,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/trust_threshold_core.py",
+      "source_path": "outputs/uteg_trust_threshold90_20261006_161248/core.py",
+      "role": "threshold and bootstrap utilities",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "38ea9625c7bc37be0cf162afb6a931a169e40485800bd2257147fbc17f227ac9",
+      "snapshot_sha256": "38ea9625c7bc37be0cf162afb6a931a169e40485800bd2257147fbc17f227ac9",
+      "bytes": 5420,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/c60_models.py",
+      "source_path": "outputs/uteg_c60_new_trust_20261007_170322/models.py",
+      "role": "C60 gate models",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "879f64185af1550d82087efd742fec3d8ce74c64de0b65e504b2b2b3331d8655",
+      "snapshot_sha256": "879f64185af1550d82087efd742fec3d8ce74c64de0b65e504b2b2b3331d8655",
+      "bytes": 6057,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/c60_stats.py",
+      "source_path": "outputs/uteg_c60_new_trust_20261007_170322/stats.py",
+      "role": "C60 gate statistics",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "995d89c90bfe33237a13e1aaa7968324feee9f5cbcca4c632982b896d884903f",
+      "snapshot_sha256": "995d89c90bfe33237a13e1aaa7968324feee9f5cbcca4c632982b896d884903f",
+      "bytes": 3902,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/adaptation/d2_ci_engine.py",
+      "source_path": "outputs/uteg_d2_ci_native85_20261007_012322/engine.py",
+      "role": "CI auxiliary adapter fit/adapt/select",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "baf42d00e85b8b9560486fc360017112e3c5377234311d6717e2de62f4b93499",
+      "snapshot_sha256": "baf42d00e85b8b9560486fc360017112e3c5377234311d6717e2de62f4b93499",
+      "bytes": 9255,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/gates/fit_ma_gates.py",
+      "source_path": "outputs/uteg_nine_direction_ma_20261025_195548/code/fit_ma_gates.py",
+      "role": "MA-ERROR-LR and finite threshold selector",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "2c54e56dcc7249fb7126af5930e71f2a189843efa6b749777976d7cce5916762",
+      "snapshot_sha256": "2c54e56dcc7249fb7126af5930e71f2a189843efa6b749777976d7cce5916762",
+      "bytes": 30901,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/dualhead/dual_head_contract.py",
+      "source_path": "outputs/uteg_ridge_dual_head_prepare_20261026_172952/dual_head_contract.py",
+      "role": "low/high dual-head feature and support contract",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "c2787a906c8d9700fede17adbba8b5eaac8ee4c5a3143af5a475cf2b0a96427f",
+      "snapshot_sha256": "c2787a906c8d9700fede17adbba8b5eaac8ee4c5a3143af5a475cf2b0a96427f",
+      "bytes": 10852,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    },
+    {
+      "snapshot_path": "snapshots/historical/dualhead/run_unified_selector.py",
+      "source_path": "outputs/uteg_ridge_dual_head_unified_selector_20261026_190142/run_unified_selector.py",
+      "role": "development-only unified dual-head selector",
+      "copied_exact": true,
+      "redactions": [],
+      "source_sha256": "d59408f03ceffcb3f97b0ccf21b1d33baa9db2be3caad39f075ca833b197dddf",
+      "snapshot_sha256": "d59408f03ceffcb3f97b0ccf21b1d33baa9db2be3caad39f075ca833b197dddf",
+      "bytes": 21408,
+      "privacy_scan": {
+        "absolute_windows_path": false,
+        "absolute_unix_path": false,
+        "credential_marker": false,
+        "email_marker": false
+      }
+    }
+  ],
+  "protocols": [
+    {
+      "snapshot_path": "snapshots/ridge10/PROTOCOL.md",
+      "source_path": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/PROTOCOL.md",
+      "role": "Ridge-10 fullchain protocol",
+      "copied_exact": true,
+      "source_sha256": "eb8c79f7eac0c824c3f3c6a5d71662895be6c0fcba5d7e367b1b994a38319e44",
+      "snapshot_sha256": "eb8c79f7eac0c824c3f3c6a5d71662895be6c0fcba5d7e367b1b994a38319e44",
+      "bytes": 3015
+    },
+    {
+      "snapshot_path": "snapshots/sequence/PROTOCOL.txt",
+      "source_path": "outputs/uteg_current_ma_sequence_20261026/PROTOCOL.txt",
+      "role": "current MA sequence protocol",
+      "copied_exact": true,
+      "source_sha256": "809c0f328536f06de7b57f34cc4d0e80249814db367ce19204103351c44f8e0c",
+      "snapshot_sha256": "809c0f328536f06de7b57f34cc4d0e80249814db367ce19204103351c44f8e0c",
+      "bytes": 2501
+    },
+    {
+      "snapshot_path": "snapshots/hgb/PROTOCOL.md",
+      "source_path": "outputs/uteg_table2_hgb_20261029/PROTOCOL.md",
+      "role": "matched HGB baseline protocol",
+      "copied_exact": true,
+      "source_sha256": "dd569311593158517da14f8d685c4d5e7004677e3948045c726e751e750a79a9",
+      "snapshot_sha256": "dd569311593158517da14f8d685c4d5e7004677e3948045c726e751e750a79a9",
+      "bytes": 1381
+    },
+    {
+      "snapshot_path": "snapshots/adaptation/PROTOCOL.md",
+      "source_path": "outputs/uteg_adaptation_fourway_20261029/PROTOCOL.md",
+      "role": "four-way adaptation protocol",
+      "copied_exact": true,
+      "source_sha256": "a63582e89c12443c3af3a6ac257a237e868d22eede0437774c390bd1762b99c8",
+      "snapshot_sha256": "a63582e89c12443c3af3a6ac257a237e868d22eede0437774c390bd1762b99c8",
+      "bytes": 2396
+    },
+    {
+      "snapshot_path": "snapshots/supplement/PROTOCOL.md",
+      "source_path": "outputs/uteg_supplement_completion_20261027_203140/PROTOCOL.md",
+      "role": "supplement completion protocol",
+      "copied_exact": true,
+      "source_sha256": "175a14e6d8a72bd7b61dbc60d2614351a038e39c97b8945f06b5485324b47084",
+      "snapshot_sha256": "175a14e6d8a72bd7b61dbc60d2614351a038e39c97b8945f06b5485324b47084",
+      "bytes": 3430
+    },
+    {
+      "snapshot_path": "snapshots/supplement/REPRODUCE.md",
+      "source_path": "outputs/uteg_supplement_completion_20261027_203140/REPRODUCE.md",
+      "role": "historical reproduction notes",
+      "copied_exact": true,
+      "source_sha256": "521d0dda23887690dfeeda36c81060c292f9b0625eafe608979869a994564a85",
+      "snapshot_sha256": "521d0dda23887690dfeeda36c81060c292f9b0625eafe608979869a994564a85",
+      "bytes": 817
+    }
+  ],
+  "excluded_private_inputs": [
+    {
+      "path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/DATA15.npz",
+      "reason": "paired U-TEG--TEG records and identifiers; private"
+    },
+    {
+      "path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/PREFIX_X.npz",
+      "reason": "prefix signal archive; private"
+    },
+    {
+      "path": "outputs/uteg_legacy_aligned_threecenter_20261022_155614/ROLE_FREEZE.json",
+      "reason": "record-role manifest; private"
+    },
+    {
+      "path": "outputs/**/models/**/*.joblib",
+      "reason": "trained objects are intentionally not distributed"
+    },
+    {
+      "path": "outputs/**/eval/**/*.npz",
+      "reason": "predictions/results may contain record-level material"
+    }
+  ],
+  "model_contract": {
+    "mapper": "RIDGE-10 (family RIDGE, alpha 10, four outputs R/K/MA/alpha_R)",
+    "adaptation_auxiliary": "J is the historical auxiliary coagulation-index score; it is not MA and does not define reporting labels",
+    "risk_heads": [
+      "MA-ERROR-LR",
+      "dual low/high heads",
+      "matched HGB full-error-score baseline"
+    ],
+    "checkpoints_seconds": [
+      300,
+      600,
+      900
+    ],
+    "ma_boundaries_mm": [
+      50,
+      70
+    ],
+    "seeds": [
+      1000,
+      1019
+    ],
+    "directions": 9
+  }
+}

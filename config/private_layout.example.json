@@ -1,0 +1,6 @@
+{
+  "data15": "<private-project-root>/outputs/uteg_legacy_aligned_threecenter_20261022_155614/DATA15.npz",
+  "prefix_x": "<private-project-root>/outputs/uteg_legacy_aligned_threecenter_20261022_155614/PREFIX_X.npz",
+  "role_freeze": "<private-project-root>/outputs/uteg_legacy_aligned_threecenter_20261022_155614/ROLE_FREEZE.json",
+  "note": "Keep these paths outside the release. No raw records, identifiers, role manifests, or trained objects are distributed here."
+}

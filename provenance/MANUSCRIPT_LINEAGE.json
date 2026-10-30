@@ -1,0 +1,191 @@
+{
+  "schema": "uteg_reference_reporting_manuscript_lineage_v1",
+  "created": "2026-10-30",
+  "scope": "current manuscript figures and tables; source files and aggregate artifacts remain in the local workspace",
+  "manuscript_anchors": [
+    {
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/main.tex",
+      "role": "current main text labels, figures and Tables 1/2"
+    },
+    {
+      "source_path": "outputs/uteg_manuscript_scaffold_20261008_185739/supplement_current.tex",
+      "role": "current supplement methods, nine-direction and auxiliary-J definitions"
+    }
+  ],
+  "entries": [
+    {
+      "id": "figure1_workflow_ma",
+      "label": "Figure 1",
+      "artifact_path": "outputs/uteg_manuscript_scaffold_20261008_185739/figures/crosscentre_aligned_20261029/Figure1_workflow_ma.pdf",
+      "artifact_sha256": "a418c4fe1e883b639f770b69805913573487d45f91e95e339befe611a7c65a31",
+      "code_snapshots": [
+        "snapshots/figures/formal_generate_figures.py",
+        "snapshots/figures/formal_validate_figures.py",
+        "snapshots/figures/revise_figure1_f.ps1",
+        "snapshots/figures/export_terminology_figure1_20261029.ps1",
+        "snapshots/figures/export_aligned_figure1.ps1"
+      ],
+      "source_data_paths": [
+        "outputs/uteg_manuscript_figures_20261024_234843/source_data/",
+        "outputs/uteg_manuscript_scaffold_20261008_185739/figures/crosscentre_aligned_20261029/"
+      ],
+      "private_prerequisites": [
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/DATA15.npz",
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/ROLE_FREEZE.json",
+        "outputs/uteg_manuscript_scaffold_20261008_185739/figures/crosscentre_aligned_20261029/editable_source.pptx"
+      ],
+      "notes": "Workflow/editable-source lineage; no model fit is performed by the export scripts."
+    },
+    {
+      "id": "figure2_translation",
+      "label": "Figure 2",
+      "artifact_path": "outputs/uteg_manuscript_scaffold_20261008_185739/figures/times_roman_20261029/Figure2_translation.pdf",
+      "artifact_sha256": "21b3539110751d0a586ad30ec6e29509c0460c81cd3581247999f50948401118",
+      "code_snapshots": [
+        "snapshots/figures/results_build_figures.py",
+        "snapshots/figures/results_unify_current.py",
+        "snapshots/figures/figure2_times.py",
+        "snapshots/figures/formal_validate_figures.py"
+      ],
+      "source_data_paths": [
+        "outputs/uteg_results_figures_20261026/source_data/",
+        "outputs/uteg_results_figures_20261026/figures/terminology_aligned_20261029/Figure2_translation.svg"
+      ],
+      "private_prerequisites": [
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/DATA15.npz",
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/PREFIX_X.npz",
+        "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/models/"
+      ],
+      "notes": "results_build_figures.py is the current SVG/data generator; figure2_times.py is the final font/format conversion. The release replaces one workstation-specific DLL literal with documented environment resolution."
+    },
+    {
+      "id": "figure3_reporting",
+      "label": "Figure 3",
+      "artifact_path": "outputs/uteg_manuscript_scaffold_20261008_185739/figures/reporting_redesign_20261029/Figure3_reporting.pdf",
+      "artifact_sha256": "e7410ded69226621ad60d1528e4ee97d816524fdeb6d0ff51f03c40a4debf370",
+      "code_snapshots": [
+        "snapshots/figures/results_build_figures.py",
+        "snapshots/figures/results_unify_current.py",
+        "snapshots/figures/redesign_figure3.py",
+        "snapshots/figures/formal_validate_figures.py"
+      ],
+      "source_data_paths": [
+        "outputs/uteg_results_figures_20261026/source_data/reporting_statistics.json",
+        "outputs/uteg_manuscript_scaffold_20261008_185739/figures/reporting_redesign_20261029/SOURCE_DATA.json"
+      ],
+      "private_prerequisites": [
+        "outputs/uteg_supplement_completion_20261027_203140/predictions/",
+        "outputs/uteg_supplement_completion_20261027_203140/tables/",
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/DATA15.npz"
+      ],
+      "notes": "The redraw consumes frozen aggregate statistics; no new fit is implied by the plotting step."
+    },
+    {
+      "id": "figure4_main_pair",
+      "label": "Figure 4",
+      "artifact_path": "outputs/uteg_manuscript_scaffold_20261008_185739/figures/main_pair_20261029/Figure4_main_pair.pdf",
+      "artifact_sha256": "4b5b7f6cd7ece57a950a31cc4bc5b50061219fb60d8c9178b681a89a2dc01123",
+      "code_snapshots": [
+        "snapshots/figures/figure4_main_pair.py",
+        "snapshots/figures/results_build_figures.py",
+        "snapshots/figures/results_unify_current.py",
+        "snapshots/figures/formal_validate_figures.py"
+      ],
+      "source_data_paths": [
+        "outputs/uteg_manuscript_scaffold_20261008_185739/figures/main_pair_20261029/SOURCE_DATA.json",
+        "outputs/uteg_current_ma_sequence_20261026/RESULTS.json"
+      ],
+      "private_prerequisites": [
+        "outputs/uteg_current_ma_sequence_20261026/dual/",
+        "outputs/uteg_current_ma_sequence_20261026/eval/",
+        "outputs/uteg_current_ma_sequence_20261026/ROLE_FREEZE.json"
+      ],
+      "notes": "First-report paired trajectory rendering from frozen sequence results; the script does not fit a model."
+    },
+    {
+      "id": "table1_mapping_and_adaptation",
+      "label": "Table 1 / mapping and adaptation",
+      "artifact_path": "outputs/uteg_supplement_completion_20261027_203140/tables/A3_mapping_baselines_FULL.csv",
+      "artifact_sha256": "fb558969345ee3fbc9edecbc99453fbe676595cc61c83d133654750a76587b93",
+      "related_artifacts": [
+        {
+          "path": "outputs/uteg_supplement_completion_20261027_203140/tables/A3_mapping_comparison.csv",
+          "sha256": "2cf87ca220d3b0aca4f656e9c7c41bab0797685df9f1dbd3be93295e38d66107"
+        }
+      ],
+      "code_snapshots": [
+        "snapshots/supplement/batch.py",
+        "snapshots/supplement/analyze.py",
+        "snapshots/adaptation/run.py",
+        "snapshots/adaptation/verify.py",
+        "snapshots/historical/models/models.py",
+        "snapshots/ridge10/run_ridge10_fullchain.py"
+      ],
+      "source_data_paths": [
+        "outputs/uteg_supplement_completion_20261027_203140/tables/A3_mapping_baselines_FULL.csv",
+        "outputs/uteg_supplement_completion_20261027_203140/tables/A4_adaptation_paired.csv"
+      ],
+      "private_prerequisites": [
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/DATA15.npz",
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/ROLE_FREEZE.json",
+        "outputs/uteg_supplement_completion_20261027_203140/models/"
+      ],
+      "notes": "The auxiliary J path is retained as an adaptation-selection quantity; MA reporting remains the 50/70-mm endpoint rule."
+    },
+    {
+      "id": "table2_reporting_hgb",
+      "label": "Table 2 / reporting baseline",
+      "artifact_path": "outputs/uteg_table2_hgb_20261029/summary.csv",
+      "artifact_sha256": "453b4e225cad29e6820d468a78759e6163cbdfe0bade964cadd3463867b35f4f",
+      "related_artifacts": [
+        {
+          "path": "outputs/uteg_table2_hgb_20261029/per_seed.csv",
+          "sha256": "a6535eb4ce6a7cf325a418fe39e78cc12b82fc62a9c0b2da3745f1188fd44885"
+        }
+      ],
+      "code_snapshots": [
+        "snapshots/hgb/run.py",
+        "snapshots/hgb/verify.py",
+        "snapshots/historical/hgb/run_hgb_ma13d_driver.py",
+        "snapshots/historical/hgb/run_hgb_development_selector.py",
+        "snapshots/historical/hgb/run_ridge_ma13d_hgb_prepare.py",
+        "snapshots/historical/hgb/run_weighted_gate.py",
+        "snapshots/historical/hgb/selector_weighted_gate.py"
+      ],
+      "source_data_paths": [
+        "outputs/uteg_table2_hgb_20261029/summary.csv",
+        "outputs/uteg_table2_hgb_20261029/per_seed.csv"
+      ],
+      "private_prerequisites": [
+        "outputs/uteg_table2_hgb_20261029/models_hgb/",
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/DATA15.npz",
+        "outputs/uteg_legacy_aligned_threecenter_20261022_155614/ROLE_FREEZE.json"
+      ],
+      "notes": "Matched full-error-score HGB is a baseline; its trained objects and record-level predictions are excluded."
+    },
+    {
+      "id": "nine_direction_integration",
+      "label": "Nine-direction sequence integration",
+      "artifact_path": "outputs/uteg_supplement_completion_20261027_203140/tables/A7_pointwise_cumulative.csv",
+      "artifact_sha256": "bb08c7f49117ae3781a656e46aab6598d94351efdc1189534ea3fcbbf6b29f83",
+      "code_snapshots": [
+        "snapshots/sequence/run.py",
+        "snapshots/sequence/evaluate.py",
+        "snapshots/supplement/batch.py",
+        "snapshots/supplement/analyze.py",
+        "snapshots/historical/gates/fit_ma_gates.py"
+      ],
+      "source_data_paths": [
+        "outputs/uteg_current_ma_sequence_20261026/RESULTS.json",
+        "outputs/uteg_supplement_completion_20261027_203140/tables/A2_nine_direction_summary.csv",
+        "outputs/uteg_supplement_completion_20261027_203140/tables/A7_pointwise_cumulative.csv"
+      ],
+      "private_prerequisites": [
+        "outputs/uteg_current_ma_sequence_20261026/models/",
+        "outputs/uteg_supplement_completion_20261027_203140/frozen/",
+        "outputs/uteg_supplement_completion_20261027_203140/predictions/"
+      ],
+      "notes": "The current main sequence runner has four matched directions; the supplement batch adds the five missing single-source directions. scripts/check_nine_direction_integration.py verifies their union without fitting."
+    }
+  ]
+}

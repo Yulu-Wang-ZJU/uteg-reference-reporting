@@ -1,0 +1,17 @@
+# Core extraction and synthetic smoke
+numpy>=1.23,<3
+scipy>=1.9,<2
+
+# Historical snapshots (only needed for the corresponding private workspace
+# runners; not required by the synthetic smoke or read-only schema checks).
+joblib>=1.1,<2
+scikit-learn>=1.1,<2
+pandas>=1.5,<3
+torch>=2.0,<3
+matplotlib>=3.6,<4
+
+# Optional figure conversion helpers (install only when rendering figures).
+cairosvg>=2.7,<3
+lxml>=4.9,<6
+pillow>=9,<12
+PyMuPDF>=1.22,<2
