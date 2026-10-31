@@ -2,7 +2,7 @@
   "schema": "uteg_current_manuscript_v1",
   "date": "2026-10-31",
   "scope": "Current manuscript and companion file hashes only; document contents are not distributed.",
-  "revision": "Completed sentence review followed by eight author-approved local wording corrections.",
+  "revision": "Completed sentence review and eight author-approved wording corrections; Code availability now pins the public release containing core and supplementary code.",
   "core_commit": "5f32af59907470ced142595625c4b80555fd1d81",
   "core_provenance": "provenance/SOURCE_PROVENANCE.json",
   "historical_core_lineage": "provenance/MANUSCRIPT_LINEAGE.json",
@@ -10,8 +10,8 @@
   "manuscript_anchors": [
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.tex",
-      "sha256": "1df11483a09dcaf65b791dac4540008f25afb27b61bfb55c2702b96977608fd2",
-      "bytes": 97873
+      "sha256": "adf47cf5ae7f0e6c7951e82c3a1bf3e19df0df1d8bd8c90c5bf7310312a4e44e",
+      "bytes": 97963
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.tex",
@@ -42,8 +42,8 @@
   "companion_anchors": [
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.pdf",
-      "sha256": "f77b50c63ff498ac820ce9b61dc6f9f3f74678f7b84b55e728b56c8f859364fd",
-      "bytes": 706720
+      "sha256": "49ca2d7ccdd75f18f2481ad60c437b9381b041e526c30a6735fcf8536452a5a4",
+      "bytes": 706796
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
@@ -52,12 +52,12 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261031.pdf",
-      "sha256": "43a8d378226d0d8b6ac38d3b9ba9fff056775a24321d95ebce0a3e320fe33783",
-      "bytes": 4313009
+      "sha256": "77535c04fe7f3251c74adbb506ede409ff37f7d6ca85cfea1e23c9e87da32219",
+      "bytes": 4313088
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
-      "sha256": "3a9ca7a704d48bd7383ad37a993adb71d7b5a203483093086ca3df9e854de9e8",
+      "sha256": "eb8f1267056d498ea3951076c5047f13407929f3cf19b320c707db744f121140",
       "bytes": 1515629
     },
     {
@@ -169,5 +169,7 @@
     }
   ],
   "publication_scope": "Source code, execution documentation and hash/path metadata only; no manuscript, PDF, ZIP, workbook, private clinical record or trained object.",
-  "interpretation": "Core prediction and reporting algorithms are unchanged. Transfer is an evaluated learning configuration, alongside target-only controls. Reporting-policy matching and internal partitions retain their retrospective, non-independent-validation status."
+  "interpretation": "Core prediction and reporting algorithms are unchanged. Transfer is an evaluated learning configuration, alongside target-only controls. Reporting-policy matching and internal partitions retain their retrospective, non-independent-validation status.",
+  "code_release_commit": "e0898a1645169b3cbb2f3b0e69e713ef718c4240",
+  "provenance_note": "The manuscript pins the code release, not this subsequently updated document-hash metadata; analytical source files are unchanged."
 }
