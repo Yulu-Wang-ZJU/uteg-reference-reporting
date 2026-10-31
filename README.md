@@ -1,6 +1,7 @@
 # U-TEG reference-reporting code release
 
-This is the local, manuscript-faithful code package assembled on 2026-10-30.
+This code-and-provenance release was assembled on 2026-10-30 and synchronized
+with the current manuscript on 2026-10-31.
 It preserves the current Ridge-10 translation/reporting implementation and
 the source snapshots used by the recent baseline, supplementary and
 sequence analyses.  It is deliberately a code-and-provenance release: no
@@ -15,10 +16,12 @@ does not copy the private inputs or infer them from the code.
 
 ## What is represented
 
-The current manuscript contract is recorded in
-[`provenance/SOURCE_PROVENANCE.json`](provenance/SOURCE_PROVENANCE.json),
-including SHA-256 anchors for the current `main.tex` and
-`supplement_current.tex` (the sources themselves are not bundled).
+The current manuscript, supplementary source files, companion documents and
+figure assets are identified by SHA-256 hashes in
+[`provenance/CURRENT_MANUSCRIPT.json`](provenance/CURRENT_MANUSCRIPT.json).
+Only hashes and relative paths are published; the files themselves are not bundled.
+The original core release and its historical manuscript anchors remain recorded
+in [`provenance/SOURCE_PROVENANCE.json`](provenance/SOURCE_PROVENANCE.json).
 
 The curated source snapshots cover:
 
@@ -37,6 +40,57 @@ The curated source snapshots cover:
 score with coefficients `(-0.6516, -0.3772, 0.1224, 0.0759)` and intercept
 `-7.7922`.  The reporting endpoint remains the fixed MA class rule:
 `<50` low, `50--70` inclusive within range, and `>70` high.
+
+## Supplementary analyses synchronized on 2026-10-31
+
+The four delivered code bundles are now available as source files under
+[`supplementary/`](supplementary/), with their internal layouts preserved:
+
+| Directory | Analysis | Execution documentation |
+| --- | --- | --- |
+| `supplementary/analysis` | Target-only numerical controls and fixed reporting schedules | [README](supplementary/analysis/Analysis_code/README.md) |
+| `supplementary/focused_reporting` | Matched target-only reporting | [README](supplementary/focused_reporting/Focused_reporting_code/README.md) |
+| `supplementary/reporting_diagnostics` | Policy frontiers, internal cross-calibration and release eligibility | [README](supplementary/reporting_diagnostics/project/README_reporting_diagnostics.md) |
+| `supplementary/minimal_revision` | 20/40/60-record budgets and internal forward/replay checks | [README](supplementary/minimal_revision/README_ZH.md) |
+
+These are exact code/document copies from the delivered archives, not new
+experimental runs. The archive-member hashes and exclusions are recorded in
+[`provenance/SUPPLEMENTARY_CODE.json`](provenance/SUPPLEMENTARY_CODE.json).
+The bundled READMEs refer to the original core commit `5f32af5`; statements
+that additional analyses are absent from **that commit** remain correct.
+They are included in the current repository revision.
+
+Read each bundle's execution instructions before using it with authorized
+private inputs. The portable Analysis bundle uses `UTEG_ARTIFACT_ROOT`;
+the diagnostic bundle retains source-relative variants. They intentionally
+remain separate. `materialize_code.py` restores only the historical core
+snapshots and does not combine or install these additional bundles.
+In the diagnostic bundle, use `equal_error_postprocess.py` for corrected
+D2/D3 post-processing; the obsolete D2/D3 dispatch is absent from the
+delivered `equal_error_analysis.py`.
+
+Transfer and target-only learning are evaluated configurations. Continued
+observation and first-report retention are reporting options; retrospective
+replay does not by itself require continued observation. Policy matching and
+internal cohort partitions do not constitute independent validation.
+
+To check the current distribution without running analyses or loading private
+data:
+
+```text
+python scripts/verify_current_release.py
+```
+
+With the original workspace available, additionally verify local manuscript,
+figure and companion hashes and exact source-archive members:
+
+```text
+python scripts/verify_current_release.py --source-root <workspace-root>
+```
+
+This synchronization leaves the core implementation unchanged. No manuscript,
+PDF, ZIP archive, workbook, fitted object, individual prediction or patient
+record is added to the public repository.
 
 ## Safe entrypoints
 
@@ -129,7 +183,7 @@ for the intended private layout.
 
 ## Snapshots and historical replay
 
-The 79 curated source snapshots are under [`snapshots/`](snapshots/), grouped
+The 79 original core source snapshots are under [`snapshots/`](snapshots/), grouped
 by stage; 78 are byte-for-byte identical to their source files.  The sole
 documented exception is `snapshots/figures/figure2_times.py`: only its
 workstation-specific Anaconda DLL path is replaced by
@@ -152,16 +206,17 @@ The small importable API in [`src/uteg_reference_reporting/core.py`](src/uteg_re
 is an exact-contract extraction for smoke tests and controlled private reuse.
 It does not silently substitute a new model or change the scientific protocol.
 
-Figure/Table and nine-direction source lineage is recorded in
+Historical core Figure/Table and nine-direction source lineage is recorded in
 [`provenance/MANUSCRIPT_LINEAGE.json`](provenance/MANUSCRIPT_LINEAGE.json).
 Run `python scripts/verify_lineage.py` from the workspace to hash-check the
-current aggregate artifacts and every copied code snapshot against its source.
+historical aggregate artifacts and every core code snapshot against its source.
 The map records private prerequisite paths but does not copy them.
 
 ## Provenance and exclusions
 
 Run `python scripts/build_provenance.py` only after changing a deliberate
-snapshot.  It rewrites the manifest with source/snapshot hashes and anchors.
+snapshot.  It rewrites the original core manifest with source/snapshot hashes and historical
+manuscript anchors; it does not regenerate the two current synchronization manifests.
 `python scripts/verify_provenance.py` checks the snapshots and, when the
 original workspace is present, checks the original hashes too.
 

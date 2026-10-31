@@ -1,0 +1,2 @@
+# Preserve archive-member bytes for provenance verification on every platform.
+supplementary/** -text

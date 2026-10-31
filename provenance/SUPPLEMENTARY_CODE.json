@@ -1,0 +1,269 @@
+{
+  "schema": "uteg_supplementary_code_v1",
+  "date": "2026-10-31",
+  "core_commit": "5f32af59907470ced142595625c4b80555fd1d81",
+  "policy": "Code and execution documentation copied exactly from the delivered code archives; archive containers, editorial notes, patient data, fitted objects, results and manuscript files are not published.",
+  "bundles": [
+    {
+      "id": "analysis",
+      "role": "Target-only numerical controls and reporting schedules; Supplementary Data 6",
+      "source_archive": {
+        "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Analysis_code.zip",
+        "sha256": "2146cef23219d22407f8ec6b5280b6d9261e9936cfa294339ddabc6ad26f07d6",
+        "bytes": 9318
+      },
+      "members": [
+        {
+          "archive_member": "Analysis_code/README.md",
+          "repository_path": "supplementary/analysis/Analysis_code/README.md",
+          "sha256": "3af7a519f1460d3ca7e42043882a1535714fa5352e1f7b17a0c81b76c7d7cddb",
+          "bytes": 2343,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Analysis_code/analysis/PROTOCOL.md",
+          "repository_path": "supplementary/analysis/Analysis_code/analysis/PROTOCOL.md",
+          "sha256": "a3d581dca5111202d05d3d993d636620463a18bd3fc15797dea0505e64e06120",
+          "bytes": 2063,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Analysis_code/analysis/round1.py",
+          "repository_path": "supplementary/analysis/Analysis_code/analysis/round1.py",
+          "sha256": "73e3f843f97da70a1977177c859ee0764532d65dd5087734b3895a16852c89fd",
+          "bytes": 7179,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Analysis_code/target_ridge/PROTOCOL.md",
+          "repository_path": "supplementary/analysis/Analysis_code/target_ridge/PROTOCOL.md",
+          "sha256": "07aa4bcea86dbfb6561dcf6e710964b6c8ebaa991477114f5300326ea3a14dad",
+          "bytes": 1981,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Analysis_code/target_ridge/run.py",
+          "repository_path": "supplementary/analysis/Analysis_code/target_ridge/run.py",
+          "sha256": "6f1de7042be5a44c64d1f73751a4a4503b20b9eb396bd11b2726c78728085538",
+          "bytes": 6062,
+          "copied_exact": true
+        }
+      ],
+      "excluded_members": []
+    },
+    {
+      "id": "focused_reporting",
+      "role": "Matched target-only reporting; Supplementary Table S14 and Data 7",
+      "source_archive": {
+        "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Focused_reporting_code.zip",
+        "sha256": "9cb216f979669383cbe3ddb472889b83291e9b9d2d6536e0edcc92025e23a74d",
+        "bytes": 13160
+      },
+      "members": [
+        {
+          "archive_member": "Focused_reporting_code/README.md",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/README.md",
+          "sha256": "1f8ad2ba8a3ecdc82b09eec2e10f28862f830e4c59129f844d7d273f0f28b62b",
+          "bytes": 2852,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/focused_reporting_20261030/evaluate_schema_fix.py",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/focused_reporting_20261030/evaluate_schema_fix.py",
+          "sha256": "b108aeb004d368a47d69bad125a715dee49dde31b0c8057f53c38dd02719a190",
+          "bytes": 1851,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/focused_reporting_20261030/PROTOCOL.md",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/focused_reporting_20261030/PROTOCOL.md",
+          "sha256": "f7c5b76a939352d3356c54487736a1477782e2d5f65e91bc4d6bfbbdb964adf3",
+          "bytes": 4860,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/focused_reporting_20261030/run.py",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/focused_reporting_20261030/run.py",
+          "sha256": "b0673def02515f4c2079b4f7d2e02dbf1ef7b8b061c7288ce92a3af5f4f45e27",
+          "bytes": 13800,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/focused_reporting_20261030/verify.py",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/focused_reporting_20261030/verify.py",
+          "sha256": "2828d03e8e695a0bb14cf695fd4ab433279fdf5698f3a4a60b88a0dd9e602668",
+          "bytes": 3591,
+          "copied_exact": true
+        }
+      ],
+      "excluded_members": [
+        {
+          "member": "Focused_reporting_code/WRITING_REVISION_NOTES_20261031.txt",
+          "reason": "Editorial process note; no analysis code or execution instructions."
+        }
+      ]
+    },
+    {
+      "id": "reporting_diagnostics",
+      "role": "Reporting-policy frontier, cross-calibration and release eligibility; Tables S15/S16 and Data 7",
+      "source_archive": {
+        "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Reporting_diagnostics_code.zip",
+        "sha256": "6b93b49a2633eeafb1176276a8ddb6c698d0b22134f51d3817cb254e1de00d74",
+        "bytes": 97902
+      },
+      "members": [
+        {
+          "archive_member": "project/outputs/uteg_reporting_increment_20261030/increment_experiment.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_reporting_increment_20261030/increment_experiment.py",
+          "sha256": "e19f164b0eab4f6f09854e1dba5f7409604d6eed2e7e549e055d028ea714f2b9",
+          "bytes": 45849,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_reporting_increment_20261030/coverage_funnel.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_reporting_increment_20261030/coverage_funnel.py",
+          "sha256": "3a4470cd8dddca7a0d4f65bbe940246cf085ac3b833171e666aa8387aa2950ee",
+          "bytes": 34781,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_equal_error_20261030/equal_error_analysis.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_equal_error_20261030/equal_error_analysis.py",
+          "sha256": "2ef86709cccee19f954215f29e3048ac3cc92e2ad3bbe7de5afb5d2896730b42",
+          "bytes": 19157,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_equal_error_20261030/equal_error_postprocess.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_equal_error_20261030/equal_error_postprocess.py",
+          "sha256": "b29abb973ef227c7696e577f61268ca384c945aea04a34c02519345904e3527b",
+          "bytes": 24430,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_equal_error_20261030/present_equal_error.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_equal_error_20261030/present_equal_error.py",
+          "sha256": "cf2ffacb30ee92ea0840c8a2667a78fdbfe6d7d7a62164aeaaa7547b2bc26fec",
+          "bytes": 23696,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_reporting_increment_20261030/independent_numeric_check.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_reporting_increment_20261030/independent_numeric_check.py",
+          "sha256": "fefe449bb736f62c68e92e74cc9a5e02692b0fd90f7edc1a2f8ec8b824c70144",
+          "bytes": 47354,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_equal_error_20261030/audit_equal_error_final.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_equal_error_20261030/audit_equal_error_final.py",
+          "sha256": "b3069a7a591473cc79ee7246ddf65341a681bf5e50a73b2db6c7a76f19df8d46",
+          "bytes": 11062,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_nc_goal_20261030/focused_reporting_20261030/run.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_nc_goal_20261030/focused_reporting_20261030/run.py",
+          "sha256": "b0673def02515f4c2079b4f7d2e02dbf1ef7b8b061c7288ce92a3af5f4f45e27",
+          "bytes": 13800,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_nc_goal_20261030/target_ridge/run.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_nc_goal_20261030/target_ridge/run.py",
+          "sha256": "5bf8434bc2f8b68a7f49026b4b27e073595a400162388a93c998ab926d6a25e0",
+          "bytes": 6019,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_ridge_dual_head_prepare_20261026_172952/dual_head_contract.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_ridge_dual_head_prepare_20261026_172952/dual_head_contract.py",
+          "sha256": "c2787a906c8d9700fede17adbba8b5eaac8ee4c5a3143af5a475cf2b0a96427f",
+          "bytes": 10852,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_ridge_dual_head_unified_selector_20261026_190142/run_unified_selector.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_ridge_dual_head_unified_selector_20261026_190142/run_unified_selector.py",
+          "sha256": "d59408f03ceffcb3f97b0ccf21b1d33baa9db2be3caad39f075ca833b197dddf",
+          "bytes": 21408,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/run_ridge10_fullchain.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/run_ridge10_fullchain.py",
+          "sha256": "015a92a39dda98d6440179c74b8437801d970ba004ddb01c1f1ad5a5e54e9d15",
+          "bytes": 44741,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/outputs/uteg_nc_goal_20261030/analysis/round1.py",
+          "repository_path": "supplementary/reporting_diagnostics/project/outputs/uteg_nc_goal_20261030/analysis/round1.py",
+          "sha256": "669becbae3cd56432088fc564cde73619c8990e09245f221e9bb287d3aea5dbb",
+          "bytes": 7136,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "project/README_reporting_diagnostics.md",
+          "repository_path": "supplementary/reporting_diagnostics/project/README_reporting_diagnostics.md",
+          "sha256": "119e0884abbc1a8865aef874cce5e3a641dd495e5ba65a8c93316cd81abc99f1",
+          "bytes": 2792,
+          "copied_exact": true
+        }
+      ],
+      "excluded_members": []
+    },
+    {
+      "id": "minimal_revision",
+      "role": "Local-reference budgets and internal forward/replay checks; Tables S17/S18 and Data 6/7",
+      "source_archive": {
+        "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Minimal_revision_code.zip",
+        "sha256": "415ee93d77b74747b0a64d8494ba89abf6a853918e2a46d196721dcb02bd5d4f",
+        "bytes": 24044
+      },
+      "members": [
+        {
+          "archive_member": "internal_pipeline/forward_recheck.py",
+          "repository_path": "supplementary/minimal_revision/internal_pipeline/forward_recheck.py",
+          "sha256": "2f72edcb05fd4e03108a8619e4e042fd9a30d9e9f21a1b2eb190f1d4c06cba8e",
+          "bytes": 21777,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "internal_pipeline/replay_internal_partition.py",
+          "repository_path": "supplementary/minimal_revision/internal_pipeline/replay_internal_partition.py",
+          "sha256": "a62b178fc94e994a06533fda2c81a35e4a9ee595d3b535a1314f7be0b83468fd",
+          "bytes": 13320,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "README_ZH.md",
+          "repository_path": "supplementary/minimal_revision/README_ZH.md",
+          "sha256": "af070d0b13b033e9436ac3988c35cbfc1f03572fa55aa98ca0196ad70641ba19",
+          "bytes": 2774,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "requirements_public.txt",
+          "repository_path": "supplementary/minimal_revision/requirements_public.txt",
+          "sha256": "56a24c11a7a5e96baaddee30e090f3b1b5913dea5d5261a936903e6a10877206",
+          "bytes": 24,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "run_budget_curve.py",
+          "repository_path": "supplementary/minimal_revision/run_budget_curve.py",
+          "sha256": "732c4ad9e7484a41f6ec1470892efeab74435efadcff28570b641353472de8ac",
+          "bytes": 37966,
+          "copied_exact": true
+        }
+      ],
+      "excluded_members": [
+        {
+          "member": "WRITING_REVISION_NOTES_20261031.txt",
+          "reason": "Editorial process note; no analysis code or execution instructions."
+        }
+      ]
+    }
+  ]
+}

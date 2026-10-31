@@ -1,0 +1,173 @@
+{
+  "schema": "uteg_current_manuscript_v1",
+  "date": "2026-10-31",
+  "scope": "Current manuscript and companion file hashes only; document contents are not distributed.",
+  "revision": "Completed sentence review followed by eight author-approved local wording corrections.",
+  "core_commit": "5f32af59907470ced142595625c4b80555fd1d81",
+  "core_provenance": "provenance/SOURCE_PROVENANCE.json",
+  "historical_core_lineage": "provenance/MANUSCRIPT_LINEAGE.json",
+  "supplementary_code": "provenance/SUPPLEMENTARY_CODE.json",
+  "manuscript_anchors": [
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.tex",
+      "sha256": "1df11483a09dcaf65b791dac4540008f25afb27b61bfb55c2702b96977608fd2",
+      "bytes": 97873
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.tex",
+      "sha256": "4718ac6653a76624f51b66c977f6e099f821771b459c9488e36ea5fb80c1f373",
+      "bytes": 3072
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_current.tex",
+      "sha256": "aa38de3b0cbb8260a4815cedd681f51908e9b1e07b92624d5f716a044d339c66",
+      "bytes": 66787
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_external_refs.tex",
+      "sha256": "014ec844f427bb0c7aaa6afdacfcc1935e222af68daac89e0100be11a34ea8c6",
+      "bytes": 15941
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_minimal_additions.tex",
+      "sha256": "4257e38d0ee8d9f60dab836c6affa727b676b74b6c7b7b7ca1a46767002f355e",
+      "bytes": 12354
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_reporting_diagnostics.tex",
+      "sha256": "6299276f31ed3a4cf347da7b8b0aee1cb7970e617f984c61373ee81c1be104fe",
+      "bytes": 14839
+    }
+  ],
+  "companion_anchors": [
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.pdf",
+      "sha256": "f77b50c63ff498ac820ce9b61dc6f9f3f74678f7b84b55e728b56c8f859364fd",
+      "bytes": 706720
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
+      "sha256": "adc20191cc1bcf2fd7bf407586114a156777564dbe962409992cf9224a638f62",
+      "bytes": 3589943
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261031.pdf",
+      "sha256": "43a8d378226d0d8b6ac38d3b9ba9fff056775a24321d95ebce0a3e320fe33783",
+      "bytes": 4313009
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
+      "sha256": "3a9ca7a704d48bd7383ad37a993adb71d7b5a203483093086ca3df9e854de9e8",
+      "bytes": 1515629
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_1_to_7.zip",
+      "sha256": "84379913b1c69e866385e39a78befc17e08222716d282c32285c42d87a295562",
+      "bytes": 1371496
+    }
+  ],
+  "figure_anchors": [
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/crosscentre_aligned_20261029/Figure1_workflow_ma.pdf",
+      "sha256": "a418c4fe1e883b639f770b69805913573487d45f91e95e339befe611a7c65a31",
+      "bytes": 283176
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_20261029/Figure2_translation.pdf",
+      "sha256": "21b3539110751d0a586ad30ec6e29509c0460c81cd3581247999f50948401118",
+      "bytes": 135561
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/reporting_redesign_20261029/Figure3_reporting.pdf",
+      "sha256": "e7410ded69226621ad60d1528e4ee97d816524fdeb6d0ff51f03c40a4debf370",
+      "bytes": 52897
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/main_pair_20261029/Figure4_main_pair.pdf",
+      "sha256": "4b5b7f6cd7ece57a950a31cc4bc5b50061219fb60d8c9178b681a89a2dc01123",
+      "bytes": 52793
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S1_cohort.pdf",
+      "sha256": "706d6e14c5a09084b2a7602357115e88c423de65048122f18f04ef0af1ff0b27",
+      "bytes": 39731
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S2_nine_direction_report.pdf",
+      "sha256": "0b58079570c19fb1f98284b8a845b9ed67c920d458cfe32e47c62b27add57c2e",
+      "bytes": 49876
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S3_mapping_1.pdf",
+      "sha256": "b22db719ef3151c4c2a5416060f14c7ab5f2ad9107386442a54df3b6bb70f0ae",
+      "bytes": 68658
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S3_mapping_2.pdf",
+      "sha256": "c7ca4b7f1f88b1413c8f0271b0da8179386d268c2901e83ba16aa5584f8a84e8",
+      "bytes": 67779
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S3_mapping_3.pdf",
+      "sha256": "2a22f7f17fd7ee31234569baf0670129c43a6730f7a017035a861e89d4488b00",
+      "bytes": 67858
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S4_paired_adaptation.pdf",
+      "sha256": "3cd8ca2c299f9d02df9a95a5e317435dd3437519440f9b6850dc9ce6fc5b37b3",
+      "bytes": 46831
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S5_MA_residuals.pdf",
+      "sha256": "6bfec506c5062d4ce1f1db0c3b933806874edb8c3de0bdf4ac4fd1ef6825dafd",
+      "bytes": 168063
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S6_risk_coverage_1.pdf",
+      "sha256": "8afaf39dea9e8e8ace3ce8194b2653a891c965e02331201a3b48fcad4f2db5a8",
+      "bytes": 69808
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S6_risk_coverage_2.pdf",
+      "sha256": "91f9b2ed8654448c6674075396207954a08cf602ed2d38c6047531d2a787535b",
+      "bytes": 59785
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S6_risk_coverage_3.pdf",
+      "sha256": "6d7773dad80ba2e96228195d07fde5ac09a8c8166681acabb3bd52519355e5cb",
+      "bytes": 68836
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S7_nine_direction_sequence.pdf",
+      "sha256": "b14c4b7bb2affb52f614ac9cedcfa73397462bc61623f85e1e703fe18f742d56",
+      "bytes": 43188
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S8_adaptation_budget.pdf",
+      "sha256": "27a35a2ec72ff7c761bee32e640ffe621eb80d33b606d1947622d6a21d64a1fc",
+      "bytes": 47963
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/Figure_S10_representation.pdf",
+      "sha256": "53af995dd45e0deb1659461cf8d9f0b7317681654bef15750bcda34759ffffd7",
+      "bytes": 2543459
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S9_seed_stability.pdf",
+      "sha256": "4b3265dca5a61bd9c879e44095495e961bae04c62d7a965675c14cbc7c3e2239",
+      "bytes": 69394
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/minimal_revision_20261030/label_budget_curve.pdf",
+      "sha256": "008a20cb4738a867cd6a0e88188039fb666d032f4eeea2be08d289306c705d56",
+      "bytes": 40491
+    },
+    {
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/framework_diagnostics_20261030/equal_error_frontier_revision.pdf",
+      "sha256": "21e14f0436e05c31bec31f5ed50b23eb8f220718bd0f46d7a4dde610f55c6ff8",
+      "bytes": 36104
+    }
+  ],
+  "publication_scope": "Source code, execution documentation and hash/path metadata only; no manuscript, PDF, ZIP, workbook, private clinical record or trained object.",
+  "interpretation": "Core prediction and reporting algorithms are unchanged. Transfer is an evaluated learning configuration, alongside target-only controls. Reporting-policy matching and internal partitions retain their retrospective, non-independent-validation status."
+}
