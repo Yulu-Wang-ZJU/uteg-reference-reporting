@@ -1,12 +1,13 @@
-# U-TEG reference-reporting code release
+# U-TEG reference-reporting code and aggregate data
 
 This code-and-provenance release was assembled on 2026-10-30 and synchronized
 with the current manuscript on 2026-10-31.
 It preserves the current Ridge-10 translation/reporting implementation and
 the source snapshots used by the recent baseline, supplementary and
-sequence analyses.  It is deliberately a code-and-provenance release: no
+sequence analyses. Supplementary Data 1–7 are available as aggregate workbooks
+in [`data/`](data/). No
 raw records, patient identifiers, input archives, trained objects, prediction
-arrays, result tables or manuscript source files are copied here.
+arrays or manuscript source files are copied here.
 
 The release is not a claim that the public folder alone reproduces the
 reported numbers.  Full numerical replay still requires the private paired
@@ -88,9 +89,12 @@ figure and companion hashes and exact source-archive members:
 python scripts/verify_current_release.py --source-root <workspace-root>
 ```
 
-This synchronization leaves the core implementation unchanged. No manuscript,
-PDF, ZIP archive, workbook, fitted object, individual prediction or patient
-record is added to the public repository.
+This synchronization leaves the core implementation unchanged. The seven
+aggregate workbooks in [`data/`](data/) match the submission supplementary
+materials. Their file hashes, worksheet inventory and content-review scope
+are recorded in [`provenance/PUBLIC_DATA.json`](provenance/PUBLIC_DATA.json).
+No manuscript, PDF, ZIP archive, fitted object, individual prediction or
+patient record is added to the public repository.
 
 ## Safe entrypoints
 
@@ -199,7 +203,7 @@ dynamically load private inputs or frozen objects.  Use
 `scripts/materialize_code.py` to restore the code side of those contracts;
 then perform a full private replay with the corresponding private inputs and
 frozen objects, following each stage’s copied `PROTOCOL`/`REPRODUCE` file.
-The release folder remains code-only and is not a replacement for those
+The public code and aggregate workbooks are not a replacement for those
 private artifacts.
 
 The small importable API in [`src/uteg_reference_reporting/core.py`](src/uteg_reference_reporting/core.py)
@@ -222,5 +226,6 @@ original workspace is present, checks the original hashes too.
 
 The excluded input classes are explicit in the manifest: `DATA15.npz`,
 `PREFIX_X.npz`, role/split manifests, `*.joblib` trained objects, prediction
-archives and generated result tables.  The root Apache-2.0 license is copied
+archives and patient-level result tables. The original core manifest predates
+the aggregate workbook release. The root Apache-2.0 license is copied
 to [`LICENSE`](LICENSE).

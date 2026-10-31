@@ -1,0 +1,616 @@
+{
+  "schema": "uteg_public_aggregate_data_v1",
+  "date": "2026-10-31",
+  "scope": "Supplementary Data 1–7: aggregate results and summaries by experimental configuration, seed, fold or class. No individual patient records.",
+  "audit": {
+    "workbooks": 7,
+    "worksheets": 108,
+    "populated_cells": 311274,
+    "row_granularity_review": "All worksheet schemas and text fields reviewed; experiment seeds, folds and policy configuration IDs are not patient IDs. First-report timings are count distributions; computational timings are repeated-run summaries.",
+    "patient_level_records_found": false,
+    "hidden_sheets_rows_columns": false,
+    "comments_embedded_objects_external_data_connections": false,
+    "formulas_or_cached_formula_values": false,
+    "unreferenced_shared_strings": false,
+    "clinical_values_changed": false,
+    "publication_metadata_cells_changed": 11
+  },
+  "files": [
+    {
+      "repository_path": "data/Supplementary_Data_1.xlsx",
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_1.xlsx",
+      "bytes": 16247,
+      "sha256": "46fe75eaf90b9532aa2e928d580f3874cbb51987f7eb62c81347bf8a9989c043",
+      "worksheets": [
+        {
+          "name": "README",
+          "populated_rows": 11,
+          "populated_cells": 39
+        },
+        {
+          "name": "Definitions",
+          "populated_rows": 73,
+          "populated_cells": 146
+        },
+        {
+          "name": "Cohort and QC",
+          "populated_rows": 4,
+          "populated_cells": 36
+        },
+        {
+          "name": "Data roles",
+          "populated_rows": 28,
+          "populated_cells": 224
+        },
+        {
+          "name": "Nine-direction overview",
+          "populated_rows": 10,
+          "populated_cells": 481
+        },
+        {
+          "name": "Evaluation denominators",
+          "populated_rows": 10,
+          "populated_cells": 70
+        }
+      ]
+    },
+    {
+      "repository_path": "data/Supplementary_Data_2.xlsx",
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_2.xlsx",
+      "bytes": 80745,
+      "sha256": "5b1424d2732cc2991118db51238e4c5b28de1558f26193fb656c182546bac024",
+      "worksheets": [
+        {
+          "name": "README",
+          "populated_rows": 13,
+          "populated_cells": 47
+        },
+        {
+          "name": "Definitions",
+          "populated_rows": 63,
+          "populated_cells": 126
+        },
+        {
+          "name": "Mapping baselines",
+          "populated_rows": 163,
+          "populated_cells": 7227
+        },
+        {
+          "name": "Paired adaptation",
+          "populated_rows": 37,
+          "populated_cells": 222
+        },
+        {
+          "name": "Class transitions",
+          "populated_rows": 244,
+          "populated_cells": 1220
+        },
+        {
+          "name": "Adaptation comparators",
+          "populated_rows": 9,
+          "populated_cells": 477
+        },
+        {
+          "name": "Adaptation paired gains",
+          "populated_rows": 25,
+          "populated_cells": 150
+        },
+        {
+          "name": "Adaptation comparator seeds",
+          "populated_rows": 161,
+          "populated_cells": 1288
+        }
+      ]
+    },
+    {
+      "repository_path": "data/Supplementary_Data_3.xlsx",
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_3.xlsx",
+      "bytes": 63770,
+      "sha256": "6f5fb2f736a61e43f6ea04e0bee528caea172420a22a3be4bb2181d14e2e67c4",
+      "worksheets": [
+        {
+          "name": "README",
+          "populated_rows": 12,
+          "populated_cells": 43
+        },
+        {
+          "name": "Definitions",
+          "populated_rows": 68,
+          "populated_cells": 136
+        },
+        {
+          "name": "Gate working points",
+          "populated_rows": 37,
+          "populated_cells": 1632
+        },
+        {
+          "name": "Matched coverage",
+          "populated_rows": 541,
+          "populated_cells": 4148
+        },
+        {
+          "name": "Report destinations",
+          "populated_rows": 433,
+          "populated_cells": 2983
+        },
+        {
+          "name": "HGB external comparison",
+          "populated_rows": 5,
+          "populated_cells": 70
+        },
+        {
+          "name": "HGB external seeds",
+          "populated_rows": 81,
+          "populated_cells": 567
+        }
+      ]
+    },
+    {
+      "repository_path": "data/Supplementary_Data_4.xlsx",
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_4.xlsx",
+      "bytes": 24855,
+      "sha256": "9c77eff451823ee742e4b66d97efdae56c1077b300da7ff61ae57aeba3b0f263",
+      "worksheets": [
+        {
+          "name": "README",
+          "populated_rows": 10,
+          "populated_cells": 35
+        },
+        {
+          "name": "Definitions",
+          "populated_rows": 58,
+          "populated_cells": 116
+        },
+        {
+          "name": "Pointwise and cumulative",
+          "populated_rows": 55,
+          "populated_cells": 2435
+        },
+        {
+          "name": "First-report times",
+          "populated_rows": 37,
+          "populated_cells": 185
+        },
+        {
+          "name": "Figure 4 additional yield",
+          "populated_rows": 5,
+          "populated_cells": 45
+        }
+      ]
+    },
+    {
+      "repository_path": "data/Supplementary_Data_5.xlsx",
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_5.xlsx",
+      "bytes": 1000526,
+      "sha256": "411fbff9907d256a935292d85110ae030b877569d924896828a2dacb7aa6a0e5",
+      "worksheets": [
+        {
+          "name": "README",
+          "populated_rows": 35,
+          "populated_cells": 135
+        },
+        {
+          "name": "Definitions",
+          "populated_rows": 354,
+          "populated_cells": 708
+        },
+        {
+          "name": "Adaptation budgets",
+          "populated_rows": 28,
+          "populated_cells": 1158
+        },
+        {
+          "name": "Reporting contrasts",
+          "populated_rows": 73,
+          "populated_cells": 417
+        },
+        {
+          "name": "Waiting contrasts",
+          "populated_rows": 82,
+          "populated_cells": 547
+        },
+        {
+          "name": "Source contrasts",
+          "populated_rows": 9,
+          "populated_cells": 63
+        },
+        {
+          "name": "Exploration status",
+          "populated_rows": 8,
+          "populated_cells": 40
+        },
+        {
+          "name": "Adaptation strengths",
+          "populated_rows": 29,
+          "populated_cells": 411
+        },
+        {
+          "name": "Nested side protection",
+          "populated_rows": 5,
+          "populated_cells": 60
+        },
+        {
+          "name": "Preserved channel dev",
+          "populated_rows": 4,
+          "populated_cells": 72
+        },
+        {
+          "name": "Preserved channel external",
+          "populated_rows": 3,
+          "populated_cells": 54
+        },
+        {
+          "name": "Oracle headroom dev",
+          "populated_rows": 8,
+          "populated_cells": 121
+        },
+        {
+          "name": "PLS SVR reuse dev",
+          "populated_rows": 29,
+          "populated_cells": 278
+        },
+        {
+          "name": "All reporting seeds",
+          "populated_rows": 721,
+          "populated_cells": 20282
+        },
+        {
+          "name": "All mapping seeds",
+          "populated_rows": 15121,
+          "populated_cells": 90726
+        },
+        {
+          "name": "All sequence seeds",
+          "populated_rows": 541,
+          "populated_cells": 14544
+        },
+        {
+          "name": "Component timing",
+          "populated_rows": 13,
+          "populated_cells": 104
+        },
+        {
+          "name": "Dual-risk timing",
+          "populated_rows": 4,
+          "populated_cells": 32
+        },
+        {
+          "name": "Task timing",
+          "populated_rows": 56,
+          "populated_cells": 336
+        },
+        {
+          "name": "Representation signal",
+          "populated_rows": 9,
+          "populated_cells": 72
+        },
+        {
+          "name": "Representation mapping",
+          "populated_rows": 217,
+          "populated_cells": 2170
+        },
+        {
+          "name": "Representation mapping delta",
+          "populated_rows": 109,
+          "populated_cells": 872
+        },
+        {
+          "name": "Representation reporting",
+          "populated_rows": 469,
+          "populated_cells": 4513
+        },
+        {
+          "name": "Representation reporting delta",
+          "populated_rows": 235,
+          "populated_cells": 1790
+        },
+        {
+          "name": "Representation matched",
+          "populated_rows": 2809,
+          "populated_cells": 32628
+        },
+        {
+          "name": "Representation matched delta",
+          "populated_rows": 1405,
+          "populated_cells": 13510
+        },
+        {
+          "name": "Representation destinations",
+          "populated_rows": 217,
+          "populated_cells": 1302
+        },
+        {
+          "name": "Representation seeds",
+          "populated_rows": 4681,
+          "populated_cells": 31744
+        },
+        {
+          "name": "Preserved channel intervals",
+          "populated_rows": 28,
+          "populated_cells": 196
+        },
+        {
+          "name": "Exploration status English",
+          "populated_rows": 8,
+          "populated_cells": 40
+        }
+      ]
+    },
+    {
+      "repository_path": "data/Supplementary_Data_6.xlsx",
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_6.xlsx",
+      "bytes": 33037,
+      "sha256": "d7f1de22828326e2889fd64052eea3246ca70755f54f7e3d1ed376800a686c86",
+      "worksheets": [
+        {
+          "name": "README",
+          "populated_rows": 26,
+          "populated_cells": 52
+        },
+        {
+          "name": "Definitions",
+          "populated_rows": 21,
+          "populated_cells": 42
+        },
+        {
+          "name": "Target prediction",
+          "populated_rows": 31,
+          "populated_cells": 248
+        },
+        {
+          "name": "Prediction contrasts",
+          "populated_rows": 19,
+          "populated_cells": 152
+        },
+        {
+          "name": "Target prediction seeds",
+          "populated_rows": 121,
+          "populated_cells": 968
+        },
+        {
+          "name": "Prediction destinations",
+          "populated_rows": 55,
+          "populated_cells": 330
+        },
+        {
+          "name": "Timing policies",
+          "populated_rows": 31,
+          "populated_cells": 310
+        },
+        {
+          "name": "Timing contrasts",
+          "populated_rows": 25,
+          "populated_cells": 175
+        },
+        {
+          "name": "Timing destinations",
+          "populated_rows": 73,
+          "populated_cells": 511
+        },
+        {
+          "name": "First report times",
+          "populated_rows": 25,
+          "populated_cells": 125
+        },
+        {
+          "name": "Timing seeds",
+          "populated_rows": 121,
+          "populated_cells": 968
+        }
+      ]
+    },
+    {
+      "repository_path": "data/Supplementary_Data_7.xlsx",
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_7.xlsx",
+      "bytes": 389918,
+      "sha256": "64b67b00b1d45491f1113606014e5a923974943a7f800e642527ae98d3b9bf0c",
+      "worksheets": [
+        {
+          "name": "README",
+          "populated_rows": 29,
+          "populated_cells": 58
+        },
+        {
+          "name": "Definitions",
+          "populated_rows": 32,
+          "populated_cells": 64
+        },
+        {
+          "name": "Working points",
+          "populated_rows": 4,
+          "populated_cells": 68
+        },
+        {
+          "name": "Paired contrasts",
+          "populated_rows": 17,
+          "populated_cells": 102
+        },
+        {
+          "name": "All seeds",
+          "populated_rows": 61,
+          "populated_cells": 671
+        },
+        {
+          "name": "Class destinations",
+          "populated_rows": 37,
+          "populated_cells": 222
+        },
+        {
+          "name": "Cap points",
+          "populated_rows": 55,
+          "populated_cells": 1036
+        },
+        {
+          "name": "Cap contrasts",
+          "populated_rows": 121,
+          "populated_cells": 1331
+        },
+        {
+          "name": "Cap seeds",
+          "populated_rows": 361,
+          "populated_cells": 2457
+        },
+        {
+          "name": "Cap destinations",
+          "populated_rows": 649,
+          "populated_cells": 6382
+        },
+        {
+          "name": "Cap subsets",
+          "populated_rows": 4,
+          "populated_cells": 64
+        },
+        {
+          "name": "Policy points",
+          "populated_rows": 239,
+          "populated_cells": 1434
+        },
+        {
+          "name": "EE matching",
+          "populated_rows": 55,
+          "populated_cells": 550
+        },
+        {
+          "name": "EE contrasts",
+          "populated_rows": 25,
+          "populated_cells": 300
+        },
+        {
+          "name": "EE classes",
+          "populated_rows": 217,
+          "populated_cells": 3472
+        },
+        {
+          "name": "EE seeds",
+          "populated_rows": 361,
+          "populated_cells": 5737
+        },
+        {
+          "name": "D3 aggregate",
+          "populated_rows": 19,
+          "populated_cells": 190
+        },
+        {
+          "name": "D3 contrasts",
+          "populated_rows": 25,
+          "populated_cells": 300
+        },
+        {
+          "name": "D3 folds",
+          "populated_rows": 91,
+          "populated_cells": 1274
+        },
+        {
+          "name": "D3 classes",
+          "populated_rows": 217,
+          "populated_cells": 2821
+        },
+        {
+          "name": "D3 foldclass",
+          "populated_rows": 271,
+          "populated_cells": 1626
+        },
+        {
+          "name": "D3 seeds",
+          "populated_rows": 361,
+          "populated_cells": 5381
+        },
+        {
+          "name": "D3 foldseed",
+          "populated_rows": 1801,
+          "populated_cells": 10806
+        },
+        {
+          "name": "Center eligibility",
+          "populated_rows": 28,
+          "populated_cells": 821
+        },
+        {
+          "name": "Center destinations",
+          "populated_rows": 109,
+          "populated_cells": 1405
+        },
+        {
+          "name": "Budget_MA_Aggregate",
+          "populated_rows": 15,
+          "populated_cells": 145
+        },
+        {
+          "name": "Budget_4param_Aggregate",
+          "populated_rows": 51,
+          "populated_cells": 590
+        },
+        {
+          "name": "Budget_Paired",
+          "populated_rows": 75,
+          "populated_cells": 513
+        },
+        {
+          "name": "Budget_Seed",
+          "populated_rows": 243,
+          "populated_cells": 3015
+        },
+        {
+          "name": "Budget_ClassDest",
+          "populated_rows": 111,
+          "populated_cells": 874
+        },
+        {
+          "name": "Budget_Info",
+          "populated_rows": 18,
+          "populated_cells": 34
+        },
+        {
+          "name": "Budget_DevAlpha",
+          "populated_rows": 483,
+          "populated_cells": 2888
+        },
+        {
+          "name": "Internal_Event",
+          "populated_rows": 75,
+          "populated_cells": 732
+        },
+        {
+          "name": "Internal_Seed",
+          "populated_rows": 363,
+          "populated_cells": 3540
+        },
+        {
+          "name": "Internal_ClassDest",
+          "populated_rows": 219,
+          "populated_cells": 1738
+        },
+        {
+          "name": "Internal_FirstReport",
+          "populated_rows": 75,
+          "populated_cells": 440
+        },
+        {
+          "name": "Internal_Forward",
+          "populated_rows": 123,
+          "populated_cells": 1091
+        },
+        {
+          "name": "Internal_QC",
+          "populated_rows": 9,
+          "populated_cells": 44
+        },
+        {
+          "name": "Internal_Scope",
+          "populated_rows": 19,
+          "populated_cells": 36
+        },
+        {
+          "name": "README_add",
+          "populated_rows": 16,
+          "populated_cells": 29
+        },
+        {
+          "name": "Definitions_add",
+          "populated_rows": 21,
+          "populated_cells": 39
+        }
+      ]
+    }
+  ]
+}

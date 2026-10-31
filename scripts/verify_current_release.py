@@ -60,11 +60,21 @@ def main() -> None:
     if actual != expected:
         raise ValueError(f'Unmanifested or missing supplementary files: {actual ^ expected}')
     anchors = current['manuscript_anchors'] + current['companion_anchors'] + current['figure_anchors']
+    public_data = json.loads((RELEASE / 'provenance/PUBLIC_DATA.json').read_text(encoding='utf-8'))
+    for entry in public_data['files']:
+        check((RELEASE / relative(entry['repository_path'])).read_bytes(), entry)
+        if args.source_root:
+            check((args.source_root / relative(entry['source_path'])).read_bytes(), entry)
+    expected_data = {entry['repository_path'] for entry in public_data['files']} | {'data/README.md'}
+    actual_data = {p.relative_to(RELEASE).as_posix() for p in (RELEASE / 'data').rglob('*') if p.is_file()}
+    if actual_data != expected_data:
+        raise ValueError(f'Unmanifested or missing data files: {actual_data ^ expected_data}')
     if args.source_root:
         for entry in anchors:
             check((args.source_root / relative(entry['source_path'])).read_bytes(), entry)
     print(json.dumps({'status': 'PASS', 'bundles': len(manifest['bundles']), 'files': count,
                       'python_files_syntax_checked': python_count, 'source_archive_members_checked': source_count,
+                      'aggregate_workbooks_checked': len(public_data['files']),
                       'local_anchors_checked': len(anchors) if args.source_root else 0,
                       'analysis_entrypoints_executed': False}, indent=2))
 

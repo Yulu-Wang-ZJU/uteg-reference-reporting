@@ -168,8 +168,9 @@
       "bytes": 36104
     }
   ],
-  "publication_scope": "Source code, execution documentation and hash/path metadata only; no manuscript, PDF, ZIP, workbook, private clinical record or trained object.",
+  "publication_scope": "Source code, execution documentation, aggregate Supplementary Data 1–7 and hash/path metadata; no manuscript, PDF, ZIP, individual clinical record, individual prediction or trained object.",
   "interpretation": "Core prediction and reporting algorithms are unchanged. Transfer is an evaluated learning configuration, alongside target-only controls. Reporting-policy matching and internal partitions retain their retrospective, non-independent-validation status.",
   "code_release_commit": "e0898a1645169b3cbb2f3b0e69e713ef718c4240",
-  "provenance_note": "The manuscript pins the code release, not this subsequently updated document-hash metadata; analytical source files are unchanged."
+  "provenance_note": "The manuscript pins the code release, not this subsequently updated document-hash metadata; analytical source files are unchanged.",
+  "public_data": "provenance/PUBLIC_DATA.json"
 }
