@@ -50,9 +50,14 @@ The four delivered code bundles are now available as source files under
 | Directory | Analysis | Execution documentation |
 | --- | --- | --- |
 | `supplementary/analysis` | Target-only numerical controls and fixed reporting schedules | [README](supplementary/analysis/Analysis_code/README.md) |
-| `supplementary/focused_reporting` | Matched target-only reporting | [README](supplementary/focused_reporting/Focused_reporting_code/README.md) |
+| `supplementary/focused_reporting` | Matched target-only fixed-time and sequential reporting | [Fixed-time README](supplementary/focused_reporting/Focused_reporting_code/README.md); [sequence README](supplementary/focused_reporting/Focused_reporting_code/target_only_sequence/README.md) |
 | `supplementary/reporting_diagnostics` | Policy frontiers, internal cross-calibration and release eligibility | [README](supplementary/reporting_diagnostics/project/README_reporting_diagnostics.md) |
 | `supplementary/minimal_revision` | 20/40/60-record budgets and internal forward/replay checks | [README](supplementary/minimal_revision/README_ZH.md) |
+
+The sequence comparison uses the same 60 target-development records, 201
+test records and 20 seeds at 5, 10 and 15 minutes. It retains the first report
+and uses the original development-side reporting rules. Six `Sequence_*`
+worksheets in Supplementary Data 7 contain the aggregate results.
 
 These are exact code/document copies from the delivered archives, not new
 experimental runs. The archive-member hashes and exclusions are recorded in

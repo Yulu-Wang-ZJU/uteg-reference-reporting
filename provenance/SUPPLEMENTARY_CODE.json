@@ -53,11 +53,11 @@
     },
     {
       "id": "focused_reporting",
-      "role": "Matched target-only reporting; Supplementary Table S14 and Data 7",
+      "role": "Matched target-only fixed-time and sequential reporting; Supplementary Data 7",
       "source_archive": {
         "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Focused_reporting_code.zip",
-        "sha256": "9cb216f979669383cbe3ddb472889b83291e9b9d2d6536e0edcc92025e23a74d",
-        "bytes": 13160
+        "sha256": "bc6fe67da51484cb2c67c047b2c3468e5594e97fa2379df64bafc481d55598c5",
+        "bytes": 38151
       },
       "members": [
         {
@@ -93,6 +93,48 @@
           "repository_path": "supplementary/focused_reporting/Focused_reporting_code/focused_reporting_20261030/verify.py",
           "sha256": "2828d03e8e695a0bb14cf695fd4ab433279fdf5698f3a4a60b88a0dd9e602668",
           "bytes": 3591,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/target_only_sequence/evaluate.py",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/target_only_sequence/evaluate.py",
+          "sha256": "a9293b102ed4c037838fe0e7e84a2ae29dcca665cc819a74bad6ffbf6f6dfaeb",
+          "bytes": 11095,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/target_only_sequence/PROTOCOL.md",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/target_only_sequence/PROTOCOL.md",
+          "sha256": "b3c53c6770e4c285bc237122c1c417df118a1023211993ce58da1e5028026895",
+          "bytes": 2118,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/target_only_sequence/README.md",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/target_only_sequence/README.md",
+          "sha256": "b4b59370b4c22e9e31700cc9c8a3f87ec422ae43a27906c18d071315581e2c01",
+          "bytes": 2764,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/target_only_sequence/report_results.py",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/target_only_sequence/report_results.py",
+          "sha256": "70610084cacb1b445fa55e6c256cee691276955a5986999321b63c8e5c18d887",
+          "bytes": 5420,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/target_only_sequence/train_prefix.py",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/target_only_sequence/train_prefix.py",
+          "sha256": "9937dfd2886ebff8f1aede2be7e907768d7331828459546ba287120db20cd60d",
+          "bytes": 27167,
+          "copied_exact": true
+        },
+        {
+          "archive_member": "Focused_reporting_code/target_only_sequence/verify.py",
+          "repository_path": "supplementary/focused_reporting/Focused_reporting_code/target_only_sequence/verify.py",
+          "sha256": "ef2a9d6f678ff9dfd1a5fb79369621f15ae570fa4a4f63506010a83b6acbbc2b",
+          "bytes": 27489,
           "copied_exact": true
         }
       ],

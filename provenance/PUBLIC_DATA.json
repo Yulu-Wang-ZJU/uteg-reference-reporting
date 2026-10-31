@@ -4,8 +4,8 @@
   "scope": "Supplementary Data 1–7: aggregate results and summaries by experimental configuration, seed, fold or class. No individual patient records.",
   "audit": {
     "workbooks": 7,
-    "worksheets": 108,
-    "populated_cells": 311274,
+    "worksheets": 114,
+    "populated_cells": 321154,
     "row_granularity_review": "All worksheet schemas and text fields reviewed; experiment seeds, folds and policy configuration IDs are not patient IDs. First-report timings are count distributions; computational timings are repeated-run summaries.",
     "patient_level_records_found": false,
     "hidden_sheets_rows_columns": false,
@@ -13,7 +13,10 @@
     "formulas_or_cached_formula_values": false,
     "unreferenced_shared_strings": false,
     "clinical_values_changed": false,
-    "publication_metadata_cells_changed": 11
+    "publication_metadata_cells_changed": 11,
+    "existing_worksheet_values_changed_in_sequence_update": false,
+    "aggregate_sequence_worksheets_added": 6,
+    "sequence_append_review": "Matched schedule, paired-contrast, seed-level, class-destination and first-report count summaries only; no record-level rows, IDs, predictions or fitted objects."
   },
   "files": [
     {
@@ -402,8 +405,8 @@
     {
       "repository_path": "data/Supplementary_Data_7.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data/Supplementary_Data_7.xlsx",
-      "bytes": 389918,
-      "sha256": "64b67b00b1d45491f1113606014e5a923974943a7f800e642527ae98d3b9bf0c",
+      "bytes": 439413,
+      "sha256": "14567c2878e5db36b3a291be3bd2853db27fe1b385ce7dd288a6e14668dd6f8f",
       "worksheets": [
         {
           "name": "README",
@@ -609,6 +612,36 @@
           "name": "Definitions_add",
           "populated_rows": 21,
           "populated_cells": 39
+        },
+        {
+          "name": "Sequence_Summary",
+          "populated_rows": 21,
+          "populated_cells": 287
+        },
+        {
+          "name": "Sequence_Contrasts",
+          "populated_rows": 99,
+          "populated_cells": 681
+        },
+        {
+          "name": "Sequence_Seeds",
+          "populated_rows": 606,
+          "populated_cells": 6854
+        },
+        {
+          "name": "Sequence_Destinations",
+          "populated_rows": 219,
+          "populated_cells": 1521
+        },
+        {
+          "name": "Sequence_FirstReports",
+          "populated_rows": 75,
+          "populated_cells": 513
+        },
+        {
+          "name": "Sequence_Protocol",
+          "populated_rows": 13,
+          "populated_cells": 24
         }
       ]
     }

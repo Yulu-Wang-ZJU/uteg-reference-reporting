@@ -13,7 +13,7 @@ its units, denominators and analysis scope.
 | [Supplementary Data 4](Supplementary_Data_4.xlsx) | Checkpoints and first-report outcomes |
 | [Supplementary Data 5](Supplementary_Data_5.xlsx) | Sensitivity analyses, experimental runs and computational timings |
 | [Supplementary Data 6](Supplementary_Data_6.xlsx) | Target-only prediction and reporting schedules |
-| [Supplementary Data 7](Supplementary_Data_7.xlsx) | Matched reporting, policy diagnostics, label budgets and internal checks |
+| [Supplementary Data 7](Supplementary_Data_7.xlsx) | Matched fixed-time and sequential reporting, policy diagnostics, label budgets and internal checks |
 
 The files contain aggregate counts, estimates, intervals and summaries by
 experimental configuration, seed, fold or class. Seeds and folds identify
@@ -22,8 +22,9 @@ distributions. Computational timings summarize repeated runs.
 
 The release contains no individual patient records, patient identifiers,
 raw signals, individual reference measurements, individual predictions,
-patient-level split assignments or group hashes. All 108 worksheets and the
-workbook containers were inspected before release. Only 11 publication-status
-and privacy-description cells were changed; all other cell values are unchanged.
+patient-level split assignments or group hashes. All 114 worksheets and the
+workbook containers were inspected before release. The latest update adds six
+`Sequence_*` aggregate worksheets to Supplementary Data 7. Values and formulas
+in the 108 previously published worksheets are unchanged.
 Hashes and the audit scope are in
 [`PUBLIC_DATA.json`](../provenance/PUBLIC_DATA.json).
