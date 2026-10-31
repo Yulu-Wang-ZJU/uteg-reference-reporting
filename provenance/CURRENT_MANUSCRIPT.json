@@ -2,7 +2,7 @@
   "schema": "uteg_current_manuscript_v1",
   "date": "2026-10-31",
   "scope": "Current manuscript and companion file hashes only; document contents are not distributed.",
-  "revision": "Completed sentence review and eight author-approved wording corrections; Code availability now pins the public release containing core and supplementary code.",
+  "revision": "Author-approved wording retained; aggregate workbook publication and pinned online data links synchronized with the submission package.",
   "core_commit": "5f32af59907470ced142595625c4b80555fd1d81",
   "core_provenance": "provenance/SOURCE_PROVENANCE.json",
   "historical_core_lineage": "provenance/MANUSCRIPT_LINEAGE.json",
@@ -10,8 +10,8 @@
   "manuscript_anchors": [
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.tex",
-      "sha256": "adf47cf5ae7f0e6c7951e82c3a1bf3e19df0df1d8bd8c90c5bf7310312a4e44e",
-      "bytes": 97963
+      "sha256": "0fbf069ae16406fa417ac18007cddf25c990fc45733e368ffc8199524e918f71",
+      "bytes": 97706
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.tex",
@@ -20,50 +20,50 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_current.tex",
-      "sha256": "aa38de3b0cbb8260a4815cedd681f51908e9b1e07b92624d5f716a044d339c66",
-      "bytes": 66787
+      "sha256": "7be54104f15278b7f1d6fe43e9024b734f1cfb3d4e4aa90c40a54a2e09a728cc",
+      "bytes": 69704
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_external_refs.tex",
-      "sha256": "014ec844f427bb0c7aaa6afdacfcc1935e222af68daac89e0100be11a34ea8c6",
-      "bytes": 15941
+      "sha256": "84bdb45989c70c6d65c6bb1d94a671325b42e64369489e3c875c75e73f1f4240",
+      "bytes": 15956
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_minimal_additions.tex",
-      "sha256": "4257e38d0ee8d9f60dab836c6affa727b676b74b6c7b7b7ca1a46767002f355e",
-      "bytes": 12354
+      "sha256": "a89e40a0c7202cb2645118746a8c36c98c63a8592ac9dc51446352879873ca14",
+      "bytes": 12389
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_reporting_diagnostics.tex",
-      "sha256": "6299276f31ed3a4cf347da7b8b0aee1cb7970e617f984c61373ee81c1be104fe",
-      "bytes": 14839
+      "sha256": "7c0295c690166cc445331e30708f03719777c42c16f15fcd0ad3c47b6ab99d03",
+      "bytes": 14880
     }
   ],
   "companion_anchors": [
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.pdf",
-      "sha256": "49ca2d7ccdd75f18f2481ad60c437b9381b041e526c30a6735fcf8536452a5a4",
-      "bytes": 706796
+      "sha256": "8ccaa811d8eb8031ed48351099963c3b7dcd34f2a2300e194c92924ce9b95da6",
+      "bytes": 706953
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
-      "sha256": "adc20191cc1bcf2fd7bf407586114a156777564dbe962409992cf9224a638f62",
-      "bytes": 3589943
+      "sha256": "c155743d07799ab8df9d66d06db28e631f974635b1b07ab680332a8564090b0b",
+      "bytes": 3590279
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261031.pdf",
-      "sha256": "77535c04fe7f3251c74adbb506ede409ff37f7d6ca85cfea1e23c9e87da32219",
-      "bytes": 4313088
+      "sha256": "661d9e846a5a4144bae42c5fc92f89ab4afa83b34265fc7cf85f5a3c222bd4a4",
+      "bytes": 4313802
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
-      "sha256": "eb8f1267056d498ea3951076c5047f13407929f3cf19b320c707db744f121140",
-      "bytes": 1515629
+      "sha256": "95bf1b19794a650dbb1913f761af2f76f130f1ed8d6f1de99a4bb949fbb1ce4e",
+      "bytes": 1515695
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_1_to_7.zip",
-      "sha256": "84379913b1c69e866385e39a78befc17e08222716d282c32285c42d87a295562",
-      "bytes": 1371496
+      "sha256": "dbfa0bf2d6f550ac46b781d6de555b1af7667e3589b86dac731cc68ef4b09d18",
+      "bytes": 1371315
     }
   ],
   "figure_anchors": [
@@ -171,6 +171,7 @@
   "publication_scope": "Source code, execution documentation, aggregate Supplementary Data 1–7 and hash/path metadata; no manuscript, PDF, ZIP, individual clinical record, individual prediction or trained object.",
   "interpretation": "Core prediction and reporting algorithms are unchanged. Transfer is an evaluated learning configuration, alongside target-only controls. Reporting-policy matching and internal partitions retain their retrospective, non-independent-validation status.",
   "code_release_commit": "e0898a1645169b3cbb2f3b0e69e713ef718c4240",
-  "provenance_note": "The manuscript pins the code release, not this subsequently updated document-hash metadata; analytical source files are unchanged.",
-  "public_data": "provenance/PUBLIC_DATA.json"
+  "provenance_note": "The article pins code release e0898a1 and data release a63b1f7. Later provenance commits update document hashes without changing those pinned files.",
+  "public_data": "provenance/PUBLIC_DATA.json",
+  "data_release_commit": "a63b1f7e5ec204c03873f8485b98bd8242438584"
 }
