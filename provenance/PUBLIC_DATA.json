@@ -1,7 +1,7 @@
 {
   "schema": "uteg_public_aggregate_data_v2",
   "date": "2026-11-07",
-  "release_ref": "v2026.11.07.9",
+  "release_ref": "v2026.11.07.10",
   "scope": "Supplementary Data 1-8; byte-identical to the current submission workbooks.",
   "audit": {
     "workbooks": 8,
