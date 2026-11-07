@@ -5,10 +5,10 @@ current manuscript. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [release v2026.11.07.8](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.8)
+Analysis code and aggregate results correspond to [release v2026.11.07.9](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.9)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.8/current) for analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.8/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.9/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.9/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
 
 ## Input data
@@ -91,6 +91,17 @@ CODE_MANIFEST.json lists the permitted package members and checksums.
 `manuscript_delivery code` repacks this snapshot from that allowlist.
 Keep the restricted inputs, folds, evaluation roles and numerical results fixed
 when comparing this release with the manuscript.
+
+## Exploratory reporting associations
+
+`code_submit/paper_inward4_replay/reporting_associations.py` summarizes saved
+predictions and HGB decisions for Supplementary Table S6b, without fitting models
+or changing reporting thresholds. It reads the current data arrays and saved
+`gates/` and `all301_gates/` outputs under the analysis root. Run it with
+`--root PATH_TO_CURRENT_ANALYSIS --output PATH_TO_AGGREGATE_JSON`.
+The adjacent `reporting_associations_aggregate.json` contains the aggregate
+counts, growth-group cutpoints and definitions used in the table. The 201-record
+and 301-record evaluations remain separate. No individual records are included.
 
 ## One-input linear/RBF comparison
 

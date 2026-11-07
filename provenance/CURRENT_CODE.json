@@ -1,18 +1,18 @@
 {
   "schema": "uteg_current_code_v2",
   "date": "2026-11-07",
-  "release_ref": "v2026.11.07.8",
+  "release_ref": "v2026.11.07.9",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "bytes": 6284190,
-    "sha256": "5096b8fcb36ab6b93a82c8bf9edddadfe71bf108645ce5022cf2f052d648d5de"
+    "bytes": 6289449,
+    "sha256": "cffd5c878c03c7fbd336e07991e071483d3298f428c518e7883fc147f46ca2c9"
   },
   "members": [
     {
       "repository_path": "current/CODE_MANIFEST.json",
       "archive_member": "CODE_MANIFEST.json",
-      "bytes": 24458,
-      "sha256": "57ae397ca62e55d96d5a30eb3f6d0f59af1e3f47eb46088f6a7bb6e25b5c5f5e"
+      "bytes": 24882,
+      "sha256": "f2c3079542426907a5a866815ed0f47d49d9376065920f66fb167024a6e174d9"
     },
     {
       "repository_path": "current/COHORT_UPDATE.json",
@@ -71,8 +71,8 @@
     {
       "repository_path": "current/README.md",
       "archive_member": "README.md",
-      "bytes": 5866,
-      "sha256": "be8e179383cd02cea378dda80d062ee731421219b182600f948dd289591e652c"
+      "bytes": 6533,
+      "sha256": "129146ebd601d642feb3ae9b8c96d51667f2076d2df457df7857301185af9130"
     },
     {
       "repository_path": "current/RESTRICTED_INPUT_HASHES.json",
@@ -601,6 +601,18 @@
       "archive_member": "code_submit/paper_inward4_replay/reconstruction.py",
       "bytes": 1014,
       "sha256": "595a4cf2276249ee2396619680deb2fcb6a18463079945d572436ee8efc14096"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/reporting_associations.py",
+      "archive_member": "code_submit/paper_inward4_replay/reporting_associations.py",
+      "bytes": 6880,
+      "sha256": "9b056bfeb792b1f677c916ed39dee1194618af21c74367a983534213bf87db73"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/reporting_associations_aggregate.json",
+      "archive_member": "code_submit/paper_inward4_replay/reporting_associations_aggregate.json",
+      "bytes": 8438,
+      "sha256": "df47317f3743fa3a9a340d19f826dce2deeaeb9c4eb5be7bbba1d1f4f5eb767a"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/ten_minute_consensus.py",

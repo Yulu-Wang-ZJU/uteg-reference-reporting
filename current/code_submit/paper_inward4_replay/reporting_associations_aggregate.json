@@ -1,0 +1,274 @@
+{
+  "table": "Supplementary Table S6b",
+  "scope": "Post hoc descriptive associations; original predictions and HGB actions are unchanged.",
+  "protocols": {
+    "paper201": "201 held-out records, 20 development partitions; repeats are not independent patients.",
+    "internal301": "301 records, one outer-held-out prediction per record; overlaps paper201."
+  },
+  "boundary_definition": "Before selection: min(abs(reference MA - 50), abs(reference MA - 70)); counts are records, each once.",
+  "growth_definition": "First 300 time points only. Among observed points, subtract median of preceding 30 from median of last 30; divide by observed-prefix p95 minus p5.",
+  "growth_group_definition": "Reference-normal records only (50 <= MA <= 70). Separate cohort-specific thirds; right-inclusive quantile boundaries.",
+  "interpretation": "Growth was not a direct HGB input. No mechanism or incremental predictive value is established by these associations.",
+  "growth_cutpoints": {
+    "paper201": [
+      -0.0710453802421962,
+      0.011102441624066196,
+      0.02896260286997443,
+      0.3228403333957575
+    ],
+    "internal301": [
+      -0.0710453802421962,
+      0.011830742948843797,
+      0.0288901395010949,
+      0.3872817330573568
+    ]
+  },
+  "boundary_15min": [
+    {
+      "protocol": "paper201",
+      "arm": "HZ_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "errors": 32,
+      "within_mm": {
+        "2": 20,
+        "3": 29,
+        "5": 31
+      },
+      "normal_near3_records": 37,
+      "normal_near3_errors": 29,
+      "normal_far3_records": 133,
+      "normal_far3_errors": 3
+    },
+    {
+      "protocol": "paper201",
+      "arm": "HZ+HB_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "errors": 32,
+      "within_mm": {
+        "2": 20,
+        "3": 29,
+        "5": 31
+      },
+      "normal_near3_records": 37,
+      "normal_near3_errors": 29,
+      "normal_far3_records": 133,
+      "normal_far3_errors": 3
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "errors": 49,
+      "within_mm": {
+        "2": 25,
+        "3": 36,
+        "5": 47
+      },
+      "normal_near3_records": 53,
+      "normal_near3_errors": 33,
+      "normal_far3_records": 200,
+      "normal_far3_errors": 12
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ+HB_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "errors": 50,
+      "within_mm": {
+        "2": 26,
+        "3": 38,
+        "5": 48
+      },
+      "normal_near3_records": 53,
+      "normal_near3_errors": 35,
+      "normal_far3_records": 200,
+      "normal_far3_errors": 12
+    }
+  ],
+  "growth_5min": [
+    {
+      "protocol": "paper201",
+      "arm": "HZ_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "growth_third": "Lower",
+      "normal_records": 57,
+      "error_records": 4,
+      "error_events": 80,
+      "withheld_events": 305,
+      "total_events": 1140,
+      "error_rate": 0.07017543859649122,
+      "withholding_rate": 0.2675438596491228
+    },
+    {
+      "protocol": "paper201",
+      "arm": "HZ_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "growth_third": "Middle",
+      "normal_records": 56,
+      "error_records": 4,
+      "error_events": 80,
+      "withheld_events": 310,
+      "total_events": 1120,
+      "error_rate": 0.07142857142857142,
+      "withholding_rate": 0.2767857142857143
+    },
+    {
+      "protocol": "paper201",
+      "arm": "HZ_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "growth_third": "Upper",
+      "normal_records": 57,
+      "error_records": 11,
+      "error_events": 220,
+      "withheld_events": 408,
+      "total_events": 1140,
+      "error_rate": 0.19298245614035087,
+      "withholding_rate": 0.35789473684210527
+    },
+    {
+      "protocol": "paper201",
+      "arm": "HZ+HB_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "growth_third": "Lower",
+      "normal_records": 57,
+      "error_records": 6,
+      "error_events": 120,
+      "withheld_events": 387,
+      "total_events": 1140,
+      "error_rate": 0.10526315789473684,
+      "withholding_rate": 0.3394736842105263
+    },
+    {
+      "protocol": "paper201",
+      "arm": "HZ+HB_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "growth_third": "Middle",
+      "normal_records": 56,
+      "error_records": 6,
+      "error_events": 120,
+      "withheld_events": 411,
+      "total_events": 1120,
+      "error_rate": 0.10714285714285714,
+      "withholding_rate": 0.3669642857142857
+    },
+    {
+      "protocol": "paper201",
+      "arm": "HZ+HB_to_SA",
+      "records": 201,
+      "repeats": 20,
+      "growth_third": "Upper",
+      "normal_records": 57,
+      "error_records": 18,
+      "error_events": 360,
+      "withheld_events": 572,
+      "total_events": 1140,
+      "error_rate": 0.3157894736842105,
+      "withholding_rate": 0.5017543859649123
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "growth_third": "Lower",
+      "normal_records": 84,
+      "error_records": 10,
+      "error_events": 10,
+      "withheld_events": 6,
+      "total_events": 84,
+      "error_rate": 0.11904761904761904,
+      "withholding_rate": 0.07142857142857142
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "growth_third": "Middle",
+      "normal_records": 85,
+      "error_records": 16,
+      "error_events": 16,
+      "withheld_events": 16,
+      "total_events": 85,
+      "error_rate": 0.18823529411764706,
+      "withholding_rate": 0.18823529411764706
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "growth_third": "Upper",
+      "normal_records": 84,
+      "error_records": 28,
+      "error_events": 28,
+      "withheld_events": 24,
+      "total_events": 84,
+      "error_rate": 0.3333333333333333,
+      "withholding_rate": 0.2857142857142857
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ+HB_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "growth_third": "Lower",
+      "normal_records": 84,
+      "error_records": 11,
+      "error_events": 11,
+      "withheld_events": 3,
+      "total_events": 84,
+      "error_rate": 0.13095238095238096,
+      "withholding_rate": 0.03571428571428571
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ+HB_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "growth_third": "Middle",
+      "normal_records": 85,
+      "error_records": 5,
+      "error_events": 5,
+      "withheld_events": 4,
+      "total_events": 85,
+      "error_rate": 0.058823529411764705,
+      "withholding_rate": 0.047058823529411764
+    },
+    {
+      "protocol": "internal301",
+      "arm": "HZ+HB_to_SA",
+      "records": 301,
+      "repeats": 1,
+      "growth_third": "Upper",
+      "normal_records": 84,
+      "error_records": 32,
+      "error_events": 32,
+      "withheld_events": 26,
+      "total_events": 84,
+      "error_rate": 0.38095238095238093,
+      "withholding_rate": 0.30952380952380953
+    }
+  ],
+  "input_sha256": {
+    "data/DATA15_CURRENT.npz": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
+    "data/CURRENT_SCALED_CURVES.npz": "5874457a287a887aadc128f5b625b7ece6d935ed8d751adf6cf2731502568dae",
+    "gates/HZ_to_SA_T900.npz": "ddba19a4f6a7bc4fb597a89b1cc8d85a47abb50d0ccd70b347e595d9fce898c7",
+    "gates/HZ_to_SA_T300.npz": "ca3f76c70ee57751eb504f56fc2eaf4b719f2921f051405e72fdcede414d1ada",
+    "gates/HZ+HB_to_SA_T900.npz": "b56b519167ffdd5cc8b70faf45510f4b11aae7dc31b18c7a5f2020c34a73abd8",
+    "gates/HZ+HB_to_SA_T300.npz": "5e7f3e3eb1b45f54c0673c039826083b4cf5b277aea6ae2d49a1ebc29057e83f",
+    "all301_gates/HZ_to_SA_T900.npz": "75b0f0779de4dd5c1c8e8563b62c5a73867ca57d421101bbaab128b6595a9192",
+    "all301_gates/HZ_to_SA_T300.npz": "32e8c29ccf65b50b472118102ace378371d13ea38f6e31dd5d67e233b789da3b",
+    "all301_gates/HZ+HB_to_SA_T900.npz": "839ead2ab31cf52a0bfc5ed35c2a4f8d92e923592cd8f65392e94c3950aac332",
+    "all301_gates/HZ+HB_to_SA_T300.npz": "a9fc54574311b8cc0085ac37297c8b0d0cad0482d44d2f2abb3ee534eb2c5104"
+  }
+}

@@ -108,12 +108,14 @@
     "code_submit/paper_inward4_replay/figure4_matched_preview.py": "85ce67a599eec51d24cbf9f57c9ac4440e77b94a8a02c973baa92d5ff038dafb",
     "code_submit/paper_inward4_replay/history_update_comparison.py": "2f960be3b51fa61955dfa2fc07e8fe1eec27ffe1bf8afd7e6a55570d8742a745",
     "code_submit/paper_inward4_replay/input_contract.py": "9d97998238fdb7c6e5582790fc152b6634cf79971f2d5e881e52ec90f0feeb70",
-    "code_submit/paper_inward4_replay/linear_rbf_comparison.py": "3d3f7359dbe0ff8e655bd5504578104ae101a7e82754c5c8fef4b8c38bfda086"
+    "code_submit/paper_inward4_replay/linear_rbf_comparison.py": "3d3f7359dbe0ff8e655bd5504578104ae101a7e82754c5c8fef4b8c38bfda086",
+    "code_submit/paper_inward4_replay/reporting_associations.py": "9b056bfeb792b1f677c916ed39dee1194618af21c74367a983534213bf87db73",
+    "code_submit/paper_inward4_replay/reporting_associations_aggregate.json": "df47317f3743fa3a9a340d19f826dce2deeaeb9c4eb5be7bbba1d1f4f5eb767a"
   },
   "documentation_files": {
     "INPUT_CONTRACT.json": "bdfa1ae6402fa8c742bd1cc6ff96efead7372c2b8c4f6d1258cfe099c09707c9",
     "configure_restricted_inputs.py": "6e17e6f6ceecd1da7cb67f8a1e80adc720766340c464a94160f23f2e7c74988c",
-    "README.md": "be8e179383cd02cea378dda80d062ee731421219b182600f948dd289591e652c",
+    "README.md": "129146ebd601d642feb3ae9b8c96d51667f2076d2df457df7857301185af9130",
     "COHORT_UPDATE.json": "5af67e9505f6a22808f9752a9741ac24ea9185b81e74e3a822d46d36cc133e87"
   },
   "protocol_files": {
@@ -266,12 +268,14 @@
     "protocols/cost_comparison/FROZEN_PROTOCOL.json",
     "protocols/figure3_selective_20261103.json",
     "protocols/history_available_curves_20261103.json",
-    "requirements-observed.txt"
+    "requirements-observed.txt",
+    "code_submit/paper_inward4_replay/reporting_associations.py",
+    "code_submit/paper_inward4_replay/reporting_associations_aggregate.json"
   ],
   "cohort_revision": "cohort_correction_20261107",
   "public_repository": {
     "url": "https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting",
-    "release_ref": "v2026.11.07.8",
+    "release_ref": "v2026.11.07.9",
     "source_directory": "current",
     "aggregate_directory": "data",
     "documentation_update": "2026-11-07"
