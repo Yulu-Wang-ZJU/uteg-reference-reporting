@@ -6,6 +6,10 @@ Start with [`current/`](current/) for the current analysis code and
 of the submission files. This repository contains no patient-level records,
 raw waveforms, individual predictions, fitted models or manuscript PDFs.
 
+The manuscript cites the fixed analysis version [`051be12`](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/commit/051be12108fc7f7fd3faaaa689c8a6f87703084c).
+Subsequent documentation and checksum updates retain the same analysis code
+and aggregate data.
+
 ## Current analysis
 
 The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and

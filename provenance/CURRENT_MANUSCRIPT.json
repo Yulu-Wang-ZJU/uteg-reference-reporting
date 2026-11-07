@@ -1,15 +1,15 @@
 {
   "schema": "uteg_current_manuscript_v2",
   "date": "2026-11-07",
-  "manuscript_revision": "outcomes_clarity_20261107",
+  "manuscript_revision": "code_availability_20261107",
   "current_code": "provenance/CURRENT_CODE.json",
   "supplementary_code": "provenance/SUPPLEMENTARY_CODE.json",
   "public_data": "provenance/PUBLIC_DATA.json",
   "manuscript_anchors": [
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.tex",
-      "bytes": 78903,
-      "sha256": "ea9364efe9ec0e84b6ec4870f3ba7b31f162ac38fe535233fce39dec9c52d53d"
+      "bytes": 79127,
+      "sha256": "e0ab016788d9c5e2412b29413c1505b064cd14d6a977946bc69a477615ece3c8"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.tex",
@@ -33,28 +33,28 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_files.tex",
-      "bytes": 3640,
-      "sha256": "fb206c915f90f06c2124e06a68b788b934b155ced6faedc3f2f25ef4be994962"
+      "bytes": 4187,
+      "sha256": "c7167f9a43e3a30c9033b7bec45fcbf1ab7bda2e2dfb6606096e228a209e67e1"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.pdf",
-      "bytes": 702911,
-      "sha256": "77d16c5485d86bc2e3a6e6c94750287519ee533d55644f793887d3acf3bf0aa3"
+      "bytes": 703074,
+      "sha256": "99e74ee906af5309b7ce05a8ef10e631cb89bc776562af4c30fb8776a1fc9b25"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
-      "bytes": 962408,
-      "sha256": "15c0b11c2285f2985c205be00965abe76246265f9eb3b6460e37b2c9a1fd6a27"
+      "bytes": 963183,
+      "sha256": "b97d6e8ce99c1263d62a7235f8d3b81a66e36248b872b7cf76553d070be5e0f3"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261103.pdf",
-      "bytes": 1500583,
-      "sha256": "3ba89ba1c74f53cb70f3fe9338dd8d6153380c309452ae43e01ee09f14f4190c"
+      "bytes": 1502565,
+      "sha256": "184eec4398ce3e76e79c6e80c007d376d6fcc7cba1bf2928a557c80d59e658fe"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
-      "bytes": 10067445,
-      "sha256": "7a7ed93ea6f55f90ba20954afd67351620500fe58761105ad0cfd5592465ecb9"
+      "bytes": 10260738,
+      "sha256": "543255f9df2103fdd886c4955c47064d132ec5d4d5c59bfa32686c71c585146d"
     }
   ],
   "companion_anchors": [],
@@ -91,5 +91,6 @@
     "Huzhou": 95,
     "Hubei": 79
   },
-  "metrics": "FNR/FPR and post-selection class recall use released reference-class denominators. Full-class yields include withheld records. All 20 seeds are retained together within resampled record groups."
+  "metrics": "FNR/FPR and post-selection class recall use released reference-class denominators. Full-class yields include withheld records. All 20 seeds are retained together within resampled record groups.",
+  "analysis_commit": "051be12108fc7f7fd3faaaa689c8a6f87703084c"
 }

@@ -3,6 +3,15 @@
 This package contains analysis code, aggregate results and protocols for the
 current manuscript. Individual research records are not included.
 
+## Public repository
+
+Analysis code and aggregate results correspond to [commit 051be12](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/commit/051be12108fc7f7fd3faaaa689c8a6f87703084c)
+in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/051be12108fc7f7fd3faaaa689c8a6f87703084c/current) for the analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/051be12108fc7f7fd3faaaa689c8a6f87703084c/data) for Supplementary Data 1-8.
+The submission archive additionally includes the editable Fig. 1 source.
+This repository-reference update changes documentation only.
+
 ## Input version
 
 The authors report that the provider corrected a file-delivery error and identify
