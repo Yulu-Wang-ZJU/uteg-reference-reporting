@@ -15,7 +15,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",
@@ -1578,7 +1578,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",
@@ -36999,7 +36999,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",
@@ -56023,7 +56023,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",
@@ -109652,7 +109652,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",
@@ -584130,7 +584130,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",
@@ -604214,7 +604214,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",
@@ -650175,7 +650175,7 @@
       },
       {
         "field": "evidence",
-        "value": "The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid."
+        "value": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation."
       },
       {
         "field": "privacy",

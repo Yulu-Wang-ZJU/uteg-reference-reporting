@@ -65,7 +65,7 @@
     "code_submit/paper_inward4_replay/manuscript_figures.py": "30bf001fcd8ac4b610f042b5af8defa918fe963026bc5b17e9c3ea84396cbf2c",
     "code_submit/paper_inward4_replay/manuscript_forward.py": "6ef89ebb344fe564ca4af5c510239f267761592c746349a7e305928006c91f13",
     "code_submit/paper_inward4_replay/manuscript_representation.py": "e999357e66857416cde9c69874fa7e556f522b0a72358eb6905044d30ed10910",
-    "code_submit/paper_inward4_replay/manuscript_results.py": "d14d826ee857ebf915217e117cd120a1b2dc499617ce0c901fa95d476e7b81b0",
+    "code_submit/paper_inward4_replay/manuscript_results.py": "96638869add0628fd4b5c5c66516106e871d59224ee593fd6edd78a6e83c003e",
     "code_submit/paper_inward4_replay/manuscript_signal.py": "812dd4ed3f5e46dab8b9ff30a1c3bf20e1ea5a340ca66b1d7867d2ba825426f6",
     "code_submit/paper_inward4_replay/manuscript_workflow_figure.py": "125ecc6f419583d0ceb2618d570429ad8219fdd5d3cbd524c3ca28a564b2ffc0",
     "code_submit/paper_inward4_replay/mapping.py": "dc57002e484aa62955f5a3fe6932ee26f4b0f4bcb3e8691dcd3ead85632fef88",
@@ -100,22 +100,21 @@
     "code_submit/paper_inward4_replay/manuscript_figure4.py": "3eb0962738019e32de66c8f3ea6235a64c1386c47172d53667445e9a7b00800f",
     "code_submit/paper_inward4_replay/ten_minute_consensus.py": "3b79d17dcb3366ddc9b86d0b6d3190d417af3b060f6fae2658bfa509a01e0a2c",
     "code_submit/paper_inward4_replay/history_available_curves.py": "d72fb17eb106cc9e4af206ab51cb29c5fe1766b62ea190ce0fc43b2aeb6cf4e2",
-    "code_submit/paper_inward4_replay/matched_checkpoint_curves.py": "03451eaaf6ff68de8b267a14e332fd61250743a88cb5936a309163735ee56418",
+    "code_submit/paper_inward4_replay/matched_checkpoint_curves.py": "8229d40515fd3e3be3a69856deefba1ccba24f45dc8edf4ef4b5040a861bfa07",
     "code_submit/paper_inward4_replay/manuscript_figure3.py": "7f62beb40371791928c9819c7100fc5fe777a3933d97a9219e2e097126055f33",
     "code_submit/paper_inward4_replay/figure3_reporting_aggregate.json": "912371dc1113861e63a11428b5be7820feb7798ab41122e3dd6924c836aa6954",
     "code_submit/paper_inward4_replay/unified_hgb_reporting.py": "dcbdc7c500bf00f82c467fe57cfeb86eb6560fc67d20df3c4f6076ff01c3abc3",
     "code_submit/paper_inward4_replay/figure4_matched_aggregate.json": "d484fe9fedf248e4485c9c8b1520f05335a8a98af64585f7129b06258a562593",
     "code_submit/paper_inward4_replay/figure4_matched_preview.py": "85ce67a599eec51d24cbf9f57c9ac4440e77b94a8a02c973baa92d5ff038dafb",
     "code_submit/paper_inward4_replay/history_update_comparison.py": "a6b4927cbeb53851a7885041ce582ade13c1f21ac86ab57bddc51b76ba71c720",
-    "code_submit/paper_inward4_replay/input_contract.py": "df4ace6f020f4a3d80bb006421c84d47b0d1963da24cf0c0a8eec964bb41cb60",
+    "code_submit/paper_inward4_replay/input_contract.py": "e1e7dd3eea92f8f5dd738908130806636dd590b2330967054aaa82e96f4eb4b4",
     "code_submit/paper_inward4_replay/linear_rbf_comparison.py": "3d3f7359dbe0ff8e655bd5504578104ae101a7e82754c5c8fef4b8c38bfda086"
   },
   "documentation_files": {
-    "INPUT_CONTRACT.json": "0aa0d4dabd9cab39277a956f7d766b84b93df0eed6e2e87e5f0f9144fa22a78e",
+    "INPUT_CONTRACT.json": "67bbaf106cc9b152450d3f02408adfb5af8f5e8eccc4487ec3e9cfc609eff356",
     "configure_restricted_inputs.py": "6e17e6f6ceecd1da7cb67f8a1e80adc720766340c464a94160f23f2e7c74988c",
-    "README.md": "239d6650f4085a55b58367d41561857bbdfdab1a5fcd47fc33454808a7613a88",
-    "COHORT_UPDATE.json": "e8f47e4030eeee8414a0e6b15ffda9b9e87c08b118aadc2d015606f8e9876df5",
-    "SOURCE_VERSION_CHECK.json": "f58860688996fc99fad8a94b996d1fa7948ed56d5a94ecbbe4d919de5b28d5d4"
+    "README.md": "ef42825a9c1448645ccc91396afa019a6d345e2d46b0a3826ebb9e4a4c76d108",
+    "COHORT_UPDATE.json": "e8f47e4030eeee8414a0e6b15ffda9b9e87c08b118aadc2d015606f8e9876df5"
   },
   "protocol_files": {
     "protocols/CLINICAL_DETAILS_20261104.json": "0734acf3b03b7146354a6f974af23a546e8be337a506c563322231398140a735",
@@ -267,13 +266,12 @@
     "protocols/cost_comparison/FROZEN_PROTOCOL.json",
     "protocols/figure3_selective_20261103.json",
     "protocols/history_available_curves_20261103.json",
-    "requirements-observed.txt",
-    "SOURCE_VERSION_CHECK.json"
+    "requirements-observed.txt"
   ],
   "cohort_revision": "cohort_correction_20261107",
   "public_repository": {
     "url": "https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting",
-    "release_ref": "v2026.11.07",
+    "release_ref": "v2026.11.07.1",
     "source_directory": "current",
     "aggregate_directory": "data",
     "documentation_update": "2026-11-07"

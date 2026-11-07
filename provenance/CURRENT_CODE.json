@@ -1,18 +1,18 @@
 {
   "schema": "uteg_current_code_v2",
   "date": "2026-11-07",
-  "release_ref": "v2026.11.07",
+  "release_ref": "v2026.11.07.1",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "bytes": 6284354,
-    "sha256": "1ad156bc006a8791a7267bc313b56c961d01c45afc5a1005f32c5dcf2ce3130d"
+    "bytes": 6282980,
+    "sha256": "33008cb46aad42077bd55ce98986322e710e1110e9fc7e80c3f8421bde2f7e50"
   },
   "members": [
     {
       "repository_path": "current/CODE_MANIFEST.json",
       "archive_member": "CODE_MANIFEST.json",
-      "bytes": 24590,
-      "sha256": "9b533433eb08fa52e32cf5fa72312dcd7002e3ac8dd2336e0cb06633690dd4a4"
+      "bytes": 24458,
+      "sha256": "6473e9459a8d3dfca12f1a65ac1e9a448e444233c50ce117d289982251c96ef7"
     },
     {
       "repository_path": "current/COHORT_UPDATE.json",
@@ -53,8 +53,8 @@
     {
       "repository_path": "current/INPUT_CONTRACT.json",
       "archive_member": "INPUT_CONTRACT.json",
-      "bytes": 1272,
-      "sha256": "0aa0d4dabd9cab39277a956f7d766b84b93df0eed6e2e87e5f0f9144fa22a78e"
+      "bytes": 1391,
+      "sha256": "67bbaf106cc9b152450d3f02408adfb5af8f5e8eccc4487ec3e9cfc609eff356"
     },
     {
       "repository_path": "current/LINEAR_RBF_ALPHA_SELECTION.json",
@@ -71,8 +71,8 @@
     {
       "repository_path": "current/README.md",
       "archive_member": "README.md",
-      "bytes": 6218,
-      "sha256": "239d6650f4085a55b58367d41561857bbdfdab1a5fcd47fc33454808a7613a88"
+      "bytes": 5385,
+      "sha256": "ef42825a9c1448645ccc91396afa019a6d345e2d46b0a3826ebb9e4a4c76d108"
     },
     {
       "repository_path": "current/RESTRICTED_INPUT_HASHES.json",
@@ -81,16 +81,10 @@
       "sha256": "f73193d874540ad8734e771ae5345821cb807f00048652daaca2790a905a8306"
     },
     {
-      "repository_path": "current/SOURCE_VERSION_CHECK.json",
-      "archive_member": "SOURCE_VERSION_CHECK.json",
-      "bytes": 1187,
-      "sha256": "f58860688996fc99fad8a94b996d1fa7948ed56d5a94ecbbe4d919de5b28d5d4"
-    },
-    {
       "repository_path": "current/WORKBOOK_TABLES.json",
       "archive_member": "WORKBOOK_TABLES.json",
-      "bytes": 24796184,
-      "sha256": "16847f394d4883f0fbfcc2009a2e4fdfab9c2d80048afea907a09f99fcf6bc80"
+      "bytes": 24795832,
+      "sha256": "fe500861ca8aa066be9ee9f11953504d8c924f1f4029ee226b1586366a36e45f"
     },
     {
       "repository_path": "current/build_workbooks.mjs",
@@ -491,8 +485,8 @@
     {
       "repository_path": "current/code_submit/paper_inward4_replay/input_contract.py",
       "archive_member": "code_submit/paper_inward4_replay/input_contract.py",
-      "bytes": 2270,
-      "sha256": "df4ace6f020f4a3d80bb006421c84d47b0d1963da24cf0c0a8eec964bb41cb60"
+      "bytes": 2402,
+      "sha256": "e1e7dd3eea92f8f5dd738908130806636dd590b2330967054aaa82e96f4eb4b4"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/linear_rbf_comparison.py",
@@ -569,8 +563,8 @@
     {
       "repository_path": "current/code_submit/paper_inward4_replay/manuscript_results.py",
       "archive_member": "code_submit/paper_inward4_replay/manuscript_results.py",
-      "bytes": 27478,
-      "sha256": "d14d826ee857ebf915217e117cd120a1b2dc499617ce0c901fa95d476e7b81b0"
+      "bytes": 27434,
+      "sha256": "96638869add0628fd4b5c5c66516106e871d59224ee593fd6edd78a6e83c003e"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/manuscript_signal.py",
@@ -593,8 +587,8 @@
     {
       "repository_path": "current/code_submit/paper_inward4_replay/matched_checkpoint_curves.py",
       "archive_member": "code_submit/paper_inward4_replay/matched_checkpoint_curves.py",
-      "bytes": 28104,
-      "sha256": "03451eaaf6ff68de8b267a14e332fd61250743a88cb5936a309163735ee56418"
+      "bytes": 28099,
+      "sha256": "8229d40515fd3e3be3a69856deefba1ccba24f45dc8edf4ef4b5040a861bfa07"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/primary.py",
@@ -843,6 +837,6 @@
       "reason": "Editable manuscript figure; outside the public code-and-aggregate-data scope."
     }
   ],
-  "copy_policy": "Included archive members are byte-identical. Rank-prefix summaries were corrected using saved predictions; no model was refitted.",
-  "input_provenance": "Hospital source account and unresolved current-version file correspondence are stated in current/INPUT_CONTRACT.json and current/SOURCE_VERSION_CHECK.json."
+  "copy_policy": "Included archive members are byte-identical. This documentation revision changes no numerical results; the prior integer-quota correction is retained.",
+  "input_provenance": "Input definitions, preparation and interpretation are stated in current/INPUT_CONTRACT.json and Supplementary Methods A1."
 }

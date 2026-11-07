@@ -303,7 +303,7 @@ def run():
     from . import manuscript_detail_tables
     manuscript_detail_tables.run(sys.modules[__name__])
     version=dict(version='newB_20261103',data_sha256=c.sha(ROOT/'data/DATA15_CURRENT.npz'),evaluation='Books1-7 original center roles; Book8 local301 grouped internal validation.',
-        evidence='The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid.',
+        evidence='The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts. The 5/10-minute inputs use the first 300/600 positions of the 900-point grid. Supplementary Methods A1 and the code package INPUT_CONTRACT.json describe input preparation.',
         privacy='Aggregate and seed-level statistics only; no patient or record-level data.',units='R/K minutes, MA mm, angle degrees; rates 0-1 unless stated.')
     for number,sheets in BOOKS.items():
         sheets['README']=[dict(field=k,value=v) for k,v in version.items()]

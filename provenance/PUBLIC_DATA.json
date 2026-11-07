@@ -1,7 +1,7 @@
 {
   "schema": "uteg_public_aggregate_data_v2",
   "date": "2026-11-07",
-  "release_ref": "v2026.11.07",
+  "release_ref": "v2026.11.07.1",
   "scope": "Supplementary Data 1-8; byte-identical to the current submission workbooks.",
   "audit": {
     "workbooks": 8,
@@ -11,14 +11,14 @@
     "patient_level_records_found": false,
     "hidden_sheets_rows_columns": false,
     "comments_embedded_objects_external_data_connections": false,
-    "numerical_update": "Integer rank quotas corrected from saved predictions; no model refit. Primary tables and figures unchanged."
+    "numerical_update": "No numerical changes in this revision. Previous integer-quota correction retained; primary tables and figures unchanged."
   },
   "files": [
     {
       "repository_path": "data/Supplementary_Data_1.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_1.xlsx",
-      "bytes": 20233,
-      "sha256": "876c6592edc0fe817b7d8ae45ceea25e64a32c8a1d37cf657f766a50d1b8e986",
+      "bytes": 20214,
+      "sha256": "c12107df20ba6ae31d286911a08d826d0aea7087f00b71408189ba042f555b27",
       "worksheets": [
         {
           "name": "README",
@@ -61,8 +61,8 @@
     {
       "repository_path": "data/Supplementary_Data_2.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_2.xlsx",
-      "bytes": 184389,
-      "sha256": "713e1ecd3ed2df3923215f5fddbde1c1c252adbb0a9649c6758c3d7d594201c2",
+      "bytes": 184366,
+      "sha256": "a20b76e86abc572d8bfc8a2c7686f654358afef70046b20206fcb5b4c2bc3615",
       "worksheets": [
         {
           "name": "README",
@@ -135,8 +135,8 @@
     {
       "repository_path": "data/Supplementary_Data_3.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_3.xlsx",
-      "bytes": 92183,
-      "sha256": "cdfd93d7273b0fc9c16e96e3fb136507b7b6ed8b5b73ccce18f993be2392a63c",
+      "bytes": 92157,
+      "sha256": "dbf39c20c7ed3296dbfd16b9e1fa7c2e616acfd264aa9cce4f2bc4c2e001af8a",
       "worksheets": [
         {
           "name": "README",
@@ -185,8 +185,8 @@
     {
       "repository_path": "data/Supplementary_Data_4.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_4.xlsx",
-      "bytes": 365088,
-      "sha256": "7770ca0b2f3891c77b1bc516a7f394d85ea4d318f4f41cbeab173ac943c6f25c",
+      "bytes": 365065,
+      "sha256": "8600a95aa7bdbd73266a9b7c39ae4ae700b2593cfe446353cbfb09949230dafb",
       "worksheets": [
         {
           "name": "README",
@@ -253,8 +253,8 @@
     {
       "repository_path": "data/Supplementary_Data_5.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_5.xlsx",
-      "bytes": 2263954,
-      "sha256": "47c7478198d3b2b3dbf64c4f40f4dca9934b1a871a9ef36f968be46241cc8e8e",
+      "bytes": 2263918,
+      "sha256": "1e1a2d6f04101a4360ff32024d6e61a82974e43bd63c8bb6f15136e2c2078a84",
       "worksheets": [
         {
           "name": "README",
@@ -423,8 +423,8 @@
     {
       "repository_path": "data/Supplementary_Data_6.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_6.xlsx",
-      "bytes": 68652,
-      "sha256": "d86449b5eafa0dc50eef7e0c82aa2293f568fa2983b06ce1bae9a7891973f7d3",
+      "bytes": 68628,
+      "sha256": "fa899f1618b43f12b918fa4bbb65d7a0cc8a9cc477e8c17a3200a72942f1246e",
       "worksheets": [
         {
           "name": "README",
@@ -467,8 +467,8 @@
     {
       "repository_path": "data/Supplementary_Data_7.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_7.xlsx",
-      "bytes": 248304,
-      "sha256": "16877dfcc59bb2df26c2af2ce26e2c492fa2e2dee23c810f614d1721b6336272",
+      "bytes": 248269,
+      "sha256": "342724bbcfea9e6f4d95cbec3d948a12f27bb467342a04d180ac389ccfaece8b",
       "worksheets": [
         {
           "name": "README",
@@ -589,8 +589,8 @@
     {
       "repository_path": "data/Supplementary_Data_8.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_8.xlsx",
-      "bytes": 181811,
-      "sha256": "85392c575446f42dd4b24a19efeb6aac9c1b840f3fbf5a238963f6b7dea18f33",
+      "bytes": 181788,
+      "sha256": "7404d03f2e9857fbce1ef6459c86a826752729219b538a3d456c6327f0cc7895",
       "worksheets": [
         {
           "name": "README",

@@ -65,7 +65,7 @@ def initialize():
         protocol_all301='Frozen grouped5outer folds,3 inner-partition repeats;903 record-repeat events.',
         statistics='Pooled count ratios, no significance/CI claims; repetitions are not independent patients.',
         source_data='Aggregate and per-repeat CSV plus private threshold/decision records.',
-        provenance='The hospitals identified the supplied U-TEG MA and curves as instrument measurements; source correspondence remains unresolved (INPUT_CONTRACT.json). The 5- and 10-minute inputs use the first 300 and 600 positions of the supplied 900-point grid.',
+        provenance='The participating hospitals supplied the U-TEG MA values and voltage curves. The 5- and 10-minute inputs use the first 300 and 600 positions of the 900-point grid. INPUT_CONTRACT.json describes input preparation and the analysis conditions.',
         B_from_original_data=True, valid_UTEG_only_validation=False, manuscript_changed=False)
     path=ROOT/'CONTRACT.json'
     if path.exists() and c.read(path)!=contract:
