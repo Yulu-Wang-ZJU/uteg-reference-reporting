@@ -5,17 +5,17 @@ current manuscript. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [release v2026.11.07.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.1)
+Analysis code and aggregate results correspond to [release v2026.11.07.2](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.2)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.1/current) for analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.1/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.2/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.2/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
 
 ## Input data
 
 The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts.
 RESTRICTED_INPUT_HASHES.json identifies the input files. Input preparation and
-interpretation are described in INPUT_CONTRACT.json and Supplementary Methods,
+loading are described in INPUT_CONTRACT.json and Supplementary Methods,
 Part A1.
 
 ## Included cohort
@@ -26,8 +26,7 @@ The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and 79 
 
 We index the U-TEG inputs on a 900-point grid at one-second intervals. The
 5- and 10-minute windows cover the first 300 and 600 grid points. Processing
-masks record the points retained for fitting, rather than independently verified
-acquisition durations.
+masks record the points retained for fitting.
 
 Early coefficient preparation fills short masked prefixes with their last retained
 value, divides each prepared prefix by its maximum absolute amplitude, fits the

@@ -1,18 +1,18 @@
 {
   "schema": "uteg_current_code_v2",
   "date": "2026-11-07",
-  "release_ref": "v2026.11.07.1",
+  "release_ref": "v2026.11.07.2",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "bytes": 6282980,
-    "sha256": "33008cb46aad42077bd55ce98986322e710e1110e9fc7e80c3f8421bde2f7e50"
+    "bytes": 6282463,
+    "sha256": "428fb56cf77680889e47dfbce2ae14c7fd27d12160e48e725eaf712ece20841f"
   },
   "members": [
     {
       "repository_path": "current/CODE_MANIFEST.json",
       "archive_member": "CODE_MANIFEST.json",
       "bytes": 24458,
-      "sha256": "6473e9459a8d3dfca12f1a65ac1e9a448e444233c50ce117d289982251c96ef7"
+      "sha256": "e27c6129bd5bb0e38a36e774ed20db32ef57720692c05144665114b4294a2d7e"
     },
     {
       "repository_path": "current/COHORT_UPDATE.json",
@@ -53,8 +53,8 @@
     {
       "repository_path": "current/INPUT_CONTRACT.json",
       "archive_member": "INPUT_CONTRACT.json",
-      "bytes": 1391,
-      "sha256": "67bbaf106cc9b152450d3f02408adfb5af8f5e8eccc4487ec3e9cfc609eff356"
+      "bytes": 863,
+      "sha256": "77750c221f97f4819b936b1d7ec03bf45df1ddf73a1a8901173ad0b25614a4c8"
     },
     {
       "repository_path": "current/LINEAR_RBF_ALPHA_SELECTION.json",
@@ -71,8 +71,8 @@
     {
       "repository_path": "current/README.md",
       "archive_member": "README.md",
-      "bytes": 5385,
-      "sha256": "ef42825a9c1448645ccc91396afa019a6d345e2d46b0a3826ebb9e4a4c76d108"
+      "bytes": 5319,
+      "sha256": "e18a5217f93dae48a05be42cdff24840bbea08bb40ecadadeadb30e56f4da023"
     },
     {
       "repository_path": "current/RESTRICTED_INPUT_HASHES.json",
@@ -479,14 +479,14 @@
     {
       "repository_path": "current/code_submit/paper_inward4_replay/history_update_comparison.py",
       "archive_member": "code_submit/paper_inward4_replay/history_update_comparison.py",
-      "bytes": 27552,
-      "sha256": "a6b4927cbeb53851a7885041ce582ade13c1f21ac86ab57bddc51b76ba71c720"
+      "bytes": 27419,
+      "sha256": "2f960be3b51fa61955dfa2fc07e8fe1eec27ffe1bf8afd7e6a55570d8742a745"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/input_contract.py",
       "archive_member": "code_submit/paper_inward4_replay/input_contract.py",
-      "bytes": 2402,
-      "sha256": "e1e7dd3eea92f8f5dd738908130806636dd590b2330967054aaa82e96f4eb4b4"
+      "bytes": 1880,
+      "sha256": "9a4498149642eba57c5e45a8baa5a7acc73f026b61b977a8821425e826338c37"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/linear_rbf_comparison.py",
@@ -587,8 +587,8 @@
     {
       "repository_path": "current/code_submit/paper_inward4_replay/matched_checkpoint_curves.py",
       "archive_member": "code_submit/paper_inward4_replay/matched_checkpoint_curves.py",
-      "bytes": 28099,
-      "sha256": "8229d40515fd3e3be3a69856deefba1ccba24f45dc8edf4ef4b5040a861bfa07"
+      "bytes": 28083,
+      "sha256": "dbb0f941036d2aa17e6ac0520ead65a74ac40ebcd823ae3c72b0ad319519173a"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/primary.py",
@@ -837,6 +837,6 @@
       "reason": "Editable manuscript figure; outside the public code-and-aggregate-data scope."
     }
   ],
-  "copy_policy": "Included archive members are byte-identical. This documentation revision changes no numerical results; the prior integer-quota correction is retained.",
-  "input_provenance": "Input definitions, preparation and interpretation are stated in current/INPUT_CONTRACT.json and Supplementary Methods A1."
+  "copy_policy": "Included archive members are byte-identical to the submission code archive.",
+  "input_provenance": "Input preparation and loading are described in current/INPUT_CONTRACT.json and Supplementary Methods A1."
 }

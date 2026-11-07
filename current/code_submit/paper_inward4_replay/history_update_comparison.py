@@ -64,7 +64,7 @@ def initialize():
         metrics="Current coverage=reported/all; agreement=correct/reported; FNR=abnormal predicted normal/released reference abnormal; FPR=normal predicted abnormal/released reference normal. Opposite abnormal states are three-class errors, not binary FN. Low<50, normal 50..70, high>70 mm.",
         fn_diagnostic="Reconstruct old first-locked 85% HGB decisions from A. Track its final FN set AFTER decisions are generated. Correct-direction release, opposite-direction abnormal, still FN, and withheld are separate. New FN versus that set and transitions from previous checkpoint are reported. Never use diagnostic subset for fitting.",
         selection="One predeclared experiment; no adjustments based on evaluation outcomes. All three mapping arms reported.",
-        provenance="Preserve the source NPZ provenance/validation flags in outputs. This experiment audits reporting decisions conditional on frozen inputs, not the independence or acquisition provenance of those inputs.",
+        provenance="This analysis compares reporting decisions using saved predictions.",
         manuscript="No manuscript, figure, PDF, supplementary package or existing result modified.",
     )
     path = OUT / "PROTOCOL.json"

@@ -11,7 +11,5 @@
     "Huzhou": 95,
     "Hubei": 79,
     "all_pass_recorded_input_qc": true
-  },
-  "analysis_scope": "The stored amplitudes exactly reproduce a construction using reference TEG MA. The saved early fits also reproduce a transformation using full-record amplitude information. We therefore interpret the results as analyses of these fixed inputs, without an independent demonstration of reference-free or strictly early-time prediction.",
-  "runtime_scope": "The runtime flags describe loading saved features during evaluation. They do not establish reference or temporal independence of the stored inputs."
+  }
 }

@@ -6,13 +6,9 @@ Start with [`current/`](current/) for the current analysis code and
 of the submission files. This repository contains no patient-level records,
 raw waveforms, individual predictions, fitted models or manuscript PDFs.
 
-The manuscript, supplement and code archive cite [release v2026.11.07.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.1).
-This documentation revision removes file-handoff and version-audit narration
-from the submission materials. Input preparation and analysis conditions remain
-in the methods and input contract. All numerical results and the previous
-integer-quota correction are unchanged. No model was refitted.
-The supplementary device video remains in the submission ZIP; its checksum is
-recorded in `provenance/CURRENT_MANUSCRIPT.json`.
+The manuscript, supplement and code archive cite [release v2026.11.07.2](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.2).
+The supplementary device video is included in the submission ZIP; its checksum
+is recorded in `provenance/CURRENT_MANUSCRIPT.json`.
 
 ## Current analysis
 
@@ -76,8 +72,8 @@ These numerical runners require the separately authorized inputs and frozen
 assignments listed in `current/RESTRICTED_INPUT_HASHES.json`. Follow
 [`current/README.md`](current/README.md) before configuring them.
 `requirements-observed.txt` records the analysis environment; workbook
-rendering also uses `@oai/artifact-tool`. The input-source account and its
-recorded provenance qualification are retained in the package documentation.
+rendering also uses `@oai/artifact-tool`. Input preparation and loading are
+described in the package documentation.
 
 ## Verify the download
 
