@@ -6,7 +6,7 @@ Start with [`current/`](current/) for the current analysis code and
 of the submission files. This repository contains no patient-level records,
 raw waveforms, individual predictions, fitted models or manuscript PDFs.
 
-The manuscript, supplement and code archive cite [release v2026.11.07.5](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.5).
+The manuscript, supplement and code archive cite [release v2026.11.07.6](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.6).
 The supplementary device video is included in the submission ZIP; its checksum
 is recorded in `provenance/CURRENT_MANUSCRIPT.json`.
 
