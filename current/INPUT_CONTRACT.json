@@ -2,7 +2,7 @@
   "source_status": "hospital_supplied_inputs",
   "source_basis": "Participating hospitals.",
   "source_statement": "The participating hospitals supplied U-TEG MA values and voltage recordings, together with the corresponding instrument-exported TEG readouts.",
-  "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+  "runtime_input": "U-TEG inputs use a 900-point grid at one-second intervals; Supplementary Methods A1 defines the early windows. Within each window, processing masks identify retained samples, and any remaining positions are filled with that window's last retained value. Each prepared prefix is normalized by its own maximum absolute amplitude for fitting, with amplitude units restored afterwards. Parameter preparation precedes model evaluation. The runner loads saved coefficients and QC flags for each early window, and stored full-record coefficients at 15 minutes. Record-level QC determines input eligibility; the reporting gate separately determines release.",
   "runtime_rescaling": false,
   "runtime_reference_labels_used_to_build_features": false,
   "included_cohort": {

@@ -1,18 +1,18 @@
 {
   "schema": "uteg_current_code_v2",
   "date": "2026-11-07",
-  "release_ref": "v2026.11.07.6",
+  "release_ref": "v2026.11.07.7",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "bytes": 6282088,
-    "sha256": "6f4e88ede73bb4128bd4c66df9fe47a1c8b297a7a86e83d7ee78ca1d2e7e240e"
+    "bytes": 6284188,
+    "sha256": "ee953cb69dfe14ef3bd820b164293b294d2ad10750915eb055b47229568d7b0c"
   },
   "members": [
     {
       "repository_path": "current/CODE_MANIFEST.json",
       "archive_member": "CODE_MANIFEST.json",
       "bytes": 24458,
-      "sha256": "c290939f2cc5214545e2dc995f43d5e5a25156f08036f4816bf947776197a760"
+      "sha256": "f329693557bc2d99045f7db148c50fac826130ed90aecd8398a4c077e7c23d6c"
     },
     {
       "repository_path": "current/COHORT_UPDATE.json",
@@ -53,8 +53,8 @@
     {
       "repository_path": "current/INPUT_CONTRACT.json",
       "archive_member": "INPUT_CONTRACT.json",
-      "bytes": 863,
-      "sha256": "77750c221f97f4819b936b1d7ec03bf45df1ddf73a1a8901173ad0b25614a4c8"
+      "bytes": 1181,
+      "sha256": "bdfa1ae6402fa8c742bd1cc6ff96efead7372c2b8c4f6d1258cfe099c09707c9"
     },
     {
       "repository_path": "current/LINEAR_RBF_ALPHA_SELECTION.json",
@@ -71,8 +71,8 @@
     {
       "repository_path": "current/README.md",
       "archive_member": "README.md",
-      "bytes": 5236,
-      "sha256": "eccc2eec32d0e7d9d756fffc0a496b9bc04bf995d666ffe7a44fe53fd1ec63e3"
+      "bytes": 5866,
+      "sha256": "f0f7fc9f677d1181ef01488e65cd0005ceeac9ac6a3abf6dd8e41d4712e79700"
     },
     {
       "repository_path": "current/RESTRICTED_INPUT_HASHES.json",
@@ -485,8 +485,8 @@
     {
       "repository_path": "current/code_submit/paper_inward4_replay/input_contract.py",
       "archive_member": "code_submit/paper_inward4_replay/input_contract.py",
-      "bytes": 1880,
-      "sha256": "9a4498149642eba57c5e45a8baa5a7acc73f026b61b977a8821425e826338c37"
+      "bytes": 2198,
+      "sha256": "9d97998238fdb7c6e5582790fc152b6634cf79971f2d5e881e52ec90f0feeb70"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/linear_rbf_comparison.py",
@@ -761,26 +761,26 @@
     {
       "repository_path": "current/protocols/CLINICAL_DETAILS_20261104.json",
       "archive_member": "protocols/CLINICAL_DETAILS_20261104.json",
-      "bytes": 1724,
-      "sha256": "0734acf3b03b7146354a6f974af23a546e8be337a506c563322231398140a735"
+      "bytes": 2042,
+      "sha256": "e4f3f114e7c7df2784e11da705eaffad623615d740325fd58016aa373d380ccb"
     },
     {
       "repository_path": "current/protocols/CONTROLS_PROTOCOL.json",
       "archive_member": "protocols/CONTROLS_PROTOCOL.json",
-      "bytes": 1162,
-      "sha256": "d0affc780de04854266f19c5aaa12d18da501c0fb914fb25ec613eb76f4c5215"
+      "bytes": 1480,
+      "sha256": "3a323392269bac2d205fc72f5fd7c87b99a309d459597fb167b2fa5412120257"
     },
     {
       "repository_path": "current/protocols/FULL_SUITE_PROTOCOL.json",
       "archive_member": "protocols/FULL_SUITE_PROTOCOL.json",
-      "bytes": 1843,
-      "sha256": "4f833454924b1a1fca2ff3437558036c79a6e7c7c4baabb89e6b5dfa5dfb7014"
+      "bytes": 2161,
+      "sha256": "97030bc69a092ed5be6cc9b3ead69a9aaa92c112dc884b179ea8d70ddff2f8c1"
     },
     {
       "repository_path": "current/protocols/GATE_PROTOCOL.json",
       "archive_member": "protocols/GATE_PROTOCOL.json",
-      "bytes": 1314,
-      "sha256": "5f4444a6498d89b7aa2eba05f1397586b721862965844a58a3cafbc5d6b4a14a"
+      "bytes": 1632,
+      "sha256": "978b1a5c349690dab8c76e811681cd7269d5996421a36cf83d63c0fc7b9aaf5c"
     },
     {
       "repository_path": "current/protocols/LINEAR_RBF_PROTOCOL.json",
@@ -791,38 +791,38 @@
     {
       "repository_path": "current/protocols/MAPPING_PROTOCOL.json",
       "archive_member": "protocols/MAPPING_PROTOCOL.json",
-      "bytes": 1436,
-      "sha256": "ab0ee47642cc7b97e2e3f58cc789898a3c9fb4cb38b44335376edef7ea2ed6d8"
+      "bytes": 1754,
+      "sha256": "00178d9f57fa18a8c78bd69adee8ab434c2631780ceaa662ca74b7d09bd032c9"
     },
     {
       "repository_path": "current/protocols/PROTOCOL.json",
       "archive_member": "protocols/PROTOCOL.json",
-      "bytes": 1337,
-      "sha256": "48676b22024a9b0c0daa0c2c0f8da0d1817f8aa44723d25143372aa4f7013486"
+      "bytes": 1655,
+      "sha256": "07c14c51d234faa3924b1664d9e9f67229ad75423e9ce8be314652fcabf86c78"
     },
     {
       "repository_path": "current/protocols/all301_local_controls/PROTOCOL.json",
       "archive_member": "protocols/all301_local_controls/PROTOCOL.json",
-      "bytes": 1287,
-      "sha256": "aafffda031c4dd062f9f77e80323b365d48f7d8def1f087e7bc577cf722c3e3a"
+      "bytes": 1605,
+      "sha256": "c6434de1e90ef996a04d9b6196949e4b36eeea93b873dff609c624ab296e0d89"
     },
     {
       "repository_path": "current/protocols/cost_comparison/FROZEN_PROTOCOL.json",
       "archive_member": "protocols/cost_comparison/FROZEN_PROTOCOL.json",
-      "bytes": 1273,
-      "sha256": "355d036320f3def9d1d785df6e159aacb06e34a3a1aba869d3bad775ee7c72e5"
+      "bytes": 1591,
+      "sha256": "91e00ceee102617ad6b4b67fb455dca011a44e0b09381a92299d3a69b2b688e8"
     },
     {
       "repository_path": "current/protocols/figure3_selective_20261103.json",
       "archive_member": "protocols/figure3_selective_20261103.json",
-      "bytes": 2063,
-      "sha256": "050b72b37460557a485cb85c3688944e44b877afbf69ebd588f4c687048c2798"
+      "bytes": 2381,
+      "sha256": "8bcdb2450289fb9d8857619864b14f3fc49bb7ebb30fc43e6006f55131b98f6c"
     },
     {
       "repository_path": "current/protocols/history_available_curves_20261103.json",
       "archive_member": "protocols/history_available_curves_20261103.json",
-      "bytes": 3564,
-      "sha256": "a96cba06d8bb80de3672ec03dea12e477c18bb0b1137e3992c28f525d567581c"
+      "bytes": 3882,
+      "sha256": "13c925c57672fe67e0157e0f999ca95ee58a5802cf5631a35759079dd4690a19"
     },
     {
       "repository_path": "current/requirements-observed.txt",

@@ -107,26 +107,26 @@
     "code_submit/paper_inward4_replay/figure4_matched_aggregate.json": "d484fe9fedf248e4485c9c8b1520f05335a8a98af64585f7129b06258a562593",
     "code_submit/paper_inward4_replay/figure4_matched_preview.py": "85ce67a599eec51d24cbf9f57c9ac4440e77b94a8a02c973baa92d5ff038dafb",
     "code_submit/paper_inward4_replay/history_update_comparison.py": "2f960be3b51fa61955dfa2fc07e8fe1eec27ffe1bf8afd7e6a55570d8742a745",
-    "code_submit/paper_inward4_replay/input_contract.py": "9a4498149642eba57c5e45a8baa5a7acc73f026b61b977a8821425e826338c37",
+    "code_submit/paper_inward4_replay/input_contract.py": "9d97998238fdb7c6e5582790fc152b6634cf79971f2d5e881e52ec90f0feeb70",
     "code_submit/paper_inward4_replay/linear_rbf_comparison.py": "3d3f7359dbe0ff8e655bd5504578104ae101a7e82754c5c8fef4b8c38bfda086"
   },
   "documentation_files": {
-    "INPUT_CONTRACT.json": "77750c221f97f4819b936b1d7ec03bf45df1ddf73a1a8901173ad0b25614a4c8",
+    "INPUT_CONTRACT.json": "bdfa1ae6402fa8c742bd1cc6ff96efead7372c2b8c4f6d1258cfe099c09707c9",
     "configure_restricted_inputs.py": "6e17e6f6ceecd1da7cb67f8a1e80adc720766340c464a94160f23f2e7c74988c",
-    "README.md": "eccc2eec32d0e7d9d756fffc0a496b9bc04bf995d666ffe7a44fe53fd1ec63e3",
+    "README.md": "f0f7fc9f677d1181ef01488e65cd0005ceeac9ac6a3abf6dd8e41d4712e79700",
     "COHORT_UPDATE.json": "5af67e9505f6a22808f9752a9741ac24ea9185b81e74e3a822d46d36cc133e87"
   },
   "protocol_files": {
-    "protocols/CLINICAL_DETAILS_20261104.json": "0734acf3b03b7146354a6f974af23a546e8be337a506c563322231398140a735",
-    "protocols/CONTROLS_PROTOCOL.json": "d0affc780de04854266f19c5aaa12d18da501c0fb914fb25ec613eb76f4c5215",
-    "protocols/figure3_selective_20261103.json": "050b72b37460557a485cb85c3688944e44b877afbf69ebd588f4c687048c2798",
-    "protocols/FULL_SUITE_PROTOCOL.json": "4f833454924b1a1fca2ff3437558036c79a6e7c7c4baabb89e6b5dfa5dfb7014",
-    "protocols/GATE_PROTOCOL.json": "5f4444a6498d89b7aa2eba05f1397586b721862965844a58a3cafbc5d6b4a14a",
-    "protocols/history_available_curves_20261103.json": "a96cba06d8bb80de3672ec03dea12e477c18bb0b1137e3992c28f525d567581c",
-    "protocols/MAPPING_PROTOCOL.json": "ab0ee47642cc7b97e2e3f58cc789898a3c9fb4cb38b44335376edef7ea2ed6d8",
-    "protocols/PROTOCOL.json": "48676b22024a9b0c0daa0c2c0f8da0d1817f8aa44723d25143372aa4f7013486",
-    "protocols/all301_local_controls/PROTOCOL.json": "aafffda031c4dd062f9f77e80323b365d48f7d8def1f087e7bc577cf722c3e3a",
-    "protocols/cost_comparison/FROZEN_PROTOCOL.json": "355d036320f3def9d1d785df6e159aacb06e34a3a1aba869d3bad775ee7c72e5",
+    "protocols/CLINICAL_DETAILS_20261104.json": "e4f3f114e7c7df2784e11da705eaffad623615d740325fd58016aa373d380ccb",
+    "protocols/CONTROLS_PROTOCOL.json": "3a323392269bac2d205fc72f5fd7c87b99a309d459597fb167b2fa5412120257",
+    "protocols/figure3_selective_20261103.json": "8bcdb2450289fb9d8857619864b14f3fc49bb7ebb30fc43e6006f55131b98f6c",
+    "protocols/FULL_SUITE_PROTOCOL.json": "97030bc69a092ed5be6cc9b3ead69a9aaa92c112dc884b179ea8d70ddff2f8c1",
+    "protocols/GATE_PROTOCOL.json": "978b1a5c349690dab8c76e811681cd7269d5996421a36cf83d63c0fc7b9aaf5c",
+    "protocols/history_available_curves_20261103.json": "13c925c57672fe67e0157e0f999ca95ee58a5802cf5631a35759079dd4690a19",
+    "protocols/MAPPING_PROTOCOL.json": "00178d9f57fa18a8c78bd69adee8ab434c2631780ceaa662ca74b7d09bd032c9",
+    "protocols/PROTOCOL.json": "07c14c51d234faa3924b1664d9e9f67229ad75423e9ce8be314652fcabf86c78",
+    "protocols/all301_local_controls/PROTOCOL.json": "c6434de1e90ef996a04d9b6196949e4b36eeea93b873dff609c624ab296e0d89",
+    "protocols/cost_comparison/FROZEN_PROTOCOL.json": "91e00ceee102617ad6b4b67fb455dca011a44e0b09381a92299d3a69b2b688e8",
     "protocols/LINEAR_RBF_PROTOCOL.json": "977d49bbec975b02095be665e47dc68d9ade28e15502df52a0e3f0748a772e54"
   },
   "package_files": [
@@ -271,7 +271,7 @@
   "cohort_revision": "cohort_correction_20261107",
   "public_repository": {
     "url": "https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting",
-    "release_ref": "v2026.11.07.6",
+    "release_ref": "v2026.11.07.7",
     "source_directory": "current",
     "aggregate_directory": "data",
     "documentation_update": "2026-11-07"

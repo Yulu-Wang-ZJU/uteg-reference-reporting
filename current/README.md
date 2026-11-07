@@ -5,10 +5,10 @@ current manuscript. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [release v2026.11.07.6](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.6)
+Analysis code and aggregate results correspond to [release v2026.11.07.7](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.7)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.6/current) for analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.6/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.7/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.7/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
 
 ## Input data
@@ -26,14 +26,23 @@ The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and 79 
 
 We index the U-TEG inputs on a 900-point grid at one-second intervals. The
 5- and 10-minute windows cover the first 300 and 600 grid points. Processing
-masks record the points retained for fitting.
+masks identify retained observation points within each window.
 
-Early coefficient preparation fills short masked prefixes with their last retained
-value, divides each prepared prefix by its maximum absolute amplitude, fits the
-model and restores amplitude units. These fits include filled positions.
-`current_version.activate()` loads the saved early coefficients and the stored
-full-record coefficients; it does not regenerate the early coefficient arrays.
-Supplementary Information Part A1 describes this distinction.
+Before model evaluation, we prepare and save a separate fit for each early window.
+Within that window, we select the points identified by the processing mask and
+fill any remaining positions with the last value retained in the same window.
+We divide the prepared prefix by its own maximum absolute amplitude, fit the
+model and restore amplitude units. These fits include filled positions.
+`current_version.activate()` loads the saved coefficients for the corresponding
+early window and the stored full-record coefficients at 15 minutes; it does not
+regenerate the early coefficient arrays.
+
+The record-level `input_qc` flag is stored in `DATA15_CURRENT.npz`. At each early
+checkpoint, `activate()` combines it with the saved `qc` flag for that window;
+at 15 minutes, it uses `input_qc`. All 478 included records pass these checks
+at all checkpoints. These flags define input eligibility. Pointwise processing
+masks identify retained samples, and reporting gates separately decide which
+predictions to release. Supplementary Methods A1 describes the same steps.
 
 For the separate EXP3/EXP4 representation control, `manuscript_signal.py` selects
 the retained points and excludes filled positions before fitting. The shared
