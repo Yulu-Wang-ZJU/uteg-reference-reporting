@@ -1,0 +1,45 @@
+{
+  "rule": "Table 2 HGB error gate at every checkpoint",
+  "minutes": [
+    5,
+    10,
+    15
+  ],
+  "coverage_levels": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "agreement_levels": [
+    0.85,
+    0.9,
+    0.95
+  ],
+  "threshold": "Original select_threshold: at least five releases and 20% development coverage; largest development coverage with error <= 1 - target. Target .85 reproduces Table 2 HGB exactly.",
+  "capability": "5=current5; 10=current10 except when current10 fails the original development HGB gate and5 passes, then use5; 15=current15 for EVERY record. No labels determine this choice. At5 and15 rank current HGB scores. At10 use development-fitted monotone isotonic calibration of the chosen source-time score to compare retained5/current10. Stable record-ID tie break. Fixed predicted candidate for all four panels.",
+  "denominator": "Coverage: all record-seed events. Agreement: released reports. FNR/FPR: released abnormal/normal reference events. Low/high states: MA <50 / >70 mm.",
+  "paper": "Original 60 development / 201 evaluation records; 20 development partitions.",
+  "internal": "Separate frozen 301-record grouped five-fold evaluation; one existing inner-partition setting. Do not pool with the paper cohort or the older three-repeat analysis.",
+  "uncertainty": "Exploratory alignment after prior inspection. No independent validation or monotonic observed performance guarantee.",
+  "figure4_modes": [
+    "matched_coverage",
+    "matched_observed_agreement"
+  ],
+  "figure1_mode": "matched_coverage40_and_observed_agreement90",
+  "separate_current_checkpoint_modes": [
+    "current_coverage",
+    "pointwise"
+  ],
+  "prior_control_protocol": {
+    "capability": "Retain the existing increasing isotonic development score-to-error calibration for cross-time comparison, now using HGB scores at every checkpoint. For each record choose the available prediction with the lowest calibrated score. A 1e-6 training percentile breaks plateaus; equal scores retain the earlier prediction. Select floor(quota*N) by score then record identifier, as in Fig. 3. Records can be reselected.",
+    "cumulative": "Apply the original HGB threshold selector to raw HGB scores separately at each checkpoint, then lock the first accepted prediction. No consensus restriction, boundary gate or test-label decision. Isotonic calibration is used only to compare prediction options in the fixed-coverage panels."
+  },
+  "agreement_matching": "For each time build the pooled curve from k=1..201 equal-count-per-partition prefixes. For each observed agreement85/90/95%, take the largest attainable coverage and interpolate between adjacent rank-prefix count vectors. Agreement is matched exactly in interpolated aggregate counts. FNR is interpolated FN divided by interpolated released-abnormal count. Identical operating point for b/d.",
+  "separate_control_modes": [
+    "coverage",
+    "agreement_target",
+    "current_coverage",
+    "pointwise"
+  ],
+  "figure4_protocol": "paper dual source only; internal301 remains a separate supplementary evaluation"
+}

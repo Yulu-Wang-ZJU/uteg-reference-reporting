@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uteg-reference-reporting"
-version = "2026.10.30"
+version = "2026.11.7"
 description = "Source-derived U-TEG to TEG reference-reporting utilities and provenance snapshots"
 requires-python = ">=3.10"
 dependencies = [

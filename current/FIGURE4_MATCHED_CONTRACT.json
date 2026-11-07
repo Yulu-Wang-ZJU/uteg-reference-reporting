@@ -1,0 +1,15 @@
+{
+  "purpose": "Compare agreement/FNR at equal report counts and coverage/FNR at equal observed agreement; use current15 predictions as the terminal reference.",
+  "archetype": "quantitative grid; a/b primary operating-point comparisons, c/d corresponding false-negative rates",
+  "backend": "Python/matplotlib; Arial; editable SVG/PDF; 183x145 mm main figure. Figure 1 insets are editable native PowerPoint charts in the existing layout.",
+  "cohort": "Original60-development/201-evaluation, dual source,20 development partitions,4020 record-seed events. No independent-patient interpretation of repeated events.",
+  "choices": "5=current5; 10=current10 except when current10 fails the original development HGB gate and5 passes, then use5; 15=current15 for EVERY record. No labels determine this choice.",
+  "risk": "At5 and15 rank current HGB scores. At10 use development-fitted monotone isotonic calibration of the chosen source-time score to compare retained5/current10. Stable record-ID tie break. Fixed predicted candidate for all four panels.",
+  "a_c": "Choose floor(q*201) per partition at q=10/20/40%. Identical report selection for agreement and FNR. Values are nominal coverage; actual is20/201,40/201,80/201.",
+  "b_d": "For each time build the pooled curve from k=1..201 equal-count-per-partition prefixes. For each observed agreement85/90/95%, take the largest attainable coverage and interpolate between adjacent rank-prefix count vectors. Agreement is matched exactly in interpolated aggregate counts. FNR is interpolated FN divided by interpolated released-abnormal count. Identical operating point for b/d.",
+  "evaluation_labels": "Used for outcome metrics and retrospective agreement matching ONLY. No fitting of mappings/HGB/calibration or selection of deployable cutoffs with evaluation labels. These matched points do not validate an operational agreement guarantee.",
+  "endpoint": "Same15-minute predictions and HGB scores as Table2, with operating-point-specific selection. Not the same single Table2 cutoff for every matched line. Compute FN counts; never overwrite endpoints with zeros.",
+  "rate": "FNR=FN/released reference abnormal; undefined if denominator0. No replacement of undefined with0. Store numerator and denominator for every point.",
+  "monotonicity": "No monotonic envelopes or test-label choice between times; observed curves can rise or fall.",
+  "scope": "Accepted matched operating-point comparison applied to the canonical Figure 4, Figure 1 editable insets, main/SI text, Supplementary Data 4, PDFs and supplementary packages. The original 301-record internal evaluation remains separate in Data 8."
+}

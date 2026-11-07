@@ -1,0 +1,18 @@
+{
+  "data_freeze": "E:\\zju\\code_proj\\UTEG2TEG_moreDataValidation\\outputs\\current_ma_20261103\\DATA_FREEZE.json",
+  "model": "Selected B-only RBF source prior + local RBF correction, alpha .01, inward4, inverseclass cap20.",
+  "gate": "InnerOOF boundary-distance95th percentile; no test-label threshold tuning.",
+  "evaluation": "Frozen301 5outer/3inner; separately original60development/201test,20seeds.",
+  "change": "Feature B read directly from active fixed file; no per-fold MA-range regeneration. This is a distinct version from previous8.33/6.25%301 result.",
+  "B_from_original_data": true,
+  "valid_UTEG_only_validation": false,
+  "manuscript_changed": false,
+  "input_provenance": {
+    "source_status": "author_confirmed_measured",
+    "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",
+    "source_statement": "U-TEG MA and curves are original measured values.",
+    "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+    "runtime_rescaling": false,
+    "runtime_reference_labels_used_to_build_features": false
+  }
+}

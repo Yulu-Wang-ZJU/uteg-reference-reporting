@@ -1,0 +1,2747 @@
+{
+  "source_sha256": "85eb072bc2cd57cc31b92b3b304d58f66f0493a6f3ed8e27e6d9db9af8308074",
+  "protocol": "original 60 development/201 evaluation;20 seeds;15 minutes",
+  "conditional_fixed_input": true,
+  "risk_curves": {
+    "HZ_to_SA": [
+      {
+        "rule": "LR",
+        "quota": 0.05,
+        "coverage": 0.04975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.1,
+        "coverage": 0.09950248756218906,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.15,
+        "coverage": 0.14925373134328357,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.2,
+        "coverage": 0.19900497512437812,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.25,
+        "coverage": 0.24875621890547264,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.3,
+        "coverage": 0.29850746268656714,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.35,
+        "coverage": 0.3482587064676617,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.39999999999999997,
+        "coverage": 0.39800995024875624,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.44999999999999996,
+        "coverage": 0.44776119402985076,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.49999999999999994,
+        "coverage": 0.4975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.5499999999999999,
+        "coverage": 0.5472636815920398,
+        "agreement": {
+          "estimate": 0.9995454545454545,
+          "low": 0.9984968806960656,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.6,
+        "coverage": 0.5970149253731343,
+        "agreement": {
+          "estimate": 0.99875,
+          "low": 0.9958466488590836,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.65,
+        "coverage": 0.6467661691542289,
+        "agreement": {
+          "estimate": 0.9988461538461538,
+          "low": 0.9961581935502315,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.7,
+        "coverage": 0.6965174129353234,
+        "agreement": {
+          "estimate": 0.9975,
+          "low": 0.9937024569216745,
+          "high": 0.9996631862579993,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.75,
+        "coverage": 0.746268656716418,
+        "agreement": {
+          "estimate": 0.9893333333333333,
+          "low": 0.9752693578786747,
+          "high": 0.998380920568023,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.7999999999999999,
+        "coverage": 0.7960199004975125,
+        "agreement": {
+          "estimate": 0.9653125,
+          "low": 0.945513766912234,
+          "high": 0.9826432355676349,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.85,
+        "coverage": 0.845771144278607,
+        "agreement": {
+          "estimate": 0.9376470588235294,
+          "low": 0.9087326923560175,
+          "high": 0.9634091245722194,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.9,
+        "coverage": 0.8955223880597015,
+        "agreement": {
+          "estimate": 0.9038888888888889,
+          "low": 0.8645475559727629,
+          "high": 0.939075046175838,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.95,
+        "coverage": 0.945273631840796,
+        "agreement": {
+          "estimate": 0.8692105263157894,
+          "low": 0.8215703918546393,
+          "high": 0.9115457108378959,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 1.0,
+        "coverage": 1.0,
+        "agreement": {
+          "estimate": 0.8407960199004975,
+          "low": 0.787431841010188,
+          "high": 0.8916256157635468,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.05,
+        "coverage": 0.04975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.1,
+        "coverage": 0.09950248756218906,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.15,
+        "coverage": 0.14925373134328357,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.2,
+        "coverage": 0.19900497512437812,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.25,
+        "coverage": 0.24875621890547264,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.3,
+        "coverage": 0.29850746268656714,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.35,
+        "coverage": 0.3482587064676617,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.39999999999999997,
+        "coverage": 0.39800995024875624,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.44999999999999996,
+        "coverage": 0.44776119402985076,
+        "agreement": {
+          "estimate": 0.9994444444444445,
+          "low": 0.9981871462884216,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.49999999999999994,
+        "coverage": 0.4975124378109453,
+        "agreement": {
+          "estimate": 0.9995,
+          "low": 0.9983739616951485,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.5499999999999999,
+        "coverage": 0.5472636815920398,
+        "agreement": {
+          "estimate": 0.9981818181818182,
+          "low": 0.9947590755000505,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.6,
+        "coverage": 0.5970149253731343,
+        "agreement": {
+          "estimate": 0.9970833333333333,
+          "low": 0.9921838328019582,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.65,
+        "coverage": 0.6467661691542289,
+        "agreement": {
+          "estimate": 0.9930769230769231,
+          "low": 0.985436387540453,
+          "high": 0.9986021283478532,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.7,
+        "coverage": 0.6965174129353234,
+        "agreement": {
+          "estimate": 0.9889285714285714,
+          "low": 0.978494319219669,
+          "high": 0.9972644634745063,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.75,
+        "coverage": 0.746268656716418,
+        "agreement": {
+          "estimate": 0.9796666666666667,
+          "low": 0.9632946325337238,
+          "high": 0.9935380687861461,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.7999999999999999,
+        "coverage": 0.7960199004975125,
+        "agreement": {
+          "estimate": 0.9640625,
+          "low": 0.9412489560338912,
+          "high": 0.9831791942845988,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.85,
+        "coverage": 0.845771144278607,
+        "agreement": {
+          "estimate": 0.9338235294117647,
+          "low": 0.9018321712902503,
+          "high": 0.963384523395647,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.9,
+        "coverage": 0.8955223880597015,
+        "agreement": {
+          "estimate": 0.9008333333333334,
+          "low": 0.8606829470198676,
+          "high": 0.9375269611738216,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.95,
+        "coverage": 0.945273631840796,
+        "agreement": {
+          "estimate": 0.8713157894736843,
+          "low": 0.8238618201361598,
+          "high": 0.9146038104447363,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 1.0,
+        "coverage": 1.0,
+        "agreement": {
+          "estimate": 0.8407960199004975,
+          "low": 0.787431841010188,
+          "high": 0.8916256157635468,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.05,
+        "coverage": 0.04975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.1,
+        "coverage": 0.09950248756218906,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.15,
+        "coverage": 0.14925373134328357,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.2,
+        "coverage": 0.19900497512437812,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.25,
+        "coverage": 0.24875621890547264,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.3,
+        "coverage": 0.29850746268656714,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.35,
+        "coverage": 0.3482587064676617,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.39999999999999997,
+        "coverage": 0.39800995024875624,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.44999999999999996,
+        "coverage": 0.44776119402985076,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.49999999999999994,
+        "coverage": 0.4975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.5499999999999999,
+        "coverage": 0.5472636815920398,
+        "agreement": {
+          "estimate": 0.990909090909091,
+          "low": 0.9711538461538461,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.6,
+        "coverage": 0.5970149253731343,
+        "agreement": {
+          "estimate": 0.9833333333333333,
+          "low": 0.9572649572649573,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.65,
+        "coverage": 0.6467661691542289,
+        "agreement": {
+          "estimate": 0.9615384615384616,
+          "low": 0.9256198347107438,
+          "high": 0.9921875,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.7,
+        "coverage": 0.6965174129353234,
+        "agreement": {
+          "estimate": 0.95,
+          "low": 0.910958904109589,
+          "high": 0.9851851851851852,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.75,
+        "coverage": 0.746268656716418,
+        "agreement": {
+          "estimate": 0.9333333333333333,
+          "low": 0.8917159082188627,
+          "high": 0.9716362001798021,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.7999999999999999,
+        "coverage": 0.7960199004975125,
+        "agreement": {
+          "estimate": 0.93125,
+          "low": 0.8902439024390244,
+          "high": 0.968157905345481,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.85,
+        "coverage": 0.845771144278607,
+        "agreement": {
+          "estimate": 0.9,
+          "low": 0.8546485200845666,
+          "high": 0.9430415707710011,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.9,
+        "coverage": 0.8955223880597015,
+        "agreement": {
+          "estimate": 0.8888888888888888,
+          "low": 0.8418079096045198,
+          "high": 0.9329608938547486,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.95,
+        "coverage": 0.945273631840796,
+        "agreement": {
+          "estimate": 0.8526315789473684,
+          "low": 0.798941798941799,
+          "high": 0.9010989010989011,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 1.0,
+        "coverage": 1.0,
+        "agreement": {
+          "estimate": 0.8407960199004975,
+          "low": 0.787431841010188,
+          "high": 0.8916256157635468,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      }
+    ],
+    "HZ+HB_to_SA": [
+      {
+        "rule": "LR",
+        "quota": 0.05,
+        "coverage": 0.04975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.1,
+        "coverage": 0.09950248756218906,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.15,
+        "coverage": 0.14925373134328357,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.2,
+        "coverage": 0.19900497512437812,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.25,
+        "coverage": 0.24875621890547264,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.3,
+        "coverage": 0.29850746268656714,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.35,
+        "coverage": 0.3482587064676617,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.39999999999999997,
+        "coverage": 0.39800995024875624,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.44999999999999996,
+        "coverage": 0.44776119402985076,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.49999999999999994,
+        "coverage": 0.4975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.5499999999999999,
+        "coverage": 0.5472636815920398,
+        "agreement": {
+          "estimate": 0.9990909090909091,
+          "low": 0.9969923679681131,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.6,
+        "coverage": 0.5970149253731343,
+        "agreement": {
+          "estimate": 0.99875,
+          "low": 0.995838774609579,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.65,
+        "coverage": 0.6467661691542289,
+        "agreement": {
+          "estimate": 0.9988461538461538,
+          "low": 0.9961472190240827,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.7,
+        "coverage": 0.6965174129353234,
+        "agreement": {
+          "estimate": 0.9985714285714286,
+          "low": 0.9952491706247096,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.75,
+        "coverage": 0.746268656716418,
+        "agreement": {
+          "estimate": 0.9916666666666667,
+          "low": 0.981242916570862,
+          "high": 0.9986691706498187,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.7999999999999999,
+        "coverage": 0.7960199004975125,
+        "agreement": {
+          "estimate": 0.9696875,
+          "low": 0.9513463552471992,
+          "high": 0.9856832643970729,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.85,
+        "coverage": 0.845771144278607,
+        "agreement": {
+          "estimate": 0.9426470588235294,
+          "low": 0.9140035382091268,
+          "high": 0.9677142048084588,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.9,
+        "coverage": 0.8955223880597015,
+        "agreement": {
+          "estimate": 0.9116666666666666,
+          "low": 0.874699048310844,
+          "high": 0.9444290960100792,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 0.95,
+        "coverage": 0.945273631840796,
+        "agreement": {
+          "estimate": 0.8768421052631579,
+          "low": 0.8306219401804973,
+          "high": 0.9181480329698171,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "LR",
+        "quota": 1.0,
+        "coverage": 1.0,
+        "agreement": {
+          "estimate": 0.8407960199004975,
+          "low": 0.787431841010188,
+          "high": 0.8916256157635468,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.05,
+        "coverage": 0.04975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.1,
+        "coverage": 0.09950248756218906,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.15,
+        "coverage": 0.14925373134328357,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.2,
+        "coverage": 0.19900497512437812,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.25,
+        "coverage": 0.24875621890547264,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.3,
+        "coverage": 0.29850746268656714,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.35,
+        "coverage": 0.3482587064676617,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.39999999999999997,
+        "coverage": 0.39800995024875624,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.44999999999999996,
+        "coverage": 0.44776119402985076,
+        "agreement": {
+          "estimate": 0.9988888888888889,
+          "low": 0.9962913153466703,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.49999999999999994,
+        "coverage": 0.4975124378109453,
+        "agreement": {
+          "estimate": 0.9975,
+          "low": 0.9942794282872233,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.5499999999999999,
+        "coverage": 0.5472636815920398,
+        "agreement": {
+          "estimate": 0.9945454545454545,
+          "low": 0.9888944860487449,
+          "high": 0.9990830836677909,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.6,
+        "coverage": 0.5970149253731343,
+        "agreement": {
+          "estimate": 0.9925,
+          "low": 0.9851523886337269,
+          "high": 0.9983834448546003,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.65,
+        "coverage": 0.6467661691542289,
+        "agreement": {
+          "estimate": 0.9869230769230769,
+          "low": 0.9752139232236866,
+          "high": 0.9963452048274823,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.7,
+        "coverage": 0.6965174129353234,
+        "agreement": {
+          "estimate": 0.9828571428571429,
+          "low": 0.9683120528307793,
+          "high": 0.9948954824159003,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.75,
+        "coverage": 0.746268656716418,
+        "agreement": {
+          "estimate": 0.974,
+          "low": 0.9556899123967103,
+          "high": 0.9899350649350649,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.7999999999999999,
+        "coverage": 0.7960199004975125,
+        "agreement": {
+          "estimate": 0.961875,
+          "low": 0.9373775983213484,
+          "high": 0.9827104411438705,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.85,
+        "coverage": 0.845771144278607,
+        "agreement": {
+          "estimate": 0.9402941176470588,
+          "low": 0.9095842063405555,
+          "high": 0.9678651781605668,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.9,
+        "coverage": 0.8955223880597015,
+        "agreement": {
+          "estimate": 0.9058333333333334,
+          "low": 0.8676447649394415,
+          "high": 0.9402382871859013,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 0.95,
+        "coverage": 0.945273631840796,
+        "agreement": {
+          "estimate": 0.8744736842105263,
+          "low": 0.8279456151051146,
+          "high": 0.9174923071250989,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "HGB",
+        "quota": 1.0,
+        "coverage": 1.0,
+        "agreement": {
+          "estimate": 0.8407960199004975,
+          "low": 0.787431841010188,
+          "high": 0.8916256157635468,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.05,
+        "coverage": 0.04975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.1,
+        "coverage": 0.09950248756218906,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.15,
+        "coverage": 0.14925373134328357,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.2,
+        "coverage": 0.19900497512437812,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.25,
+        "coverage": 0.24875621890547264,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.3,
+        "coverage": 0.29850746268656714,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.35,
+        "coverage": 0.3482587064676617,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.39999999999999997,
+        "coverage": 0.39800995024875624,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.44999999999999996,
+        "coverage": 0.44776119402985076,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.49999999999999994,
+        "coverage": 0.4975124378109453,
+        "agreement": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.5499999999999999,
+        "coverage": 0.5472636815920398,
+        "agreement": {
+          "estimate": 0.9818181818181818,
+          "low": 0.9532710280373832,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.6,
+        "coverage": 0.5970149253731343,
+        "agreement": {
+          "estimate": 0.9833333333333333,
+          "low": 0.9572619047619048,
+          "high": 1.0,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.65,
+        "coverage": 0.6467661691542289,
+        "agreement": {
+          "estimate": 0.9615384615384616,
+          "low": 0.9253731343283582,
+          "high": 0.9921875,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.7,
+        "coverage": 0.6965174129353234,
+        "agreement": {
+          "estimate": 0.95,
+          "low": 0.9097731307435255,
+          "high": 0.9849652115363035,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.75,
+        "coverage": 0.746268656716418,
+        "agreement": {
+          "estimate": 0.9333333333333333,
+          "low": 0.8920814699591678,
+          "high": 0.9716312056737588,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.7999999999999999,
+        "coverage": 0.7960199004975125,
+        "agreement": {
+          "estimate": 0.91875,
+          "low": 0.8742138364779874,
+          "high": 0.959466261563577,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.85,
+        "coverage": 0.845771144278607,
+        "agreement": {
+          "estimate": 0.8941176470588236,
+          "low": 0.8456921182266011,
+          "high": 0.9390336289726533,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.9,
+        "coverage": 0.8955223880597015,
+        "agreement": {
+          "estimate": 0.8777777777777778,
+          "low": 0.8277639616055846,
+          "high": 0.9244264191047761,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 0.95,
+        "coverage": 0.945273631840796,
+        "agreement": {
+          "estimate": 0.8473684210526315,
+          "low": 0.7938144329896907,
+          "high": 0.8974462365591398,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      },
+      {
+        "rule": "BOUNDARY",
+        "quota": 1.0,
+        "coverage": 1.0,
+        "agreement": {
+          "estimate": 0.8407960199004975,
+          "low": 0.787431841010188,
+          "high": 0.8916256157635468,
+          "valid": 2000,
+          "resamples": 2000
+        }
+      }
+    ]
+  },
+  "reporting": {
+    "HZ_to_SA": {
+      "ALL_REPORT": {
+        "events": 4020,
+        "reported": 4020,
+        "correct": 3380,
+        "incorrect": 640,
+        "withheld": 0,
+        "coverage": 1.0,
+        "agreement": 0.8407960199004975,
+        "fn": 0,
+        "fn_denominator": 620,
+        "fnr": 0.0,
+        "fp": 640,
+        "fp_denominator": 3400,
+        "fpr": 0.18823529411764706,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            140,
+            0,
+            0
+          ],
+          [
+            180,
+            2760,
+            460
+          ],
+          [
+            0,
+            0,
+            480
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2760,
+            640
+          ],
+          [
+            0,
+            620
+          ]
+        ],
+        "withheld_by_true_state": [
+          0,
+          0,
+          0
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.8407960199004975,
+        "incorrect_yield": 0.15920398009950248,
+        "mae": 2.268671027593483,
+        "rmse": 2.8899101740137563,
+        "r2": 0.8151474502377547,
+        "class_mae": {
+          "low": 2.9136582561302933,
+          "normal": 2.3500923619950616,
+          "high": 1.5038153005923978
+        },
+        "class_errors": {
+          "low": {
+            "n": 140,
+            "mae": 2.9136582561302933,
+            "rmse": 3.63037258418706,
+            "bias": 1.512917836338144,
+            "median_ae": 1.8972455355788185,
+            "p90_ae": 6.116779411730192
+          },
+          "normal": {
+            "n": 3400,
+            "mae": 2.3500923619950616,
+            "rmse": 2.9676443434380118,
+            "bias": 0.39466408481833,
+            "median_ae": 1.8116475495465956,
+            "p90_ae": 4.794870227215407
+          },
+          "high": {
+            "n": 480,
+            "mae": 1.5038153005923978,
+            "rmse": 1.928247331707127,
+            "bias": 0.9410109448781725,
+            "median_ae": 1.1905605369980492,
+            "p90_ae": 3.1224679733965104
+          }
+        },
+        "balanced_accuracy": 0.9372549019607842,
+        "macro_f1": 0.7269519621019928,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8407960199004975,
+            "low": 0.787431841010188,
+            "high": 0.8916256157635468,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.8407960199004975,
+            "low": 0.787431841010188,
+            "high": 0.8916256157635468,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.15920398009950248,
+            "low": 0.10837438423645321,
+            "high": 0.212568158989812,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.268671027593483,
+            "low": 2.026274997980556,
+            "high": 2.5220584265331407,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "BOUNDARY95": {
+        "events": 4020,
+        "reported": 3857,
+        "correct": 3267,
+        "incorrect": 590,
+        "withheld": 163,
+        "coverage": 0.959452736318408,
+        "agreement": 0.8470313715322789,
+        "fn": 0,
+        "fn_denominator": 620,
+        "fnr": 0.0,
+        "fp": 590,
+        "fp_denominator": 3237,
+        "fpr": 0.18226753166512202,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            140,
+            0,
+            0
+          ],
+          [
+            159,
+            2647,
+            431
+          ],
+          [
+            0,
+            0,
+            480
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2647,
+            590
+          ],
+          [
+            0,
+            620
+          ]
+        ],
+        "withheld_by_true_state": [
+          0,
+          163,
+          0
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.8126865671641791,
+        "incorrect_yield": 0.14676616915422885,
+        "mae": 2.185239888170342,
+        "rmse": 2.7886838485882746,
+        "r2": 0.8285641826635195,
+        "class_mae": {
+          "low": 2.9136582561302933,
+          "normal": 2.254781201276002,
+          "high": 1.5038153005923978
+        },
+        "class_errors": {
+          "low": {
+            "n": 140,
+            "mae": 2.9136582561302933,
+            "rmse": 3.63037258418706,
+            "bias": 1.512917836338144,
+            "median_ae": 1.8972455355788185,
+            "p90_ae": 6.116779411730192
+          },
+          "normal": {
+            "n": 3237,
+            "mae": 2.254781201276002,
+            "rmse": 2.853930471675379,
+            "bias": 0.3314088477378483,
+            "median_ae": 1.7405606323964378,
+            "p90_ae": 4.63362742460977
+          },
+          "high": {
+            "n": 480,
+            "mae": 1.5038153005923978,
+            "rmse": 1.928247331707127,
+            "bias": 0.9410109448781725,
+            "median_ae": 1.1905605369980492,
+            "p90_ae": 3.1224679733965104
+          }
+        },
+        "balanced_accuracy": 0.9392441561116259,
+        "macro_f1": 0.7425640861695287,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8470313715322789,
+            "low": 0.7945045685764021,
+            "high": 0.8959362500916507,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.959452736318408,
+            "low": 0.935,
+            "high": 0.9801934819392334,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.8126865671641791,
+            "low": 0.7581559405940594,
+            "high": 0.8655354825531096,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.14676616915422885,
+            "low": 0.1,
+            "high": 0.19775027985074628,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.185239888170342,
+            "low": 1.9490458004858051,
+            "high": 2.435964661890557,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "BOUNDARY_PAPER": {
+        "events": 4020,
+        "reported": 3639,
+        "correct": 3174,
+        "incorrect": 465,
+        "withheld": 381,
+        "coverage": 0.905223880597015,
+        "agreement": 0.8722176422093982,
+        "fn": 0,
+        "fn_denominator": 589,
+        "fnr": 0.0,
+        "fp": 465,
+        "fp_denominator": 3050,
+        "fpr": 0.15245901639344261,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            126,
+            0,
+            0
+          ],
+          [
+            149,
+            2585,
+            316
+          ],
+          [
+            0,
+            0,
+            463
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2585,
+            465
+          ],
+          [
+            0,
+            589
+          ]
+        ],
+        "withheld_by_true_state": [
+          14,
+          350,
+          17
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.7895522388059701,
+        "incorrect_yield": 0.11567164179104478,
+        "mae": 2.132459305390386,
+        "rmse": 2.7406718723906747,
+        "r2": 0.8317321495078612,
+        "class_mae": {
+          "low": 2.7671680081146657,
+          "normal": 2.200142689247044,
+          "high": 1.5138683392865746
+        },
+        "class_errors": {
+          "low": {
+            "n": 126,
+            "mae": 2.7671680081146657,
+            "rmse": 3.509785218441053,
+            "bias": 1.2534877417128016,
+            "median_ae": 1.8972455355788185,
+            "p90_ae": 6.116779411730192
+          },
+          "normal": {
+            "n": 3050,
+            "mae": 2.200142689247044,
+            "rmse": 2.8064646266144333,
+            "bias": 0.22699547562252545,
+            "median_ae": 1.6653112320277685,
+            "p90_ae": 4.63362742460977
+          },
+          "high": {
+            "n": 463,
+            "mae": 1.5138683392865746,
+            "rmse": 1.9490654681594786,
+            "bias": 0.9847661735790875,
+            "median_ae": 1.197993872401966,
+            "p90_ae": 3.1224679733965104
+          }
+        },
+        "balanced_accuracy": 0.9491803278688525,
+        "macro_f1": 0.7638268739294642,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8722176422093982,
+            "low": 0.8268902706159502,
+            "high": 0.9146228160443126,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.905223880597015,
+            "low": 0.8725716139575123,
+            "high": 0.9339107893788298,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.7895522388059701,
+            "low": 0.7343374125874126,
+            "high": 0.8429336468129571,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.11567164179104478,
+            "low": 0.07842364420387445,
+            "high": 0.15635119606003747,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.132459305390386,
+            "low": 1.8992954100159731,
+            "high": 2.3844668555758526,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "LR": {
+        "events": 4020,
+        "reported": 3811,
+        "correct": 3312,
+        "incorrect": 499,
+        "withheld": 209,
+        "coverage": 0.9480099502487562,
+        "agreement": 0.8690632379952768,
+        "fn": 0,
+        "fn_denominator": 552,
+        "fnr": 0.0,
+        "fp": 499,
+        "fp_denominator": 3259,
+        "fpr": 0.15311445228597728,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            101,
+            0,
+            0
+          ],
+          [
+            130,
+            2760,
+            369
+          ],
+          [
+            0,
+            0,
+            451
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2760,
+            499
+          ],
+          [
+            0,
+            552
+          ]
+        ],
+        "withheld_by_true_state": [
+          39,
+          141,
+          29
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.8238805970149253,
+        "incorrect_yield": 0.12412935323383084,
+        "mae": 2.218893595395498,
+        "rmse": 2.8389385735698154,
+        "r2": 0.8077953081118399,
+        "class_mae": {
+          "low": 2.7464476289691238,
+          "normal": 2.2984274912258953,
+          "high": 1.5260245845258695
+        },
+        "class_errors": {
+          "low": {
+            "n": 101,
+            "mae": 2.7464476289691238,
+            "rmse": 3.4688433122845015,
+            "bias": 1.2388675359063588,
+            "median_ae": 1.8972455355788185,
+            "p90_ae": 6.116779411730192
+          },
+          "normal": {
+            "n": 3259,
+            "mae": 2.2984274912258953,
+            "rmse": 2.9187638403141736,
+            "bias": 0.3848239808508977,
+            "median_ae": 1.7654495237779386,
+            "p90_ae": 4.789346093429074
+          },
+          "high": {
+            "n": 451,
+            "mae": 1.5260245845258695,
+            "rmse": 1.9617711037704162,
+            "bias": 0.9566108933096655,
+            "median_ae": 1.197993872401966,
+            "p90_ae": 3.1224679733965104
+          }
+        },
+        "balanced_accuracy": 0.9489618492380076,
+        "macro_f1": 0.7450690057982602,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8690632379952768,
+            "low": 0.8224228809980975,
+            "high": 0.9110118702987308,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.9480099502487562,
+            "low": 0.9334162414965986,
+            "high": 0.961887556474094,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.8238805970149253,
+            "low": 0.7698006806930693,
+            "high": 0.8730440433749257,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.12412935323383084,
+            "low": 0.08506840796019902,
+            "high": 0.16650689647124717,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.218893595395498,
+            "low": 1.98042557298121,
+            "high": 2.472567835120277,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "HGB": {
+        "events": 4020,
+        "reported": 3488,
+        "correct": 3170,
+        "incorrect": 318,
+        "withheld": 532,
+        "coverage": 0.8676616915422886,
+        "agreement": 0.9088302752293578,
+        "fn": 0,
+        "fn_denominator": 436,
+        "fnr": 0.0,
+        "fp": 318,
+        "fp_denominator": 3052,
+        "fpr": 0.10419397116644823,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            85,
+            0,
+            0
+          ],
+          [
+            116,
+            2734,
+            202
+          ],
+          [
+            0,
+            0,
+            351
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2734,
+            318
+          ],
+          [
+            0,
+            436
+          ]
+        ],
+        "withheld_by_true_state": [
+          55,
+          348,
+          129
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.7885572139303483,
+        "incorrect_yield": 0.0791044776119403,
+        "mae": 2.1778653823807756,
+        "rmse": 2.809194954796822,
+        "r2": 0.7976120642188315,
+        "class_mae": {
+          "low": 2.4245429957639217,
+          "normal": 2.2381147998813904,
+          "high": 1.5942505124393413
+        },
+        "class_errors": {
+          "low": {
+            "n": 85,
+            "mae": 2.4245429957639217,
+            "rmse": 3.1720841547878327,
+            "bias": 0.7743157063754565,
+            "median_ae": 1.3449863010664984,
+            "p90_ae": 6.041381221179172
+          },
+          "normal": {
+            "n": 3052,
+            "mae": 2.2381147998813904,
+            "rmse": 2.872487104054101,
+            "bias": 0.24612364534759754,
+            "median_ae": 1.6653112320277685,
+            "p90_ae": 4.745728932021521
+          },
+          "high": {
+            "n": 351,
+            "mae": 1.5942505124393413,
+            "rmse": 2.058911650714463,
+            "bias": 1.0272152937194907,
+            "median_ae": 1.197993872401966,
+            "p90_ae": 3.500755698349735
+          }
+        },
+        "balanced_accuracy": 0.9652686762778506,
+        "macro_f1": 0.7719980060317893,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.9088302752293578,
+            "low": 0.87326717370346,
+            "high": 0.9401275751146236,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.8676616915422886,
+            "low": 0.8348773096821877,
+            "high": 0.8987501554726368,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.7885572139303483,
+            "low": 0.7341166771356783,
+            "high": 0.8395129106520657,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.0791044776119403,
+            "low": 0.05323383084577114,
+            "high": 0.10708198502777103,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.1778653823807756,
+            "low": 1.9374665953427592,
+            "high": 2.4419276365170735,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      }
+    },
+    "HZ+HB_to_SA": {
+      "ALL_REPORT": {
+        "events": 4020,
+        "reported": 4020,
+        "correct": 3380,
+        "incorrect": 640,
+        "withheld": 0,
+        "coverage": 1.0,
+        "agreement": 0.8407960199004975,
+        "fn": 0,
+        "fn_denominator": 620,
+        "fnr": 0.0,
+        "fp": 640,
+        "fp_denominator": 3400,
+        "fpr": 0.18823529411764706,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            140,
+            0,
+            0
+          ],
+          [
+            180,
+            2760,
+            460
+          ],
+          [
+            0,
+            0,
+            480
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2760,
+            640
+          ],
+          [
+            0,
+            620
+          ]
+        ],
+        "withheld_by_true_state": [
+          0,
+          0,
+          0
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.8407960199004975,
+        "incorrect_yield": 0.15920398009950248,
+        "mae": 2.3512652499874056,
+        "rmse": 2.956155405003001,
+        "r2": 0.8065755904402536,
+        "class_mae": {
+          "low": 2.1161228773943273,
+          "normal": 2.4719862159735984,
+          "high": 1.564741599591523
+        },
+        "class_errors": {
+          "low": {
+            "n": 140,
+            "mae": 2.1161228773943273,
+            "rmse": 2.333177796942707,
+            "bias": -1.152817417973636,
+            "median_ae": 1.9617448584699773,
+            "p90_ae": 3.6022769785128474
+          },
+          "normal": {
+            "n": 3400,
+            "mae": 2.4719862159735984,
+            "rmse": 3.0920633427695177,
+            "bias": 0.18475295076612383,
+            "median_ae": 2.0401923509732427,
+            "p90_ae": 4.904266108741392
+          },
+          "high": {
+            "n": 480,
+            "mae": 1.564741599591523,
+            "rmse": 1.969118969555976,
+            "bias": 1.1019070514839313,
+            "median_ae": 1.1689364872418793,
+            "p90_ae": 3.31609709165231
+          }
+        },
+        "balanced_accuracy": 0.9372549019607842,
+        "macro_f1": 0.7269519621019928,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8407960199004975,
+            "low": 0.787431841010188,
+            "high": 0.8916256157635468,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.8407960199004975,
+            "low": 0.787431841010188,
+            "high": 0.8916256157635468,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.15920398009950248,
+            "low": 0.10837438423645321,
+            "high": 0.212568158989812,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.351265249987405,
+            "low": 2.1121311624028167,
+            "high": 2.604108262340025,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "BOUNDARY95": {
+        "events": 4020,
+        "reported": 3862,
+        "correct": 3253,
+        "incorrect": 609,
+        "withheld": 158,
+        "coverage": 0.9606965174129353,
+        "agreement": 0.8423096841015019,
+        "fn": 0,
+        "fn_denominator": 620,
+        "fnr": 0.0,
+        "fp": 609,
+        "fp_denominator": 3242,
+        "fpr": 0.1878470080197409,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            140,
+            0,
+            0
+          ],
+          [
+            160,
+            2633,
+            449
+          ],
+          [
+            0,
+            0,
+            480
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2633,
+            609
+          ],
+          [
+            0,
+            620
+          ]
+        ],
+        "withheld_by_true_state": [
+          0,
+          158,
+          0
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.8092039800995025,
+        "incorrect_yield": 0.15149253731343285,
+        "mae": 2.2643660442090034,
+        "rmse": 2.850093452649426,
+        "r2": 0.8210228331094869,
+        "class_mae": {
+          "low": 2.1161228773943273,
+          "normal": 2.3743517865811334,
+          "high": 1.564741599591523
+        },
+        "class_errors": {
+          "low": {
+            "n": 140,
+            "mae": 2.1161228773943273,
+            "rmse": 2.333177796942707,
+            "bias": -1.152817417973636,
+            "median_ae": 1.9617448584699773,
+            "p90_ae": 3.6022769785128474
+          },
+          "normal": {
+            "n": 3242,
+            "mae": 2.3743517865811334,
+            "rmse": 2.977805286943806,
+            "bias": 0.11480187415864766,
+            "median_ae": 1.996687732368109,
+            "p90_ae": 4.652272137987204
+          },
+          "high": {
+            "n": 480,
+            "mae": 1.564741599591523,
+            "rmse": 1.969118969555976,
+            "bias": 1.1019070514839313,
+            "median_ae": 1.1689364872418793,
+            "p90_ae": 3.31609709165231
+          }
+        },
+        "balanced_accuracy": 0.9373843306600863,
+        "macro_f1": 0.7380127805088317,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8423096841015019,
+            "low": 0.7880823970479164,
+            "high": 0.8923541847984278,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.9606965174129353,
+            "low": 0.9351275252525253,
+            "high": 0.9821278937696215,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.8092039800995025,
+            "low": 0.7554387162854217,
+            "high": 0.8628052671425481,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.15149253731343285,
+            "low": 0.10319101665965294,
+            "high": 0.2048555587283457,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.264366044209003,
+            "low": 2.0331757316674364,
+            "high": 2.5178743280621623,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "BOUNDARY_PAPER": {
+        "events": 4020,
+        "reported": 3595,
+        "correct": 3137,
+        "incorrect": 458,
+        "withheld": 425,
+        "coverage": 0.8942786069651741,
+        "agreement": 0.8726008344923505,
+        "fn": 0,
+        "fn_denominator": 590,
+        "fnr": 0.0,
+        "fp": 458,
+        "fp_denominator": 3005,
+        "fpr": 0.15241264559068218,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            128,
+            0,
+            0
+          ],
+          [
+            146,
+            2547,
+            312
+          ],
+          [
+            0,
+            0,
+            462
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2547,
+            458
+          ],
+          [
+            0,
+            590
+          ]
+        ],
+        "withheld_by_true_state": [
+          12,
+          395,
+          18
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.7803482587064676,
+        "incorrect_yield": 0.11393034825870647,
+        "mae": 2.204914405307199,
+        "rmse": 2.798253480314261,
+        "r2": 0.8265042481729092,
+        "class_mae": {
+          "low": 2.0458123137724247,
+          "normal": 2.307744817495886,
+          "high": 1.5801518059337083
+        },
+        "class_errors": {
+          "low": {
+            "n": 128,
+            "mae": 2.0458123137724247,
+            "rmse": 2.260994356218822,
+            "bias": -1.466323873339665,
+            "median_ae": 1.9617448584699773,
+            "p90_ae": 3.6022769785128474
+          },
+          "normal": {
+            "n": 3005,
+            "mae": 2.307744817495886,
+            "rmse": 2.922143331207181,
+            "bias": -0.03263710302700943,
+            "median_ae": 1.916213328492688,
+            "p90_ae": 4.652272137987204
+          },
+          "high": {
+            "n": 462,
+            "mae": 1.5801518059337083,
+            "rmse": 1.993410279033506,
+            "bias": 1.1530892106995891,
+            "median_ae": 1.1852526088972013,
+            "p90_ae": 3.31609709165231
+          }
+        },
+        "balanced_accuracy": 0.949195784803106,
+        "macro_f1": 0.7672986468476473,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8726008344923505,
+            "low": 0.8265968798346605,
+            "high": 0.9146211311080394,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.8942786069651741,
+            "low": 0.8604937500000001,
+            "high": 0.9248756218905473,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.7803482587064676,
+            "low": 0.7247509732769393,
+            "high": 0.8345785402257007,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.11393034825870647,
+            "low": 0.07738407948835085,
+            "high": 0.15375240384615382,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.2049144053071985,
+            "low": 1.9727072231959792,
+            "high": 2.455543800470895,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "LR": {
+        "events": 4020,
+        "reported": 3698,
+        "correct": 3265,
+        "incorrect": 433,
+        "withheld": 322,
+        "coverage": 0.9199004975124379,
+        "agreement": 0.8829096809085992,
+        "fn": 0,
+        "fn_denominator": 520,
+        "fnr": 0.0,
+        "fp": 433,
+        "fp_denominator": 3178,
+        "fpr": 0.13624921334172435,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            106,
+            0,
+            0
+          ],
+          [
+            118,
+            2745,
+            315
+          ],
+          [
+            0,
+            0,
+            414
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2745,
+            433
+          ],
+          [
+            0,
+            520
+          ]
+        ],
+        "withheld_by_true_state": [
+          34,
+          222,
+          66
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.8121890547263682,
+        "incorrect_yield": 0.10771144278606966,
+        "mae": 2.288692658132895,
+        "rmse": 2.9031569516434437,
+        "r2": 0.8001418597066514,
+        "class_mae": {
+          "low": 2.0023243775661363,
+          "normal": 2.3890251746220263,
+          "high": 1.5918286492865608
+        },
+        "class_errors": {
+          "low": {
+            "n": 106,
+            "mae": 2.0023243775661363,
+            "rmse": 2.2277651065343136,
+            "bias": -1.4297937743255367,
+            "median_ae": 1.9617448584699773,
+            "p90_ae": 3.6022769785128474
+          },
+          "normal": {
+            "n": 3178,
+            "mae": 2.3890251746220263,
+            "rmse": 3.0179176427529093,
+            "bias": 0.13188516174964102,
+            "median_ae": 1.9735123869077071,
+            "p90_ae": 4.898204058235109
+          },
+          "high": {
+            "n": 414,
+            "mae": 1.5918286492865608,
+            "rmse": 2.0247163412704885,
+            "bias": 1.1081362924782994,
+            "median_ae": 1.1526203655865572,
+            "p90_ae": 3.31609709165231
+          }
+        },
+        "balanced_accuracy": 0.9545835955527586,
+        "macro_f1": 0.7645762819085554,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.8829096809085992,
+            "low": 0.8398271944804303,
+            "high": 0.9210177641336602,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.9199004975124379,
+            "low": 0.8997571306090905,
+            "high": 0.9391102521582206,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.8121890547263682,
+            "low": 0.7586155684533971,
+            "high": 0.8616788152334275,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.10771144278606966,
+            "low": 0.07387733208955224,
+            "high": 0.14452871112418203,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.2886926581328946,
+            "low": 2.0500604264088222,
+            "high": 2.5518383562118068,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      },
+      "HGB": {
+        "events": 4020,
+        "reported": 3452,
+        "correct": 3157,
+        "incorrect": 295,
+        "withheld": 568,
+        "coverage": 0.8587064676616916,
+        "agreement": 0.9145422943221321,
+        "fn": 0,
+        "fn_denominator": 463,
+        "fnr": 0.0,
+        "fp": 295,
+        "fp_denominator": 2989,
+        "fpr": 0.09869521579123453,
+        "low_recall": 1.0,
+        "high_recall": 1.0,
+        "confusion": [
+          [
+            110,
+            0,
+            0
+          ],
+          [
+            111,
+            2694,
+            184
+          ],
+          [
+            0,
+            0,
+            353
+          ]
+        ],
+        "binary_confusion": [
+          [
+            2694,
+            295
+          ],
+          [
+            0,
+            463
+          ]
+        ],
+        "withheld_by_true_state": [
+          30,
+          411,
+          127
+        ],
+        "all_true_class_counts": [
+          140,
+          3400,
+          480
+        ],
+        "correct_yield": 0.7853233830845772,
+        "incorrect_yield": 0.07338308457711443,
+        "mae": 2.2526447428846725,
+        "rmse": 2.8735394679914186,
+        "r2": 0.8011248751530239,
+        "class_mae": {
+          "low": 2.0526779345112804,
+          "normal": 2.3312821198123785,
+          "high": 1.6491014830664292
+        },
+        "class_errors": {
+          "low": {
+            "n": 110,
+            "mae": 2.0526779345112804,
+            "rmse": 2.2740808803793287,
+            "bias": -1.5622678824425649,
+            "median_ae": 1.9617448584699773,
+            "p90_ae": 3.6022769785128474
+          },
+          "normal": {
+            "n": 2989,
+            "mae": 2.3312821198123785,
+            "rmse": 2.9703746018530848,
+            "bias": -0.025651584576891085,
+            "median_ae": 1.9284171273415467,
+            "p90_ae": 4.8697989915108195
+          },
+          "high": {
+            "n": 353,
+            "mae": 1.6491014830664292,
+            "rmse": 2.1040730043397367,
+            "bias": 1.1790758198984335,
+            "median_ae": 1.1852526088972013,
+            "p90_ae": 3.7848767583916896
+          }
+        },
+        "balanced_accuracy": 0.9671015947362552,
+        "macro_f1": 0.8020005973521078,
+        "intervals": {
+          "agreement": {
+            "estimate": 0.9145422943221321,
+            "low": 0.88075137421456,
+            "high": 0.9439482631249297,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "coverage": {
+            "estimate": 0.8587064676616916,
+            "low": 0.8252469225888325,
+            "high": 0.8900546050236621,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "correct_yield": {
+            "estimate": 0.7853233830845772,
+            "low": 0.7306871638940544,
+            "high": 0.8350279513210985,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "incorrect_yield": {
+            "estimate": 0.07338308457711443,
+            "low": 0.04876847290640394,
+            "high": 0.1,
+            "valid": 2000,
+            "resamples": 2000
+          },
+          "mae": {
+            "estimate": 2.2526447428846725,
+            "low": 2.0159472395219074,
+            "high": 2.5177418516578625,
+            "valid": 2000,
+            "resamples": 2000
+          }
+        }
+      }
+    }
+  }
+}

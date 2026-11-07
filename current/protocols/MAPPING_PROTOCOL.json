@@ -1,0 +1,26 @@
+{
+  "methods": [
+    "RIDGE-10",
+    "KRR-1",
+    "PLS-2",
+    "SVR-1",
+    "MLP-8",
+    "TT-SMALL"
+  ],
+  "source_inputs": "Four parameters read from the active fixed B file.",
+  "primary": "B-only RBF inward4 separately reported",
+  "comparison": "Original six source recipes and losses retained, common currentB-only local inward4 correction; not a pure architecture ablation.",
+  "calibration": "MA source prior plus auxiliary R/K/angle from current-four-parameter Ridge for joint controls.",
+  "source_seeds": "20seeds MLP/TT; deterministic source fits cached at1000",
+  "steps": 500,
+  "data_sha256": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
+  "B_from_original_data": true,
+  "input_provenance": {
+    "source_status": "author_confirmed_measured",
+    "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",
+    "source_statement": "U-TEG MA and curves are original measured values.",
+    "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+    "runtime_rescaling": false,
+    "runtime_reference_labels_used_to_build_features": false
+  }
+}

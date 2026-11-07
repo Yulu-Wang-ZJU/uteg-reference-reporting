@@ -1,0 +1,22 @@
+{
+  "primary_gate": "Boundary95 stays fixed",
+  "controls": [
+    "LR",
+    "HGB",
+    "TWO_SIDED",
+    "BOUNDARY_PAPER"
+  ],
+  "training": "Original3 outer development positions, each gate fits upstream inner-OOF errors; thresholds chosen from outer development predictions only.",
+  "features": "Original13slot interface: physical4 inputs, predicted MA,margin,class indicators; missing R/K/angle model-output slots constant0, never reference values.",
+  "selector": "Historical select_threshold max_risk .15; original two-sided normal/tail selector and support requirements.",
+  "B_from_original_data": true,
+  "valid_UTEG_only_validation": false,
+  "input_provenance": {
+    "source_status": "author_confirmed_measured",
+    "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",
+    "source_statement": "U-TEG MA and curves are original measured values.",
+    "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+    "runtime_rescaling": false,
+    "runtime_reference_labels_used_to_build_features": false
+  }
+}

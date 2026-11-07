@@ -1,177 +1,95 @@
 {
-  "schema": "uteg_current_manuscript_v1",
-  "date": "2026-10-31",
-  "scope": "Current manuscript and companion file hashes only; document contents are not distributed.",
-  "revision": "Matched target-only 5/10/15-minute results integrated through local wording changes, Table 3, Table S19 and six aggregate worksheets; Figure 1 distinguishes local prediction from source-transfer adaptation.",
-  "core_commit": "5f32af59907470ced142595625c4b80555fd1d81",
-  "core_provenance": "provenance/SOURCE_PROVENANCE.json",
-  "historical_core_lineage": "provenance/MANUSCRIPT_LINEAGE.json",
+  "schema": "uteg_current_manuscript_v2",
+  "date": "2026-11-07",
+  "manuscript_revision": "outcomes_clarity_20261107",
+  "current_code": "provenance/CURRENT_CODE.json",
   "supplementary_code": "provenance/SUPPLEMENTARY_CODE.json",
+  "public_data": "provenance/PUBLIC_DATA.json",
   "manuscript_anchors": [
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.tex",
-      "sha256": "ee99bd3c49aa0c270ee7eb4398fd58b476ae62a1f4e9665613494a7d37a0fa1f",
-      "bytes": 94762
+      "bytes": 78903,
+      "sha256": "ea9364efe9ec0e84b6ec4870f3ba7b31f162ac38fe535233fce39dec9c52d53d"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.tex",
-      "sha256": "4718ac6653a76624f51b66c977f6e099f821771b459c9488e36ea5fb80c1f373",
-      "bytes": 3072
+      "bytes": 3028,
+      "sha256": "2fff72dfe99c2ac6cf95203db5adf8960da725e92c5a13b917de7141e45caf97"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_current.tex",
-      "sha256": "b1790601aee299576c9a9a37669eac838c5eae1bd521da8c00efa629f4803bfb",
-      "bytes": 72868
+      "bytes": 61927,
+      "sha256": "3f70bc94ca0b1e6dd7223e515bd24b9194ee040b400db8be1b99ca613a70d91b"
     },
     {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_external_refs.tex",
-      "sha256": "6c189fbc01cdc3b4fa85769a2d5ff3dfa59facbd86991b2d4e3b82a6febdbad5",
-      "bytes": 16377
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_internal301.tex",
+      "bytes": 4299,
+      "sha256": "5b9977193232ca631c4160802946a58d0c21ded1cdaf32a572948758c2913eb7"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_minimal_additions.tex",
-      "sha256": "274e9d531699ce5e35d46bf88859ec925a65c274c7d2441f865b545cb8b3f1d3",
-      "bytes": 12389
+      "bytes": 9190,
+      "sha256": "5f838b72601bee5845e0c817510339255d48a2a2799b500df481793c90751340"
     },
     {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_reporting_diagnostics.tex",
-      "sha256": "b5d62f9fcdb85f10aced764761f33318e2d39812424aa90d4aaa81807f4af864",
-      "bytes": 14880
-    }
-  ],
-  "companion_anchors": [
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_files.tex",
+      "bytes": 3640,
+      "sha256": "fb206c915f90f06c2124e06a68b788b934b155ced6faedc3f2f25ef4be994962"
+    },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.pdf",
-      "sha256": "7d947f0a260820d1ae41653b19ad65f9981eae16f0975f3f3af3bbf08ec0f251",
-      "bytes": 705536
+      "bytes": 702911,
+      "sha256": "77d16c5485d86bc2e3a6e6c94750287519ee533d55644f793887d3acf3bf0aa3"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
-      "sha256": "992694f4f9b345576e012e83f84a4df916563eba9ac7b7c1e3b0ce5a81e3a070",
-      "bytes": 3592038
+      "bytes": 962408,
+      "sha256": "15c0b11c2285f2985c205be00965abe76246265f9eb3b6460e37b2c9a1fd6a27"
     },
     {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261031.pdf",
-      "sha256": "510f000d47c1b6709db068c10320435e9f148b42b1ffd99f577b8826f047a0ff",
-      "bytes": 4315727
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261103.pdf",
+      "bytes": 1500583,
+      "sha256": "3ba89ba1c74f53cb70f3fe9338dd8d6153380c309452ae43e01ee09f14f4190c"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
-      "sha256": "c0f9740f1fc25d38184c12728321489a02e4de53f4bbffa6b8be4e3c6bdc930f",
-      "bytes": 1586034
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_1_to_7.zip",
-      "sha256": "fe81912f857f7ecd271d5a15199eddfa5d144bfcdd658bc5cc30725763c4ba85",
-      "bytes": 1417313
+      "bytes": 10067445,
+      "sha256": "7a7ed93ea6f55f90ba20954afd67351620500fe58761105ad0cfd5592465ecb9"
     }
   ],
+  "companion_anchors": [],
   "figure_anchors": [
     {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/crosscentre_aligned_20261029/Figure1_workflow_ma.pdf",
-      "sha256": "cc3f3462568a10d79b06c1026b3b36e2bbd09b2be42683174c92894e278c92c0",
-      "bytes": 285616
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/newB_20261103/Figure1_workflow_ma.pdf",
+      "bytes": 300075,
+      "sha256": "01731546dae9fb803aa97eaa444b6e9eae951f4a217900970297baa1eb310f9a"
     },
     {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_20261029/Figure2_translation.pdf",
-      "sha256": "21b3539110751d0a586ad30ec6e29509c0460c81cd3581247999f50948401118",
-      "bytes": 135561
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/newB_20261103/Figure2_translation.pdf",
+      "bytes": 153317,
+      "sha256": "eb277a87a3f49f30292e3b18223e383d36257690ae96e987c25d1daa1a19483f"
     },
     {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/reporting_redesign_20261029/Figure3_reporting.pdf",
-      "sha256": "e7410ded69226621ad60d1528e4ee97d816524fdeb6d0ff51f03c40a4debf370",
-      "bytes": 52897
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/newB_20261103/Figure3_reporting.pdf",
+      "bytes": 53334,
+      "sha256": "856d52362131dcf9a58ecc74b9986aad3442311ce525cfb59b06c6b34fee05d9"
     },
     {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/main_pair_20261029/Figure4_main_pair.pdf",
-      "sha256": "4b5b7f6cd7ece57a950a31cc4bc5b50061219fb60d8c9178b681a89a2dc01123",
-      "bytes": 52793
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S1_cohort.pdf",
-      "sha256": "706d6e14c5a09084b2a7602357115e88c423de65048122f18f04ef0af1ff0b27",
-      "bytes": 39731
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S2_nine_direction_report.pdf",
-      "sha256": "0b58079570c19fb1f98284b8a845b9ed67c920d458cfe32e47c62b27add57c2e",
-      "bytes": 49876
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S3_mapping_1.pdf",
-      "sha256": "b22db719ef3151c4c2a5416060f14c7ab5f2ad9107386442a54df3b6bb70f0ae",
-      "bytes": 68658
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S3_mapping_2.pdf",
-      "sha256": "c7ca4b7f1f88b1413c8f0271b0da8179386d268c2901e83ba16aa5584f8a84e8",
-      "bytes": 67779
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S3_mapping_3.pdf",
-      "sha256": "2a22f7f17fd7ee31234569baf0670129c43a6730f7a017035a861e89d4488b00",
-      "bytes": 67858
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S4_paired_adaptation.pdf",
-      "sha256": "3cd8ca2c299f9d02df9a95a5e317435dd3437519440f9b6850dc9ce6fc5b37b3",
-      "bytes": 46831
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S5_MA_residuals.pdf",
-      "sha256": "6bfec506c5062d4ce1f1db0c3b933806874edb8c3de0bdf4ac4fd1ef6825dafd",
-      "bytes": 168063
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S6_risk_coverage_1.pdf",
-      "sha256": "8afaf39dea9e8e8ace3ce8194b2653a891c965e02331201a3b48fcad4f2db5a8",
-      "bytes": 69808
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S6_risk_coverage_2.pdf",
-      "sha256": "91f9b2ed8654448c6674075396207954a08cf602ed2d38c6047531d2a787535b",
-      "bytes": 59785
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S6_risk_coverage_3.pdf",
-      "sha256": "6d7773dad80ba2e96228195d07fde5ac09a8c8166681acabb3bd52519355e5cb",
-      "bytes": 68836
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S7_nine_direction_sequence.pdf",
-      "sha256": "b14c4b7bb2affb52f614ac9cedcfa73397462bc61623f85e1e703fe18f742d56",
-      "bytes": 43188
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S8_adaptation_budget.pdf",
-      "sha256": "27a35a2ec72ff7c761bee32e640ffe621eb80d33b606d1947622d6a21d64a1fc",
-      "bytes": 47963
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/Figure_S10_representation.pdf",
-      "sha256": "53af995dd45e0deb1659461cf8d9f0b7317681654bef15750bcda34759ffffd7",
-      "bytes": 2543459
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/times_roman_si_20261030/S9_seed_stability.pdf",
-      "sha256": "4b3265dca5a61bd9c879e44095495e961bae04c62d7a965675c14cbc7c3e2239",
-      "bytes": 69394
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/minimal_revision_20261030/label_budget_curve.pdf",
-      "sha256": "008a20cb4738a867cd6a0e88188039fb666d032f4eeea2be08d289306c705d56",
-      "bytes": 40491
-    },
-    {
-      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/framework_diagnostics_20261030/equal_error_frontier_revision.pdf",
-      "sha256": "21e14f0436e05c31bec31f5ed50b23eb8f220718bd0f46d7a4dde610f55c6ff8",
-      "bytes": 36104
+      "source_path": "outputs/uteg_nc_goal_20261030/manuscript/figures/newB_20261103/Figure4_main_pair.pdf",
+      "bytes": 41992,
+      "sha256": "bc6da7031513d85ed79ca712ac1cf398bc24cda967a8a67a16b5f668edb66eff"
     }
   ],
-  "publication_scope": "Source code, execution documentation, aggregate Supplementary Data 1–7 and hash/path metadata; no manuscript, PDF, ZIP, individual clinical record, individual prediction or trained object.",
-  "interpretation": "Core prediction and reporting algorithms are unchanged. Transfer is an evaluated learning configuration, alongside target-only controls. Reporting-policy matching and internal partitions retain their retrospective, non-independent-validation status.",
-  "code_release_commit": "2ff6dee52ac5c4242352b9937a03601445343c0e",
-  "provenance_note": "The article pins code and aggregate data release 2ff6dee. Later provenance commits update manuscript and companion hashes without changing the pinned code or workbooks.",
-  "public_data": "provenance/PUBLIC_DATA.json",
-  "data_release_commit": "2ff6dee52ac5c4242352b9937a03601445343c0e"
+  "publication_scope": "Current analysis sources, protocols and aggregate workbooks; manuscript files and individual records are not distributed.",
+  "evaluation_protocols": [
+    "Original reserved adaptation and held-out centre cohorts",
+    "Separate grouped five-fold internal evaluation of 301 local records"
+  ],
+  "cohort": {
+    "total": 478,
+    "SAHZU": 304,
+    "Huzhou": 95,
+    "Hubei": 79
+  },
+  "metrics": "FNR/FPR and post-selection class recall use released reference-class denominators. Full-class yields include withheld records. All 20 seeds are retained together within resampled record groups."
 }

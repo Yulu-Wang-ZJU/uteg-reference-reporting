@@ -1,0 +1,49 @@
+{
+  "revision": "clinical_details_20261104",
+  "source": "author questionnaire and existing source-table date fields",
+  "approval_numbers": {
+    "SAHZU": "2022-0971",
+    "Huzhou": "202509003-02"
+  },
+  "ethics_original_PDFs_included": false,
+  "Huzhou_consent_status": "informed consent obtained; author confirmed on 2026-11-04",
+  "date_ranges": {
+    "Huzhou": {
+      "records": 95,
+      "start": "2025-06-19",
+      "end": "2025-07-16"
+    },
+    "SAHZU": {
+      "records": 304,
+      "start": "2026-01-06",
+      "end": "2026-03-19"
+    },
+    "Hubei": {
+      "records": 79,
+      "start": "2026-10-12",
+      "end": "2026-10-20"
+    }
+  },
+  "reference_instruments": {
+    "SAHZU": "TEG5000",
+    "Huzhou": "TEG5000",
+    "Hubei": "LEPU.CFMS.Auto8"
+  },
+  "UTEG_instruments": {
+    "SAHZU": "UTEG2400",
+    "Huzhou": "UTEG2400",
+    "Hubei": "self-developed"
+  },
+  "numerical_results_changed": false,
+  "input_provenance": {
+    "source_status": "author_confirmed_measured",
+    "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",
+    "source_statement": "U-TEG MA and curves are original measured values.",
+    "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+    "runtime_rescaling": false,
+    "runtime_reference_labels_used_to_build_features": false
+  },
+  "document_numbers": {
+    "Hubei": "AF/SC-08/01.0"
+  }
+}

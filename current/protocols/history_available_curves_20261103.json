@@ -1,0 +1,38 @@
+{
+  "claim": "Use all predictions available by each checkpoint; retain earlier options without choosing by held-out correctness.",
+  "coverage_levels": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "agreement_levels": [
+    0.85,
+    0.9,
+    0.95
+  ],
+  "capability": "At each time choose the lowest development-calibrated error-score prediction available for each record, then rank and select the same k records. Previously selected records may change; this is not a replay of issued reports.",
+  "calibrator": "Increasing isotonic error calibration fitted separately for each checkpoint, on eligible development OOF score/error pairs. Development risk estimates cross-fitted by existing development fold; query calibration fitted on the full development set. No fitted risk is a guaranteed probability.",
+  "tie": "Calibrated risk plus1e-6 times the training-score empirical percentile preserves score ordering on isotonic plateaus. Prefer earlier prediction on equal composite score; record-identity hash breaks remaining batch rank ties.",
+  "downstream_input": "Existing5min LR/worst-member score;10min worst boundary-distance/consensus/low-B veto;15min boundary distance. Existing upstream mappings unchanged.",
+  "interface_limit": "Development score is from its OOF predictor, whereas query5/10 scores add model consensus; this inherited difference is evaluated, not asserted calibrated.",
+  "sequence": "For each fixed agreement target, select stage cutoff on development cumulative reports and still-unreported records. Query reports remain locked; later stages may use an earlier saved prediction for a previously unreported record. Cumulative coverage cannot decrease.",
+  "threshold": "Maximize cumulative development report count with cumulative agreement>=target, minimum max(10,ceil(.1*N)) cumulative support,5 identity-proxy groups,2 folds. No added zero-FN constraint; FNR reported.",
+  "actual_agreement": "Observed agreement may vary despite increasing information. No test-label best-of-time selection, no cumulative maxima of observed accuracy, no silent replacement of issued errors.",
+  "protocol_paper": "Original60/201,20seeds,4020 record-seed events.",
+  "protocol_all301": "Frozen grouped5outer folds,3inner-partition repetitions,903 record-repeat events.",
+  "uncertainty": "Pooled ratios only; repeated events are not independent patients. Internal exploratory analysis after prior data inspection.",
+  "figures": "Two time-axis quantitative grids, three levels each; PNG/PDF/SVG plus source CSV.",
+  "provenance": "U-TEG MA and curves are original measured values. The 5- and 10-minute inputs use the first 300 and 600 samples of each 900-sample recording.",
+  "B_from_original_data": true,
+  "valid_UTEG_only_validation": false,
+  "manuscript_changed": false,
+  "software_reference": "https://scikit-learn.org/stable/modules/generated/sklearn.isotonic.IsotonicRegression.html",
+  "input_provenance": {
+    "source_status": "author_confirmed_measured",
+    "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",
+    "source_statement": "U-TEG MA and curves are original measured values.",
+    "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+    "runtime_rescaling": false,
+    "runtime_reference_labels_used_to_build_features": false
+  }
+}

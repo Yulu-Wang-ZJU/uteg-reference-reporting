@@ -1,0 +1,841 @@
+{
+  "schema": "uteg_current_code_v2",
+  "date": "2026-11-07",
+  "source_archive": {
+    "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
+    "bytes": 6096230,
+    "sha256": "bae20c881d209f13d56f8f0699c62febdd182406efc249a93874a17a2960322d"
+  },
+  "members": [
+    {
+      "repository_path": "current/CODE_MANIFEST.json",
+      "archive_member": "CODE_MANIFEST.json",
+      "bytes": 24481,
+      "sha256": "0bf8d4769333e2891cc95afdbc89a6008633c4f70a08786ddb8643208118f98e"
+    },
+    {
+      "repository_path": "current/COHORT_UPDATE.json",
+      "archive_member": "COHORT_UPDATE.json",
+      "bytes": 696,
+      "sha256": "e8f47e4030eeee8414a0e6b15ffda9b9e87c08b118aadc2d015606f8e9876df5"
+    },
+    {
+      "repository_path": "current/EVIDENCE.json",
+      "archive_member": "EVIDENCE.json",
+      "bytes": 6058098,
+      "sha256": "968af02a9e6ed9452eefa0f7153f2db4588aae91d4f68730c33ac85a33114a2c"
+    },
+    {
+      "repository_path": "current/FIGURE4_MATCHED_AGGREGATES.json",
+      "archive_member": "FIGURE4_MATCHED_AGGREGATES.json",
+      "bytes": 9605,
+      "sha256": "d484fe9fedf248e4485c9c8b1520f05335a8a98af64585f7129b06258a562593"
+    },
+    {
+      "repository_path": "current/FIGURE4_MATCHED_CONTRACT.json",
+      "archive_member": "FIGURE4_MATCHED_CONTRACT.json",
+      "bytes": 2653,
+      "sha256": "fc34901670d49d00ea785650769170e7a71421ea88c7e94c51484d15337b72be"
+    },
+    {
+      "repository_path": "current/HGB_TIME_AGGREGATES.json",
+      "archive_member": "HGB_TIME_AGGREGATES.json",
+      "bytes": 340809,
+      "sha256": "af7ee4743eb59f59cfd25634777532c623bfe18ecead5c269855320a7fe56dff"
+    },
+    {
+      "repository_path": "current/HGB_TIME_PROTOCOL.json",
+      "archive_member": "HGB_TIME_PROTOCOL.json",
+      "bytes": 3066,
+      "sha256": "40473890156adb5e6dc712e2f221ca421aa8ab8f1d016c4bfe58c654e13a4e35"
+    },
+    {
+      "repository_path": "current/INPUT_CONTRACT.json",
+      "archive_member": "INPUT_CONTRACT.json",
+      "bytes": 820,
+      "sha256": "69a16220a0a9f83f9612ccb0aa1981b3d0f7de058cb1542750b164f213349e79"
+    },
+    {
+      "repository_path": "current/LINEAR_RBF_ALPHA_SELECTION.json",
+      "archive_member": "LINEAR_RBF_ALPHA_SELECTION.json",
+      "bytes": 1580,
+      "sha256": "bee2021f646901f0471309baec42195eb119bbc3618931f9171b680cb988b7a4"
+    },
+    {
+      "repository_path": "current/LINEAR_RBF_RESULTS.json",
+      "archive_member": "LINEAR_RBF_RESULTS.json",
+      "bytes": 35427,
+      "sha256": "0cd1236a7768aa0579f8254f430722b30065f415be3eb3bd342fdb58d003e29a"
+    },
+    {
+      "repository_path": "current/README.md",
+      "archive_member": "README.md",
+      "bytes": 5011,
+      "sha256": "dae2f5b08c72a1da9d557a62c208301100edc388666db7df7fab1af1fd4dea41"
+    },
+    {
+      "repository_path": "current/RESTRICTED_INPUT_HASHES.json",
+      "archive_member": "RESTRICTED_INPUT_HASHES.json",
+      "bytes": 564,
+      "sha256": "f73193d874540ad8734e771ae5345821cb807f00048652daaca2790a905a8306"
+    },
+    {
+      "repository_path": "current/WORKBOOK_TABLES.json",
+      "archive_member": "WORKBOOK_TABLES.json",
+      "bytes": 24797342,
+      "sha256": "d9f530cf392ec7dba4f9676093531b80349dc7e110f41984c82477f82d229b46"
+    },
+    {
+      "repository_path": "current/build_workbooks.mjs",
+      "archive_member": "build_workbooks.mjs",
+      "bytes": 3993,
+      "sha256": "ed5ec888f35e0acea963e583d5efafe8bc64516fd741fe78d75f0f28f45d04a3"
+    },
+    {
+      "repository_path": "current/code_submit/__init__.py",
+      "archive_member": "code_submit/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository_path": "current/code_submit/ma_imbalance_mapping/__init__.py",
+      "archive_member": "code_submit/ma_imbalance_mapping/__init__.py",
+      "bytes": 305,
+      "sha256": "5ac334fd7db1526e53c7207f00a6ec55e9966cc18e020f1f66e27e49d977e6b3"
+    },
+    {
+      "repository_path": "current/code_submit/ma_imbalance_mapping/data_contract.py",
+      "archive_member": "code_submit/ma_imbalance_mapping/data_contract.py",
+      "bytes": 21032,
+      "sha256": "127c5b78433c24653c7617d8aacb81c72206d874295fe4ad633759d61ae9d1cf"
+    },
+    {
+      "repository_path": "current/code_submit/ma_imbalance_mapping/models.py",
+      "archive_member": "code_submit/ma_imbalance_mapping/models.py",
+      "bytes": 29308,
+      "sha256": "f577638b2dafbaf3566b3baa8fe8ad54036bcff94f9c3ba84c1cd6e04ce36f15"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/__init__.py",
+      "archive_member": "code_submit/ma_target_optimization/__init__.py",
+      "bytes": 82,
+      "sha256": "50c633268d78d038122af647cbcbab61b3a8f3e34ac8e6d575828db5c4055ed6"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/abnormal_direction_mapping.py",
+      "archive_member": "code_submit/ma_target_optimization/abnormal_direction_mapping.py",
+      "bytes": 9738,
+      "sha256": "c84d451c9b0414aa55cdad742c475364913d406900db86b98a6dd3255cc07ebb"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/alignment_search.py",
+      "archive_member": "code_submit/ma_target_optimization/alignment_search.py",
+      "bytes": 8530,
+      "sha256": "c7893a5699447bb590d7436d1719bea3bb6b1fba873ab9178f005ab93943caa4"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/all301_b085_inward4_transfer.py",
+      "archive_member": "code_submit/ma_target_optimization/all301_b085_inward4_transfer.py",
+      "bytes": 4921,
+      "sha256": "1313eb46b0ce1a07f43d0a472d57ddff5286a332f4ac8e3e2d16e91d35e00ecc"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/all301_internal_data.py",
+      "archive_member": "code_submit/ma_target_optimization/all301_internal_data.py",
+      "bytes": 6833,
+      "sha256": "b91abd8280dad4461811fc4dbbb846abba3fb7ce35ca6ba8ea81a79dbf817495"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/all301_internal_models.py",
+      "archive_member": "code_submit/ma_target_optimization/all301_internal_models.py",
+      "bytes": 4268,
+      "sha256": "d175ff9f797084d5a1c448d42b46aa580ab72dd023e9e429703e645b6e07d4e2"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/asymmetric_ma_mapping.py",
+      "archive_member": "code_submit/ma_target_optimization/asymmetric_ma_mapping.py",
+      "bytes": 14792,
+      "sha256": "2715ee2ba4df2869d9284e336df3c79c709874d989b7b79c81670bea391e760f"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/center_tree_search.py",
+      "archive_member": "code_submit/ma_target_optimization/center_tree_search.py",
+      "bytes": 5655,
+      "sha256": "4a249e66fe35c2b2d21dc15e1461d5da1f63b1e199f7262ef7a3111325a5dc0e"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/common_clock.py",
+      "archive_member": "code_submit/ma_target_optimization/common_clock.py",
+      "bytes": 10803,
+      "sha256": "b61f25a396cb51d62675f685d8b090ed768e11fc6ba3d98756c319e24790e33b"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/cost_sensitive_detection.py",
+      "archive_member": "code_submit/ma_target_optimization/cost_sensitive_detection.py",
+      "bytes": 18317,
+      "sha256": "231c2635dcdb8d341caabc20adc8aa3be06abc03736a52873794d3ceecca7b3d"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/current_low_support.py",
+      "archive_member": "code_submit/ma_target_optimization/current_low_support.py",
+      "bytes": 9360,
+      "sha256": "0cf139e8c4702d1ac994c68dab2aec3c868c64c151db799f287443fec37224aa"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/density_reweight_mapping.py",
+      "archive_member": "code_submit/ma_target_optimization/density_reweight_mapping.py",
+      "bytes": 9571,
+      "sha256": "318f4e96937b0a9caf5d933984b6d0ee97e44dc3103a6b3c41fc4fb36e275daa"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/duration_transfer.py",
+      "archive_member": "code_submit/ma_target_optimization/duration_transfer.py",
+      "bytes": 10022,
+      "sha256": "da729b359287bfaccab20eef0e4134d7498375632120567fd53c00d6903723e4"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/feature_combination_audit.py",
+      "archive_member": "code_submit/ma_target_optimization/feature_combination_audit.py",
+      "bytes": 17826,
+      "sha256": "8a55fc1383cb39b815ef0b7e6454edf5f0c5de51e4ddbde1f10e29c6562f4d52"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/frozen_moment_features.py",
+      "archive_member": "code_submit/ma_target_optimization/frozen_moment_features.py",
+      "bytes": 6921,
+      "sha256": "c990d3783ef922a83c55de8f4a2ebe5305267ee5386c7508d3ebb007c332f61a"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/frozen_moment_mapping.py",
+      "archive_member": "code_submit/ma_target_optimization/frozen_moment_mapping.py",
+      "bytes": 12705,
+      "sha256": "c0601b23083aa6a47d2c1c7025fa9118bfcf0e031e79aba55981b464a7186be8"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/frozen_moment_specialist.py",
+      "archive_member": "code_submit/ma_target_optimization/frozen_moment_specialist.py",
+      "bytes": 9328,
+      "sha256": "759156063142d49d40a0ee3de87be4907bf15d8ac7f8367eaaf3407686c9ed7d"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/full_curve_cost_sensitive.py",
+      "archive_member": "code_submit/ma_target_optimization/full_curve_cost_sensitive.py",
+      "bytes": 11281,
+      "sha256": "59c0ced30dd81e7786ba3088c815d6c32e2ff85a979a4496c9aadf534cf6d962"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/full_curve_joint_state.py",
+      "archive_member": "code_submit/ma_target_optimization/full_curve_joint_state.py",
+      "bytes": 14867,
+      "sha256": "e5c540e6ae7c88156b66a076245d98adb9b45034eb33fa612e8a4559fdd7ab28"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/full_curve_neural.py",
+      "archive_member": "code_submit/ma_target_optimization/full_curve_neural.py",
+      "bytes": 13215,
+      "sha256": "d4ed6476a09163368d7254ebd70f5e96b9bc023be8babb8c244ce0702f8c3a7b"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/full_curve_state_experts.py",
+      "archive_member": "code_submit/ma_target_optimization/full_curve_state_experts.py",
+      "bytes": 10039,
+      "sha256": "6b91b5c0ff9a71711ae8bf4b80a06eda439e779a4246c4d5b5f4e5ecfd5016d7"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/functional_search.py",
+      "archive_member": "code_submit/ma_target_optimization/functional_search.py",
+      "bytes": 8447,
+      "sha256": "2b8a9d4881829a92748059d469cf1d454a12ee92a3ebd6b6d551ca966e4979ca"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/hierarchical_search.py",
+      "archive_member": "code_submit/ma_target_optimization/hierarchical_search.py",
+      "bytes": 6559,
+      "sha256": "2fc7716aa77413cf64094fd0cdde2a748399aef738d77fe04b0cbd065f4ebcd9"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/high_ma_specialist.py",
+      "archive_member": "code_submit/ma_target_optimization/high_ma_specialist.py",
+      "bytes": 12815,
+      "sha256": "2ea7c96781045683028d54db762db9660c90b198ee93dbbdddbc379ccecb31be"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/hubei_source_search.py",
+      "archive_member": "code_submit/ma_target_optimization/hubei_source_search.py",
+      "bytes": 6789,
+      "sha256": "93750de2c5deb40bda94d51b3e5e84f997d6553272d7ba2e1c2768774a27320e"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/learning_curve.py",
+      "archive_member": "code_submit/ma_target_optimization/learning_curve.py",
+      "bytes": 6708,
+      "sha256": "7deacae10283e008495dc6062615fdbd8f914511be9717f88030a641bed3fe5c"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/low_rank_curve_mapping.py",
+      "archive_member": "code_submit/ma_target_optimization/low_rank_curve_mapping.py",
+      "bytes": 13734,
+      "sha256": "94ef5647c963294dcb0c1b866d9d74dd2cbd2ad8938e928f65d3f09dcf443d09"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/metrics.py",
+      "archive_member": "code_submit/ma_target_optimization/metrics.py",
+      "bytes": 3895,
+      "sha256": "2bcb74a713daa26643f1be75833994fa0b3619b5031757b17b1a6401b7e6d405"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/models.py",
+      "archive_member": "code_submit/ma_target_optimization/models.py",
+      "bytes": 7621,
+      "sha256": "4c0230cd02b900ed4a3587f61325b88bb0e78ae80afbda2c435a6d048789dcd5"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/pinned_pls_mapping.py",
+      "archive_member": "code_submit/ma_target_optimization/pinned_pls_mapping.py",
+      "bytes": 1583,
+      "sha256": "0669967a9935e5118a108361623e0bb1b3e05dd39105e9792a2d2ec7a640a3e1"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/representation_search.py",
+      "archive_member": "code_submit/ma_target_optimization/representation_search.py",
+      "bytes": 9072,
+      "sha256": "86152eb79f030181159f61cc8c8e8a92ee446d4ba3a1ebd3f35b3f35e6b67178"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/search.py",
+      "archive_member": "code_submit/ma_target_optimization/search.py",
+      "bytes": 9482,
+      "sha256": "a86b1aff3eb356cf91c42e745cdbed733645e7a7afc8faaa30dcd0f7019c1a7f"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/signal_neighborhood.py",
+      "archive_member": "code_submit/ma_target_optimization/signal_neighborhood.py",
+      "bytes": 7516,
+      "sha256": "0e67d240e02775df3523f65d390c6b111165571136db837c1d5273316ca725cb"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/specialist_boundary_calibration.py",
+      "archive_member": "code_submit/ma_target_optimization/specialist_boundary_calibration.py",
+      "bytes": 10087,
+      "sha256": "a30ff7628064d4928edd72e60fe831c58622f45581d1a151e12c396dc3c8f798"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/supervised_curve_mapping.py",
+      "archive_member": "code_submit/ma_target_optimization/supervised_curve_mapping.py",
+      "bytes": 10977,
+      "sha256": "b7966aaa630f935012e4c81a3d448ce999a263316e38da946e7ed31d305b9b9a"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/supervised_high_rescue.py",
+      "archive_member": "code_submit/ma_target_optimization/supervised_high_rescue.py",
+      "bytes": 7630,
+      "sha256": "ead07d0595ee4bbb863af9bfe55a26e9abbfeee408028c85083aa5d3be725e9d"
+    },
+    {
+      "repository_path": "current/code_submit/ma_target_optimization/voltage_scale.py",
+      "archive_member": "code_submit/ma_target_optimization/voltage_scale.py",
+      "bytes": 15071,
+      "sha256": "68283a3daf1c456269c9e1ae189445e921c6c52cdd8878dba62de7a8df91d42f"
+    },
+    {
+      "repository_path": "current/code_submit/paper_b085_hospital_replay/__init__.py",
+      "archive_member": "code_submit/paper_b085_hospital_replay/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository_path": "current/code_submit/paper_b085_hospital_replay/adaptation_controls.py",
+      "archive_member": "code_submit/paper_b085_hospital_replay/adaptation_controls.py",
+      "bytes": 13570,
+      "sha256": "1c17dc9e72dcd6d71887f647e16dd9bc23826f3f82bf666bdcb242b816e20327"
+    },
+    {
+      "repository_path": "current/code_submit/paper_b085_hospital_replay/common.py",
+      "archive_member": "code_submit/paper_b085_hospital_replay/common.py",
+      "bytes": 3997,
+      "sha256": "7c400c6b8c44ded50cd38d38e05d2e52419b8be2b36ce534fa0ab5f4a25ea001"
+    },
+    {
+      "repository_path": "current/code_submit/paper_b085_hospital_replay/equal_error.py",
+      "archive_member": "code_submit/paper_b085_hospital_replay/equal_error.py",
+      "bytes": 43060,
+      "sha256": "03698bba188109f40a388c0540f513f6151df69e23d530c8f95367839664ce13"
+    },
+    {
+      "repository_path": "current/code_submit/paper_b085_hospital_replay/reporting_controls.py",
+      "archive_member": "code_submit/paper_b085_hospital_replay/reporting_controls.py",
+      "bytes": 53242,
+      "sha256": "b0a7eeb4d8d9bf139550be697ea2038252ed2e2ddb6e31743426adb59886e2a3"
+    },
+    {
+      "repository_path": "current/code_submit/paper_b085_hospital_replay/target_only.py",
+      "archive_member": "code_submit/paper_b085_hospital_replay/target_only.py",
+      "bytes": 22452,
+      "sha256": "3e53dbf815ad198d48d05b201e99a37b7f743889f625c73c4434a8cbd303e1cb"
+    },
+    {
+      "repository_path": "current/code_submit/paper_b085_hospital_replay/transfer.py",
+      "archive_member": "code_submit/paper_b085_hospital_replay/transfer.py",
+      "bytes": 14272,
+      "sha256": "8efe2d6129c6bbcaa6c5109aeb3d67934a3e825b8068c8c33e28f35737ed78dc"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/__init__.py",
+      "archive_member": "code_submit/paper_inward4_replay/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/analysis.py",
+      "archive_member": "code_submit/paper_inward4_replay/analysis.py",
+      "bytes": 10427,
+      "sha256": "f01c34c5b71652623a1f5367d7ab2dadc430b5b462d0d5b11bd7c158a5fe56c5"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/controls.py",
+      "archive_member": "code_submit/paper_inward4_replay/controls.py",
+      "bytes": 2885,
+      "sha256": "04c3bb3aa728f5e9d70a8f3a73d4b69ca94e863f14a8b8bd37640a9f0694aca0"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/core.py",
+      "archive_member": "code_submit/paper_inward4_replay/core.py",
+      "bytes": 8337,
+      "sha256": "aa71328e8d3fb8bc6ba511530291e4a70a6205fdb9e954cecf6101d17bf193b1"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/current_costs.py",
+      "archive_member": "code_submit/paper_inward4_replay/current_costs.py",
+      "bytes": 7006,
+      "sha256": "fb82c59cca793c08326282d0f5990670903c39fc8514bdc38898af7529a0de5a"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/current_finalize.py",
+      "archive_member": "code_submit/paper_inward4_replay/current_finalize.py",
+      "bytes": 18365,
+      "sha256": "31a2abdf23b236235d3d70faa7885cbbf3edcb82830286a14e78e5e64b621b11"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/current_local_controls.py",
+      "archive_member": "code_submit/paper_inward4_replay/current_local_controls.py",
+      "bytes": 4979,
+      "sha256": "eda909f5acc4902aa734124b9fbb49f2e8c69121f08522be453c405e029f6dae"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/current_suite.py",
+      "archive_member": "code_submit/paper_inward4_replay/current_suite.py",
+      "bytes": 12794,
+      "sha256": "3174d1dfecb03240e5f836d2fd001050139c36ab1eb7ae502caa75991d9fc475"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/current_version.py",
+      "archive_member": "code_submit/paper_inward4_replay/current_version.py",
+      "bytes": 9709,
+      "sha256": "006eb44aa8fe261e96dd7ea44de4a343b479d6017abe067a915893e06f86ee3c"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/early_release_subset.py",
+      "archive_member": "code_submit/paper_inward4_replay/early_release_subset.py",
+      "bytes": 34258,
+      "sha256": "1b95c03bb6af2a6220a8b2a47c8d2d6bfb1b81b149934d1feb1eb68c07cd6834"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/early_stability.py",
+      "archive_member": "code_submit/paper_inward4_replay/early_stability.py",
+      "bytes": 19269,
+      "sha256": "2496c52139fac2acafdf53c24d9eac22f338c81ec42d00af15cd1bfba8d9e548"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/figure3_reporting_aggregate.json",
+      "archive_member": "code_submit/paper_inward4_replay/figure3_reporting_aggregate.json",
+      "bytes": 71164,
+      "sha256": "912371dc1113861e63a11428b5be7820feb7798ab41122e3dd6924c836aa6954"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/figure4_matched_aggregate.json",
+      "archive_member": "code_submit/paper_inward4_replay/figure4_matched_aggregate.json",
+      "bytes": 9605,
+      "sha256": "d484fe9fedf248e4485c9c8b1520f05335a8a98af64585f7129b06258a562593"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/figure4_matched_preview.py",
+      "archive_member": "code_submit/paper_inward4_replay/figure4_matched_preview.py",
+      "bytes": 13546,
+      "sha256": "85ce67a599eec51d24cbf9f57c9ac4440e77b94a8a02c973baa92d5ff038dafb"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/gates.py",
+      "archive_member": "code_submit/paper_inward4_replay/gates.py",
+      "bytes": 7688,
+      "sha256": "7971a6e064fa85d5f867aea63d86da0c1e859530de696a0b17f130e2e326e567"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/history_available_curves.py",
+      "archive_member": "code_submit/paper_inward4_replay/history_available_curves.py",
+      "bytes": 22784,
+      "sha256": "d72fb17eb106cc9e4af206ab51cb29c5fe1766b62ea190ce0fc43b2aeb6cf4e2"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/history_update_comparison.py",
+      "archive_member": "code_submit/paper_inward4_replay/history_update_comparison.py",
+      "bytes": 27552,
+      "sha256": "a6b4927cbeb53851a7885041ce582ade13c1f21ac86ab57bddc51b76ba71c720"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/input_contract.py",
+      "archive_member": "code_submit/paper_inward4_replay/input_contract.py",
+      "bytes": 1819,
+      "sha256": "ed1c01b862699a689a66ded7e70f0982d63bc2f071890122c9b4ce93d6a9ef8f"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/linear_rbf_comparison.py",
+      "archive_member": "code_submit/paper_inward4_replay/linear_rbf_comparison.py",
+      "bytes": 30420,
+      "sha256": "3d3f7359dbe0ff8e655bd5504578104ae101a7e82754c5c8fef4b8c38bfda086"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_auxiliary.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_auxiliary.py",
+      "bytes": 8088,
+      "sha256": "2ce5e07fc901be59fdf6400e815b2752692c5b50fe45e248728e1855a0b297fb"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_delivery.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_delivery.py",
+      "bytes": 5758,
+      "sha256": "2acd09dbcf9ba33a2fd56e7d8e61f506caa1b142e330ca6614e6b05f32c3fb94"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_detail_tables.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_detail_tables.py",
+      "bytes": 10827,
+      "sha256": "efd0641b60ca207471387c7b45f2d28e69f06a9ddddac7fa70124c0e30b2f6e0"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_development.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_development.py",
+      "bytes": 10642,
+      "sha256": "766550d03432270b19985971589290c04b3977c53fca8ab0738616d167b446ce"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_diagnostics.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_diagnostics.py",
+      "bytes": 8284,
+      "sha256": "5517337ec62149a8cdead5c01bbf0656c7c0b9284e9252507b7c8f730a89f080"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_figure2.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_figure2.py",
+      "bytes": 23650,
+      "sha256": "aa7389cc33a8c1a7fd5b96c390dd75dc2d28bda55f5b85b0540b6ec9aa13ee53"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_figure3.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_figure3.py",
+      "bytes": 11323,
+      "sha256": "7f62beb40371791928c9819c7100fc5fe777a3933d97a9219e2e097126055f33"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_figure4.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_figure4.py",
+      "bytes": 4616,
+      "sha256": "3eb0962738019e32de66c8f3ea6235a64c1386c47172d53667445e9a7b00800f"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_figures.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_figures.py",
+      "bytes": 16143,
+      "sha256": "30bf001fcd8ac4b610f042b5af8defa918fe963026bc5b17e9c3ea84396cbf2c"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_forward.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_forward.py",
+      "bytes": 3140,
+      "sha256": "6ef89ebb344fe564ca4af5c510239f267761592c746349a7e305928006c91f13"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_representation.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_representation.py",
+      "bytes": 6329,
+      "sha256": "e999357e66857416cde9c69874fa7e556f522b0a72358eb6905044d30ed10910"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_results.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_results.py",
+      "bytes": 27342,
+      "sha256": "ba0d3f75945a750ce66b164d37b1abe1eaaf50df02aa3bba91ab5cf0ec71c2ad"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_signal.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_signal.py",
+      "bytes": 5087,
+      "sha256": "812dd4ed3f5e46dab8b9ff30a1c3bf20e1ea5a340ca66b1d7867d2ba825426f6"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/manuscript_workflow_figure.py",
+      "archive_member": "code_submit/paper_inward4_replay/manuscript_workflow_figure.py",
+      "bytes": 4130,
+      "sha256": "125ecc6f419583d0ceb2618d570429ad8219fdd5d3cbd524c3ca28a564b2ffc0"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/mapping.py",
+      "archive_member": "code_submit/paper_inward4_replay/mapping.py",
+      "bytes": 6557,
+      "sha256": "dc57002e484aa62955f5a3fe6932ee26f4b0f4bcb3e8691dcd3ead85632fef88"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/matched_checkpoint_curves.py",
+      "archive_member": "code_submit/paper_inward4_replay/matched_checkpoint_curves.py",
+      "bytes": 27585,
+      "sha256": "687d815797b20c5ab4456241cbad66b93b03c9a5450d20d78f1341c62670e344"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/primary.py",
+      "archive_member": "code_submit/paper_inward4_replay/primary.py",
+      "bytes": 7519,
+      "sha256": "3adf3c657ce7d4530212faec1bcf4d82dd2c8c1bf88dc3619f0fd6f500b05ae1"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/reconstruction.py",
+      "archive_member": "code_submit/paper_inward4_replay/reconstruction.py",
+      "bytes": 1014,
+      "sha256": "595a4cf2276249ee2396619680deb2fcb6a18463079945d572436ee8efc14096"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/ten_minute_consensus.py",
+      "archive_member": "code_submit/paper_inward4_replay/ten_minute_consensus.py",
+      "bytes": 15458,
+      "sha256": "3b79d17dcb3366ddc9b86d0b6d3190d417af3b060f6fae2658bfa509a01e0a2c"
+    },
+    {
+      "repository_path": "current/code_submit/paper_inward4_replay/unified_hgb_reporting.py",
+      "archive_member": "code_submit/paper_inward4_replay/unified_hgb_reporting.py",
+      "bytes": 15340,
+      "sha256": "dcbdc7c500bf00f82c467fe57cfeb86eb6560fc67d20df3c4f6076ff01c3abc3"
+    },
+    {
+      "repository_path": "current/configure_restricted_inputs.py",
+      "archive_member": "configure_restricted_inputs.py",
+      "bytes": 1561,
+      "sha256": "2ab291a05049e8e107efefe971884b1353f81dde814ddf9b6344944d3e2e464e"
+    },
+    {
+      "repository_path": "current/outputs/uteg_c60_new_trust_20261007_170322/models.py",
+      "archive_member": "outputs/uteg_c60_new_trust_20261007_170322/models.py",
+      "bytes": 6154,
+      "sha256": "8af259ea014bf6dcf47af4a7c66834ff8fbbc18f01c187742a9e84a518158279"
+    },
+    {
+      "repository_path": "current/outputs/uteg_c60_new_trust_20261007_170322/stats.py",
+      "archive_member": "outputs/uteg_c60_new_trust_20261007_170322/stats.py",
+      "bytes": 3948,
+      "sha256": "ac5ce2ab126f8127a09c5a077c4c34c8626e422eca89a6ed72d84853d3d273c4"
+    },
+    {
+      "repository_path": "current/outputs/uteg_d2_ci_native85_20261007_012322/engine.py",
+      "archive_member": "outputs/uteg_d2_ci_native85_20261007_012322/engine.py",
+      "bytes": 9360,
+      "sha256": "c0588b1e9c56c1c11170eee1b4224433e66648f3fec2683c6d12f21535ede916"
+    },
+    {
+      "repository_path": "current/outputs/uteg_fourparam_mapping_trust_20261006_132600/core.py",
+      "archive_member": "outputs/uteg_fourparam_mapping_trust_20261006_132600/core.py",
+      "bytes": 6401,
+      "sha256": "164f99680cdb72ea973b2a817ed77b12280e53a9b38a8fd6ed226397dd5df92d"
+    },
+    {
+      "repository_path": "current/outputs/uteg_hill_exp_matched_20261012_153337/models.py",
+      "archive_member": "outputs/uteg_hill_exp_matched_20261012_153337/models.py",
+      "bytes": 2516,
+      "sha256": "46943376318de56cc531a539d09a45a818a05396e9706d23e4e52e938de2b3a1"
+    },
+    {
+      "repository_path": "current/outputs/uteg_med4_capacity_20261006_001701/core.py",
+      "archive_member": "outputs/uteg_med4_capacity_20261006_001701/core.py",
+      "bytes": 5471,
+      "sha256": "1c64c32270dfdb55d1e9a7feaea3d1ceabfc790cfc897ea1739ae6c01defd72d"
+    },
+    {
+      "repository_path": "current/outputs/uteg_med4_early_decision_20261004_191744/common.py",
+      "archive_member": "outputs/uteg_med4_early_decision_20261004_191744/common.py",
+      "bytes": 3125,
+      "sha256": "327da89827d0c596ae94fa2557a5f7108dcddf046b032913e42026dedbed0fec"
+    },
+    {
+      "repository_path": "current/outputs/uteg_med4_source_clinical_20261006_104632/core.py",
+      "archive_member": "outputs/uteg_med4_source_clinical_20261006_104632/core.py",
+      "bytes": 4278,
+      "sha256": "e08c22a50128b4443412fb0eb729b165a4b67f3b30bfa5133a0b4c7b67a45dd2"
+    },
+    {
+      "repository_path": "current/outputs/uteg_nc_goal_20261030/focused_reporting_20261030/run.py",
+      "archive_member": "outputs/uteg_nc_goal_20261030/focused_reporting_20261030/run.py",
+      "bytes": 13980,
+      "sha256": "cacd96f220f41faeb1c9ac1bdaedccca72eac2aea54714507e9759d13cf3a32e"
+    },
+    {
+      "repository_path": "current/outputs/uteg_nc_goal_20261030/target_ridge/run.py",
+      "archive_member": "outputs/uteg_nc_goal_20261030/target_ridge/run.py",
+      "bytes": 6106,
+      "sha256": "2d193cac868341dccb9dba431c0baaaa022b66930a62347852d24e429ffa32b0"
+    },
+    {
+      "repository_path": "current/outputs/uteg_nine_direction_ma_20261025_195548/code/fit_ma_gates.py",
+      "archive_member": "outputs/uteg_nine_direction_ma_20261025_195548/code/fit_ma_gates.py",
+      "bytes": 31453,
+      "sha256": "d873487c5b0629ed606951b75d9f88a856a6349080f269684eb87e6266d40941"
+    },
+    {
+      "repository_path": "current/outputs/uteg_platform_param_compare_20261006_125428/core.py",
+      "archive_member": "outputs/uteg_platform_param_compare_20261006_125428/core.py",
+      "bytes": 865,
+      "sha256": "470e85708f6b6b2db4ecd614435b982005bd72d56b4e7a31ef7b0e6a91a5866b"
+    },
+    {
+      "repository_path": "current/outputs/uteg_platform_param_compare_20261006_125428/curves.py",
+      "archive_member": "outputs/uteg_platform_param_compare_20261006_125428/curves.py",
+      "bytes": 6902,
+      "sha256": "4ea18fa2bbc2f2c77669f79f3e6e53e7a11dfedbb22f8ac7c5a8f2be51c39608"
+    },
+    {
+      "repository_path": "current/outputs/uteg_ridge_dual_head_prepare_20261026_172952/dual_head_contract.py",
+      "archive_member": "outputs/uteg_ridge_dual_head_prepare_20261026_172952/dual_head_contract.py",
+      "bytes": 11143,
+      "sha256": "9c513f8dc17a405c4014f9bc7a76dba11d64ec4862182d9a56378b39c57fc342"
+    },
+    {
+      "repository_path": "current/outputs/uteg_ridge_dual_head_unified_selector_20261026_190142/run_unified_selector.py",
+      "archive_member": "outputs/uteg_ridge_dual_head_unified_selector_20261026_190142/run_unified_selector.py",
+      "bytes": 21888,
+      "sha256": "9af66b0452dba54ca9c5a6a9eb7b4b8888511418674fbf189010c74bb1dfe59b"
+    },
+    {
+      "repository_path": "current/outputs/uteg_scalar_ordinal_trust_20261006_181750/core.py",
+      "archive_member": "outputs/uteg_scalar_ordinal_trust_20261006_181750/core.py",
+      "bytes": 3116,
+      "sha256": "df1203632f4e88c465a21fe51395925b4356921d29acc262c2d25f9fadc33eda"
+    },
+    {
+      "repository_path": "current/outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/run_ridge10_fullchain.py",
+      "archive_member": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/run_ridge10_fullchain.py",
+      "bytes": 45526,
+      "sha256": "c05928445afdb4df33a4dff7d135a7c038bb8820711e65d9b48812523d1ed86e"
+    },
+    {
+      "repository_path": "current/outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/runtime.py",
+      "archive_member": "outputs/uteg_signal_model_goal_20261026_000929/ridge10_fullchain_20261026_122551/runtime.py",
+      "bytes": 12321,
+      "sha256": "4854e987af9d7e7cd6ce7deafac857f56b8b956735ae8f7dd59f9b3daa6b1e9d"
+    },
+    {
+      "repository_path": "current/outputs/uteg_supplement_completion_20261027_203140/batch.py",
+      "archive_member": "outputs/uteg_supplement_completion_20261027_203140/batch.py",
+      "bytes": 12823,
+      "sha256": "1bd9afa868c8c73f6fc4efffa575630158a8e9d06e9b2e72d72947602f1afdc1"
+    },
+    {
+      "repository_path": "current/outputs/uteg_trust_gate_selection_20261004_205412/independent_statistics.py",
+      "archive_member": "outputs/uteg_trust_gate_selection_20261004_205412/independent_statistics.py",
+      "bytes": 6073,
+      "sha256": "affded150a5aae765213d7103cfbb3064dcafcd823bcc3667c46fa3ed25c9aa7"
+    },
+    {
+      "repository_path": "current/outputs/uteg_trust_gate_selection_20261004_205412/risk_models.py",
+      "archive_member": "outputs/uteg_trust_gate_selection_20261004_205412/risk_models.py",
+      "bytes": 30367,
+      "sha256": "a47da5667e37c11387dd296c6715c362a884eeb6282f6270fd912999d297a039"
+    },
+    {
+      "repository_path": "current/outputs/uteg_trust_threshold90_20261006_161248/core.py",
+      "archive_member": "outputs/uteg_trust_threshold90_20261006_161248/core.py",
+      "bytes": 5478,
+      "sha256": "153f037ea185ea505fd7f15de2c851ac2da8e3eb1bbe8630e311f85a889c4233"
+    },
+    {
+      "repository_path": "current/outputs/uteg_zero5_med4_20261006_113257/core.py",
+      "archive_member": "outputs/uteg_zero5_med4_20261006_113257/core.py",
+      "bytes": 3646,
+      "sha256": "0412b0e6090734166f0575048014a1c9e476fd9ae0afe82a8694ffcc2374686f"
+    },
+    {
+      "repository_path": "current/protocols/CLINICAL_DETAILS_20261104.json",
+      "archive_member": "protocols/CLINICAL_DETAILS_20261104.json",
+      "bytes": 1724,
+      "sha256": "0734acf3b03b7146354a6f974af23a546e8be337a506c563322231398140a735"
+    },
+    {
+      "repository_path": "current/protocols/CONTROLS_PROTOCOL.json",
+      "archive_member": "protocols/CONTROLS_PROTOCOL.json",
+      "bytes": 1162,
+      "sha256": "d0affc780de04854266f19c5aaa12d18da501c0fb914fb25ec613eb76f4c5215"
+    },
+    {
+      "repository_path": "current/protocols/FULL_SUITE_PROTOCOL.json",
+      "archive_member": "protocols/FULL_SUITE_PROTOCOL.json",
+      "bytes": 1883,
+      "sha256": "64387b809e514e2fa7df0238c051bf8d3e81e264956b7323ee5f5a86eed8f945"
+    },
+    {
+      "repository_path": "current/protocols/GATE_PROTOCOL.json",
+      "archive_member": "protocols/GATE_PROTOCOL.json",
+      "bytes": 1353,
+      "sha256": "16153330941d56a9c16052ca5d8bd5f99e3c5075a7583cbbc77d835b10dc0ce9"
+    },
+    {
+      "repository_path": "current/protocols/LINEAR_RBF_PROTOCOL.json",
+      "archive_member": "protocols/LINEAR_RBF_PROTOCOL.json",
+      "bytes": 4309,
+      "sha256": "977d49bbec975b02095be665e47dc68d9ade28e15502df52a0e3f0748a772e54"
+    },
+    {
+      "repository_path": "current/protocols/MAPPING_PROTOCOL.json",
+      "archive_member": "protocols/MAPPING_PROTOCOL.json",
+      "bytes": 1436,
+      "sha256": "ab0ee47642cc7b97e2e3f58cc789898a3c9fb4cb38b44335376edef7ea2ed6d8"
+    },
+    {
+      "repository_path": "current/protocols/PROTOCOL.json",
+      "archive_member": "protocols/PROTOCOL.json",
+      "bytes": 1376,
+      "sha256": "e8a9f45b7c688362a9d51aed3df1f31af78653afe613de2c3d765d19b875294e"
+    },
+    {
+      "repository_path": "current/protocols/all301_local_controls/PROTOCOL.json",
+      "archive_member": "protocols/all301_local_controls/PROTOCOL.json",
+      "bytes": 1327,
+      "sha256": "67b33dc7c21c606297fda8649d28ea4b6568078e52e9543817165d422ea69d33"
+    },
+    {
+      "repository_path": "current/protocols/cost_comparison/FROZEN_PROTOCOL.json",
+      "archive_member": "protocols/cost_comparison/FROZEN_PROTOCOL.json",
+      "bytes": 1313,
+      "sha256": "79ec093036b19c2422c3b320f2aa25c2fb62595cde855e372d7360109016d90f"
+    },
+    {
+      "repository_path": "current/protocols/figure3_selective_20261103.json",
+      "archive_member": "protocols/figure3_selective_20261103.json",
+      "bytes": 2063,
+      "sha256": "050b72b37460557a485cb85c3688944e44b877afbf69ebd588f4c687048c2798"
+    },
+    {
+      "repository_path": "current/protocols/history_available_curves_20261103.json",
+      "archive_member": "protocols/history_available_curves_20261103.json",
+      "bytes": 3603,
+      "sha256": "db3b45f697ffa6d7bdf52a3fc7cee45130fbae0ccfa5b466f193f62023d8a71a"
+    },
+    {
+      "repository_path": "current/requirements-observed.txt",
+      "archive_member": "requirements-observed.txt",
+      "bytes": 178,
+      "sha256": "e4a39fd31e6497cab44bfcf265e2d06aa3de1dcf326b0256053df276cf9ecde7"
+    }
+  ],
+  "excluded_members": [
+    {
+      "member": "outputs/uteg_nc_goal_20261030/manuscript/figures/newB_20261103/Figure1_workflow_ma.pptx",
+      "reason": "Editable manuscript figure; outside the public code-and-aggregate-data scope."
+    }
+  ],
+  "copy_policy": "Included archive members are byte-identical. No numerical analyses were rerun for publication.",
+  "input_provenance": "The supplied input account and the recorded provenance qualification are retained in current/README.md and the input protocols."
+}

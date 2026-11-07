@@ -1,2 +1,4 @@
-# Preserve archive-member bytes for provenance verification on every platform.
+# Preserve exact source-archive bytes for provenance verification.
 supplementary/** -text
+current/** -text -whitespace
+data/*.xlsx binary

@@ -1,0 +1,28 @@
+{
+  "budgets": [
+    20,
+    40,
+    60
+  ],
+  "full": "original outer train,240or241",
+  "selection": "Fixed identity-group hash order, no outcome enrichment; same rows for all arms. Original inner folds restricted to the selected pool.",
+  "calibration": [
+    "raw",
+    "affine",
+    "joint",
+    "huber",
+    "complete"
+  ],
+  "auxiliary": "Source Ridge supplies R,K,angle; B-only source prior supplies MA. Complete updates MA only.",
+  "data_sha256": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
+  "B_from_original_data": true,
+  "valid_UTEG_only_validation": false,
+  "input_provenance": {
+    "source_status": "author_confirmed_measured",
+    "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",
+    "source_statement": "U-TEG MA and curves are original measured values.",
+    "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+    "runtime_rescaling": false,
+    "runtime_reference_labels_used_to_build_features": false
+  }
+}

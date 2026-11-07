@@ -1,0 +1,35 @@
+{
+  "claim": "Risk-score ranking and its retained-report/error-interception trade-off are assessed separately at15minutes.",
+  "backend": "Python Matplotlib",
+  "archetype": "quantitative grid",
+  "layout": "2x2; A/B unchanged; C/D show two groups of horizontal stacked bars: initially incorrect (640) and initially correct (3380), each split into released and withheld events with exact count columns and coverage footer",
+  "curves": "Existing20 coverage quotas per score;shared50–100% main-panel view;complete5–100% data retained",
+  "intervals": "Existing descriptive95% proxy-group bootstrap,2000 resamples",
+  "bottom_denominators": {
+    "correct": 3380,
+    "incorrect": 640,
+    "low": 140,
+    "high": 480
+  },
+  "frozen_rules": [
+    "ALL_REPORT",
+    "BOUNDARY95",
+    "BOUNDARY_PAPER",
+    "LR",
+    "HGB"
+  ],
+  "source_sha256": "912371dc1113861e63a11428b5be7820feb7798ab41122e3dd6924c836aa6954",
+  "no_refitting": true,
+  "width_mm": 183,
+  "height_mm": 160,
+  "input_provenance": {
+    "source_status": "author_confirmed_measured",
+    "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",
+    "source_statement": "U-TEG MA and curves are original measured values.",
+    "runtime_input": "U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.",
+    "runtime_rescaling": false,
+    "runtime_reference_labels_used_to_build_features": false
+  },
+  "threshold_points": "Pooled development-selected operating points from Table 2; report counts may vary across seeds, unlike the fixed-count curves",
+  "lower_panel_definition": "Bar segments use the stated group denominator. Released and withheld counts sum to that denominator for every rule. Low/high subdivisions remain in Table 2; all original counts and exports unchanged."
+}

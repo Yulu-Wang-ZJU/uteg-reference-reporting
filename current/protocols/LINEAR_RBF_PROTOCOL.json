@@ -1,0 +1,63 @@
+{
+  "status": "FROZEN_BEFORE_NEW_FITTING",
+  "horizon_minutes": 15,
+  "input": "Stored U-TEG MA, x[:,1], only; unchanged active file.",
+  "families": [
+    "linear",
+    "rbf"
+  ],
+  "arms": [
+    "target_only_SA",
+    "HZ_to_SA",
+    "HZ+HB_to_SA"
+  ],
+  "fixed_alpha": 0.01,
+  "source_alpha": 0.01,
+  "local_alpha_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "fixed_comparison": "Source and local coefficients use alpha=.01 for both families; RBF must reproduce saved baseline.",
+  "development_selected_comparison": "For both families, select LOCAL alpha by training-weighted asymmetric validation loss over the frozen inner folds; source alpha remains .01. Ties within1e-12 prefer larger alpha.",
+  "source": "Same source rows; source-only standardization, class weighting within each hospital, equal hospital mass. Linear source plus linear local correction versus RBF source plus RBF local correction.",
+  "loss": "Same mean weighted squared loss in (MA-60)/10 coordinates. Multiply low-MA overestimation and high-MA underestimation by4. Apply to final prediction, not residual target.",
+  "weights": "Same inverse class frequency weights, ratio cap20, mean1; no query labels in weights. Validation class weights estimated from each inner training set.",
+  "regularization": "L2 coefficient penalty and free intercept. RBF RKHS coordinates; standardized linear slope. Same alpha is a controlled setting, not a claim of identical effective complexity.",
+  "protocols": {
+    "paper": "Original60 development +201 test; seeds1000-1019 retained; repeated events are not independent records.",
+    "internal301": "Existing grouped5outer/3inner; each of301 local records predicted once per family/arm/procedure."
+  },
+  "selection_scope": "Development data only. All fixed and selected results reported; no test-based winner promotion.",
+  "reporting": "All-report mapping evaluation; no gate, no reporting threshold fitting. MA boundaries50 and70 unchanged.",
+  "source_counts": {
+    "target_only_SA": 0,
+    "HZ_to_SA": 95,
+    "HZ+HB_to_SA": 174
+  },
+  "local_classes": [
+    11,
+    253,
+    37
+  ],
+  "input_and_code_hashes": {
+    "outputs/current_ma_20261103/data/DATA15_CURRENT.npz": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
+    "outputs/current_ma_20261103/data/FROZEN_SPLITS.json": "f229a553ff2b9ec1f2ed7816a3828481b151373f8b2e19812df24b92f1622953",
+    "outputs/current_ma_20261103/data/ROLE_FREEZE.json": "7b02a3002f10ed0eb27256b056c360d0a3aa8cacf9b3212af9ae83c31f0686a4",
+    "outputs/current_ma_20261103/data/SOURCE_PLAN.json": "956fa6a0a2e7614e74e98b048b30aab3451fe03b5b04e5f0c8cb58b52f4116b5",
+    "outputs/ACTIVE_EXPERIMENT_DATASET.json": "935b117fef02b7523af97c4e3e058e8441291c9a4cf0a517e6ade5580559f68d",
+    "code_submit/paper_inward4_replay/linear_rbf_comparison.py": "3d3f7359dbe0ff8e655bd5504578104ae101a7e82754c5c8fef4b8c38bfda086",
+    "code_submit/ma_target_optimization/models.py": "138a6ebbfd5644b9736b7e7ee08353939f9645370e43f525b80627e8cf65caa3",
+    "code_submit/ma_target_optimization/density_reweight_mapping.py": "890c473e9da43140bc3186a9735add3eee69d106f62324a6c0adf2d94be3f420",
+    "code_submit/ma_target_optimization/asymmetric_ma_mapping.py": "550afa543b89a211c59bdf18f084330180bf88d0987506ca3cac18465815d7b9",
+    "code_submit/ma_target_optimization/full_curve_cost_sensitive.py": "372fcb1c771983596eaf21d729078b75b9ec5bd110c79d9cc773e34ebadb8eb5",
+    "code_submit/ma_target_optimization/all301_internal_models.py": "38c655a153bb382170d178f05c021d962c6fbd1bf5417ebefd87280f8027df52",
+    "code_submit/ma_target_optimization/all301_b085_inward4_transfer.py": "ebe65b04117b19a0c013c2455b6e3a8679932465b1ef4d539eaf52ad1c0f65a5",
+    "outputs/current_ma_20261103/all301/T900.npz": "45c87c27c2d2e17f3df842e30f1e87d03d9dfc1ad3c0a8efd71237a17a291af9",
+    "outputs/current_ma_20261103/primary/target_only_SA_T900_B0.npz": "f87067118a823c70132d115a30d9ce39ae8d6d078099e2949bbb4413e8852fb8",
+    "outputs/current_ma_20261103/primary/HZ_to_SA_T900_B0.npz": "efa6504f3465507b3a7a5df9d8e16a05df6a102bda9d672b359ca32f821e7043",
+    "outputs/current_ma_20261103/primary/HZ+HB_to_SA_T900_B0.npz": "40af82843b3e22c6e5e2575dd1ab3e02e3c5bc90d3e75ad69ec09f76972ca07f"
+  }
+}

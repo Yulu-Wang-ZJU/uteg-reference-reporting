@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-07",
+  "reason": "Clinical-team correction of two out-of-cohort Hubei imports.",
+  "included_records": 478,
+  "centres": {
+    "SAHZU": 304,
+    "Huzhou": 95,
+    "Hubei": 79
+  },
+  "hubei_adaptation": 40,
+  "hubei_test": 39,
+  "all_included_pass_recorded_input_qc": true,
+  "retained_predictions_unchanged": true,
+  "model_refitting": false,
+  "nine_configuration_agreement_percent": [
+    94.4,
+    98.1
+  ],
+  "nine_configuration_coverage_percent": [
+    78.2,
+    79.6
+  ],
+  "data_sha256": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
+  "curve_sha256": "5874457a287a887aadc128f5b625b7ece6d935ed8d751adf6cf2731502568dae"
+}
