@@ -1,24 +1,24 @@
 {
   "schema": "uteg_current_code_v2",
   "date": "2026-11-07",
-  "release_ref": "v2026.11.07.3",
+  "release_ref": "v2026.11.07.4",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "bytes": 6282079,
-    "sha256": "31b818dc1cb92d81b5319f9f891973edfb4f4f07d21db658f6857530882001c8"
+    "bytes": 6282090,
+    "sha256": "a42eb088ef30b5dac3f78dca80093640a1d59de3dba8c6c461b863c26eaae86f"
   },
   "members": [
     {
       "repository_path": "current/CODE_MANIFEST.json",
       "archive_member": "CODE_MANIFEST.json",
       "bytes": 24458,
-      "sha256": "b7fa8c7244665243ebfcc2f7dd9f4365fb4cba65a1c9efc276280e7e6a8c9004"
+      "sha256": "a48344c3727c5dd0ee46a3a14c3dba0544c2a0dd8e883ff287bc15c56af90802"
     },
     {
       "repository_path": "current/COHORT_UPDATE.json",
       "archive_member": "COHORT_UPDATE.json",
-      "bytes": 696,
-      "sha256": "e8f47e4030eeee8414a0e6b15ffda9b9e87c08b118aadc2d015606f8e9876df5"
+      "bytes": 658,
+      "sha256": "5af67e9505f6a22808f9752a9741ac24ea9185b81e74e3a822d46d36cc133e87"
     },
     {
       "repository_path": "current/EVIDENCE.json",
@@ -72,7 +72,7 @@
       "repository_path": "current/README.md",
       "archive_member": "README.md",
       "bytes": 5236,
-      "sha256": "e18a2e4257e6d5b6c67a8d9b392c846cccf9a0e8ae016199b6a29dfd61ea1242"
+      "sha256": "2090f187883fff9dbeb429ef67206217cce076dd95e3e55b568f5e6cdcf902be"
     },
     {
       "repository_path": "current/RESTRICTED_INPUT_HASHES.json",
