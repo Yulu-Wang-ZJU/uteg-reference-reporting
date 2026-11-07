@@ -6,9 +6,11 @@ Start with [`current/`](current/) for the current analysis code and
 of the submission files. This repository contains no patient-level records,
 raw waveforms, individual predictions, fitted models or manuscript PDFs.
 
-The manuscript cites the fixed analysis version [`051be12`](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/commit/051be12108fc7f7fd3faaaa689c8a6f87703084c).
-Subsequent documentation and checksum updates retain the same analysis code
-and aggregate data.
+The manuscript, supplement and code archive cite [release v2026.11.07](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07).
+This release corrects integer rank quotas using saved predictions and synchronizes
+the submission files and source documentation. No model was refitted.
+The supplementary device video remains in the submission ZIP; its checksum is
+recorded in `provenance/CURRENT_MANUSCRIPT.json`.
 
 ## Current analysis
 

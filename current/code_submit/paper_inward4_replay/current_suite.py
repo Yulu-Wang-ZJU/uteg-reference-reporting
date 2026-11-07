@@ -42,7 +42,7 @@ def initialize():
         scopes=dict(paper='9source directions+3target-only,20seeds; original center-specific pool/test roles',
             all301='Frozen5outer/3inner local301; source arms HZ andHZ+HB; all301 only refers to the local cohort'),
         selection='Frozen historical hyperparameters and development-only gates. No outer-result winner promotion.',
-        B_from_original_data=True,source_status='author_confirmed_measured',
+        B_from_original_data=True,source_status=input_provenance()['source_status'],
         input_provenance=input_provenance(),manuscript_changed=False)
     p=ROOT/'FULL_SUITE_PROTOCOL.json'
     if p.exists():check_protocol(c.read(p),manifest)

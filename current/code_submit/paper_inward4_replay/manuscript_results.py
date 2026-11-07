@@ -83,7 +83,7 @@ def cohort():
         E['cohort'].append(row);add(1,'Cohort and QC',row)
         r=role['roles'][center]
         for name,ix in [('development',r['pool_full']),('evaluation',r['test'])]:
-            tc=c.accounting.states(d['y'][ix,2]);add(1,'Data roles',dict(center=center,role=name,records=len(ix),groups=len(set(d['groups'][ix])),low=int((tc==-1).sum()),normal=int((tc==0).sum()),high=int((tc==1).sum())))
+            tc=c.accounting.states(d['y'][ix,2]);add(1,'Data roles',dict(center=center,role=name,records=len(ix),low=int((tc==-1).sum()),normal=int((tc==0).sum()),high=int((tc==1).sum())))
     for row in c.read(ROOT/'summary/SPLIT_COUNTS.json')['all301']:add(8,'Frozen folds',row)
 
 def predictions():
@@ -202,12 +202,13 @@ def representation():
     for arm in DIRECTIONS:
         zs={r:analysis.load(REP/f'{r}_{arm}.npz') for r in ['EXP3','EXP4']};idx=zs['EXP3']['test'];y=d['y'][idx,2];gg=d['groups'][idx];tc=c.accounting.states(y)
         common=np.isfinite(zs['EXP3']['LR_score'])&np.isfinite(zs['EXP4']['LR_score']);curves=[]
-        for q in np.linspace(.05,1.,20):
+        for percent in range(5,101,5):
+            q=percent/100
             vals={}
             for rep,z in zs.items():
                 a=np.zeros(common.shape,bool)
                 for s in range(20):
-                    inds=np.flatnonzero(common[s]);n=int(q*len(inds));order=sorted(inds,key=lambda i:(z['LR_score'][s,i],str(d['ids'][idx[i]])));a[s,order[:n]]=True
+                    inds=np.flatnonzero(common[s]);n=percent*len(inds)//100;order=sorted(inds,key=lambda i:(z['LR_score'][s,i],str(d['ids'][idx[i]])));a[s,order[:n]]=True
                 correct=a&(c.accounting.states(z['prediction'])==tc);vals[rep]=dict(agreement=ratio(correct,a,gg,2000),coverage=float(a.mean()),correct=correct,action=a)
                 add(5,'Representation matched',dict(arm=arm,quota=float(q),representation=rep,agreement=vals[rep]['agreement'],coverage=vals[rep]['coverage']))
             diff=paired_ratio_difference(vals['EXP3']['correct'],vals['EXP3']['action'],vals['EXP4']['correct'],vals['EXP4']['action'],gg,2000)
@@ -250,10 +251,11 @@ def enrich():
         curves=[]
         for key in ['LR','HGB','BOUNDARY']:
             scores=z[key+'_score'];valid=np.isfinite(scores)&np.isfinite(z['prediction'])
-            for q in np.linspace(.05,1.,20):
+            for percent in range(5,101,5):
+                q=percent/100
                 a=np.zeros(valid.shape,bool)
                 for si in range(20):
-                    ids=np.flatnonzero(valid[si]);order=sorted(ids,key=lambda i:(scores[si,i],str(d['ids'][idx[i]])));a[si,order[:int(q*len(ids))]]=True
+                    ids=np.flatnonzero(valid[si]);order=sorted(ids,key=lambda i:(scores[si,i],str(d['ids'][idx[i]])));a[si,order[:percent*len(ids)//100]]=True
                 v=dict(rule=key,quota=float(q),coverage=float(a.mean()),agreement=ratio(a&(p==t),a,gg,2000));curves.append(v);add(3,'Risk coverage curves',dict(arm=arm,**v))
         E['risk_curves'][arm]=curves
     z=analysis.load(AUX/'target_ridge_B60.npz');idx=z['test'];y=d['medical'][idx];gg=d['groups'][idx]
@@ -292,7 +294,7 @@ def runtime():
         times.append(v);add(5,'Dual-risk timing' if name=='Dual risk heads' else 'Component timing',v)
     E['runtime']=times
     for rep in ['EXP3','EXP4']:
-        v=E['signal'][rep];add(5,'Task timing',dict(task=rep,records=480,median_seconds=v['median_seconds'],scope='per-record signal fit, not acquisition time'))
+        v=E['signal'][rep];add(5,'Task timing',dict(task=rep,records=len(d['ids']),median_seconds=v['median_seconds'],scope='per-record signal fit, not acquisition time'))
 
 def run():
     suite.initialize();OUT.mkdir(exist_ok=True)
@@ -301,7 +303,7 @@ def run():
     from . import manuscript_detail_tables
     manuscript_detail_tables.run(sys.modules[__name__])
     version=dict(version='newB_20261103',data_sha256=c.sha(ROOT/'data/DATA15_CURRENT.npz'),evaluation='Books1-7 original center roles; Book8 local301 grouped internal validation.',
-        evidence='The study authors report that experimenters at the participating hospitals identified the supplied U-TEG MA values and curves as original instrument measurements. The complete record has 900 one-second samples. The first 300/600 samples form the 5/10-minute inputs.',
+        evidence='The hospitals identified the supplied inputs as instrument measurements. The current 478 retained records match the audited 480-record version after two exclusions; source correspondence remains unresolved (code package INPUT_CONTRACT.json and SOURCE_VERSION_CHECK.json). The 5/10-minute inputs use the first 300/600 positions of the supplied 900-point grid.',
         privacy='Aggregate and seed-level statistics only; no patient or record-level data.',units='R/K minutes, MA mm, angle degrees; rates 0-1 unless stated.')
     for number,sheets in BOOKS.items():
         sheets['README']=[dict(field=k,value=v) for k,v in version.items()]

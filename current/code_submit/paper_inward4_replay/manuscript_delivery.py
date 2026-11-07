@@ -25,7 +25,11 @@ def check_workbooks():
             if 'groups' in fields:assert all(isinstance(row.get('groups'),int) for row in records),(no,name,'groups must be aggregate counts')
             expected=[fields]+[[row.get(k) if row.get(k) is not None else 'NA' for k in fields] for row in records]
             sh=wb[name];actual_rows=list(sh.iter_rows())
-            assert len(actual_rows)==len(expected) and all(len(row)==len(fields) for row in actual_rows),(no,name,len(actual_rows),len(expected))
+            assert len(actual_rows)==len(expected),(no,name,len(actual_rows),len(expected))
+            # Cleared Excel columns can remain in the worksheet dimensions.
+            # Accept empty trailing cells, but never ignore an exported value.
+            assert all(len(row)>=len(fields) and all(cell.value is None for cell in row[len(fields):]) for row in actual_rows),(no,name,'unexpected trailing values')
+            actual_rows=[row[:len(fields)] for row in actual_rows]
             for ri,(actual,exp) in enumerate(zip(actual_rows,expected),1):
                 for ci,(cell,v) in enumerate(zip(actual,exp),1):
                     assert cell.data_type not in ('f','e'),(no,name,ri,ci,cell.data_type)

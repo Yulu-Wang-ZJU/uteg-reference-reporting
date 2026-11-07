@@ -1,962 +1,668 @@
 {
   "schema": "uteg_public_aggregate_data_v2",
   "date": "2026-11-07",
-  "scope": "Supplementary Data 1-8; exact copies of the current submission workbooks.",
+  "release_ref": "v2026.11.07",
+  "scope": "Supplementary Data 1-8; byte-identical to the current submission workbooks.",
   "audit": {
     "workbooks": 8,
     "worksheets": 98,
-    "populated_cells": 631593,
-    "row_granularity": "Configuration, model, seed, fold, class, checkpoint or rank-prefix aggregate. Frozen-fold sheets contain counts, not record assignments.",
+    "populated_cells": 631586,
+    "row_granularity": "Configuration, model, seed, fold, class, checkpoint or rank-prefix aggregate; no individual record assignments.",
     "patient_level_records_found": false,
     "hidden_sheets_rows_columns": false,
     "comments_embedded_objects_external_data_connections": false,
-    "scan_scope": "All worksheet schemas and cells, worksheet visibility and workbook containers; code/JSON record-ID and credential-pattern checks.",
-    "numerical_values_changed": false
+    "numerical_update": "Integer rank quotas corrected from saved predictions; no model refit. Primary tables and figures unchanged."
   },
   "files": [
     {
       "repository_path": "data/Supplementary_Data_1.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_1.xlsx",
-      "bytes": 20185,
-      "sha256": "d6e5774abd2d5d4efa93e6711884bff85701cb7d89e818c57ebfb2c11e129512",
+      "bytes": 20233,
+      "sha256": "876c6592edc0fe817b7d8ae45ceea25e64a32c8a1d37cf657f766a50d1b8e986",
       "worksheets": [
         {
           "name": "README",
           "rows": 8,
-          "populated_cells": 16,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 16
         },
         {
           "name": "Definitions",
           "rows": 10,
-          "populated_cells": 20,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 20
         },
         {
           "name": "Cohort and QC",
           "rows": 4,
-          "populated_cells": 24,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 24
         },
         {
           "name": "Data roles",
           "rows": 7,
-          "populated_cells": 49,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 42
         },
         {
           "name": "Nine-direction overview",
           "rows": 10,
-          "populated_cells": 1460,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 146,
+          "populated_cells": 1460
         },
         {
           "name": "Evaluation denominators",
           "rows": 10,
-          "populated_cells": 70,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 70
         }
       ]
     },
     {
       "repository_path": "data/Supplementary_Data_2.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_2.xlsx",
-      "bytes": 184323,
-      "sha256": "a444302894f7658f22799828efd4ee4f970d717b94274e3c3061b6c6c4fff725",
+      "bytes": 184389,
+      "sha256": "713e1ecd3ed2df3923215f5fddbde1c1c252adbb0a9649c6758c3d7d594201c2",
       "worksheets": [
         {
           "name": "README",
           "rows": 7,
-          "populated_cells": 14,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 14
         },
         {
           "name": "Definitions",
           "rows": 19,
-          "populated_cells": 38,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 38
         },
         {
           "name": "Paired adaptation",
           "rows": 28,
-          "populated_cells": 1176,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 42,
+          "populated_cells": 1176
         },
         {
           "name": "Adaptation paired gains",
           "rows": 10,
-          "populated_cells": 70,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 70
         },
         {
           "name": "Class transitions",
           "rows": 244,
-          "populated_cells": 1220,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 5,
+          "populated_cells": 1220
         },
         {
           "name": "Mapping baselines",
           "rows": 163,
-          "populated_cells": 7009,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 43,
+          "populated_cells": 7009
         },
         {
           "name": "Adaptation comparators",
           "rows": 46,
-          "populated_cells": 1932,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 42,
+          "populated_cells": 1932
         },
         {
           "name": "Adaptation comparator seeds",
           "rows": 901,
-          "populated_cells": 20723,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 23,
+          "populated_cells": 20723
         },
         {
           "name": "Figure 2 mapping",
           "rows": 7,
-          "populated_cells": 168,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 24,
+          "populated_cells": 168
         },
         {
           "name": "Figure 2 association",
           "rows": 2,
-          "populated_cells": 14,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 14
         },
         {
           "name": "Linear-RBF comparison",
           "rows": 13,
-          "populated_cells": 403,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 31,
+          "populated_cells": 403
         }
       ]
     },
     {
       "repository_path": "data/Supplementary_Data_3.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_3.xlsx",
-      "bytes": 92135,
-      "sha256": "21d9b97565cd4fc6d0259c3627786363d7d71f3b7f9b731297092bca3fea9333",
+      "bytes": 92183,
+      "sha256": "cdfd93d7273b0fc9c16e96e3fb136507b7b6ed8b5b73ccce18f993be2392a63c",
       "worksheets": [
         {
           "name": "README",
           "rows": 7,
-          "populated_cells": 14,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 14
         },
         {
           "name": "Definitions",
           "rows": 13,
-          "populated_cells": 26,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 26
         },
         {
           "name": "Gate working points",
           "rows": 61,
-          "populated_cells": 4514,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 74,
+          "populated_cells": 4514
         },
         {
           "name": "Report destinations",
           "rows": 721,
-          "populated_cells": 4326,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 4326
         },
         {
           "name": "Risk coverage curves",
           "rows": 721,
-          "populated_cells": 6489,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 9,
+          "populated_cells": 6489
         },
         {
           "name": "All-candidate matched20",
           "rows": 25,
-          "populated_cells": 300,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 12,
+          "populated_cells": 300
         },
         {
           "name": "Figure 3 retention",
           "rows": 41,
-          "populated_cells": 287,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 287
         }
       ]
     },
     {
       "repository_path": "data/Supplementary_Data_4.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_4.xlsx",
-      "bytes": 365023,
-      "sha256": "25b546f48241103e36129250d82c78ec8e265b706978627e7f362534b850961d",
+      "bytes": 365088,
+      "sha256": "7770ca0b2f3891c77b1bc516a7f394d85ea4d318f4f41cbeab173ac943c6f25c",
       "worksheets": [
         {
           "name": "README",
           "rows": 9,
-          "populated_cells": 18,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 18
         },
         {
           "name": "Definitions",
           "rows": 14,
-          "populated_cells": 28,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 28
         },
         {
           "name": "Pointwise and cumulative",
           "rows": 181,
-          "populated_cells": 13575,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 75,
+          "populated_cells": 13575
         },
         {
           "name": "First-report times",
           "rows": 361,
-          "populated_cells": 2166,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 2166
         },
         {
           "name": "Checkpoint reports",
           "rows": 181,
-          "populated_cells": 13575,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 75,
+          "populated_cells": 13575
         },
         {
           "name": "History matched reporting",
           "rows": 55,
-          "populated_cells": 2420,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 44,
+          "populated_cells": 2420
         },
         {
           "name": "Cumulative checkpoints",
           "rows": 37,
-          "populated_cells": 2812,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 76,
+          "populated_cells": 2812
         },
         {
           "name": "HGB over time",
           "rows": 109,
-          "populated_cells": 4360,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 40,
+          "populated_cells": 4360
         },
         {
           "name": "Matched operating points",
           "rows": 19,
-          "populated_cells": 418,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 22,
+          "populated_cells": 418
         },
         {
           "name": "Matched rank curves",
           "rows": 604,
-          "populated_cells": 11476,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 19,
+          "populated_cells": 11476
         }
       ]
     },
     {
       "repository_path": "data/Supplementary_Data_5.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_5.xlsx",
-      "bytes": 2263906,
-      "sha256": "f1bd71748e7920732b7de73e48cac77517ce0603943d718d8f178d14f41d64e3",
+      "bytes": 2263954,
+      "sha256": "47c7478198d3b2b3dbf64c4f40f4dca9934b1a871a9ef36f968be46241cc8e8e",
       "worksheets": [
         {
           "name": "README",
           "rows": 7,
-          "populated_cells": 14,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 14
         },
         {
           "name": "Definitions",
           "rows": 10,
-          "populated_cells": 20,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 20
         },
         {
           "name": "All mapping seeds",
           "rows": 3781,
-          "populated_cells": 90744,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 24,
+          "populated_cells": 90744
         },
         {
           "name": "Adaptation budgets",
           "rows": 22,
-          "populated_cells": 924,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 42,
+          "populated_cells": 924
         },
         {
           "name": "All reporting seeds",
           "rows": 1201,
-          "populated_cells": 60050,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 50,
+          "populated_cells": 60050
         },
         {
           "name": "All sequence seeds",
           "rows": 3601,
-          "populated_cells": 183651,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 51,
+          "populated_cells": 183651
         },
         {
           "name": "Waiting contrasts",
           "rows": 10,
-          "populated_cells": 120,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 12,
+          "populated_cells": 120
         },
         {
           "name": "Representation reporting",
           "rows": 55,
-          "populated_cells": 4125,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 75,
+          "populated_cells": 4125
         },
         {
           "name": "Representation mapping",
           "rows": 19,
-          "populated_cells": 798,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 42,
+          "populated_cells": 798
         },
         {
           "name": "Representation signal",
           "rows": 3,
-          "populated_cells": 15,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 5,
+          "populated_cells": 15
         },
         {
           "name": "Representation matched",
           "rows": 361,
-          "populated_cells": 3249,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 9,
+          "populated_cells": 3249
         },
         {
           "name": "Representation matched delta",
           "rows": 181,
-          "populated_cells": 1267,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 1267
         },
         {
           "name": "Adaptation strengths",
           "rows": 43,
-          "populated_cells": 387,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 9,
+          "populated_cells": 387
         },
         {
           "name": "PLS SVR reuse dev",
           "rows": 29,
-          "populated_cells": 261,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 9,
+          "populated_cells": 261
         },
         {
           "name": "Nested side protection",
           "rows": 36,
-          "populated_cells": 324,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 9,
+          "populated_cells": 324
         },
         {
           "name": "Preserved channel external",
           "rows": 4,
-          "populated_cells": 116,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 29,
+          "populated_cells": 116
         },
         {
           "name": "Preserved channel dev",
           "rows": 61,
-          "populated_cells": 1342,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 22,
+          "populated_cells": 1342
         },
         {
           "name": "Oracle headroom dev",
           "rows": 141,
-          "populated_cells": 1692,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 12,
+          "populated_cells": 1692
         },
         {
           "name": "Source contrasts",
           "rows": 3,
-          "populated_cells": 21,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 21
         },
         {
           "name": "Preserved channel intervals",
           "rows": 3,
-          "populated_cells": 18,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 18
         },
         {
           "name": "Component timing",
           "rows": 6,
-          "populated_cells": 36,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 36
         },
         {
           "name": "Task timing",
           "rows": 3,
-          "populated_cells": 12,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 4,
+          "populated_cells": 12
         },
         {
           "name": "Reporting contrasts",
           "rows": 61,
-          "populated_cells": 549,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 9,
+          "populated_cells": 549
         },
         {
           "name": "Representation destinations",
           "rows": 1081,
-          "populated_cells": 7567,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 7567
         },
         {
           "name": "Representation seeds",
           "rows": 1801,
-          "populated_cells": 91851,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 51,
+          "populated_cells": 91851
         },
         {
           "name": "Representation reporting delta",
           "rows": 46,
-          "populated_cells": 368,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 8,
+          "populated_cells": 368
         },
         {
           "name": "Representation mapping delta",
           "rows": 37,
-          "populated_cells": 259,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 259
         }
       ]
     },
     {
       "repository_path": "data/Supplementary_Data_6.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_6.xlsx",
-      "bytes": 68583,
-      "sha256": "882cd2d89c4095691de36771fe6567f3a8e7c92afc3df3aee491805786f5f020",
+      "bytes": 68652,
+      "sha256": "d86449b5eafa0dc50eef7e0c82aa2293f568fa2983b06ce1bae9a7891973f7d3",
       "worksheets": [
         {
           "name": "README",
           "rows": 7,
-          "populated_cells": 14,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 14
         },
         {
           "name": "Definitions",
           "rows": 10,
-          "populated_cells": 20,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 20
         },
         {
           "name": "Timing destinations",
           "rows": 2161,
-          "populated_cells": 15127,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 15127
         },
         {
           "name": "Target prediction",
           "rows": 6,
-          "populated_cells": 438,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 73,
+          "populated_cells": 438
         },
         {
           "name": "Prediction destinations",
           "rows": 25,
-          "populated_cells": 125,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 5,
+          "populated_cells": 125
         },
         {
           "name": "Prediction contrasts",
           "rows": 4,
-          "populated_cells": 28,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 28
         }
       ]
     },
     {
       "repository_path": "data/Supplementary_Data_7.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_7.xlsx",
-      "bytes": 248235,
-      "sha256": "8e3dbd8ff29c89ce73feb9149f2e925570d8992a56e5f184b59d8aadea5b8a1e",
+      "bytes": 248304,
+      "sha256": "16877dfcc59bb2df26c2af2ce26e2c492fa2e2dee23c810f614d1721b6336272",
       "worksheets": [
         {
           "name": "README",
           "rows": 7,
-          "populated_cells": 14,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 14
         },
         {
           "name": "Definitions",
           "rows": 10,
-          "populated_cells": 20,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 20
         },
         {
           "name": "Budget_4param_Aggregate",
           "rows": 10,
-          "populated_cells": 420,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 42,
+          "populated_cells": 420
         },
         {
           "name": "Budget_Paired",
           "rows": 25,
-          "populated_cells": 225,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 9,
+          "populated_cells": 225
         },
         {
           "name": "Budget_DevAlpha",
           "rows": 61,
-          "populated_cells": 244,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 4,
+          "populated_cells": 244
         },
         {
           "name": "Paired contrasts",
           "rows": 3,
-          "populated_cells": 36,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 12,
+          "populated_cells": 36
         },
         {
           "name": "Internal_Event",
           "rows": 28,
-          "populated_cells": 2128,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 76,
+          "populated_cells": 2128
         },
         {
           "name": "Sequence_Contrasts",
           "rows": 7,
-          "populated_cells": 84,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 12,
+          "populated_cells": 84
         },
         {
           "name": "Budget_ClassDest",
           "rows": 109,
-          "populated_cells": 654,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 654
         },
         {
           "name": "Budget_Seed",
           "rows": 181,
-          "populated_cells": 4163,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 23,
+          "populated_cells": 4163
         },
         {
           "name": "Working points",
           "rows": 4,
-          "populated_cells": 192,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 48,
+          "populated_cells": 192
         },
         {
           "name": "Class destinations",
           "rows": 37,
-          "populated_cells": 185,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 5,
+          "populated_cells": 185
         },
         {
           "name": "All seeds",
           "rows": 61,
-          "populated_cells": 2989,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 49,
+          "populated_cells": 2989
         },
         {
           "name": "Internal_ClassDest",
           "rows": 325,
-          "populated_cells": 2275,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 2275
         },
         {
           "name": "Internal_Seed",
           "rows": 541,
-          "populated_cells": 27591,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 51,
+          "populated_cells": 27591
         },
         {
           "name": "Internal_FirstReport",
           "rows": 55,
-          "populated_cells": 330,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 330
         },
         {
           "name": "Internal_Forward",
           "rows": 181,
-          "populated_cells": 1448,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 8,
+          "populated_cells": 1448
         },
         {
           "name": "Internal_Scope",
           "rows": 2,
-          "populated_cells": 6,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 3,
+          "populated_cells": 6
         },
         {
           "name": "Internal_QC",
           "rows": 4,
-          "populated_cells": 24,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 6,
+          "populated_cells": 24
         }
       ]
     },
     {
       "repository_path": "data/Supplementary_Data_8.xlsx",
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Data_8.xlsx",
-      "bytes": 181738,
-      "sha256": "843131b02c8ee1ce3030af1364b0e801b74d95d2f33704cb6760da96915bb25e",
+      "bytes": 181811,
+      "sha256": "85392c575446f42dd4b24a19efeb6aac9c1b840f3fbf5a238963f6b7dea18f33",
       "worksheets": [
         {
           "name": "README",
           "rows": 9,
-          "populated_cells": 18,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 18
         },
         {
           "name": "Definitions",
           "rows": 21,
-          "populated_cells": 42,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 2,
+          "populated_cells": 42
         },
         {
           "name": "Frozen folds",
           "rows": 6,
-          "populated_cells": 30,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 5,
+          "populated_cells": 30
         },
         {
           "name": "Internal301 outcomes",
           "rows": 212,
-          "populated_cells": 10176,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 48,
+          "populated_cells": 10176
         },
         {
           "name": "Refitted representation",
           "rows": 31,
-          "populated_cells": 1550,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 50,
+          "populated_cells": 1550
         },
         {
           "name": "Representation destinations",
           "rows": 361,
-          "populated_cells": 2527,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 7,
+          "populated_cells": 2527
         },
         {
           "name": "Four-output target Ridge",
           "rows": 2,
-          "populated_cells": 136,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 68,
+          "populated_cells": 136
         },
         {
           "name": "Ridge destinations",
           "rows": 13,
-          "populated_cells": 65,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 5,
+          "populated_cells": 65
         },
         {
           "name": "Figure S13 mapping",
           "rows": 4,
-          "populated_cells": 96,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 24,
+          "populated_cells": 96
         },
         {
           "name": "History matched reporting",
           "rows": 55,
-          "populated_cells": 2420,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 44,
+          "populated_cells": 2420
         },
         {
           "name": "HGB over time",
           "rows": 109,
-          "populated_cells": 4360,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 40,
+          "populated_cells": 4360
         },
         {
           "name": "Linear-RBF comparison",
           "rows": 13,
-          "populated_cells": 403,
-          "hidden": false,
-          "hidden_rows": 0,
-          "hidden_columns": 0,
-          "formulas": 0
+          "columns": 31,
+          "populated_cells": 403
         }
       ]
     }

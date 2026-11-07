@@ -6,8 +6,8 @@ from pathlib import Path
 
 
 def input_provenance():
-    """Return the current hospital-confirmed input description."""
-    return {'source_status': 'author_confirmed_measured', 'source_basis': 'Hospital experimenter confirmation, as communicated by the study authors.', 'source_statement': 'U-TEG MA and curves are original measured values.', 'runtime_input': 'U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.', 'runtime_rescaling': False, 'runtime_reference_labels_used_to_build_features': False}
+    """Return the reported source account and its unresolved file correspondence."""
+    return {'source_status': 'hospital_reported_measurements_source_correspondence_unresolved', 'source_basis': 'Hospital experimenter confirmation, as communicated by the study authors.', 'source_statement': 'The participating hospitals identified the supplied U-TEG MA values and curves as instrument measurements.', 'source_qualification': 'All 478 retained amplitudes, curves and saved early fits match the corresponding entries in the previously audited 480-record version. Exact correspondence with reference-MA-based amplitude construction and full-record waveform transformations remains unresolved. SOURCE_VERSION_CHECK.json records the file-version comparison.', 'runtime_input': 'U-TEG inputs are indexed on a 900-point grid at one-second intervals (15 minutes). The 5- and 10-minute windows cover the first 300 and 600 grid points. Processing masks identify the points retained for fitting. The runner loads saved early fits and stored full-record coefficients; parameter preparation precedes model evaluation.', 'runtime_rescaling': False, 'runtime_reference_labels_used_to_build_features': False}
 
 
 

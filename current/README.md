@@ -5,12 +5,11 @@ current manuscript. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [commit 051be12](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/commit/051be12108fc7f7fd3faaaa689c8a6f87703084c)
+Analysis code and aggregate results correspond to [release v2026.11.07](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/051be12108fc7f7fd3faaaa689c8a6f87703084c/current) for the analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/051be12108fc7f7fd3faaaa689c8a6f87703084c/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
-This repository-reference update changes documentation only.
 
 ## Input version
 
@@ -21,7 +20,16 @@ measurements. RESTRICTED_INPUT_HASHES.json fixes the input version.
 A provenance check found exact equality with retained outputs from reference-MA-based
 amplitude construction and full-record waveform transformations, including the
 saved early-window fits. This correspondence remains unreconciled with the reported
-source account; reproducing the results does not resolve it.
+source account; reproducing the results does not resolve it. A record-aligned check
+on 7 November 2026 confirmed that all 478 retained inputs match the corresponding
+entries in the audited 480-record version. Only the two out-of-cohort records were
+removed. See SOURCE_VERSION_CHECK.json. These results characterize the supplied
+fixed inputs; they do not independently establish U-TEG-only or strictly early-time
+predictive validity.
+
+Legacy Boolean fields such as `B_from_original_data` preserve the frozen file
+schema and the authors' source account; they are not independent acquisition
+authentication. `INPUT_CONTRACT.json` states the current qualification.
 
 ## Included cohort
 

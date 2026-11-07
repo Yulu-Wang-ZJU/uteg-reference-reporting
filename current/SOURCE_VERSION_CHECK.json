@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-07",
+  "status": "unresolved_current_input_source_correspondence",
+  "verification": {
+    "current_records": 478,
+    "audited_records": 480,
+    "excluded_records": 2,
+    "matched_by_record_id": true,
+    "B_matches_archived_reference_based_values": true,
+    "curves_match_archived_transformed_values": true,
+    "curves_match_archived_untransformed_values": false,
+    "curves_match_recorded_ratio_product": true,
+    "early_fits_match_archived_values": true,
+    "early_fits_match_amplitude_transformation": true
+  },
+  "input_hashes": {
+    "current_data": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
+    "current_curves": "5874457a287a887aadc128f5b625b7ece6d935ed8d751adf6cf2731502568dae",
+    "archived_curves": "d9d09c6984707705612bcd35ef940e7593be9e85969402e657e929f441c22217",
+    "archived_prefix": "a69ea22c7129f593f3c7e34ab0949d5390b43b688033ee6448bef36ac0d12296",
+    "archived_B": "04ca2401dcf730d28146adaf9ec87f395f9cf862e5b536d6e89a5139ec2e484a"
+  },
+  "scope": "Numerical file-version correspondence; no independent authentication of physical acquisition. No data changed and no model refitted."
+}
