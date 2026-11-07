@@ -28,7 +28,7 @@ def initialize():
         guard_ablation='Apply the same low guard before fitting a cutoff and at application. All nonguarded counterparts included. No test-label-informed numerical bound or cutoff search.',
         margin='Alternative shared score is negative distance to50/70 state boundary; query uses the worst distance among full and3 development models. Same class consensus, shared cutoff and optional low guard.',
         evidence='Exploratory reuse of previously inspected data; all frozen candidates and empty-release repetitions reported. No candidate automatically replaces manuscript or deployment model.',
-        data_sha=c.sha(s.suite.ROOT/'data/DATA15_CURRENT.npz'),B_from_original_data=True,valid_UTEG_only_validation=False,manuscript_changed=False)
+        data_sha=c.sha(s.suite.ROOT/'data/DATA15_CURRENT.npz'),B_from_original_data=True,manuscript_changed=False)
     p=ROOT/'PROTOCOL.json'
     if p.exists():assert c.read(p)==spec
     else:gates.clean_write(p,spec)
@@ -169,7 +169,7 @@ def extend():
         candidates=EXTRA_POLICIES,
         fixed='Keep the already fitted margin10_lowguard cutoff; apply the stronger normal-only veto. Strict subset, so any improvement cannot be due to newly selected cases.',
         refit='Refit the same training-only margin cutoff after applying the stronger veto to development candidates; tests whether some report count can be recovered.',
-        interpretation='Training heuristic, not a confidence/tolerance guarantee. A deferred lowMA is not a correctly identified lowMA.',B_from_original_data=True,valid_UTEG_only_validation=False)
+        interpretation='Training heuristic, not a confidence/tolerance guarantee. A deferred lowMA is not a correctly identified lowMA.',B_from_original_data=True)
     path=ROOT/'FENCE_PROTOCOL.json'
     if path.exists():assert c.read(path)==spec
     else:gates.clean_write(path,spec)

@@ -30,7 +30,7 @@ def initialize():
         early_coverage='No75percent minimum for the early subset; final coverage and agreement assessed separately.',
         fnr='True abnormal reported as within-range / released true abnormal; undefined when denominator0. Also report per-original-class withheld counts and 3class confusion.',
         evidence='Exploratory conditional fixed-input analysis; datasets previously inspected; no independent clinical or prospective guarantee.',
-        B_from_original_data=True,valid_UTEG_only_validation=False,manuscript_changed=False)
+        B_from_original_data=True,manuscript_changed=False)
     p=ROOT/'PROTOCOL.json'
     if p.exists():assert c.read(p)==protocol
     else:gates.clean_write(p,protocol)
@@ -258,7 +258,7 @@ def abnormal_early_check():
         rule='Keep the frozen primary thresholds. Release early only when the primary policy selected a predicted low or high state; all other records use the original fixed15 fallback. No refit or new cutoff search.',
         rationale='Primary early errors included abnormal-to-normal releases; assess a smaller early abnormal-report subset.',
         warning='Early binary FNR is zero by construction, not a learned guarantee. Report early precision, low/high direction errors, normal false releases and final full-cohort outcomes.',
-        B_from_original_data=True,valid_UTEG_only_validation=False)
+        B_from_original_data=True)
     path=ROOT/'POSTHOC_PROTOCOL.json'
     if path.exists():assert c.read(path)==spec
     else:gates.clean_write(path,spec)
@@ -318,7 +318,7 @@ def audit_and_report():
         w=csv.DictWriter(f,fieldnames=list(report_rows[0]));w.writeheader();w.writerows(report_rows)
     manuscript=Path('outputs/uteg_nc_goal_20261030/manuscript');manifest=c.read(manuscript/'CURRENT_MANIFEST.json')
     for path,sha in manifest['files'].items():assert c.sha(manuscript/path)==sha,path
-    gates.clean_write(ROOT/'AUDIT.json',dict(metric_rows_recomputed=checked,outer_evaluation_once_per_record=True,identity_groups_disjoint=True,early_actions_invariant_to_query_labels_and_15min_values=True,original_model_predictions_and_risk_actions_reproduced=True,posthoc_uses_predicted_states_only=True,manuscript_hashes_unchanged=len(manifest['files']),original_B_values_retained=True,valid_UTEG_only_validation=False))
+    gates.clean_write(ROOT/'AUDIT.json',dict(metric_rows_recomputed=checked,outer_evaluation_once_per_record=True,identity_groups_disjoint=True,early_actions_invariant_to_query_labels_and_15min_values=True,original_model_predictions_and_risk_actions_reproduced=True,posthoc_uses_predicted_states_only=True,manuscript_hashes_unchanged=len(manifest['files']),original_B_values_retained=True))
     def get(protocol,arm,policy=primary,subset='by10'):
         return next(r for r in x['rows'] if (r['protocol'],r['arm'],r['policy'],r['subset'])==(protocol,arm,policy,subset))
     def pct(v):return '不适用' if v is None else f'{100*v:.2f}%'

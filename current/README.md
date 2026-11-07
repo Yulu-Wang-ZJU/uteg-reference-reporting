@@ -5,10 +5,10 @@ current manuscript. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [release v2026.11.07.2](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.2)
+Analysis code and aggregate results correspond to [release v2026.11.07.3](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.3)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.2/current) for analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.2/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.3/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.07.3/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
 
 ## Input data
@@ -20,7 +20,7 @@ Part A1.
 
 ## Included cohort
 
-The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and 79 from Hubei. All included records passed the recorded input QC. Hubei has 40 adaptation and 39 test records. The two out-of-cohort imports are excluded from both current inputs and reporting denominators. Retained predictions and training identities are unchanged; no model was refitted. See COHORT_UPDATE.json for the aggregate correction summary.
+The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and 79 from Hubei. All included records passed the recorded input QC. Hubei has 40 adaptation and 39 test records. The two out-of-cohort imports are excluded from both current inputs and reporting denominators. See COHORT_UPDATE.json for the aggregate correction summary.
 
 ## Time windows and numerical processing
 

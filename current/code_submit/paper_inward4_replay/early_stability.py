@@ -29,7 +29,7 @@ def initialize():
         downstream_isolation='No outer truth used for model, score, threshold, agreement vote, or model selection. Every fixed policy reported, no external-result selection of thresholds.',
         fallback='Original15min prediction/gate for unchanged protocols; same-budget15min fit for full-pipeline budget diagnostics. Cutoff-only thinning holds full-budget fallback fixed.',
         evidence='Exploratory reuse of previously studied data.',
-        B_from_original_data=True,valid_UTEG_only_validation=False,manuscript_changed=False)
+        B_from_original_data=True,manuscript_changed=False)
     p=ROOT/'PROTOCOL.json'
     if p.exists():assert c.read(p)==spec
     else:gates.clean_write(p,spec)
@@ -185,7 +185,7 @@ def repeat301():
     spec=dict(status='Additional stability audit after the first candidate results; all7 candidates repeated, no threshold tuning.',
         fixed='Outer5fold membership and training records unchanged.',
         repetitions='Original inner splits plus2 independently seeded3fold inner partitions; seeds57000+fold and58000+fold. Each record evaluated3times, not3 independent patients.',
-        B_from_original_data=True,valid_UTEG_only_validation=False)
+        B_from_original_data=True)
     path=ROOT/'REPEAT_PROTOCOL.json'
     if path.exists():assert c.read(path)==spec
     else:gates.clean_write(path,spec)

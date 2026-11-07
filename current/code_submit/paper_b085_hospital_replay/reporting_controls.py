@@ -111,7 +111,7 @@ def load_data() -> dict[str, np.ndarray]:
         D = {k: z[k].copy() for k in z.files}
     if D["x"].shape != (480, 4) or D["medical"].shape != (480, 4):
         raise RuntimeError("revised DATA15 shape changed")
-    if not bool(D["B_from_original_data"]) or bool(D["valid_UTEG_only_validation"]):
+    if not bool(D["B_from_original_data"]):
         raise RuntimeError("original-B input metadata changed")
     return D
 
@@ -275,12 +275,12 @@ def check_transfer_complete(*, full: bool = True) -> None:
         required_seeds = SEEDS if full else (1000,)
         if full and (z["seed"].tolist() != list(SEEDS) or z["pred_ma"].shape != (20, 201)):
             raise RuntimeError(f"transfer prediction incomplete: {p}")
-        required_keys = {"final_med4", "base_score", "dual_score", "test", "ids", "groups", "B_from_original_data", "valid_UTEG_only_validation"}
+        required_keys = {"final_med4", "base_score", "dual_score", "test", "ids", "groups", "B_from_original_data"}
         if not required_keys.issubset(set(z.files)):
             raise RuntimeError(f"fixed transfer prediction missing final-med4/risk keys: {p}")
         if not full and (1000 not in z["seed"].tolist() or z["pred_ma"].shape[1:] != (201,)):
             raise RuntimeError(f"transfer smoke prediction missing seed 1000: {p}")
-        if not bool(z["B_from_original_data"]) or bool(z["valid_UTEG_only_validation"]):
+        if not bool(z["B_from_original_data"]):
             raise RuntimeError(f"transfer prediction lineage changed: {p}")
         for seed in required_seeds:
             target, dual = transfer_paths(direction, seed)
@@ -510,7 +510,7 @@ def fit_all(D: dict[str, np.ndarray], *, smoke: bool = False) -> dict[str, Any]:
             "development_test_labels_used": False,
             "threshold_selection": "one pooled outer-B threshold per seed, positions 0-2 merged",
         }
-        np.savez_compressed(OUT / f"DEVELOPMENT_{direction}.npz", hgb_score=hgb_score_dev, pred=hgb_pred_dev, truth=hgb_truth_dev, boundary_score=bnd_score_dev, B_from_original_data=np.asarray(True), valid_UTEG_only_validation=np.asarray(False))
+        np.savez_compressed(OUT / f"DEVELOPMENT_{direction}.npz", hgb_score=hgb_score_dev, pred=hgb_pred_dev, truth=hgb_truth_dev, boundary_score=bnd_score_dev, B_from_original_data=np.asarray(True))
         test = np.asarray(test_cache[0]["test"], int)
         med = np.asarray([q["med"] for q in test_cache], float)
         pred = np.asarray([q["pred"] for q in test_cache], np.int8)
@@ -531,7 +531,7 @@ def fit_all(D: dict[str, np.ndarray], *, smoke: bool = False) -> dict[str, Any]:
         boundary_action = np.asarray([threshold_actions(x, bnd_thr_by_seed[int(seed)]["threshold"]) for seed, x in zip(seeds, boundary_scores)], bool)
         truth = ma_class(D["medical"][test, 2])
         arrays[direction] = {"test": test, "truth": truth, "pred": pred, "med4": med, "lr_score": lr_score, "dual_score": dual_score, "hgb_score": hgb_scores, "boundary_score": boundary_scores, "hgb_action": hgb_action, "boundary_action": boundary_action}
-        np.savez_compressed(OUT / f"{direction}.npz", seed=np.asarray(seeds), test=test, truth=truth, pred=pred, med4=med, lr_score=lr_score, dual_score=dual_score, hgb_score=hgb_scores, boundary_score=boundary_scores, hgb_action=hgb_action, boundary_action=boundary_action, B_from_original_data=np.asarray(True), valid_UTEG_only_validation=np.asarray(False))
+        np.savez_compressed(OUT / f"{direction}.npz", seed=np.asarray(seeds), test=test, truth=truth, pred=pred, med4=med, lr_score=lr_score, dual_score=dual_score, hgb_score=hgb_scores, boundary_score=boundary_scores, hgb_action=hgb_action, boundary_action=boundary_action, B_from_original_data=np.asarray(True))
         for method, action in (("HGB", hgb_action), ("BOUNDARY", boundary_action), ("LR", np.asarray([threshold_actions(q["lr_score"], None) for q in test_cache], bool))):
             # LR action is not thresholded here; only its score enters matched
             # quota. Keep an explicit all-false placeholder out of summaries.
@@ -572,7 +572,7 @@ def fit_all(D: dict[str, np.ndarray], *, smoke: bool = False) -> dict[str, Any]:
         "schema": "paper_b085_reporting_controls_v1",
         "status": "SMOKE_COMPLETE" if smoke else "COMPLETE",
         "data_path": str(DATA), "data_sha256": sha(DATA), "B_from_original_data": True,
-        "valid_UTEG_only_validation": False, "static_B_revision": True,
+        "static_B_revision": True,
         "directions": list(DIRECTIONS if not smoke else (DIRECTIONS[0],)), "seeds": list(seeds),
         "test_labels_used_only_after_threshold_freeze": True,
         "old_hgb_models_loaded": False, "feature_dim": FEATURE_DIM,
@@ -783,7 +783,7 @@ def run_nine_direction_boundary(D: dict[str, np.ndarray]) -> None:
         scores_a = np.asarray(scores, float); actions_a = np.asarray(actions, bool)
         np.savez_compressed(out / f"{direction}.npz", seed=seeds, test=test, score=scores_a, action=actions_a,
                             pred_class=pred_test, input_qc=qc_test, final_med4=med_test,
-                            ids=D["ids"][test], groups=D["groups"][test], B_from_original_data=np.asarray(True), valid_UTEG_only_validation=np.asarray(False))
+                            ids=D["ids"][test], groups=D["groups"][test], B_from_original_data=np.asarray(True))
         write_json(out / f"THRESHOLDS_{direction}.json", {"direction": direction, "max_risk": 0.15,
             "selection_source": "saved dual outer development rows plus saved outer-B numeric MA coordinate",
             "test_labels_used_for_threshold_selection": False, "thresholds_by_seed": seed_thresholds}, overwrite=True)
@@ -799,12 +799,12 @@ def run_nine_direction_boundary(D: dict[str, np.ndarray]) -> None:
             main_checks[direction] = {"exact_action_match_existing_main_boundary": same, "new_shape": list(new["action"].shape), "old_shape": list(old["boundary_action"].shape)}
             if not same: raise RuntimeError(f"nine-direction boundary mismatch with existing main arm: {direction}")
     audit["main_direction_exact_matches"] = main_checks
-    audit["B_from_original_data"] = True; audit["valid_UTEG_only_validation"] = False
+    audit["B_from_original_data"] = True
     write_json(out / "AUDIT.json", audit, overwrite=True)
     write_json(out / "RESULTS.json", {"protocol": "paper_b085_nine_direction_boundary_v1", "directions": list(NINE_DIRECTIONS),
         "threshold_source": "development outer only", "test_labels_used_for_threshold_selection": False,
         "models_refit": False, "main_direction_exact_matches": main_checks,
-        "B_from_original_data": True, "valid_UTEG_only_validation": False}, overwrite=True)
+        "B_from_original_data": True}, overwrite=True)
     print(json.dumps(audit, ensure_ascii=False, indent=2))
 
 

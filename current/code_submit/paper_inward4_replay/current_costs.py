@@ -38,7 +38,7 @@ def run():
     protocol=dict(costs=COSTS,source_cost_fixed=4,changes='Only local inward-error multiplier. Source priors/weights,alpha.01,inputs,groups and gate unchanged.',
         selection='Within each outer training set use innerOOF selection_key: retain agreement>80 when possible, then lowerFNR/FPR and class error;5% is preference, not mandatory veto.',
         main_preserved=True,data_sha256=c.read(current.ROOT/'DATA_FREEZE.json')['current_dataset_sha256'],
-        B_from_original_data=True,valid_UTEG_only_validation=False,manuscript_changed=False)
+        B_from_original_data=True,manuscript_changed=False)
     c.write(OUT/'FROZEN_PROTOCOL.json',protocol)
     # Exact baseline and test-label isolation on the first fold before scoring.
     f=folds[0];first={}

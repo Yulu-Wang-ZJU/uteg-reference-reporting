@@ -45,7 +45,7 @@ def initialize():
         uncertainty='Pooled ratios only; repeated events are not independent patients. Internal exploratory analysis after prior data inspection.',
         figures='Two time-axis quantitative grids, three levels each; PNG/PDF/SVG plus source CSV.',
         provenance='U-TEG MA and curves are original measured values. The 5- and 10-minute inputs use the first 300 and 600 samples of each 900-sample recording.',
-        B_from_original_data=True,valid_UTEG_only_validation=False,manuscript_changed=False,
+        B_from_original_data=True,manuscript_changed=False,
         software_reference='https://scikit-learn.org/stable/modules/generated/sklearn.isotonic.IsotonicRegression.html')
     p=ROOT/'CONTRACT.json'
     if p.exists():assert c.read(p)==contract

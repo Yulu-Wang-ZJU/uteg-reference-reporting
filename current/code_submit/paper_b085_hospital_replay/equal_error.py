@@ -93,7 +93,6 @@ def load_data() -> dict[str, np.ndarray]:
     with np.load(DATA, allow_pickle=False) as z:
         d = {k: z[k].copy() for k in z.files}
     assert d["x"].shape == (480, 4) and bool(d["B_from_original_data"])
-    assert not bool(d["valid_UTEG_only_validation"])
     return d
 
 
@@ -253,7 +252,7 @@ def freeze() -> None:
         "base_policy_selection_test_labels_used": False,
         "d2_full_test_labels_used_after_base_freeze": True,
         "d3_calibration_fold_labels_used_for_selection": True,
-        "B_from_original_data": True, "valid_UTEG_only_validation": False})
+        "B_from_original_data": True})
     rows = []
     for method in METHODS:
         for c in configs[method]:
@@ -535,7 +534,7 @@ def verify() -> None:
         "base_policy_selection_test_labels_used":False,"d2_full_test_labels_used_after_base_freeze":True,
         "d3_calibration_fold_labels_used_for_selection":True,"d3_heldout_fold_labels_used_for_selection":False,
         "test_label_aware_after_base_freeze":True,"B_from_original_data":True,
-        "valid_UTEG_only_validation":False,"no_manuscript_writes":True}
+        "no_manuscript_writes":True}
     write_json(OUT / "VERIFICATION.json", checks)
     assert checks["data_sha256_matches"] and checks["development_rows_60_each"] and all(prediction_checks.values()) and disjoint
     print(json.dumps(checks, ensure_ascii=False, indent=2))

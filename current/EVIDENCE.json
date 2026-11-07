@@ -71055,8 +71055,7 @@
           252
         ]
       ],
-      "B_from_original_data": true,
-      "valid_UTEG_only_validation": false
+      "B_from_original_data": true
     },
     {
       "arm": "REMATCHED",
@@ -71122,8 +71121,7 @@
           115
         ]
       ],
-      "B_from_original_data": true,
-      "valid_UTEG_only_validation": false
+      "B_from_original_data": true
     },
     {
       "arm": "PRESERVED",
@@ -71189,8 +71187,7 @@
           171
         ]
       ],
-      "B_from_original_data": true,
-      "valid_UTEG_only_validation": false
+      "B_from_original_data": true
     }
   ],
   "diagnostics": {

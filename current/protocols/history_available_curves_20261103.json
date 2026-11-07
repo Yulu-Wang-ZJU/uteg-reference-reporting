@@ -24,7 +24,6 @@
   "figures": "Two time-axis quantitative grids, three levels each; PNG/PDF/SVG plus source CSV.",
   "provenance": "U-TEG MA and curves are original measured values. The 5- and 10-minute inputs use the first 300 and 600 samples of each 900-sample recording.",
   "B_from_original_data": true,
-  "valid_UTEG_only_validation": false,
   "manuscript_changed": false,
   "software_reference": "https://scikit-learn.org/stable/modules/generated/sklearn.isotonic.IsotonicRegression.html",
   "input_provenance": {

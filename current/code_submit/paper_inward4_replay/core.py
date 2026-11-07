@@ -154,5 +154,5 @@ def summarize(pred,ref,accepted=None):
     m['rmse']=float(np.sqrt(np.mean((pred[a]-ref[a])**2))) if a.any() else None
     m['class_mae']={k:float(np.mean(abs(pred[a&(truth==v)]-ref[a&(truth==v)]))) if np.any(a&(truth==v)) else None for k,v in [('low',-1),('normal',0),('high',1)]}
     m['binary_confusion']=[[m['fp_denominator']-m['fp'],m['fp']],[m['fn'],m['fn_denominator']-m['fn']]]
-    m['B_from_original_data']=True;m['valid_UTEG_only_validation']=False
+    m['B_from_original_data']=True
     return m

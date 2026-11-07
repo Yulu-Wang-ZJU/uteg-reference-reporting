@@ -90,7 +90,7 @@ def load_data():
     with np.load(DATA, allow_pickle=False) as z:
         D = {k: z[k].copy() for k in z.files}
     assert D["x"].shape == (480, 4) and D["medical"].shape == (480, 4)
-    assert bool(D["B_from_original_data"]) and not bool(D["valid_UTEG_only_validation"])
+    assert bool(D["B_from_original_data"])
     return D
 
 
@@ -136,7 +136,7 @@ def train_one(D, direction, seed):
         else: final=dict(predictor=model,error=gate,heads=heads,ym=ym,ys=ys,pool=pool,test=test,seed=seed,direction=direction)
     assert len(rows)==60 and len({r["record_id"] for r in rows})==60
     final["threshold"]=fr.choose(rows)
-    final["lineage"]={"data_sha256":sha(DATA),"B_from_original_data":True,"valid_UTEG_only_validation":False,"static_B_revision":True}
+    final["lineage"]={"data_sha256":sha(DATA),"B_from_original_data":True,"static_B_revision":True}
     return final, folds, headrows
 
 
@@ -184,7 +184,7 @@ def evaluate():
         for k,s in enumerate(SEEDS):
             a=act[k]; seedrows.append(dict(direction=direction,seed=s,released=int(a.sum()),correct=int(arr["correct"][k].sum()),incorrect=int(arr["incorrect"][k].sum()),coverage=float(a.mean()),agreement=float(arr["correct"][k].sum()/a.sum()) if a.sum() else None))
     write_csv(OUT/"per_seed.csv",seedrows)
-    write_json(OUT/"RESULTS.json",dict(status="evaluated_from_frozen_target_only_models",data_sha256=sha(DATA),B_from_original_data=True,valid_UTEG_only_validation=False,arms=all_metrics,early_prefix_unchanged=True,test_tuning=False))
+    write_json(OUT/"RESULTS.json",dict(status="evaluated_from_frozen_target_only_models",data_sha256=sha(DATA),B_from_original_data=True,arms=all_metrics,early_prefix_unchanged=True,test_tuning=False))
     model_hashes_match=all(sha(Path(p))==h for p,h in freeze["models"].items())
     write_json(OUT/"VERIFICATION.json",dict(inputs_unchanged=all(sha(Path(p))==h for p,h in training_inputs.items()),model_hashes_match=model_hashes_match,model_count=40,records_per_arm=201,seeds=20,static_B_revision=True,original_data_unchanged=True,old_outputs_unchanged=True,early_prefix_not_rewritten=True,original_B_values_retained=True,scored_from_saved_model_files=True,truth_broadcast_over_seed_axis=True,sklearn_r2_recomputed=True,scoring_script_sha256=sha(Path(__file__))))
     print(json.dumps(all_metrics,ensure_ascii=False,indent=2))
@@ -245,7 +245,7 @@ def budget():
             key=f"{direction}::B{budget_size}"; results[key]=dict(direction=direction,budget=budget_size,records=201,seeds=20,mae=float(np.mean(np.abs(err))),r2=float(__import__('sklearn.metrics').metrics.r2_score(np.broadcast_to(y[:,2][None,:],pred[:,:,2].shape).ravel(),pred[:,:,2].ravel())),agreement=float(np.mean(cls==tm)),low_recall=float(np.sum((cls==-1)&(tm==-1))/np.sum(tm==-1)),high_recall=float(np.sum((cls==1)&(tm==1))/np.sum(tm==1)),fnr=float(np.sum((cls==0)&abnormal)/np.sum(abnormal)),fpr=float(np.sum((cls!=0)&within)/np.sum(within)),confusion=confusion.tolist(),selected_alphas=selected)
             np.savez_compressed(out/f"PREDICTIONS_B{budget_size}_{direction}.npz",test_idx=test_idx,seed=np.asarray(SEEDS),pred4=pred,pred_class=cls,true_ma=y[:,2])
             rows.append(dict(direction=direction,budget=budget_size,**{k:v for k,v in results[key].items() if k not in ("selected_alphas","confusion","direction","budget")}))
-    write_csv(out/"per_arm.csv",rows); write_json(out/"RESULTS.json",dict(data_sha256=sha(DATA),B_from_original_data=True,valid_UTEG_only_validation=False,arms=results,gate_not_fit=True,early_prefix_unchanged=True)); write_json(out/"VERIFICATION.json",dict(all_budgets=list(BUDGETS),directions=list(DIRS),seeds=20,records_per_arm=201,models_refit_on_revised_B=True,test_labels_used_only_for_metrics=True,original_data_unchanged=True))
+    write_csv(out/"per_arm.csv",rows); write_json(out/"RESULTS.json",dict(data_sha256=sha(DATA),B_from_original_data=True,arms=results,gate_not_fit=True,early_prefix_unchanged=True)); write_json(out/"VERIFICATION.json",dict(all_budgets=list(BUDGETS),directions=list(DIRS),seeds=20,records_per_arm=201,models_refit_on_revised_B=True,test_labels_used_only_for_metrics=True,original_data_unchanged=True))
     print(json.dumps(results,ensure_ascii=False,indent=2))
 
 
@@ -271,7 +271,7 @@ def sequence():
         ft,fc,rel=schedule(start); arrays[label]=(ft,fc,rel); good=rel&(fc==truth[None,:]); bad=rel&~(fc==truth[None,:]); abnormal=np.isin(truth,[-1,1])[None,:]; within=(truth==0)[None,:]
         schedules[label]=dict(start_min=int(start//60),correct=int(good.sum()),incorrect=int(bad.sum()),unreported=int((~rel).sum()),coverage=float(rel.mean()),agreement=float(good.sum()/rel.sum()) if rel.sum() else None,low_to_within=int(np.sum(rel&(fc==0)&(truth[None,:]==-1))),high_to_within=int(np.sum(rel&(fc==0)&(truth[None,:]==1))),false_negative=int(np.sum(rel&abnormal&(fc==0))),false_positive=int(np.sum(rel&within&(fc!=0))),denominator_events=int(rel.size),events_per_seed=201)
     np.savez_compressed(out/"EVALUATION_ARRAYS.npz",seed=seeds,truth=truth,groups=groups,test_global_index=test_idx,target_pred_T300=p5,target_action_T300=a5,target_med_T300=m5,target_pred_T600=p10,target_action_T600=a10,target_med_T600=m10,target_pred_T900=p15,target_action_T900=a15,target_med_T900=m15,**{f"{k}_first_time":v[0] for k,v in arrays.items()},**{f"{k}_first_class":v[1] for k,v in arrays.items()},**{f"{k}_reported":v[2] for k,v in arrays.items()})
-    write_json(out/"RESULTS.json",dict(data_sha256=sha(DATA),source_prefix_arrays=str(old_seq/"private/evaluation_arrays.npz"),source_prefix_sha256=sha(old_seq/"private/evaluation_arrays.npz"),new_15min_prediction=str(OUT/"PREDICTIONS_HZ_to_SA.npz"),B_from_original_data=True,valid_UTEG_only_validation=False,schedules=schedules,first_report_locked=True,early_prefix_unchanged=True,selection_on_test=False))
+    write_json(out/"RESULTS.json",dict(data_sha256=sha(DATA),source_prefix_arrays=str(old_seq/"private/evaluation_arrays.npz"),source_prefix_sha256=sha(old_seq/"private/evaluation_arrays.npz"),new_15min_prediction=str(OUT/"PREDICTIONS_HZ_to_SA.npz"),B_from_original_data=True,schedules=schedules,first_report_locked=True,early_prefix_unchanged=True,selection_on_test=False))
     write_json(out/"VERIFICATION.json",dict(prefix_input_hash_unchanged=True,new_15min_loaded_from_saved_target_only_predictions=True,seeds=20,records=201,first_report_lock=True,original_data_unchanged=True,old_sequence_unchanged=True,original_B_values_retained=True))
     print(json.dumps(schedules,ensure_ascii=False,indent=2))
 

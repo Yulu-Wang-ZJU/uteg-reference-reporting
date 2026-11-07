@@ -1,15 +1,15 @@
 {
   "schema": "uteg_current_manuscript_v2",
   "date": "2026-11-07",
-  "manuscript_revision": "2026-11-07.2",
+  "manuscript_revision": "2026-11-07.3",
   "current_code": "provenance/CURRENT_CODE.json",
   "supplementary_code": "provenance/SUPPLEMENTARY_CODE.json",
   "public_data": "provenance/PUBLIC_DATA.json",
   "manuscript_anchors": [
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.tex",
-      "bytes": 79030,
-      "sha256": "a1a7ec93069c866719b9eb548a19a722d19bbb85ffaad5d9ba7b0785b53fdc90"
+      "bytes": 78989,
+      "sha256": "0cb9f8e3432756827750d23b0309d32d26cc1cf30cdff89e93d393d06e59d0ea"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.tex",
@@ -18,8 +18,8 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_current.tex",
-      "bytes": 61987,
-      "sha256": "9d9057b55d6bd2d4439dcfb1ce8e36d793ff1020e524af3cf43c3565ac94ad84"
+      "bytes": 61989,
+      "sha256": "381bb91b26b3a2b1414fb1a2fa002fa3c17180c159430670dddcbdc6841da153"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_internal301.tex",
@@ -34,27 +34,27 @@
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_files.tex",
       "bytes": 4247,
-      "sha256": "1e120654a7d5e2e7b6761fd0c7267716da7467952b7fbf57bdb7fa6f842c7fd2"
+      "sha256": "83a4b82be8139455b52b900f50a7995cdc68f47f8f72b3768f6f91c54e11a3e5"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.pdf",
       "bytes": 703097,
-      "sha256": "11c8eac4df5d19cb5300e91a8c49f9461acac6473774cec274f1f869439d1388"
+      "sha256": "8e5930618c8f8676ccbbf2d58848be68cdaacb180cb6ce1503d3a6ebced46b94"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
-      "bytes": 963291,
-      "sha256": "42e2789af025b3c540a3f9f918d6acf29c38b85c80889bfe749384e1ea522b22"
+      "bytes": 963288,
+      "sha256": "8dec43ae029c0988fd1080a13ad53296defdf9493bc77676cb8f4becdca7f5f3"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261103.pdf",
-      "bytes": 1502662,
-      "sha256": "4c1d65bd66e2edbc6ca4faae91cd0f8daace0b8869ba62033afbcbdb84932268"
+      "bytes": 1502663,
+      "sha256": "95f0a55a7e58f598d78f69ca94ba11aba963b4798c3f314606abcc5b09434975"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
-      "bytes": 30573724,
-      "sha256": "8b510320a39aadb2064f3c6feba74fb43108896fce1329ff7c37fcd90f5b4be1"
+      "bytes": 30573365,
+      "sha256": "889ab071910ae1c28cd8b8636676452e053093a9ed79d36b31dd15f146f7bc01"
     }
   ],
   "companion_anchors": [
@@ -103,6 +103,6 @@
     "Hubei": 79
   },
   "metrics": "FNR/FPR and post-selection class recall use released reference-class denominators. Full-class yields include withheld records. All 20 seeds are retained together within resampled record groups.",
-  "release_ref": "v2026.11.07.2",
+  "release_ref": "v2026.11.07.3",
   "input_provenance": "Hospital-supplied U-TEG inputs and instrument-exported TEG readouts; input preparation and loading are described in current/INPUT_CONTRACT.json and Supplementary Methods A1."
 }

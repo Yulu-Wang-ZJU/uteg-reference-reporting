@@ -64,7 +64,7 @@ def evaluate():
         evaluation='Frozen301 5outer/3inner; separately original60development/201test,20seeds.',
         change='Stored B values read directly from the active input file and retained across splits.',
         input_provenance=input_provenance(),
-        B_from_original_data=True,valid_UTEG_only_validation=False,manuscript_changed=False))
+        B_from_original_data=True,manuscript_changed=False))
     pos={int(v):i for i,v in enumerate(local)}
     for h in c.HORIZONS:
         path=ROOT/'all301'/f'T{h}.npz'
@@ -78,7 +78,7 @@ def evaluate():
         assert (seen==1).all() and np.isfinite(pred).all()
         path.parent.mkdir(exist_ok=True)
         np.savez_compressed(path,prediction=pred,accepted=ac,local=local,reference=d['y'][local,2],directions=c.MAIN,
-                            B_from_original_data=True,valid_UTEG_only_validation=False)
+                            B_from_original_data=True)
         c.write(path.with_suffix('.audit.json'),audits)
         c.write(path.with_suffix('.metrics.json'),{arm:dict(all_report=c.summarize(pred[j],d['y'][local,2]),boundary95=c.summarize(pred[j],d['y'][local,2],ac[j])) for j,arm in enumerate(c.MAIN)})
         print('CURRENT_ALL301',h,flush=True)

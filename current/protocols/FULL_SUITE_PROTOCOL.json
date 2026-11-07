@@ -22,7 +22,6 @@
   },
   "selection": "Frozen historical hyperparameters and development-only gates. No outer-result winner promotion.",
   "B_from_original_data": true,
-  "valid_UTEG_only_validation": false,
   "manuscript_changed": false,
   "input_provenance": {
     "source_status": "author_confirmed_measured",

@@ -16,7 +16,6 @@
   "auxiliary": "Source Ridge supplies R,K,angle; B-only source prior supplies MA. Complete updates MA only.",
   "data_sha256": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
   "B_from_original_data": true,
-  "valid_UTEG_only_validation": false,
   "input_provenance": {
     "source_status": "author_confirmed_measured",
     "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",

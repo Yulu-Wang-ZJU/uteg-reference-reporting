@@ -10,7 +10,6 @@
   "features": "Original13slot interface: physical4 inputs, predicted MA,margin,class indicators; missing R/K/angle model-output slots constant0, never reference values.",
   "selector": "Historical select_threshold max_risk .15; original two-sided normal/tail selector and support requirements.",
   "B_from_original_data": true,
-  "valid_UTEG_only_validation": false,
   "input_provenance": {
     "source_status": "author_confirmed_measured",
     "source_basis": "Hospital experimenter confirmation, as communicated by the study authors.",

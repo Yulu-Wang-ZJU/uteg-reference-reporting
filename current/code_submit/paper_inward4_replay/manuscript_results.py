@@ -215,15 +215,19 @@ def representation():
             add(5,'Representation matched delta',dict(arm=arm,quota=float(q),**diff));curves.append(dict(quota=float(q),EXP3={k:v for k,v in vals['EXP3'].items() if k not in ['correct','action']},EXP4={k:v for k,v in vals['EXP4'].items() if k not in ['correct','action']},delta=diff))
         E['representation_curves'][arm]=curves
 
+PRESERVED_SUMMARY_FIELDS = ('arm', 'events', 'reported', 'correct', 'incorrect', 'withheld', 'coverage', 'agreement', 'fnr', 'fpr', 'fn', 'fn_denominator', 'fp', 'fp_denominator', 'low_recall', 'high_recall', 'confusion', 'withheld_by_true_state', 'all_true_class_counts', 'correct_yield', 'incorrect_yield', 'r2', 'mae', 'rmse', 'class_mae', 'binary_confusion', 'B_from_original_data')
+
+def preserved_summary(row):
+    """Export the defined aggregate columns from a saved summary."""
+    return {key: row[key] for key in PRESERVED_SUMMARY_FIELDS}
+
 def extras():
-    dev=OUT/'experiments/development';E['development']=c.read(dev/'SUMMARY.json');E['preserved']=c.read(dev/'PRESERVED_TEST.json');E['diagnostics']={k:c.read(OUT/f'experiments/diagnostics/{k}.json') for k in ['COMPLETE','D2','D3','FAMILY']}
+    dev=OUT/'experiments/development';E['development']=c.read(dev/'SUMMARY.json');E['preserved']=[preserved_summary(row) for row in c.read(dev/'PRESERVED_TEST.json')];E['diagnostics']={k:c.read(OUT/f'experiments/diagnostics/{k}.json') for k in ['COMPLETE','D2','D3','FAMILY']}
     for row in E['development']:
         name=row['candidate'];sheet='Adaptation strengths' if name.startswith('strength') or name in ['base','raw'] else 'Nested side protection' if name in ['BASE','LOW','HIGH','BOTH','side_selected'] else 'PLS SVR reuse dev';add(5,sheet,row)
     for name,sheet in [('PRESERVED_TEST','Preserved channel external'),('PRESERVED_DEV','Preserved channel dev'),('HEADROOM','Oracle headroom dev')]:
         for row in c.read(dev/f'{name}.json'):
-            # Filter the exported summary only; retain the source evidence.
-            exported = ({k:v for k,v in row.items() if k != 'valid_UTEG_only_validation'}
-                        if sheet == 'Preserved channel external' else row)
+            exported = preserved_summary(row) if sheet == 'Preserved channel external' else row
             add(5,sheet,exported)
     for row in c.read(OUT/'experiments/diagnostics/CAP_POINTS.json'):add(7,'Cap points',row)
     for kind in ['D2','D3']:

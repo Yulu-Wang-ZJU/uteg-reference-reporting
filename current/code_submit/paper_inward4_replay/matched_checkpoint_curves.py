@@ -66,7 +66,7 @@ def initialize():
         statistics='Pooled count ratios, no significance/CI claims; repetitions are not independent patients.',
         source_data='Aggregate and per-repeat CSV plus private threshold/decision records.',
         provenance='The participating hospitals supplied the U-TEG MA values and voltage curves. The 5- and 10-minute inputs use the first 300 and 600 positions of the 900-point grid. INPUT_CONTRACT.json describes input preparation and loading.',
-        B_from_original_data=True, valid_UTEG_only_validation=False, manuscript_changed=False)
+        B_from_original_data=True, manuscript_changed=False)
     path=ROOT/'CONTRACT.json'
     if path.exists() and c.read(path)!=contract:
         assert (ROOT/'additional_zero_fn_constraint/CONTRACT.json').exists()

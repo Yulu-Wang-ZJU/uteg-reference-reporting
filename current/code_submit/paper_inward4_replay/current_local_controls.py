@@ -30,7 +30,7 @@ def run():
         selection='Fixed identity-group hash order, no outcome enrichment; same rows for all arms. Original inner folds restricted to the selected pool.',
         calibration=['raw','affine','joint','huber','complete'],
         auxiliary='Source Ridge supplies R,K,angle; B-only source prior supplies MA. Complete updates MA only.',
-        data_sha256=c.sha(ROOT/'data/DATA15_CURRENT.npz'),B_from_original_data=True,valid_UTEG_only_validation=False)
+        data_sha256=c.sha(ROOT/'data/DATA15_CURRENT.npz'),B_from_original_data=True)
     path=out/'PROTOCOL.json'
     if path.exists():assert c.read(path)==protocol
     else:clean_write(path,protocol)

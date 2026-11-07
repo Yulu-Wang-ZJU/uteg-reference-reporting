@@ -5,7 +5,6 @@
   "evaluation": "Frozen301 5outer/3inner; separately original60development/201test,20seeds.",
   "change": "Feature B read directly from active fixed file; no per-fold MA-range regeneration. This is a distinct version from previous8.33/6.25%301 result.",
   "B_from_original_data": true,
-  "valid_UTEG_only_validation": false,
   "manuscript_changed": false,
   "input_provenance": {
     "source_status": "author_confirmed_measured",

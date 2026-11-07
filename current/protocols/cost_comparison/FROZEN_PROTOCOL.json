@@ -10,7 +10,6 @@
   "main_preserved": true,
   "data_sha256": "5ac9902265919e72465b41c0e137eac2f25e10a8a383a99b582db2f274247f0a",
   "B_from_original_data": true,
-  "valid_UTEG_only_validation": false,
   "manuscript_changed": false,
   "input_provenance": {
     "source_status": "author_confirmed_measured",

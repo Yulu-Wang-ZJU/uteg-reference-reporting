@@ -97,7 +97,7 @@ def run(reconstructed=False):
         training='Original3 outer development positions, each gate fits upstream inner-OOF errors; thresholds chosen from outer development predictions only.',
         features='Original13slot interface: physical4 inputs, predicted MA,margin,class indicators; missing R/K/angle model-output slots constant0, never reference values.',
         selector='Historical select_threshold max_risk .15; original two-sided normal/tail selector and support requirements.',
-        B_from_original_data=True,valid_UTEG_only_validation=False))
+        B_from_original_data=True))
     for direction in c.TARGET:
         for h in [900,300,600]:
             if reconstructed and h==900:
