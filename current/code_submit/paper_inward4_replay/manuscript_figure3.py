@@ -124,19 +124,21 @@ def run(output_dir=None):
                 assert released >= 0 and held >= 0 and released + held == total
                 count = held if group == 0 else released
                 pct = 100 * count / total
-                split.bar(j, pct, width=.62, color=bar_colors[j], zorder=3)
-                split.text(j, pct + 2, f'{count:,}\n{pct:.1f}%', ha='center', va='bottom', fontsize=6)
+                height = count if group == 0 else pct
+                split.bar(j, height, width=.62, color=bar_colors[j], zorder=3)
+                label = f'{count:,}' if group == 0 else f'{count:,}\n{pct:.1f}%'
+                split.text(j, height + (8 if group == 0 else 2), label, ha='center', va='bottom', fontsize=6)
                 for outcome, n in [('released', released), ('withheld', held)]:
                     flow_rows.append(dict(arm=arm, rule=rule, initial_prediction=state,
                                           outcome=outcome, count=n, denominator=total,
                                           fraction=n / total))
-            split.set(xlim=(-.65, 3.65), ylim=(0, 125 if group else 85),
-                      xticks=range(4), yticks=[0, 50, 100] if group else [0, 25, 50, 75])
+            split.set(xlim=(-.65, 3.65), ylim=(0, 125 if group else 500),
+                      xticks=range(4), yticks=[0, 50, 100] if group else [0, 100, 200, 300, 400, 500])
             split.set_xticklabels(['All', 'Boundary', 'Logistic', 'HGB'], fontsize=6.5)
             split.tick_params(length=2.5, width=.6)
             split.grid(axis='y', color='#DFE5E9', lw=.45)
             split.set_axisbelow(True)
-            split.set_ylabel('FP withheld (%)' if group == 0 else 'Correct retained (%)', fontsize=6.7)
+            split.set_ylabel('FP withheld (count)' if group == 0 else 'Correct retained (%)', fontsize=6.7)
             split.set_title('Before gating: 640 FP' if group == 0 else 'Before gating: 3,380 correct (TP + TN)',
                             loc='left', fontsize=6.8, pad=5)
             if group == 0:
@@ -170,7 +172,7 @@ def run(output_dir=None):
               dimensions_mm=[183, 160], main_coverage_view=[50, 100],
               all_curve_quotas_retained=[.05, 1.0], displayed_rules=RULES,
               threshold_callouts=True, threshold_points='Actual Table 2 pooled counts, not interpolated curve points',
-              lower_layout='Vertical bars: FP withheld / 640 pre-gate FP and correct retained / 3380 pre-gate correct events (TP + TN)',
+              lower_layout='Vertical bars: FP withheld counts (640 pre-gate FP); correct retained percentages (3380 pre-gate TP + TN)',
               release_count_rows=len(flow_rows), low_high_subgroups='Table 2',
               boundary95_preserved_in_source=True, visual_qa='pending')
     (out / 'Figure3_QA.json').write_text(json.dumps(qa, indent=2) + '\n', encoding='utf-8')
