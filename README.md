@@ -6,11 +6,11 @@ Start with [`current/`](current/) for the current analysis code and
 of the submission files. This repository contains no patient-level records,
 raw waveforms, individual predictions, fitted models or manuscript PDFs.
 
-The manuscript, supplement and code archive cite [release v2026.11.10.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.10.1).
+The manuscript, supplement and code archive cite [release v2026.11.10.2](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.10.2).
 The supplementary device video is included in the submission ZIP; its checksum
 is recorded in `provenance/CURRENT_MANUSCRIPT.json`.
 
-The U-TEG device uses longitudinal ultrasonic guided waves in a micro-metal tube, as described in US patent 12,487,161 B2 (2025). This release aligns the device description and manuscript references; the numerical analyses and aggregate workbooks are unchanged.
+The U-TEG device uses longitudinal ultrasonic guided waves in a micro-metal tube, as described in US patent 12,487,161 B2 (2025). Figure 3 now separates false-positive withholding from correct-report retention. The numerical analyses and aggregate workbooks are unchanged.
 
 ## Current analysis
 

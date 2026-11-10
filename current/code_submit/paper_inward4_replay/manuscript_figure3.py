@@ -8,7 +8,6 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-from matplotlib.patches import Patch
 import numpy as np
 
 WS = Path(__file__).resolve().parents[2]
@@ -37,7 +36,6 @@ def run(output_dir=None):
     grid = fig.add_gridspec(2, 2, left=.17, right=.97, bottom=.20,
                           top=.835, wspace=.24, hspace=.50,
                           height_ratios=[1, 1.28])
-    release_color, withhold_color = '#DCE2E6', '#657680'
     curve_rows, retention_rows, point_rows, cost_rows, flow_rows = [], [], [], [], []
     for col, arm in enumerate(ARMS):
         ax = fig.add_subplot(grid[0, col])
@@ -111,6 +109,12 @@ def run(output_dir=None):
                 assert np.isclose(withheld[i, j], 100 * n / d)
                 cost_rows.append(dict(arm=arm, rule=rule, metric=name, numerator=n,
                                       denominator=d, fraction=n / d, percent=100 * n / d))
+        # In these 15-minute comparisons, every pre-gate error is an FP.
+        for rule in RULES:
+            cm = np.asarray(metrics[rule]['confusion'])
+            assert cm[0, 1] + cm[2, 1] == 0  # no abnormal-to-normal errors
+            assert cm[0, 2] + cm[2, 0] == 0  # no low/high swaps
+        bar_colors = ['#9AA6AF', COLORS['BOUNDARY'], COLORS['LR'], COLORS['HGB']]
         for group, (state, total) in enumerate([('incorrect', errors), ('correct', correct)]):
             split = fig.add_subplot(lower[group])
             for j, rule in enumerate(RULES):
@@ -118,36 +122,30 @@ def run(output_dir=None):
                 released = int(cm.sum() - np.trace(cm)) if state == 'incorrect' else int(np.trace(cm))
                 held = total - released
                 assert released >= 0 and held >= 0 and released + held == total
-                released_pct = 100 * released / total
-                split.barh(j, released_pct, height=.56, color=release_color, edgecolor='white', linewidth=.4)
-                split.barh(j, 100 - released_pct, left=released_pct, height=.56,
-                           color=withhold_color, edgecolor='white', linewidth=.4, hatch='///')
-                split.text(122, j, f'{released:,}', ha='center', va='center', fontsize=7)
-                split.text(157, j, f'{held:,}', ha='center', va='center', fontsize=7)
-                for outcome, count in [('released', released), ('withheld', held)]:
+                count = held if group == 0 else released
+                pct = 100 * count / total
+                split.bar(j, pct, width=.62, color=bar_colors[j], zorder=3)
+                split.text(j, pct + 2, f'{count:,}\n{pct:.1f}%', ha='center', va='bottom', fontsize=6)
+                for outcome, n in [('released', released), ('withheld', held)]:
                     flow_rows.append(dict(arm=arm, rule=rule, initial_prediction=state,
-                                          outcome=outcome, count=count, denominator=total,
-                                          fraction=count / total))
-            split.set(xlim=(0, 174), ylim=(3.55, -.5), xticks=[], yticks=range(4))
-            split.set_yticklabels(['All', 'Boundary', 'Logistic', 'HGB'], fontsize=6.5)
-            split.tick_params(which='both', length=0, axis='both', pad=6)
-            for spine in split.spines.values():
-                spine.set_visible(False)
-            split.text(0, 1.15, f'Initially {state} (n = {total:,})',
-                       transform=split.transAxes, ha='left', va='bottom', fontsize=7.2)
-            split.text(122 / 174, 1.02, 'Released', transform=split.transAxes,
-                       ha='center', va='bottom', fontsize=6.5)
-            split.text(157 / 174, 1.02, 'Withheld', transform=split.transAxes,
-                       ha='center', va='bottom', fontsize=6.5)
+                                          outcome=outcome, count=n, denominator=total,
+                                          fraction=n / total))
+            split.set(xlim=(-.65, 3.65), ylim=(0, 125 if group else 85),
+                      xticks=range(4), yticks=[0, 50, 100] if group else [0, 25, 50, 75])
+            split.set_xticklabels(['All', 'Boundary', 'Logistic', 'HGB'], fontsize=6.5)
+            split.tick_params(length=2.5, width=.6)
+            split.grid(axis='y', color='#DFE5E9', lw=.45)
+            split.set_axisbelow(True)
+            split.set_ylabel('FP withheld (%)' if group == 0 else 'Correct retained (%)', fontsize=6.7)
+            split.set_title('Before gating: 640 FP' if group == 0 else 'Before gating: 3,380 correct (TP + TN)',
+                            loc='left', fontsize=6.8, pad=5)
             if group == 0:
-                split.text(-.13, 1.15, 'cd'[col], transform=split.transAxes,
+                split.text(-.13, 1.18, 'cd'[col], transform=split.transAxes,
                            fontsize=9, fontweight='bold')
-        for j, (rule, label) in enumerate(zip(RULES, ['All', 'Boundary', 'Logistic', 'HGB'])):
-            x = position.x0 + (j + .5) / 4 * position.width
-            fig.text(x, .097, label, ha='center', va='top', fontsize=6.5)
-            fig.text(x, .074, f"{100 * metrics[rule]['coverage']:.2f}%", ha='center', va='top', fontsize=6.5)
-        if col == 0:
-            fig.text(position.x0 - .025, .074, 'Coverage', ha='right', va='top', fontsize=6.5)
+            else:
+                split.set_xticklabels([f'{label}\n{100*metrics[rule]["coverage"]:.2f}%'
+                                       for rule,label in zip(RULES,['All','Boundary','Logistic','HGB'])], fontsize=6.3)
+                split.set_xlabel('Reporting rule / coverage', fontsize=6.5, labelpad=4)
 
     fig.suptitle('Selective reporting at 15 minutes', fontsize=10, fontweight='bold', y=.982)
     handles = [Line2D([0], [0], color=COLORS[k], ls=STYLES[k], lw=1.5, label=LABELS[k])
@@ -157,10 +155,6 @@ def run(output_dir=None):
                           markersize=4, label='Table 2 operating point'))
     fig.legend(handles=handles, loc='upper center', bbox_to_anchor=(.56, .916), ncol=5,
                fontsize=6.4, handlelength=2.2, columnspacing=1.05)
-    fig.legend(handles=[Patch(facecolor=release_color, label='Released'),
-                        Patch(facecolor=withhold_color, edgecolor='white', hatch='///', label='Withheld')],
-               loc='lower center', bbox_to_anchor=(.57, .009), ncol=2, fontsize=6.5,
-               handlelength=2.2, columnspacing=2)
     for ext in ['pdf', 'svg', 'png']:
         fig.savefig(out / f'Figure3_reporting.{ext}', dpi=400, facecolor='white')
     fig.savefig(out / 'Figure3_reporting.tiff', dpi=600, facecolor='white',
@@ -176,7 +170,7 @@ def run(output_dir=None):
               dimensions_mm=[183, 160], main_coverage_view=[50, 100],
               all_curve_quotas_retained=[.05, 1.0], displayed_rules=RULES,
               threshold_callouts=True, threshold_points='Actual Table 2 pooled counts, not interpolated curve points',
-              lower_layout='Released/withheld stacked bars and exact count columns; fixed denominators of 640 initially incorrect and 3380 initially correct events',
+              lower_layout='Vertical bars: FP withheld / 640 pre-gate FP and correct retained / 3380 pre-gate correct events (TP + TN)',
               release_count_rows=len(flow_rows), low_high_subgroups='Table 2',
               boundary95_preserved_in_source=True, visual_qa='pending')
     (out / 'Figure3_QA.json').write_text(json.dumps(qa, indent=2) + '\n', encoding='utf-8')

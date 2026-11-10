@@ -1,18 +1,18 @@
 {
   "schema": "uteg_current_code_v2",
   "date": "2026-11-10",
-  "release_ref": "v2026.11.10.1",
+  "release_ref": "v2026.11.10.2",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "bytes": 6289631,
-    "sha256": "157050873248993072e76a89ff4686c9ffb4f695a9cfdbf2c1dd46a8d627a5da"
+    "bytes": 6289587,
+    "sha256": "e4d0f86ddf0f67c73b2e47594b1e2a7bb1324d5f2d439c4e8caade2aaa195aa4"
   },
   "members": [
     {
       "repository_path": "current/CODE_MANIFEST.json",
       "archive_member": "CODE_MANIFEST.json",
       "bytes": 24882,
-      "sha256": "e3cd4d3d106676b5afe33f68b6a2745844f71358e835506370ca4ed150bb52da"
+      "sha256": "06945ca36b51caebd8e9c1e50256eb55ee800d310ed26ff1d02079e153aa2a93"
     },
     {
       "repository_path": "current/COHORT_UPDATE.json",
@@ -72,7 +72,7 @@
       "repository_path": "current/README.md",
       "archive_member": "README.md",
       "bytes": 6840,
-      "sha256": "524189977902d19bd19435aa8184ab6efedbeee9c35fb8bf38643d509b312061"
+      "sha256": "a24e41fc5d12201dbd7ef99a3f61b9889c4cb40244f521c1625df247c64d48e2"
     },
     {
       "repository_path": "current/RESTRICTED_INPUT_HASHES.json",
@@ -533,8 +533,8 @@
     {
       "repository_path": "current/code_submit/paper_inward4_replay/manuscript_figure3.py",
       "archive_member": "code_submit/paper_inward4_replay/manuscript_figure3.py",
-      "bytes": 11323,
-      "sha256": "7f62beb40371791928c9819c7100fc5fe777a3933d97a9219e2e097126055f33"
+      "bytes": 10953,
+      "sha256": "48991fffe372d412e0ac1324bd82342196b6587208828efd8dde79f006f1a5b2"
     },
     {
       "repository_path": "current/code_submit/paper_inward4_replay/manuscript_figure4.py",
