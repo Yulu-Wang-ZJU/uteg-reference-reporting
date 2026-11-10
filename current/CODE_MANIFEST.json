@@ -115,7 +115,7 @@
   "documentation_files": {
     "INPUT_CONTRACT.json": "bdfa1ae6402fa8c742bd1cc6ff96efead7372c2b8c4f6d1258cfe099c09707c9",
     "configure_restricted_inputs.py": "6e17e6f6ceecd1da7cb67f8a1e80adc720766340c464a94160f23f2e7c74988c",
-    "README.md": "0e52e21642d5b9158295d5d1322fe764528b61439f49f00f2a16e074e4cf61ba",
+    "README.md": "524189977902d19bd19435aa8184ab6efedbeee9c35fb8bf38643d509b312061",
     "COHORT_UPDATE.json": "5af67e9505f6a22808f9752a9741ac24ea9185b81e74e3a822d46d36cc133e87"
   },
   "protocol_files": {
@@ -275,9 +275,9 @@
   "cohort_revision": "cohort_correction_20261107",
   "public_repository": {
     "url": "https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting",
-    "release_ref": "v2026.11.07.10",
+    "release_ref": "v2026.11.10.1",
     "source_directory": "current",
     "aggregate_directory": "data",
-    "documentation_update": "2026-11-07"
+    "documentation_update": "2026-11-10"
   }
 }
