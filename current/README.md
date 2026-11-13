@@ -5,10 +5,10 @@ current manuscript. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [release v2026.11.10.3](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.10.3)
+Analysis code and aggregate results correspond to [release v2026.11.13.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.13.1)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.10.3/current) for analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.10.3/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.13.1/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.13.1/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
 
 ## Device principle
@@ -21,6 +21,10 @@ The participating hospitals supplied U-TEG MA values and voltage recordings, tog
 RESTRICTED_INPUT_HASHES.json identifies the input files. Input preparation and
 loading are described in INPUT_CONTRACT.json and Supplementary Methods,
 Part A1.
+
+## Specimen handling
+
+At SAHZU and Hubei, samples were kept at room temperature and tested within 6 h after collection. At Huzhou, samples were stored at 2–8 °C and tested 24–48 h after collection. Both assays were started simultaneously on aliquots from the same blood draw. Supplementary Methods A1 describes specimen handling and the supporting literature.
 
 ## Included cohort
 

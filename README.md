@@ -1,16 +1,16 @@
 # U-TEG reference reporting: code and aggregate data
 
-Updated **10 November 2026** to match the current submission materials.
+Updated **13 November 2026** to match the current submission materials.
 Start with [`current/`](current/) for the current analysis code and
 [`data/`](data/) for Supplementary Data 1–8. The workbooks are exact copies
 of the submission files. This repository contains no patient-level records,
 raw waveforms, individual predictions, fitted models or manuscript PDFs.
 
-The manuscript, supplement and code archive cite [release v2026.11.10.3](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.10.3).
+The manuscript, supplement and code archive cite [release v2026.11.13.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.13.1).
 The supplementary device video is included in the submission ZIP; its checksum
 is recorded in `provenance/CURRENT_MANUSCRIPT.json`.
 
-The U-TEG device uses longitudinal ultrasonic guided waves in a micro-metal tube, as described in US patent 12,487,161 B2 (2025). Figure 3 now separates false-positive withholding from correct-report retention. The numerical analyses and aggregate workbooks are unchanged.
+The U-TEG device uses longitudinal ultrasonic guided waves in a micro-metal tube, as described in US patent 12,487,161 B2 (2025). The numerical analyses and aggregate workbooks are unchanged.
 
 ## Current analysis
 
@@ -36,6 +36,10 @@ uses released reports. FNR and FPR use released abnormal and normal
 reference events, respectively. Full-class yields also include withheld
 events. Repeated seed outcomes are retained within the same record group
 when estimating intervals; they are not independent patients.
+
+## Specimen handling
+
+At SAHZU and Hubei, samples were kept at room temperature and tested within 6 h after collection. At Huzhou, samples were stored at 2–8 °C and tested 24–48 h after collection. Both assays were started simultaneously on aliquots from the same blood draw. Supplementary Methods A1 describes specimen handling and the supporting literature.
 
 ## Files and entry points
 

@@ -1,7 +1,7 @@
 # Supplementary Data
 
 These eight workbooks are identical to the current submission files,
-synchronized on 7 November 2026. Read each workbook's README and Definitions
+verified against the submission files on 13 November 2026. Read each workbook's README and Definitions
 sheets for units, denominators and evaluation scope.
 
 | Workbook | Contents |
