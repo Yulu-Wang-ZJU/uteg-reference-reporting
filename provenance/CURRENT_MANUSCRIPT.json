@@ -1,7 +1,7 @@
 {
   "schema": "uteg_current_manuscript_v2",
   "date": "2026-11-15",
-  "manuscript_revision": "2026-11-15.1",
+  "manuscript_revision": "2026-11-15.2",
   "current_code": "provenance/CURRENT_CODE.json",
   "supplementary_code": "provenance/SUPPLEMENTARY_CODE.json",
   "public_data": "provenance/PUBLIC_DATA.json",
@@ -18,8 +18,8 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_current.tex",
-      "bytes": 66329,
-      "sha256": "bf3b4ca7ffbf2982f194e2fb0fb2afa71a0cf6605c5cd4614d078f546c12b28d"
+      "bytes": 66336,
+      "sha256": "562862bda89e163bf8d6374244206d7553f638cd8b165ebbe45e901a64e318d4"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_internal301.tex",
@@ -43,18 +43,18 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
-      "bytes": 1002288,
-      "sha256": "d4cb880fda557bfadda6934a8eb985501f3f975bcfd879e54d08c37ac2b3053d"
+      "bytes": 1002304,
+      "sha256": "877707a13ad3995fb30079361d5459aaf9c6efeab1e6104d71d805135debd01e"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261103.pdf",
-      "bytes": 1544913,
-      "sha256": "32e6aba63fb81e2a421f3acc8a75978ae982bd1b9884344d9357f799ce23919a"
+      "bytes": 1544926,
+      "sha256": "7c7d727778f3284cf756fda3fe69df0413f0388142436e158a0cdc72e4af34e1"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
-      "bytes": 30619169,
-      "sha256": "14c850fc27fa966b14d1f08086b76392aed71b69854d2145b8e4b83109ad9be8"
+      "bytes": 30619152,
+      "sha256": "4b60efe7f68a1895ec5b533ad8c2d9049a365e16eaea2924e33a9fb8932ebb0b"
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_reporting_associations.tex",
