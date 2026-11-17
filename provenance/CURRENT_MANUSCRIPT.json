@@ -21,8 +21,8 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_current.tex",
-      "sha256": "db86576ca2182dc77c08662097912b62c20ce55e81316923ed293f0c77b5f28b",
-      "bytes": 64887
+      "sha256": "1c65b53b644f39aa3643dac9b92776252add295a29d0584fcf61067316777567",
+      "bytes": 64885
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement_external_refs.tex",
@@ -56,23 +56,23 @@
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main.pdf",
-      "sha256": "9b356cc6f092eadac643260ca847cd5869e38b174f88a7e2f0f2c2967b0b2ac1",
+      "sha256": "e557c6013f80448f81d49eb88f4742dc2a289525eaa1d5cdee7db92a09da446c",
       "bytes": 689152
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/supplement.pdf",
-      "sha256": "514107dd310bf3a88ebf95a0d3d5fc1a938a42c7f9dfb7ca8248fa3746ab184a",
-      "bytes": 1064329
+      "sha256": "256ffdd6c4fd3eb146863fac7442c1404bf02164a682d6fda605d1b827915475",
+      "bytes": 1064324
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/main_and_supplement_review_20261103.pdf",
-      "sha256": "b69a8fddaedf6f1aceab64900127ff529bc0e4830c13942b48eae3ee186498da",
-      "bytes": 1696115
+      "sha256": "ef8ff3737ca74f4953a007ec81eb45ba852085f8cb7bdae1b5a5109085471b84",
+      "bytes": 1696111
     },
     {
       "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Supplementary_Materials.zip",
-      "sha256": "df41bc5b00d787987c8e6d345ef75d677a99243bcdaeb58dcfe3fec631962443",
-      "bytes": 56785394
+      "sha256": "84716ece96e8c0d9f21024dfd4ecc894effa6c303639038b06001258ee2ee2ba",
+      "bytes": 56785382
     }
   ],
   "figure_anchors": [
