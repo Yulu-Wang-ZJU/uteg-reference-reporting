@@ -1,32 +1,16 @@
 # Supplementary Data
 
-These eight workbooks are identical to the current submission files,
-verified against the submission files on 15 November 2026. Read each workbook's README and Definitions
-sheets for units, denominators and evaluation scope.
+These eight workbooks are exact copies of the 17 November 2026 submission files. Read the README and Definitions sheets for metric denominators. Current sheets report 100-repeat summaries and retained aggregate repeat records. H_ sheets are the original fixed-cohort or exploratory analyses, with their original denominators.
 
-| Workbook | Contents |
-| --- | --- |
-| [Supplementary Data 1](Supplementary_Data_1.xlsx) | Cohort, data roles, nine configurations and evaluation denominators |
-| [Supplementary Data 2](Supplementary_Data_2.xlsx) | Mapping, adaptation, Fig. 2 aggregates and linear/RBF comparisons |
-| [Supplementary Data 3](Supplementary_Data_3.xlsx) | Reporting rules, class destinations, risk–coverage curves and Fig. 3 counts |
-| [Supplementary Data 4](Supplementary_Data_4.xlsx) | Checkpoints, first-report schedules, HGB comparisons and Fig. 4 operating points |
-| [Supplementary Data 5](Supplementary_Data_5.xlsx) | Seed summaries, representation comparisons, diagnostic analyses and computational timing |
-| [Supplementary Data 6](Supplementary_Data_6.xlsx) | Timing destinations and target-only prediction comparisons |
-| [Supplementary Data 7](Supplementary_Data_7.xlsx) | Local-label budgets, paired comparisons, schedule controls and internal checks |
-| [Supplementary Data 8](Supplementary_Data_8.xlsx) | Separate 301-record internal evaluation, fold counts and linear/RBF comparisons |
+1. Cohorts and nine configurations.
+2. Mapping, adaptation, linear/RBF controls and Figure 2 (fixed 201-record illustration separately identified).
+3. Reporting rules, class destinations, Figure 3 and exploratory associations.
+4. Time checkpoints, locked first reports, updated final reports and HGB capability comparisons.
+5. Sensitivity analyses, representations, component ablations and computation timing.
+6. Target-only controls.
+7. Local-data budgets and retained internal partitions.
+8. Separate internal evaluation and ensemble extensions.
 
-Rows summarize configurations, models, seeds, folds, classes, checkpoints or
-rank prefixes. Fold tables contain sample and class counts, not record
-assignments. Time-to-first-report tables are count distributions.
+Main development size is 60; sensitivity size is 54. The repeated internal analysis samples 271 of 301 records. Accuracy uses released reports; reporting rate uses all sampled test records. FNR/FPR use reported abnormal/normal references. Undefined ratios remain missing, with valid-repeat counts retained. Mean ± SD is not a confidence interval.
 
-The original 60/201 SAHZU evaluation and the separate 301-record internal
-evaluation are identified separately. Agreement uses released reports;
-coverage uses the complete evaluation cohort. FNR/FPR use released
-abnormal/normal references, while full-class yields include withheld events.
-
-All 98 worksheets and their workbook containers were checked for
-patient-level fields, hidden content and embedded attachments. No individual
-records, patient identifiers, raw signals or individual predictions were
-found. Seeds and folds identify experimental runs or partitions.
-File hashes, worksheet inventories and the review scope are recorded in
-[`PUBLIC_DATA.json`](../provenance/PUBLIC_DATA.json).
+Tables contain aggregate counts and metrics, not individual patient records, identifiers, signals or prediction vectors. `current/repeat100/aggregate_results.zip` retains complete aggregate results for all repeats. Checksums are in `provenance/PUBLIC_DATA.json`.

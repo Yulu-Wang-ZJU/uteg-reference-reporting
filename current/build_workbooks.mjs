@@ -46,8 +46,8 @@ for(const [number,sheets] of Object.entries(books)){
       if(lineCount>1)sh.getRangeByIndexes(1,0,records.length,fields.length).format.rowHeight=Math.min(90,17*lineCount);
     }
     const lastCol=Math.min(fields.length,8);let col='';let v=lastCol;while(v){v--;col=String.fromCharCode(65+v%26)+col;v=Math.floor(v/26);}
-    const img=await wb.render({sheetName:name,range:`A1:${col}${Math.min(rows.length,9)}`,scale:1.1,format:'png'});
-    const safe=name.replace(/[^a-zA-Z0-9_-]/g,'_');await fs.writeFile(path.join(previews,`${number}_${safe}.png`),new Uint8Array(await img.arrayBuffer()));
+    const safe=name.replace(/[^a-zA-Z0-9_-]/g,'_');
+    if(name==='README'){ const img=await wb.render({sheetName:name,range:`A1:${col}${Math.min(rows.length,9)}`,scale:1.1,format:'png'});await fs.writeFile(path.join(previews,`${number}_${safe}.png`),new Uint8Array(await img.arrayBuffer()));}
     ledger.push({workbook:Number(number),sheet:name,rows:records.length,columns:fields.length,preview:`${number}_${safe}.png`});
   }
   wb.recalculate();

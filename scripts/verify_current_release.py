@@ -44,7 +44,7 @@ def main() -> None:
     python_count = json_count = 0
     for entry in code['members']:
         path = RELEASE/relative(entry['repository_path'])
-        if path.suffix not in {'.py', '.json', '.md', '.mjs', '.txt'}:
+        if path.suffix not in {'.py', '.json', '.md', '.mjs', '.txt', '.zip'}:
             raise ValueError(f'Unexpected current source type: {path}')
         data = path.read_bytes()
         check(data, entry)
@@ -52,6 +52,12 @@ def main() -> None:
         if path.suffix == '.py':
             ast.parse(data.decode('utf-8-sig'), filename=entry['repository_path'])
             python_count += 1
+        elif path.suffix == '.zip':
+            if path.relative_to(RELEASE).as_posix() != 'current/repeat100/aggregate_results.zip':
+                raise ValueError('Unexpected aggregate archive')
+            with zipfile.ZipFile(path) as archive:
+                if archive.testzip() is not None or any(not n.endswith('.json') or '..' in PurePosixPath(n).parts for n in archive.namelist()):
+                    raise ValueError('Invalid aggregate archive')
         elif path.suffix == '.json':
             json.loads(data)
             json_count += 1

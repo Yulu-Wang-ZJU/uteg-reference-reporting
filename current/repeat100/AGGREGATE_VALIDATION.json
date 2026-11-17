@@ -1,0 +1,7 @@
+{
+  "summary_metric_checks": 5184,
+  "complete_reporting_repeats": 10800,
+  "all_rounds_retained": true,
+  "primary_and_sensitivity_final_composite_zero_FN": true,
+  "undefined_ratios_not_zero_filled": true
+}

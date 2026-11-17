@@ -1,110 +1,27 @@
-# U-TEG reference reporting: code and aggregate data
+# U-TEG reference reporting
 
-Updated **15 November 2026** to match the current submission materials.
-Start with [`current/`](current/) for the current analysis code and
-[`data/`](data/) for Supplementary Data 1–8. The workbooks are exact copies
-of the submission files. This repository contains no patient-level records,
-raw waveforms, individual predictions, fitted models or manuscript PDFs.
+Current release: **v2026.11.17.1** (17 November 2026).
 
-The manuscript, supplement and code archive cite [release v2026.11.15.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.15.1).
-The supplementary device video is included in the submission ZIP; its checksum
-is recorded in `provenance/CURRENT_MANUSCRIPT.json`.
+The main evaluation uses 60 local development records and all 100 stratified subsampling repeats. The 54-record sensitivity and the 271-of-301 internal evaluation are separate. The fixed composite reporting rule is `common_B`; ensemble extensions are reported separately. Mean ± SD describes variation across overlapping repeats, not 95% confidence limits.
 
-The U-TEG device uses longitudinal ultrasonic guided waves in a micro-metal tube, as described in US patent 12,487,161 B2 (2025). The numerical analyses and aggregate workbooks are unchanged.
+Start with [the current repeated evaluation](current/repeat100/README.md). Complete aggregate repeat records are in `current/repeat100/aggregate_results.zip`. Run `python current/repeat100/validate_aggregates.py` to verify the reporting summaries without patient data. The [eight supplementary workbooks](data/) are identical to the submission files; H_ sheets retain the original fixed-cohort analyses.
 
-## Current analysis
+The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and 79 from Hubei. Main transfer comparisons share the original 60-record development pool and 201-record evaluation pool. Each repeat samples 181 evaluation records and designated source records. The additional local internal analysis samples 271 of 301 records and uses grouped outer and inner folds.
 
-The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and
-79 from Hubei. All included records passed the recorded input QC. The two
-evaluation protocols remain separate:
+Accuracy is correct MA-state reports divided by reports. Reporting rate is reports divided by all sampled test records. FNR and FPR use reported abnormal and normal references, respectively; zero denominators remain undefined. Low/high correct-report counts and withheld outcomes are retained separately.
 
-- The original centre-role evaluation uses reserved adaptation and held-out
-  test cohorts. The main single-source and dual-source comparisons share
-  60 SAHZU adaptation records and 201 test records.
-- The separate 301-record local evaluation uses grouped five-fold outer and
-  three-fold inner splits, with one outer-held-out prediction per record.
+The U-TEG device uses longitudinal ultrasonic guided waves in a micro-metal tube, as described in US patent 12,487,161 B2 (2025). At SAHZU and Hubei, samples were kept at room temperature and tested within 6 h. At Huzhou, samples were stored at 2–8 °C and tested at 24–48 h. Both assays began simultaneously on aliquots from the same blood draw.
 
-The current sources cover hybrid regression, asymmetric correction, mapping
-and adaptation controls, target-only RBF and Ridge comparisons, and
-boundary-distance, logistic and HGB reporting rules. HGB capability
-comparisons at matched coverage or observed agreement are distinct from the
-supplementary B95 analyses that retain the first report.
-
-MA states are low (`<50 mm`), normal (`50–70 mm`, inclusive) and high
-(`>70 mm`). Coverage uses the complete evaluation denominator; agreement
-uses released reports. FNR and FPR use released abnormal and normal
-reference events, respectively. Full-class yields also include withheld
-events. Repeated seed outcomes are retained within the same record group
-when estimating intervals; they are not independent patients.
-
-## Specimen handling
-
-At SAHZU and Hubei, samples were kept at room temperature and tested within 6 h after collection. At Huzhou, samples were stored at 2–8 °C and tested 24–48 h after collection. Both assays were started simultaneously on aliquots from the same blood draw. Supplementary Methods A1 describes specimen handling and the supporting literature.
-
-## Files and entry points
+This repository contains code, aggregate tables and manuscript checksums. It does not publish individual patient inputs, prediction vectors, manuscript PDFs or the device video. The video remains in the submission ZIP.
 
 | Location | Contents |
-| --- | --- |
-| [`current/README.md`](current/README.md) | Input definitions, provenance, dependencies and execution instructions |
-| [`current/code_submit/`](current/code_submit/) | Current runners and their shared dependencies |
-| [`current/protocols/`](current/protocols/) | Frozen analysis settings and comparison protocols |
-| [`current/EVIDENCE.json`](current/EVIDENCE.json) | Aggregate analysis results |
-| [`current/WORKBOOK_TABLES.json`](current/WORKBOOK_TABLES.json) | Aggregate tables used to build the eight workbooks |
-| [`data/`](data/) | Supplementary Data 1–8 and their index |
-| [`provenance/CURRENT_CODE.json`](provenance/CURRENT_CODE.json) | Source-archive member hashes and the public-file inventory |
-| [`provenance/PUBLIC_DATA.json`](provenance/PUBLIC_DATA.json) | Workbook hashes, worksheet inventory and content-review scope |
-| [`provenance/CURRENT_MANUSCRIPT.json`](provenance/CURRENT_MANUSCRIPT.json) | Hashes linking this release to the local manuscript and figures |
+|---|---|
+| `current/repeat100/` | Current fixed-rule implementation, 100-repeat summaries, component ablation and timing |
+| `current/code_submit/`, `current/protocols/` | Retained fixed-cohort implementation and protocols |
+| `current/WORKBOOK_TABLES.json` | Exact source tables for all eight workbooks |
+| `data/` | Supplementary Data 1–8 and their ZIP |
+| `provenance/CURRENT_CODE.json` | Public code inventory and archive hashes |
+| `provenance/PUBLIC_DATA.json` | Aggregate data hashes and source correspondence |
+| `provenance/CURRENT_MANUSCRIPT.json` | Current manuscript, figures and video hashes |
 
-The files under `current/` retain the submission code package's paths and
-bytes. One editable manuscript-figure asset is omitted from the public copy;
-the exclusion is recorded in `CURRENT_CODE.json`. The original
-`current/CODE_MANIFEST.json` describes the submission archive, including that
-asset. Use `provenance/CURRENT_CODE.json` to verify the public subset.
-
-From `current/`, the principal analysis commands use
-`python -m code_submit.paper_inward4_replay.MODULE`:
-
-| Module and arguments | Analysis |
-| --- | --- |
-| `current_version evaluate` | 301-record grouped internal evaluation |
-| `current_suite primary` | Original centre-role primary comparisons |
-| `current_suite mapping --method all` | Mapping and calibration controls |
-| `current_suite gates` | Reporting-rule comparisons |
-| `current_suite sequence` | First-report accounting |
-| `linear_rbf_comparison` | Matched one-input linear/RBF comparison; see the package instructions for its stages |
-| `manuscript_figure3`, `manuscript_figure4` | Current reporting figures |
-
-These numerical runners require the separately authorized inputs and frozen
-assignments listed in `current/RESTRICTED_INPUT_HASHES.json`. Follow
-[`current/README.md`](current/README.md) before configuring them.
-`requirements-observed.txt` records the analysis environment; workbook
-rendering also uses `@oai/artifact-tool`. Input preparation and loading are
-described in the package documentation.
-
-## Verify the download
-
-From the repository root, use Python 3.10 or later:
-
-```text
-python scripts/verify_current_release.py
-```
-
-This checks file hashes, the current Python/JSON sources and the aggregate
-workbooks without importing an analysis runner or loading private data.
-With the original workspace available, also compare the submission archive,
-workbooks and manuscript hashes:
-
-```text
-python scripts/verify_current_release.py --source-root <workspace-root>
-```
-
-## Historical implementation
-
-`src/`, `snapshots/` and the four bundles under `supplementary/` preserve the
-earlier implementation and supplementary analyses. Their original provenance
-manifests remain available. Their READMEs describe those earlier versions;
-use `current/` for the current submission. The small package installed with
-`pip install -e .` remains the earlier Ridge-10 utility API and does not
-replace the current runners.
-
-The repository's Apache-2.0 license is in [`LICENSE`](LICENSE).
+Run `python scripts/verify_current_release.py` to check the public inventory. With the authorized local workspace available, add `--source-root PATH` to check manuscript and archive correspondence. No analyses are executed by this verification.

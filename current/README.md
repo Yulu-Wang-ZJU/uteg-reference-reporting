@@ -1,14 +1,18 @@
-# Current manuscript analysis snapshot
+# Current release: v2026.11.17.1
 
-This package contains analysis code, aggregate results and protocols for the
-current manuscript. Individual research records are not included.
+The current repeated-subsampling analysis is in `repeat100/`. Main development size: 60; sensitivity: 54; separate internal sample: 271 of 301. See `repeat100/README.md` for entry points and aggregate results. The remaining directories retain the original fixed-cohort analyses.
+
+## Retained fixed-cohort implementation
+
+The directories outside `repeat100/` contain the retained fixed-cohort code,
+aggregate results and protocols. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [release v2026.11.15.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.15.1)
+Analysis code and aggregate results correspond to [release v2026.11.17.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.17.1)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.15.1/current) for analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.15.1/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.17.1/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.17.1/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
 
 ## Device principle

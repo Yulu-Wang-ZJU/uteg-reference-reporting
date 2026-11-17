@@ -1,0 +1,79 @@
+[
+  {
+    "file": "repeat100/experiments/uteg_component_ablation_20261117/ablate_and_time.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_locked_commonB_20261117"
+    ]
+  },
+  {
+    "file": "repeat100/experiments/uteg_component_ablation_20261117/build_revision_inventory.py",
+    "absolute_roots_relocated": [
+      "E:/zju/code_proj/UTEG2TEG_moreDataValidation/outputs/uteg_nc_goal_20261030/manuscript",
+      "D:/CodexData/experiments/uteg_locked_expansion_20261117/summary"
+    ]
+  },
+  {
+    "file": "repeat100/experiments/uteg_dual_mapping_safety_20261117/run.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_locked_expansion_20261117"
+    ]
+  },
+  {
+    "file": "repeat100/experiments/uteg_fixed10_remaining_20261116/run_followup.py",
+    "absolute_roots_relocated": [
+      "E:/zju/code_proj/UTEG2TEG_moreDataValidation/outputs/resampling90_100_20261116"
+    ]
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_commonB_20261117/package_locked.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_risk_calibration_20261117",
+      "E:/zju/code_proj/UTEG2TEG_moreDataValidation",
+      "D:/CodexData/experiments",
+      "D:/CodexData/experiments"
+    ]
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_expansion_20261117/experiment.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_risk_calibration_20261117",
+      "D:/CodexData/experiments/uteg_locked_commonB_20261117"
+    ]
+  },
+  {
+    "file": "repeat100/experiments/uteg_risk_calibration_20261117/calibrate.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_fixed10_remaining_20261116"
+    ]
+  },
+  {
+    "file": "repeat100/project/outputs/resampling90_100_20261116/fixed10_gate_balance.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_fixed10_gate_balance_20261116"
+    ]
+  },
+  {
+    "file": "repeat100/project/outputs/resampling90_100_20261116/fixed_cap_diagnostic.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_fixed10_gate_balance_20261116"
+    ]
+  },
+  {
+    "file": "repeat100/project/outputs/resampling90_100_20261116/high_risk_followup.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_high_risk_followup_20261116"
+    ]
+  },
+  {
+    "file": "repeat100/project/outputs/resampling90_100_20261116/normal_fn_remaining_diagnostic.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_high_risk_followup_20261116"
+    ]
+  },
+  {
+    "file": "repeat100/project/outputs/resampling90_100_20261116/normal_hard_fn.py",
+    "absolute_roots_relocated": [
+      "D:/CodexData/experiments/uteg_normal_hard_fn_20261116/required_normal_check"
+    ]
+  }
+]
