@@ -1,12 +1,12 @@
 # U-TEG reference reporting
 
-Current release: **v2026.11.17.1** (17 November 2026).
+Current release: **v2026.11.18.1** (18 November 2026).
 
-The main evaluation uses 60 local development records and all 100 stratified subsampling repeats. The 54-record sensitivity and the 271-of-301 internal evaluation are separate. The fixed composite reporting rule is `common_B`; ensemble extensions are reported separately. Mean ± SD describes variation across overlapping repeats, not 95% confidence limits.
+The main evaluation uses 60 local development records and all 100 stratified subsampling repeats. Sensitivity to 90% development sampling and the 271-of-301 internal evaluation are separate. The Class-specific reporting gate is stored as `common_B`; ensemble extensions are reported separately. Mean ± SD describes variation across overlapping repeats, not 95% confidence limits.
 
 Start with [the current repeated evaluation](current/repeat100/README.md). Complete aggregate repeat records are in `current/repeat100/aggregate_results.zip`. Run `python current/repeat100/validate_aggregates.py` to verify the reporting summaries without patient data. The [eight supplementary workbooks](data/) are identical to the submission files; H_ sheets retain the original fixed-cohort analyses.
 
-The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and 79 from Hubei. Main transfer comparisons share the original 60-record development pool and 201-record evaluation pool. Each repeat samples 181 evaluation records and designated source records. The additional local internal analysis samples 271 of 301 records and uses grouped outer and inner folds.
+The included cohort contains 478 records: 304 from SAHZU, 95 from Huzhou and 79 from Hubei. Main transfer comparisons share a fixed 60-record development pool and 244-record evaluation pool. Each repeat samples 220 evaluation records and designated source records. The additional local internal analysis samples 271 of 301 records and uses grouped outer and inner folds.
 
 Accuracy is correct MA-state reports divided by reports. Reporting rate is reports divided by all sampled test records. FNR and FPR use reported abnormal and normal references, respectively; zero denominators remain undefined. Low/high correct-report counts and withheld outcomes are retained separately.
 

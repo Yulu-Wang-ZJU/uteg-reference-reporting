@@ -1,0 +1,392 @@
+[
+  {
+    "file": "repeat100/experiments/uteg_fixed10_remaining_20261116/run_followup.py",
+    "source_sha256": "738c2d66ce15c17de2bb5d442b6de60c41056c0233c83f8530ff2cf4e8964a1a",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_full90_target70_20261117/full90.py",
+    "source_sha256": "04daa983f7513e700b040e91ab1ca14f2c0cacccb06a574e02c7dd68ee3e5a36",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_expansion_20261117/additional.py",
+    "source_sha256": "4306f92d4d908b8ee237abb8760ffeb2cfa5ccd1658d6c5c81f027cf4df0e194",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_expansion_20261117/aggregate.py",
+    "source_sha256": "ee1309e68cf2af449beb8f98d0f6ef20ca39b7b480a340cebaf7da89ca7476ac",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_expansion_20261117/capability.py",
+    "source_sha256": "dca6705a7c8a0eced64554e1070129640937734c9a7407f3250a2486764666a4",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_expansion_20261117/experiment.py",
+    "source_sha256": "758e8f517327ef7772230cac81d9092913963e29f7af1652072f2c97a428a588",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_expansion_20261117/extensions.py",
+    "source_sha256": "2e04aee29b2a3bab3d240a9c48de5c359148fe791414dd6dcee51abc01a5abcc",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_locked_expansion_20261117/fast_policy.py",
+    "source_sha256": "75896503ef5db3adcaf52d503f11d9eac07ddbcba91494c96382db9e31c8a72e",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_risk_calibration_20261117/calibrate.py",
+    "source_sha256": "fecaf1c6c7f162f6da2b76ac2d0e783b1b6c91b53625922042fb643450fff6de",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu60_test244_20261118/audit_plan.py",
+    "source_sha256": "4473e40087eefbd25955a46cba317aaddb07c97d742f77779f40673b61e780f0",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu60_test244_20261118/check_original.py",
+    "source_sha256": "8851ac8f56ebf1cad8c466c4b7a666790d7ca22055390f666bd2163d6967ec88",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu60_test244_20261118/report.py",
+    "source_sha256": "e07504e2a3e159a46b502828915e443eb7caa9cbac2b241d49319a19666e1bd4",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu60_test244_20261118/run.py",
+    "source_sha256": "20798e6fb2fe7276d1acd35b72baddb47c9740233f0b1624e48e948ff5821d8c",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_locked_completion_20261118/check_controls.py",
+    "source_sha256": "674b8a83e82632b894b81091b5bb869d94ed2113f2a12912975109f82cc11d0f",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_locked_completion_20261118/complete.py",
+    "source_sha256": "2ddb1b7ed7d743c03e1403b46ce44b7e5fc29d7914140955c7b5ae009990efa2",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_locked_completion_20261118/derive.py",
+    "source_sha256": "e2c3300d8071d20394b5bdddc7d2d25a5aad001e4c67c52e0f4ba9d898a2aff2",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_locked_completion_20261118/report.py",
+    "source_sha256": "b093d9d0222906922e3a10a7d574a8972d47c037e442d0096c842e7b4bc12b6e",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_lowfn_20261118/audit_lock.py",
+    "source_sha256": "068f0e68ad7580c12f70e2f3e726109fb794d0ffcc9912d95a26c85c7b86c38a",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_lowfn_20261118/report.py",
+    "source_sha256": "0a079a96a6134d421edf0047c1261910b51f34bc1f4b104e3d7b8f9f5901121a",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_lowfn_20261118/reselect.py",
+    "source_sha256": "c0b2da37b144aeec89794855ba53ac6884536a9f501bfeb0b4f8c5ab0e457d96",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/experiments/uteg_sahzu_lowfn_20261118/study.py",
+    "source_sha256": "3c8d7c39c75c3adb274e96c44da43ff95ff69b8cfe371546750aef55444919aa",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_imbalance_mapping/__init__.py",
+    "source_sha256": "2880b9f490b0201b61de22642cbcf3ad5bac785f98d546daf5c17868d03901ad",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_imbalance_mapping/data_contract.py",
+    "source_sha256": "51778bdb82346e7f12dda8cd25a15a8247d35efee90eb72777143e40a008a4fc",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_imbalance_mapping/models.py",
+    "source_sha256": "544975282f9c96aa32f3992a4b79361547eebe59bd1192d713c513dc76ff293b",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/__init__.py",
+    "source_sha256": "7f4654ca6e4c72c0760ad96e823477e97f54fc5d81e7a0cb42a5513e5f0e4c48",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/abnormal_direction_mapping.py",
+    "source_sha256": "b9b80e72a32541934edde02c1c5f4b08bb4f4d7be0dd52e80c89a05b4d7a4901",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/alignment_search.py",
+    "source_sha256": "05bafbfebe4c17491fbf9d2cc83dfbacd34f5eb08bdd3b81de1d8148d18ab33d",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/all301_b085_inward4_transfer.py",
+    "source_sha256": "ebe65b04117b19a0c013c2455b6e3a8679932465b1ef4d539eaf52ad1c0f65a5",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/all301_b_only_diagnostic.py",
+    "source_sha256": "0590ef281e22c4f20a9766620f78604e32466fac7746e3aa4075dc0eee4226df",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/all301_b_only_mix085.py",
+    "source_sha256": "a2e733341e68ec878fe532ecd09174570dfa6aa6bca32225377cd39553c4782c",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/all301_internal_data.py",
+    "source_sha256": "ce238d653b0eddda4d05f06f01ad7bbe741414985f44fd46bccc831f5c5ad3f5",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/all301_internal_models.py",
+    "source_sha256": "38c655a153bb382170d178f05c021d962c6fbd1bf5417ebefd87280f8027df52",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/all301_oracle_amplitude_substitution.py",
+    "source_sha256": "e15dfa8d0923bcd88045417cd1b13daefeefbd8f72b962da081d5ce230c85f88",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/asymmetric_ma_mapping.py",
+    "source_sha256": "c0ecf792af53c230eb7fa48be7d8811c5a514e24fa128e7a3662aa4f9a69abb6",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/center_tree_search.py",
+    "source_sha256": "4644e8f4a7f5dcaa4323db4a9c469aca5b0fe94653d59c4be4dd14cd21e841c4",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/common_clock.py",
+    "source_sha256": "374df373fe86b9a2d8e67244fdacaa2e06cff496777474482f2eec2a20579083",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/cost_sensitive_detection.py",
+    "source_sha256": "787523cf388aab52f7982f30215beb532e9cf458f0688b1990c19a03b59f8a03",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/current_low_support.py",
+    "source_sha256": "dffad75c8bb20e8869a7c2a88f6d01297b610335ccee49070c8404873b898e9e",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/density_reweight_mapping.py",
+    "source_sha256": "890c473e9da43140bc3186a9735add3eee69d106f62324a6c0adf2d94be3f420",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/duration_transfer.py",
+    "source_sha256": "5180bb86e0dd2b1e33c0f8ef5565010d1f4c1d67c96cda822692a9edc6034c1f",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/feature_combination_audit.py",
+    "source_sha256": "f0fa32e40ca9b58f1da28fdb853c4fd280591ad61e18f1bf1aad2a4dd6fac6ec",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/frozen_moment_features.py",
+    "source_sha256": "e68ed1a0ad75cea72ddb1c0722e01a658898876ab19e034f6f0bce7e1338f946",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/frozen_moment_mapping.py",
+    "source_sha256": "8c2c0fbe440a1cfb9b56d0594b7c341edecee9f173f2c938ffc4b946672910a8",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/frozen_moment_specialist.py",
+    "source_sha256": "e26063d2d9d475b4748cdbc34e72e723a6c82c034866608d7676fb1bb5b7d2e7",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/full_curve_cost_sensitive.py",
+    "source_sha256": "372fcb1c771983596eaf21d729078b75b9ec5bd110c79d9cc773e34ebadb8eb5",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/full_curve_joint_state.py",
+    "source_sha256": "c77719e0e285a4402bf1f348d9418b6254f84bc85e29242b5cecbf94e762c809",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/full_curve_neural.py",
+    "source_sha256": "c73907d7f10589a9463bf88731110cd89352ca74fa47881516fca6d04b138ce8",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/full_curve_state_experts.py",
+    "source_sha256": "a6befec4ea7193fb150dbd617482d30bb0da42aa685060bef791833b670074d6",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/functional_search.py",
+    "source_sha256": "3fa49282b4d58aad110dcb3dbc07f337bdffe67fd5ab9af2e2c0a49373536bff",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/hierarchical_search.py",
+    "source_sha256": "559de0aee0feb644ef9208fde4877b5d5da0a31a1098b7ec54747a9bd72c36d2",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/high_ma_specialist.py",
+    "source_sha256": "a8ca5def8ffd9f803b164b50e8d0fa6525e6d25f8abc864ad62efe0ce460bf89",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/hubei_source_search.py",
+    "source_sha256": "03ee72ac583c55929be3797aeedc9246cd0b992b90ed539abbf593eaea1eb5c9",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/learning_curve.py",
+    "source_sha256": "aadee37dfd26c5f24b4294848abcdfc3ef232fc4a37b0675668519197bf49666",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/low_rank_curve_mapping.py",
+    "source_sha256": "7c94cf795a1c871da31055a483901ffc2b31c784d313e90da73829373856e5a3",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/metrics.py",
+    "source_sha256": "dd8fc2aa97943ad957c3c0dae3baad8a5554e0742f9ab8e44fcab1a8167ca71a",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/models.py",
+    "source_sha256": "138a6ebbfd5644b9736b7e7ee08353939f9645370e43f525b80627e8cf65caa3",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/pinned_pls_mapping.py",
+    "source_sha256": "16ebad4cbf39f6a1bed7b7fb65263f07a8e62fcc0fc1c57fb59a8e33b62ce547",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/representation_search.py",
+    "source_sha256": "0d7b5dd67af8f5583585002e14ca13386cc0806a657f8cddbea20b6277300ad9",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/search.py",
+    "source_sha256": "4ff2e84fc446aef5e4b507852f12b308cfd35a294ea4dfd82d6c663e626e7e2f",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/signal_neighborhood.py",
+    "source_sha256": "7a517edfe57df8f3f941ee2a2c9216ad4f04bd1c846b51c881776394ea723ebf",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/specialist_boundary_calibration.py",
+    "source_sha256": "867c2c322baab5491f0c63e29f282168ba9d639f623b45ab155dcd40968c246d",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/supervised_curve_mapping.py",
+    "source_sha256": "a22bca0ceb617e840f9089667de38e8dfe175b4a933b2b6f1541f81eab7890e7",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/supervised_high_rescue.py",
+    "source_sha256": "bba6a1936e19ae68d7674b285d0c0bc474f64091c2c44f4da90da56515a7b386",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/ma_target_optimization/voltage_scale.py",
+    "source_sha256": "234f922354b8d09f2ffa8c662c3bccf1689a6101b91aefa20941e5764c57d8b1",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_b085_hospital_replay/adaptation_controls.py",
+    "source_sha256": "c72a0c1d1c9f6031e5cbb5b215a00ee3a681b95667b478a261dd1ed4f6527749",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_b085_hospital_replay/common.py",
+    "source_sha256": "7c400c6b8c44ded50cd38d38e05d2e52419b8be2b36ce534fa0ab5f4a25ea001",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_b085_hospital_replay/equal_error.py",
+    "source_sha256": "2dfd1f995930f276d8e5a32b523bc80df13b7f5a731cd8fb03e95db1d966d7cd",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_b085_hospital_replay/reporting_controls.py",
+    "source_sha256": "b87cd9fdb78cab10679d6f64abc48c4631ed2f242c0a66639bcec7b57bb9b22b",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_b085_hospital_replay/target_only.py",
+    "source_sha256": "3c343a07f0aab51385ab71f8d8fb1bc7ec42e36ebb1d86d19ce38e998db5f30f",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/analysis.py",
+    "source_sha256": "a9368d714b9c9fadeb86aec78d90a5229fffefbf33e7fdf9565422fc902c09a3",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/controls.py",
+    "source_sha256": "3e5a30bfe294dedb452199546b0f4c46e7fe654631a39dd8afcdeda8a3837934",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/core.py",
+    "source_sha256": "76fb0de7a57062c6b907cf29abb4bca33e38e5a11f382eb3d4ca3158eb0f6e00",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/current_suite.py",
+    "source_sha256": "bd0e512587b90e4952bb1b65de7d4a725cf80d4416a73ad25d404c9e1430b58d",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/current_version.py",
+    "source_sha256": "9611652fff1fa09671aac5b3105f8cde586e9d8635f6a65c1aa7d4ca868ecf81",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/gates.py",
+    "source_sha256": "64d0703f4fbe224773769ed086069900699684e168fcc2bfa129504ca8a96217",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/input_contract.py",
+    "source_sha256": "9d97998238fdb7c6e5582790fc152b6634cf79971f2d5e881e52ec90f0feeb70",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/mapping.py",
+    "source_sha256": "e5f0f475878dcc49a246f97de814bde44b6fa41c02b33979cc17973d71380970",
+    "changes": "Path roots only"
+  },
+  {
+    "file": "repeat100/project/code_submit/paper_inward4_replay/primary.py",
+    "source_sha256": "d2a1163428c45fb15f7345376833c3c1a065f83eed24e9998476de06d7fa9ff7",
+    "changes": "Path roots only"
+  }
+]
