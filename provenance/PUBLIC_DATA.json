@@ -1,5 +1,5 @@
 {
-  "release_ref": "v2026.11.18.2",
+  "release_ref": "v2026.11.18.3",
   "scope": "Aggregate-only data; no patient rows.",
   "files": [
     {

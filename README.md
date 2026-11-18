@@ -1,6 +1,6 @@
 # U-TEG reference reporting
 
-Current release: **v2026.11.18.2** (18 November 2026).
+Current release: **v2026.11.18.3** (18 November 2026).
 
 The main evaluation uses 60 local development records and all 100 stratified subsampling repeats. Sensitivity to 90% development sampling and the 271-of-301 internal evaluation are separate. The Class-specific reporting gate is stored as `common_B`; ensemble extensions are reported separately. Mean ± SD describes variation across overlapping repeats, not 95% confidence limits.
 

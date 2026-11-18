@@ -19,6 +19,11 @@ plt.rcParams.update({'font.family':'Arial','font.size':8,'axes.spines.top':False
 F.mkdir(exist_ok=True,parents=True)
 (W/'before_figures').mkdir(exist_ok=True)
 def save(fig,n):
+ if n=='Figure3_reporting':
+  from matplotlib.text import Text
+  for item in fig.findobj(match=Text):
+   item.set_fontfamily('Times New Roman')
+   if item.get_text():item.set_fontsize(max(6.5,item.get_fontsize()))
  for ext in ['pdf','png','svg']:
   p=F/f'{n}.{ext}'
   if p.exists() and not (W/'before_figures'/p.name).exists():shutil.copy2(p,W/'before_figures'/p.name)
@@ -38,12 +43,12 @@ for col,arm in enumerate(arms):
   rows=sorted(choose(cur,budget=60,arm=arm,rule=rule,time=900),key=lambda x:x['nominal_rate'])
   x=np.array([100*r['reporting_rate']['mean'] for r in rows]);y=np.array([100*r['accuracy']['mean'] for r in rows]);sd=np.array([100*r['accuracy']['sd'] for r in rows])
   ax.plot(x,y,label=labels[rule],color=colors[rule]);ax.fill_between(x,np.maximum(0,y-sd),np.minimum(100,y+sd),color=colors[rule],alpha=.08)
- for rule in rules:
+ for rule in ['All report','Boundary','Logistic','HGB']:
   r=one(ops,budget=60,arm=arm,time=900,rule=rule)
   ax.scatter(100*r['reporting_rate']['mean'],100*r['accuracy']['mean'],color=colors[rule],edgecolors='white',s=35,marker='D' if rule=='common_B' else 'o',zorder=4)
  ax.set(xlim=(45,102),ylim=(70,102),xlabel='Reporting rate (%)',ylabel='Accuracy (%)',title=titles[col]);ax.text(-.18,1.08,'AB'[col],transform=ax.transAxes,fontweight='bold',fontsize=11)
  if col==0:ax.legend(fontsize=7,loc='lower left')
- else:ax.text(.03,.05,'Points: Table 2 operating points\nDiamond: Class-specific reporting gate',transform=ax.transAxes,fontsize=7)
+ else:ax.text(.03,.05,'Points: Table 2 operating points',transform=ax.transAxes,fontsize=7)
  for sub,key in enumerate(['FP_withheld','correct_released']):
   ax=fig.add_subplot(gs[sub+1,col]);ys=[];es=[]
   for rule in rules:
@@ -66,6 +71,8 @@ for col,arm in enumerate(arms):
   ax.tick_params(axis='x',labelsize=7,rotation=25)
   if sub==0:ax.text(-.25,1.08,'CD'[col],transform=ax.transAxes,fontweight='bold',fontsize=11)
 fig.subplots_adjust(left=.12,right=.99,bottom=.08,top=.96);save(fig,'Figure3_reporting')
+import sys
+if '--figure3-only' in sys.argv:raise SystemExit(0)
 # Figure 4: retain HGB capability comparison, never substitute the composite endpoint.
 cap=load('Fig4_HGB_capability');fig,axes=plt.subplots(2,2,figsize=(7.2,5.5));fig.subplots_adjust(hspace=.55,wspace=.32,bottom=.14)
 for j,(cond,metric,levels) in enumerate([('fixed_reporting_rate','accuracy',[.1,.2,.4]),('matched_observed_accuracy','reporting_rate',[.85,.9,.95]),('fixed_reporting_rate','FNR',[.1,.2,.4]),('matched_observed_accuracy','FNR',[.85,.9,.95])]):
