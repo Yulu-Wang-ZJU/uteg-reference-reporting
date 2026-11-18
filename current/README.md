@@ -1,4 +1,4 @@
-# Current release: v2026.11.18.1
+# Current release: v2026.11.18.2
 
 The current 60-record development / 244-record test-pool evaluation uses the Class-specific reporting gate. See `repeat100/README.md` for the separate 90% development-sampling and internal evaluations, entry points and aggregate results.
 
@@ -9,10 +9,10 @@ aggregate results and protocols. Individual research records are not included.
 
 ## Public repository
 
-Analysis code and aggregate results correspond to [release v2026.11.18.1](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.18.1)
+Analysis code and aggregate results correspond to [release v2026.11.18.2](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.18.2)
 in [Yulu-Wang-ZJU/uteg-reference-reporting](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting).
-Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.18.1/current) for analysis sources and
-[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.18.1/data) for Supplementary Data 1-8.
+Use [current/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.18.2/current) for analysis sources and
+[data/](https://github.com/Yulu-Wang-ZJU/uteg-reference-reporting/tree/v2026.11.18.2/data) for Supplementary Data 1-8.
 The submission archive additionally includes the editable Fig. 1 source.
 
 ## Device principle

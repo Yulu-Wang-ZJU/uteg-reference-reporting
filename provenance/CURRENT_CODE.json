@@ -1,9 +1,9 @@
 {
-  "release_ref": "v2026.11.18.1",
+  "release_ref": "v2026.11.18.2",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "sha256": "fa8e05ce73ba78c77bdd8871a2b147a1b867af4faa7a1077d9643ac67d3b59f1",
-    "bytes": 43991328
+    "sha256": "a8c7ba9494fbbb14107e42e75eda46caf0b6b890a61abd211c377310a54f94e2",
+    "bytes": 43991612
   },
   "members": [
     {
@@ -15,8 +15,8 @@
     {
       "archive_member": "CODE_MANIFEST.json",
       "repository_path": "current/CODE_MANIFEST.json",
-      "sha256": "32b945e5fa4750e41e4f7982a69aa2187f78494b02050068335eedbcd8e977fd",
-      "bytes": 45324
+      "sha256": "2fadf1600b52dea975783db32feed0c75340d01e22811d3a8edccacde3b0dc51",
+      "bytes": 45326
     },
     {
       "archive_member": "COHORT_UPDATE.json",
@@ -81,7 +81,7 @@
     {
       "archive_member": "README.md",
       "repository_path": "current/README.md",
-      "sha256": "bed44adaadb53ab6333eda6dbb1bdc467e3235a9e1ce98b2b66e5e2cdf394482",
+      "sha256": "68a2b1081a2f1a8203e43e45b8671e94e60f41dc3bb56ca6814eca8183dfadcb",
       "bytes": 7501
     },
     {
@@ -99,8 +99,8 @@
     {
       "archive_member": "WORKBOOK_TABLES.json",
       "repository_path": "current/WORKBOOK_TABLES.json",
-      "sha256": "7e7454491e76a3a4a96de7d7334c9a74a4276ded130118688c1b562f3d92b4fe",
-      "bytes": 47793022
+      "sha256": "73066232680bb4cd741ce9a4dc27fd6e90a430e9be84f0b70f73222d5f925966",
+      "bytes": 47793550
     },
     {
       "archive_member": "code_submit/__init__.py",
@@ -201,8 +201,8 @@
     {
       "archive_member": "repeat100/README.md",
       "repository_path": "current/repeat100/README.md",
-      "sha256": "775edc87204587a52c05576e73151e64b0a3a7b1b145baefe95a5658bccc61cf",
-      "bytes": 2857
+      "sha256": "724de025ac8338af0a62f195d6fd83b8175e4c3b7da8a09aa7cd9ac277da335e",
+      "bytes": 2942
     },
     {
       "archive_member": "repeat100/render_current.py",
@@ -213,8 +213,8 @@
     {
       "archive_member": "repeat100/unpack_aggregates.py",
       "repository_path": "current/repeat100/unpack_aggregates.py",
-      "sha256": "a2f1c6a8b7cfa6b5754271d0e2675be0f3cc7a128507b0015904d55f301b7e33",
-      "bytes": 432
+      "sha256": "e6911220fd412eff27a7cb0ead6d47c8cf38b765e4403ced589e279b3749f318",
+      "bytes": 387
     },
     {
       "archive_member": "repeat100/update_figure1.py",
