@@ -17,9 +17,28 @@ mod.STYLE.update({'font.family':'Times New Roman','mathtext.fontset':'custom',
 _original_save=mod.save
 def save_with_readable_type(fig,name):
  from matplotlib.text import Text
+ if name=='Figure2_translation':
+  # Place the three E scatter axes and the shared F matrix on one row.
+  scatter_axes=[ax for ax in fig.axes if ax.get_title() in ['Target-only','Single-source','Dual-source']]
+  assert len(scatter_axes)==3
+  for ax,x in zip(scatter_axes,[.075,.305,.535]):ax.set_position([x,.245,.175,.117])
+  matrix_axes=[ax for ax in fig.axes if len(ax.images)]
+  assert len(matrix_axes)==1
+  matrix_axes[0].set_position([.80,.245,.185,.117])
+  matrix_axes[0].set_title('Target-only, single-source\nand dual-source',fontsize=6.5,pad=5)
+  for item in fig.texts:
+   label=item.get_text()
+   if label=='E':item.set_position((.018,.393))
+   elif label=='F':item.set_position((.75,.393))
+   elif label=='TEG MA (mm)':item.set_position((.3925,.210))
+   elif label.startswith('Accuracy '):item.set_position((.8925,.184))
  for item in fig.findobj(match=Text):
   item.set_fontfamily('Times New Roman')
   if item.get_text():item.set_fontsize(max(6.5,item.get_fontsize()))
+ if name=='Figure2_translation':
+  for ext in ['pdf','svg','png']:fig.savefig(mod.OUT/f'{name}.{ext}',dpi=400,bbox_inches='tight',pad_inches=.04)
+  plt.close(fig)
+  return
  return _original_save(fig,name)
 mod.save=save_with_readable_type
 

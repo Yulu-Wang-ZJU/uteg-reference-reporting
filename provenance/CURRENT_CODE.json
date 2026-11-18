@@ -1,9 +1,9 @@
 {
-  "release_ref": "v2026.11.18.3",
+  "release_ref": "v2026.11.18.4",
   "source_archive": {
     "source_path": "outputs/uteg_nc_goal_20261030/manuscript/Current_analysis_code.zip",
-    "sha256": "6be7784860f0e603dd5ffe7b8d72acd744bd75573e2d1c68308a7c4af76b9046",
-    "bytes": 43992074
+    "sha256": "e754621a8db2ba56d7a22596719107bc007d270e192905e72594ca3f822a8d16",
+    "bytes": 43992435
   },
   "members": [
     {
@@ -15,7 +15,7 @@
     {
       "archive_member": "CODE_MANIFEST.json",
       "repository_path": "current/CODE_MANIFEST.json",
-      "sha256": "bbc8ceaa857282b84db4216711240c41996494eb057edf2b1219dec0b861ecb1",
+      "sha256": "abf5ab6b3d5d426a0b3cc29fc6dd326c710e017afce59b6b39a57cc9a08c0191",
       "bytes": 45326
     },
     {
@@ -81,7 +81,7 @@
     {
       "archive_member": "README.md",
       "repository_path": "current/README.md",
-      "sha256": "7c54f22dc7ad5a4ca50955caf8149874d9a035c75c3d0d21ad1a2de29305d99e",
+      "sha256": "604fadc200a9c8598bc92025f9de802bbb1074833f35bbd0197bb0fafe8ce919",
       "bytes": 7501
     },
     {
@@ -225,8 +225,8 @@
     {
       "archive_member": "repeat100/update_figure2.py",
       "repository_path": "current/repeat100/update_figure2.py",
-      "sha256": "e349c63a0b5beafaaf34623ba8342e3c62b87833ed467347d3ad4f3bfe67850d",
-      "bytes": 3675
+      "sha256": "aafc4502f001b857fd05a2d7ef1f68514933f7e735f2779c243de18f03fa268e",
+      "bytes": 4699
     },
     {
       "archive_member": "repeat100/update_si_plots.py",
